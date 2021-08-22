@@ -1,0 +1,1710 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("The Phantom - Movie", -1)
+$Author: Herkie
+$Created: 08/30/16 at 10:17:03
+$Modified: 07/02/17 at 20:03:03
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 3080
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Player Entry Delay:
+3.000000
+
++Viewer pos: -22107.005859, 415.152649, 7588.951660
++Viewer orient:
+	0.992867, -0.000002, 0.119226,
+	-0.070924, 0.803810, 0.590643,
+	-0.095836, -0.594886, 0.798077
+
+
+$Load Screen 640:	LoadAct2S.dds
+$Load Screen 1024:	LoadAct2L.dds
+
+$Skybox Model: SpaceBox.pof
+
+$AI Profile: AF2
+
+#Sexp_variables
+
+$Variables:
+(
+		0		"CamTracker0"		"0"		"number"
+		1		"CamTracker1"		"0"		"number"
+		2		"CamTracker2"		"0"		"number"
+		3		"CamTracker3"		"0"		"number"
+		4		"CamTracker4"		"0"		"number"
+)
+
+#Command Briefing
+
+#Briefing
+$start_briefing
+$num_stages: 0
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 0
+
+#Players		;! 1 total
+
+$Starting Shipname: alpha 1
+$Ship Choices: (
+)
+
++Weaponry Pool: (
+	"AM Cannon"	16
+	"Subach HL-7"	1
+	"Prometheus R"	1
+	"Harpoon"	16
+)
+
+#Objects		;! 32 total
+
+$Name: alpha 1		;! Object #0
+$Class: GTF Ulysses
+$Team: Friendly
+$Location: 0.000000, 0.000000, 0.000000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "player-start" "invulnerable" "hidden-from-sensors" "guardian" "stealth" )
++Flags2: ( "primitive-sensors" "no-subspace-drive" "primaries-locked" "secondaries-locked" "hide-ship-name" "lock-all-turrets" "afterburners-locked" "immobile" "cloaked" "ship-locked" "weapons-locked" "no-collide" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Richter		;! Object #1
+$Class: XJR Phantom
+$Team: Friendly
+$Location: -22085.771484, -22.997721, 10950.073242
+$Orientation:
+	-0.999501, 0.000000, 0.031588,
+	0.000000, 1.000000, 0.000000,
+	-0.031588, 0.000000, -0.999501
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Coronis		;! Object #2
+$Class: GTCv Coronis
+$Team: Friendly
+$Location: -22848.699219, -500.000000, 9533.200195
+$Orientation:
+	0.593924, -0.389418, -0.703993,
+	0.251107, 0.921061, -0.297644,
+	0.764329, 0.000000, 0.644826
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Coronis Point" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1100
+
+$Name: Enforcer 1		;! Object #3
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -21999.435547, -36.440926, 9030.930664
+$Orientation:
+	0.999971, 0.000000, -0.007667,
+	0.000137, 0.999840, 0.017878,
+	0.007665, -0.017878, 0.999811
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Enforcer 2		;! Object #4
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -22066.207031, -120.772934, 8829.069336
+$Orientation:
+	0.999834, 0.000000, 0.018213,
+	0.000116, 0.999980, -0.006374,
+	-0.018213, 0.006375, 0.999814
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Enforcer 3		;! Object #5
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -22193.964844, -102.431984, 9220.082031
+$Orientation:
+	0.999618, 0.000000, -0.027630,
+	-0.000321, 0.999933, -0.011597,
+	0.027628, 0.011601, 0.999551
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Enforcer 4		;! Object #6
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -22037.931641, -58.566067, 9017.573242
+$Orientation:
+	0.999847, 0.000000, -0.017516,
+	0.000170, 0.999953, 0.009723,
+	0.017516, -0.009725, 0.999799
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Enforcer 5		;! Object #7
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -22228.640625, -79.591713, 9295.393555
+$Orientation:
+	0.998575, 0.000000, -0.053372,
+	0.000395, 0.999973, 0.007385,
+	0.053370, -0.007396, 0.998547
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Andromeda		;! Object #8
+$Class: GTI Andromeda
+$Team: Friendly
+$Location: -22095.478516, -0.010092, -21860.238281
+$Orientation:
+	0.010796, 0.000000, 0.999942,
+	0.000000, 1.000000, 0.000000,
+	-0.999942, 0.000000, 0.010796
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret01L
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTI Persephone 9		;! Object #9
+$Class: GTI Persephone
+$Team: Friendly
+$Location: -20208.199219, 754.042847, -23635.802734
+$Orientation:
+	0.999800, 0.000000, -0.019999,
+	0.000000, 1.000000, 0.000000,
+	0.019999, 0.000000, 0.999800
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GTVA Headquarters 10		;! Object #10
+$Class: GTVA Headquarters
+$Team: Friendly
+$Location: -25589.322266, -0.129596, -25629.503906
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Hercules		;! Object #11
+$Class: GTD Hercules
+$Team: Friendly
+$Location: -23791.082031, -88.490135, -22875.410156
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a-base
++Subsystem: turret02a-base
++Subsystem: turret03a-base
++Subsystem: turret04a-base
++Subsystem: turret05a
++Subsystem: turret06a
++Subsystem: turret07a
++Subsystem: turret08a
++Subsystem: turret09a
++Subsystem: turret10a
++Subsystem: turret11a
++Subsystem: turret12a
++Subsystem: turret13a
++Subsystem: turret14a
++Subsystem: turret15a
++Subsystem: turret16a
++Subsystem: turret17a-base
++Subsystem: turret18a-base
++Subsystem: turret19a-base
++Subsystem: turret20a-base
++Subsystem: turret21a-base
++Subsystem: turret22a-base
++Subsystem: turret23a-base
++Subsystem: turret24a-base
++Subsystem: turret25a
++Subsystem: turret26a
++Subsystem: turret27a
++Subsystem: turret28a
++Subsystem: turret29a
++Subsystem: turret30a
++Subsystem: turret31a
++Subsystem: turret32a
++Subsystem: turret33a
++Subsystem: turret34a
++Subsystem: turret35a
++Subsystem: turret36a
++Subsystem: turret37a
++Subsystem: turret38a
++Subsystem: turret39a
++Subsystem: turret40a
++Subsystem: turret41a
++Subsystem: turret42a
++Subsystem: turret43a
++Subsystem: turret44a
++Subsystem: turret45a
++Subsystem: turret46a
++Subsystem: turret47a
++Subsystem: turret48a
++Subsystem: turret49a
++Subsystem: turret50a
++Subsystem: turret51a
++Subsystem: turret52a
++Subsystem: turret53a
++Subsystem: turret54a
++Subsystem: turret55a
++Subsystem: turret56a
++Subsystem: turret57a
++Subsystem: turret58a
++Subsystem: turret59a
++Subsystem: turret60a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1800
+
+$Name: GTD Hecate 12		;! Object #12
+$Class: GTD Hecate
+$Team: Friendly
+$Location: -21807.597656, -350.680969, -25950.279297
+$Orientation:
+	0.882913, 0.237703, 0.404922,
+	-0.216063, 0.971338, -0.099091,
+	-0.416871, 0.000000, 0.908966
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: Babylon		;! Object #13
+$Class: GTCv Babylon
+$Team: Friendly
+$Location: -24066.886719, 1038.228149, -24765.664063
+$Orientation:
+	0.486506, -0.276356, -0.828818,
+	0.139897, 0.961055, -0.238330,
+	0.862404, -0.000000, 0.506220
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1500
+
+$Name: Patrolers 1		;! Object #14
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -26489.785156, 1204.760864, -21021.931641
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 0.999950, -0.010000,
+	0.000000, 0.010000, 0.999950
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Patrolers 2		;! Object #15
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -26564.542969, 1204.661987, -20936.121094
+$Orientation:
+	1.000000, -0.000000, 0.000000,
+	0.000000, 0.999950, -0.010000,
+	0.000000, 0.010000, 0.999950
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Patrolers 3		;! Object #16
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -26684.089844, 1202.913940, -21037.306641
+$Orientation:
+	1.000000, -0.000000, 0.000000,
+	0.000000, 0.999950, -0.010000,
+	0.000000, 0.010000, 0.999950
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Patrolers 4		;! Object #17
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -26745.695313, 1201.178345, -21210.859375
+$Orientation:
+	1.000000, -0.000000, 0.000000,
+	0.000000, 0.999950, -0.010000,
+	0.000000, 0.010000, 0.999950
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Patrolers 5		;! Object #18
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -26589.080078, 1200.701172, -21258.562500
+$Orientation:
+	1.000000, -0.000000, 0.000000,
+	0.000000, 0.999950, -0.010000,
+	0.000000, 0.010000, 0.999950
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Patrolers 6		;! Object #19
+$Class: GTF Enforcer
+$Team: Friendly
+$Location: -26576.746094, 1202.123901, -21116.316406
+$Orientation:
+	1.000000, -0.000000, 0.000000,
+	0.000000, 0.999950, -0.010000,
+	0.000000, 0.010000, 0.999950
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTT Argo 21		;! Object #20
+$Class: GTT Argo
+$Team: Friendly
+$Location: -23143.367188, 934.649353, -25643.232422
+$Orientation:
+	-0.132606, 0.548024, -0.825884,
+	0.086879, 0.836462, 0.541094,
+	0.987354, 0.000000, -0.158532
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 257		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 40
+
+$Name: GTT Argo 22		;! Object #21
+$Class: GTT Argo
+$Team: Friendly
+$Location: -23518.830078, 745.397339, -25290.375000
+$Orientation:
+	-0.132606, 0.548025, -0.825884,
+	0.086879, 0.836462, 0.541095,
+	0.987354, 0.000000, -0.158532
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 257		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 40
+
+$Name: Minos		;! Object #22
+$Class: GTC Minos
+$Team: Friendly
+$Location: -22278.708984, 19.999989, 10122.099609
+$Orientation:
+	0.522536, -0.305059, -0.796175,
+	0.167383, 0.952333, -0.255037,
+	0.836026, 0.000000, 0.548690
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Minos Point" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 50
+
+$Name: GTF Perseus 23		;! Object #23
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -22150.509766, -111.066498, 8478.638672
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 24		;! Object #24
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -22187.835938, -73.321289, 8400.942383
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 25		;! Object #25
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -22031.367188, -89.593712, 8327.433594
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 26		;! Object #26
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -22216.341797, -160.234283, 8256.481445
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 27		;! Object #27
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -22267.279297, -130.168060, 8062.886719
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 28		;! Object #28
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -22212.146484, -199.654510, 7966.046387
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 29		;! Object #29
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -22340.656250, -170.503143, 7920.295898
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Enforcers Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTC Orca 30		;! Object #30
+$Class: GTC Orca
+$Team: Friendly
+$Location: -26328.722656, 973.736267, -20937.835938
+$Orientation:
+	-0.805736, 0.324043, -0.495768,
+	0.275985, 0.946042, 0.169813,
+	0.524044, 0.000000, -0.851691
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Patrolers Point" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a
++Subsystem: turret02a
++Subsystem: turret03a
++Subsystem: turret04a
++Subsystem: turret05a
++Subsystem: turret06a
++Subsystem: turret07a
++Subsystem: turret08a
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turretB1
++Subsystem: turretB2
++Subsystem: turretB3
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 180
+
+$Name: GTC Khitomer 31		;! Object #31
+$Class: GTC Khitomer
+$Team: Friendly
+$Location: -26773.564453, 1103.261353, -21859.929688
+$Orientation:
+	-0.832307, 0.314566, -0.456414,
+	0.275818, 0.949235, 0.151251,
+	0.480823, 0.000000, -0.876818
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Patrolers Point" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01a
++Subsystem: Turret02a
++Subsystem: Turret03a
++Subsystem: Turret04a
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+#Wings		;! 2 total
+
+$Name: alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"alpha 1"
+)
++Hotkey: 0
++Flags: ( )
+
+$Name: Patrolers
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Patrolers 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 6 total
+	"Patrolers 1"
+	"Patrolers 2"
+	"Patrolers 3"
+	"Patrolers 4"
+	"Patrolers 5"
+	"Patrolers 6"
+)
++Flags: ( )
+
+#Events		;! 27 total
+
+$Formula: ( when 
+   ( true ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "alpha 1" 
+      ( ai-play-dead 89 ) 
+   )
+   ( hud-disable-except-messages 1 ) 
+   ( never-warp "alpha 1" ) 
+   ( adjust-audio-volume "Effects" 0 ) 
+   ( lock-perspective ( true ) ) 
+)
++Name: Init
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ------Scene Camera Work--------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-out 0 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "Cam Pos 1:1" ) 
+      ( get-object-y "Cam Pos 1:1" ) 
+      ( get-object-z "Cam Pos 1:1" ) 
+   )
+   ( set-camera-facing-object "Richter" ) 
+)
++Name: Set up Scene
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Cam Pos 2:1" ) 
+      ( get-object-y "Cam Pos 2:1" ) 
+      ( get-object-z "Cam Pos 2:1" ) 
+      84000 
+      4000 
+   )
+)
++Name: Move to Cam Pos 2
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker1[0] 1 ) 
+)
++Name: Activate Tracker 1
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 3000 0 0 0 ) 
+   ( play-sound-from-file "To Vega.ogg" ) 
+)
++Name: Fade In and Music
++Repeat Count: 1
++Interval: 1
++Chained: 2
+
+$Formula: ( when 
+   ( has-time-elapsed 17 ) 
+   ( set-camera-position 
+      ( get-object-x "Cam Pos 3:1" ) 
+      ( get-object-y "Cam Pos 3:1" ) 
+      ( get-object-z "Cam Pos 3:1" ) 
+      7000 
+      2000 
+      5000 
+   )
+)
++Name: Move to Cam Pos 3
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker1[0] 2 ) 
+)
++Name: Deactivate Tracker 1
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker2[0] 1 ) 
+)
++Name: Activate Tracker 2
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Move to Cam Pos 3" 
+      7000 
+   )
+   ( set-camera-position 
+      ( get-object-x "Cam Pos 4:1" ) 
+      ( get-object-y "Cam Pos 4:1" ) 
+      ( get-object-z "Cam Pos 4:1" ) 
+      10000 
+      4000 
+      1000 
+   )
+)
++Name: Move to Cam Pos 4
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker2[0] 2 ) 
+)
++Name: Deactivate Tracker 2
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker3[0] 1 ) 
+)
++Name: Activate Tracker 3
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Move to Cam Pos 4" 
+      10000 
+   )
+   ( set-camera-position 
+      ( get-object-x "Cam Pos 5:1" ) 
+      ( get-object-y "Cam Pos 5:1" ) 
+      ( get-object-z "Cam Pos 5:1" ) 
+      10000 
+   )
+)
++Name: Move to Cam Pos 5
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker3[0] 2 ) 
+)
++Name: Deactivate Tracker 3
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker4[0] 1 ) 
+)
++Name: Activate Tracker 4
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Move to Cam Pos 5" 
+      7000 
+   )
+   ( fade-out 3000 0 0 0 ) 
+   ( adjust-audio-volume "Effects" 100 ) 
+)
++Name: Fade Out to End
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when ( true ) ( end-mission ) ) 
++Name: End
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ------Camera Trackers----------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( = @CamTracker1[0] 1 ) 
+   ( set-camera-facing-object "Richter" ) 
+)
++Name: Cam Tracker 1
++Repeat Count: 50000
++Interval: 0
+
+
+$Formula: ( when 
+   ( = @CamTracker2[0] 1 ) 
+   ( set-camera-facing-object 
+      "Cam Focus 1:1" 
+      2000 
+   )
+)
++Name: Cam Tracker 2
++Repeat Count: 50000
++Interval: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( when 
+      ( = @CamTracker3[0] 1 ) 
+      ( set-camera-facing-object 
+         "Cam Focus 2:1" 
+         2000 
+      )
+   )
+)
++Name: Cam Tracker 3
++Repeat Count: 50000
++Interval: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( when 
+      ( = @CamTracker4[0] 1 ) 
+      ( set-camera-facing-object 
+         "Hercules" 
+         3000 
+      )
+   )
+)
++Name: Cam Tracker 4
++Repeat Count: 50000
++Interval: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ------Scene Events-------------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( add-goal 
+      "Richter" 
+      ( ai-waypoints-once 
+         "Richter Point" 
+         89 
+      )
+   )
+)
++Name: Richter Move
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Move to Cam Pos 3" 
+      0 
+   )
+   ( add-goal 
+      "Patrolers" 
+      ( ai-waypoints "Patrolers Point" 89 ) 
+   )
+   ( add-goal 
+      "Babylon" 
+      ( ai-waypoints-once 
+         "Babylon Point" 
+         89 
+      )
+   )
+   ( add-goal 
+      "GTT Argo 21" 
+      ( ai-waypoints-once "Argo 1 Point" 89 ) 
+   )
+   ( add-goal 
+      "GTT Argo 22" 
+      ( ai-waypoints-once "Argo 2 Point" 89 ) 
+   )
+)
++Name: Andromeda Actors Move
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Init" 
+      20500 
+   )
+   ( show-subtitle-image 
+      "Sub-A2-001.pcx" 
+      70 
+      30 
+      ( false ) 
+      ( false ) 
+      0 
+      0 
+      10000 
+      2000 
+   )
+)
++Name: Subtitles
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( script-eval 
+      "jsv('Personal Log', 'a2a')" 
+   )
+)
++Name: Update Journal
++Repeat Count: 1
++Interval: 1
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 16 lists total
+
+$Name: Cam Pos 1
+$List: (		;! 1 points in list
+	( -22060.605469, 0.030324, 11072.766602 )
+)
+
+$Name: Cam Pos 2
+$List: (		;! 1 points in list
+	( -22042.820313, 0.030310, -8.984479 )
+)
+
+$Name: Richter Point
+$List: (		;! 1 points in list
+	( -22012.068359, 0.010987, -8.247700 )
+)
+
+$Name: Coronis Point
+$List: (		;! 2 points in list
+	( -21365.599609, -500.000000, 10321.299805 )
+	( -20035.181641, -500.001953, 10423.051758 )
+)
+
+$Name: Enforcers Point
+$List: (		;! 1 points in list
+	( -22113.699219, 0.000011, 11178.876953 )
+)
+
+$Name: Babylon Point
+$List: (		;! 3 points in list
+	( -23102.951172, 1038.105103, -24102.460938 )
+	( -22191.384766, 1038.105103, -23802.214844 )
+	( -21562.878906, 1038.104370, -23704.958984 )
+)
+
+$Name: Patrolers Point
+$List: (		;! 8 points in list
+	( -24136.519531, 677.045959, -23048.746094 )
+	( -23526.080078, 677.045959, -23015.433594 )
+	( -22815.814453, 677.046204, -23450.361328 )
+	( -22635.292969, 677.045959, -24104.435547 )
+	( -23061.042969, 677.046204, -24701.673828 )
+	( -23867.583984, 677.046082, -24657.056641 )
+	( -24346.398438, 677.046082, -24300.300781 )
+	( -24482.960938, 677.046143, -23811.080078 )
+)
+
+$Name: Argo 1 Point
+$List: (		;! 4 points in list
+	( -22699.304688, 925.001221, -25701.949219 )
+	( -22082.191406, 917.535034, -25791.291016 )
+	( -21262.867188, 757.770752, -25714.347656 )
+	( -20416.875000, 503.755676, -25518.673828 )
+)
+
+$Name: Argo 2 Point
+$List: (		;! 5 points in list
+	( -22996.232422, 665.239258, -25315.275391 )
+	( -22467.558594, 687.442749, -25429.132813 )
+	( -21801.535156, 621.577759, -25450.117188 )
+	( -21128.695313, 450.946289, -25335.470703 )
+	( -20410.925781, 158.850433, -25069.509766 )
+)
+
+$Name: Minos Point
+$List: (		;! 1 points in list
+	( -21549.064453, 0.000013, 10621.162109 )
+)
+
+$Name: Cam Pos 3
+$List: (		;! 1 points in list
+	( -25513.011719, 757.300171, -11813.415039 )
+)
+
+$Name: Cam Focus 1
+$List: (		;! 1 points in list
+	( -22284.113281, 0.063256, -23973.812500 )
+)
+
+$Name: Cam Pos 4
+$List: (		;! 1 points in list
+	( -24770.300781, 751.000000, -26866.699219 )
+)
+
+$Name: Cam Focus 2
+$List: (		;! 1 points in list
+	( -19403.361328, 0.063066, -21327.908203 )
+)
+
+$Name: Cam Pos 5
+$List: (		;! 1 points in list
+	( -23945.527344, 690.400085, -30506.958984 )
+)
+
+$Name: First Focus
+$List: (		;! 1 points in list
+	( -27647.441406, 0.007755, 11002.695313 )
+)
+
+#Messages		;! 0 total
+
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 9 total
+
+$Num stars: 500
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunGreen
++Angles: 0.122173 0.000000 5.654867
++Scale: 2.000000
+$Starbitmap: NebulF1-Main
++Angles: 6.021386 6.248279 5.742134
++ScaleX: 7.000000
++ScaleY: 7.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulF2-Main
++Angles: 6.195914 0.000000 0.349066
++ScaleX: 8.000000
++ScaleY: 8.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulF10-Whisp
++Angles: 5.846848 0.000000 5.201077
++ScaleX: 10.000000
++ScaleY: 10.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulF8-Whisp
++Angles: 0.000000 0.000000 0.000000
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulF14-Whisp
++Angles: 0.000000 0.000000 0.052360
++ScaleX: 1.000000
++ScaleY: 1.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulF10-Whisp
++Angles: 0.733038 0.000000 1.413717
++ScaleX: 7.000000
++ScaleY: 7.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.000000 0.000000 2.181662
++ScaleX: 12.000000
++ScaleY: 12.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planet7
++Angles: 6.248279 3.054326 1.553343
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planeth
++Angles: 0.488692 3.996804 3.490659
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: None
+$Briefing Music: None
+
+#End
+

@@ -1,0 +1,4291 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("Adhara build up - movie", -1)
+$Author: Herkie
+$Created: 09/08/11 at 13:51:24
+$Modified: 07/02/17 at 19:51:25
+$Notes:
+This is my first attempt in Cut Scene making. Not much have changed in the camera works to remind me where I've started.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 527368
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: 12630.133789, 12341.003906, -8746.789063
++Viewer orient:
+	0.826404, -0.000009, 0.563078,
+	-0.301936, 0.844069, 0.443151,
+	-0.475281, -0.536235, 0.697539
+
+
+$Load Screen 640:	LoadAct4S.dds
+$Load Screen 1024:	LoadAct4L.dds
+
+$Skybox Model: RedBox.pof
+
+$AI Profile: FS2 RETAIL
+
+#Command Briefing
+
+#Briefing
+$start_briefing
+$num_stages: 0
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 0
+
+#Callsigns:
+$Callsign: Bei
+$Callsign: Al'Fadil
+$Callsign: Corey
+$Callsign: Taylor
+
+#end
+
+
+#Players		;! 1 total
+
+$Starting Shipname: alpha 1
+$Ship Choices: (
+	"GTF Ulysses"	5
+	"GTF Hercules"	5
+	"GTF Hercules Mark II"	5
+	"GTF Ares"	5
+	"GTF Erinyes"	5
+	"GTF Loki"	5
+	"GTF Pegasus"	5
+	"GTF Perseus"	5
+	"GTF Myrmidon"	5
+	"SF Mara (terrans)"	5
+	"GTB Artemis"	5
+	"GTB Artemis D.H."	5
+	"GTB Medusa"	5
+	"GTB Ursa"	5
+	"GTB Zeus"	5
+	"GTB Boanerges"	5
+	"GVF Ptah"	5
+	"Spacesuit"	5
+)
+
++Weaponry Pool: (
+	"Subach HL-7"	17
+	"Subach HL-D"	16
+	"Mekhu HL-7"	16
+	"Mekhu HL-7D"	16
+	"Akheton SDG"	16
+	"Morning Star"	16
+	"MorningStar D"	16
+	"Prometheus R"	17
+	"Prometheus S"	16
+	"Prometheus D"	16
+	"Maxim"	16
+	"Maxim D"	16
+	"UD-8 Kayser"	16
+	"UD-D Kayser"	16
+	"Circe"	16
+	"Lamprey"	16
+	"Targeting Laser"	16
+	"Rockeye"	500
+	"Rockeye D"	500
+	"Tempest"	500
+	"Tempest D"	500
+	"Hornet"	500
+	"Hornet D"	500
+	"Tornado"	500
+	"Tornado D"	500
+	"Harpoon"	516
+	"Harpoon D"	500
+	"Harpoon#Weak"	500
+	"Trebuchet"	500
+	"TAG-A"	500
+	"TAG-B"	500
+	"TAG-C"	500
+	"Piranha"	500
+	"Stiletto II"	500
+	"Infyrno"	500
+	"Infyrno D"	500
+	"Cyclops"	500
+	"Cyclops#short"	500
+	"Helios"	500
+	"EMP Adv."	500
+)
+
+#Objects		;! 63 total
+
+$Name: alpha 1		;! Object #0
+$Class: GTF Ulysses
+$Team: Friendly
+$Location: -16072.207031, -0.019381, -7569.597168
+$Orientation:
+	0.884240, -0.346821, 0.312790,
+	0.435946, 0.853197, -0.286368,
+	-0.167553, 0.389577, 0.905626
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" "invulnerable" "hidden-from-sensors" "stealth" )
++Flags2: ( "no-subspace-drive" "primaries-locked" "secondaries-locked" "lock-all-turrets" "afterburners-locked" "immobile" "cloaked" "ship-locked" "weapons-locked" "no-collide" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: GTD Raynor 1		;! Object #1
+$Class: GTD Hercules
+$Team: Friendly
+$Location: -768.048828, 1125.999512, 694.486572
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a-base
++Subsystem: turret02a-base
++Subsystem: turret03a-base
++Subsystem: turret04a-base
++Subsystem: turret05a
++Subsystem: turret06a
++Subsystem: turret07a
++Subsystem: turret08a
++Subsystem: turret09a
++Subsystem: turret10a
++Subsystem: turret11a
++Subsystem: turret12a
++Subsystem: turret13a
++Subsystem: turret14a
++Subsystem: turret15a
++Subsystem: turret16a
++Subsystem: turret17a-base
++Subsystem: turret18a-base
++Subsystem: turret19a-base
++Subsystem: turret20a-base
++Subsystem: turret21a-base
++Subsystem: turret22a-base
++Subsystem: turret23a-base
++Subsystem: turret24a-base
++Subsystem: turret25a
++Subsystem: turret26a
++Subsystem: turret27a
++Subsystem: turret28a
++Subsystem: turret29a
++Subsystem: turret30a
++Subsystem: turret31a
++Subsystem: turret32a
++Subsystem: turret33a
++Subsystem: turret34a
++Subsystem: turret35a
++Subsystem: turret36a
++Subsystem: turret37a
++Subsystem: turret38a
++Subsystem: turret39a
++Subsystem: turret40a
++Subsystem: turret41a
++Subsystem: turret42a
++Subsystem: turret43a
++Subsystem: turret44a
++Subsystem: turret45a
++Subsystem: turret46a
++Subsystem: turret47a
++Subsystem: turret48a
++Subsystem: turret49a
++Subsystem: turret50a
++Subsystem: turret51a
++Subsystem: turret52a
++Subsystem: turret53a
++Subsystem: turret54a
++Subsystem: turret55a
++Subsystem: turret56a
++Subsystem: turret57a
++Subsystem: turret58a
++Subsystem: turret59a
++Subsystem: turret60a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
+
+$Name: GTD Raynor 2		;! Object #2
+$Class: GTD Excelsior
+$Team: Friendly
+$Location: -3107.196289, 454.221283, -1.501604
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
++Subsystem: turret53
++Subsystem: turret54
++Subsystem: turret55
++Subsystem: turret56
++Subsystem: turret57
++Subsystem: turret58
++Subsystem: turret59
++Subsystem: turret60
++Subsystem: turret61
++Subsystem: turret62
++Subsystem: turret63
++Subsystem: turret64
++Subsystem: turret65
++Subsystem: turret66
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GTD Titan 3		;! Object #3
+$Class: GTDc Titan
+$Team: Friendly
+$Location: -1979.546631, 248.803253, -960.076660
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
++Subsystem: turret53
++Subsystem: turret54
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 8
+
+$Name: GTCv Bellerophon 4		;! Object #4
+$Class: GTCv Olympus
+$Team: Friendly
+$Location: -3483.887939, 1418.458130, 733.286133
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 8
+
+$Name: GTCv Bellerophon 5		;! Object #5
+$Class: GTCv Serenity
+$Team: Friendly
+$Location: -4016.234619, 1058.912476, 1748.598267
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: TurretMAIN
++Subsystem: TurretAM
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08b
++Subsystem: Turret09b
++Subsystem: Turret10m
++Subsystem: Turret11m
++Subsystem: Turret12m
++Subsystem: Turret13m
++Subsystem: Turret14a
++Subsystem: Turret15a
++Subsystem: Turret16b
++Subsystem: Turret17b
++Subsystem: Turret18b
++Subsystem: Turret19b
++Subsystem: Turret20a
++Subsystem: Turret21a
++Subsystem: Turret22b
++Subsystem: Turret23b
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 40
+
+$Name: GTCv Chimera 6		;! Object #6
+$Class: GTCv Copernicus
+$Team: Friendly
+$Location: -3119.384521, 1556.394043, 2070.393066
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
++Subsystem: Turret17
++Subsystem: Turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 40
+
+$Name: GTCv Chimera 7		;! Object #7
+$Class: GTCv Babylon
+$Team: Friendly
+$Location: -3956.247070, 483.396759, 3936.853760
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 40
+
+$Name: GTCv Chimera 8		;! Object #8
+$Class: GTCv Capella
+$Team: Friendly
+$Location: -2679.219482, -178.734360, -156.033508
+$Orientation:
+	-0.999135, 0.000000, 0.041581,
+	0.000000, 1.000000, 0.000000,
+	-0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 40
+
+$Name: GTD Hecate 9		;! Object #9
+$Class: GTD Sovereign
+$Team: Friendly
+$Location: 4565.867676, 2540.922852, 4476.220215
+$Orientation:
+	-0.019202, 0.000000, 0.999816,
+	0.000000, 1.000000, 0.000000,
+	-0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1300
+
+$Name: GTCv Deimos 10		;! Object #10
+$Class: GTCv Alexandria
+$Team: Friendly
+$Location: 2564.561768, 2599.299805, 5484.442871
+$Orientation:
+	-0.019202, 0.000000, 0.999816,
+	0.000000, 1.000000, 0.000000,
+	-0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
++Subsystem: Turret17
++Subsystem: Turret18
++Subsystem: Turret19
++Subsystem: Turret20
++Subsystem: Turret21
++Subsystem: Turret22
++Subsystem: Turret23
++Subsystem: Turret24
++Subsystem: Turret25
++Subsystem: Turret26
++Subsystem: Turret27
++Subsystem: Turret28
++Subsystem: Turret29
++Subsystem: Turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 11		;! Object #11
+$Class: GTCv Coronis
+$Team: Friendly
+$Location: 3905.189453, 3146.730469, 3329.424316
+$Orientation:
+	-0.019202, 0.000000, 0.999816,
+	0.000000, 1.000000, 0.000000,
+	-0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 12		;! Object #12
+$Class: GTCv Comet
+$Team: Friendly
+$Location: 401.744629, 2694.065430, 4461.450684
+$Orientation:
+	-0.019202, 0.000000, 0.999816,
+	0.000000, 1.000000, 0.000000,
+	-0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 13		;! Object #13
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: 2272.567871, 3380.493652, 3702.358398
+$Orientation:
+	-0.019202, 0.000000, 0.999816,
+	0.000000, 1.000000, 0.000000,
+	-0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 15		;! Object #14
+$Class: GVCv Hathor
+$Team: Friendly
+$Location: 2101.465332, 451.336731, 3215.786865
+$Orientation:
+	-0.999999, 0.000000, 0.001593,
+	0.000000, 1.000000, 0.000000,
+	-0.001593, 0.000000, -0.999999
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01-base
++Subsystem: turret02-base
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
+$Arrival Location: Hyperspace
++Arrival Delay: 11
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 16		;! Object #15
+$Class: GVCv Hathor
+$Team: Friendly
+$Location: 3657.338379, 809.724548, 3792.763184
+$Orientation:
+	-0.999999, 0.000000, 0.001593,
+	0.000000, 1.000000, 0.000000,
+	-0.001593, 0.000000, -0.999999
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01-base
++Subsystem: turret02-base
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
+$Arrival Location: Hyperspace
++Arrival Delay: 10
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 17		;! Object #16
+$Class: GVD Archania
+$Team: Friendly
+$Location: 2774.269287, -523.773376, 6093.936523
+$Orientation:
+	-0.999999, 0.000000, 0.001593,
+	0.000000, 1.000000, 0.000000,
+	-0.001593, 0.000000, -0.999999
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
++Subsystem: turret19-base
++Subsystem: turret20-base
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
++Subsystem: turret53
++Subsystem: turret54
++Subsystem: turret55-base
++Subsystem: turret56-base
+$Arrival Location: Hyperspace
++Arrival Delay: 14
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTD Hecate 18		;! Object #17
+$Class: GTSD Jupiter
+$Team: Friendly
+$Location: 995.739624, 783.928528, 4869.784668
+$Orientation:
+	-0.999999, 0.000000, 0.001593,
+	0.000000, 1.000000, 0.000000,
+	-0.001593, 0.000000, -0.999999
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01-main
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
++Subsystem: turret53
++Subsystem: turret54
+$Arrival Location: Hyperspace
++Arrival Delay: 12
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 1300
+
+$Name: GTD Orion 19		;! Object #18
+$Class: GTD Damocles
+$Team: Friendly
+$Location: 5415.839844, 3786.566162, 1449.442383
+$Orientation:
+	-0.009203, 0.000000, 0.999958,
+	0.000000, 1.000000, 0.000000,
+	-0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: gunturret-0a
++Subsystem: gunturret-1a
++Subsystem: gunturret-2a
++Subsystem: gunturret-3a
++Subsystem: gunturret-4a
++Subsystem: gunturret-5a
++Subsystem: gunturret-6a
++Subsystem: gunturret-7a
++Subsystem: gunturret-36a
++Subsystem: gunturret-8
++Subsystem: gunturret-9
++Subsystem: gunturret-10
++Subsystem: gunturret-11
++Subsystem: gunturret-12
++Subsystem: gunturret-13
++Subsystem: gunturret-14
++Subsystem: gunturret-15
++Subsystem: gunturret-16
++Subsystem: gunturret-17
++Subsystem: gunturret-18
++Subsystem: gunturret-19
++Subsystem: gunturret-20
++Subsystem: gunturret-21
++Subsystem: gunturret-22
++Subsystem: gunturret-23
++Subsystem: gunturret-24
++Subsystem: gunturret-25
++Subsystem: gunturret-26
++Subsystem: gunturret-27
++Subsystem: gunturret-28
++Subsystem: gunturret-29
++Subsystem: gunturret-30
++Subsystem: gunturret-31
++Subsystem: gunturret-32
++Subsystem: gunturret-33
++Subsystem: gunturret-34
++Subsystem: gunturret-35
++Subsystem: missileturret-0
++Subsystem: missileturret-1
+$Arrival Location: Hyperspace
++Arrival Delay: 24
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
+
+$Name: GTCv Deimos 20		;! Object #19
+$Class: GTCv Alexandria
+$Team: Friendly
+$Location: 2061.930420, 1758.205688, 96.948257
+$Orientation:
+	-0.009203, 0.000000, 0.999958,
+	0.000000, 1.000000, 0.000000,
+	-0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
++Subsystem: Turret17
++Subsystem: Turret18
++Subsystem: Turret19
++Subsystem: Turret20
++Subsystem: Turret21
++Subsystem: Turret22
++Subsystem: Turret23
++Subsystem: Turret24
++Subsystem: Turret25
++Subsystem: Turret26
++Subsystem: Turret27
++Subsystem: Turret28
++Subsystem: Turret29
++Subsystem: Turret30
+$Arrival Location: Hyperspace
++Arrival Delay: 20
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 21		;! Object #20
+$Class: GTD Excalibur
+$Team: Friendly
+$Location: 3035.267578, 2405.769287, 795.702454
+$Orientation:
+	-0.009203, 0.000000, 0.999958,
+	0.000000, 1.000000, 0.000000,
+	-0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
+$Arrival Location: Hyperspace
++Arrival Delay: 21
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTC Aeolus 22		;! Object #21
+$Class: GTC Orca
+$Team: Friendly
+$Location: 4095.270020, 3034.766602, -367.632721
+$Orientation:
+	-0.009203, 0.000000, 0.999958,
+	0.000000, 1.000000, 0.000000,
+	-0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a
++Subsystem: turret02a
++Subsystem: turret03a
++Subsystem: turret04a
++Subsystem: turret05a
++Subsystem: turret06a
++Subsystem: turret07a
++Subsystem: turret08a
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turretB1
++Subsystem: turretB2
++Subsystem: turretB3
+$Arrival Location: Hyperspace
++Arrival Delay: 23
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 500
+
+$Name: GTC Aeolus 23		;! Object #22
+$Class: GTC Bajoran
+$Team: Friendly
+$Location: 3337.022949, 2653.400391, 272.936005
+$Orientation:
+	-0.009203, 0.000000, 0.999958,
+	0.000000, 1.000000, 0.000000,
+	-0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a
++Subsystem: turret02a
++Subsystem: turret03a
++Subsystem: turret04a
++Subsystem: turret5
++Subsystem: turret6
++Subsystem: turret7
++Subsystem: turret8
++Subsystem: turret9
++Subsystem: turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
+$Arrival Location: Hyperspace
++Arrival Delay: 22
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 100000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: GTC Aeolus 24		;! Object #23
+$Class: GTM Hippocrates
+$Team: Friendly
+$Location: 1666.055420, 550.046753, 5737.981934
+$Orientation:
+	-0.032383, 0.000000, -0.999476,
+	0.000000, 1.000000, 0.000000,
+	0.999476, 0.000000, -0.032383
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
+$Arrival Location: Hyperspace
++Arrival Delay: 37
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 100000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 500
+
+$Name: GTC Aeolus 25		;! Object #24
+$Class: GTD Sovereign
+$Team: Friendly
+$Location: -2147.175781, -526.055420, 5405.310059
+$Orientation:
+	-0.032383, 0.000000, -0.999475,
+	0.000000, 1.000000, 0.000000,
+	0.999475, 0.000000, -0.032383
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
+$Arrival Location: Hyperspace
++Arrival Delay: 38
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 180
+
+$Name: GTC Aeolus 26		;! Object #25
+$Class: GTC Bajoran
+$Team: Friendly
+$Location: 2724.184326, 416.046753, 6007.979492
+$Orientation:
+	-0.032383, 0.000000, -0.999475,
+	0.000000, 1.000000, 0.000000,
+	0.999475, 0.000000, -0.032383
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a
++Subsystem: turret02a
++Subsystem: turret03a
++Subsystem: turret04a
++Subsystem: turret5
++Subsystem: turret6
++Subsystem: turret7
++Subsystem: turret8
++Subsystem: turret9
++Subsystem: turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
+$Arrival Location: Hyperspace
++Arrival Delay: 36
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 1000
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: GTC Aeolus 27		;! Object #26
+$Class: GTD Excalibur
+$Team: Friendly
+$Location: -818.033508, 685.831299, 6601.427246
+$Orientation:
+	-0.032383, 0.000000, -0.999475,
+	0.000000, 1.000000, 0.000000,
+	0.999475, 0.000000, -0.032383
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
+$Arrival Location: Hyperspace
++Arrival Delay: 35
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 500
+
+$Name: GTL Anemoi 28		;! Object #27
+$Class: GTL Opulence
+$Team: Friendly
+$Location: 276.448120, -486.074249, 3386.277344
+$Orientation:
+	0.000797, 0.000000, -1.000000,
+	0.000000, 1.000000, 0.000000,
+	1.000000, 0.000000, 0.000797
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
+$Arrival Location: Hyperspace
++Arrival Delay: 45
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 8
+
+$Name: GTD Hades 29		;! Object #28
+$Class: GTDc Warlock
+$Team: Friendly
+$Location: -1315.167236, 2407.974854, 8225.587891
+$Orientation:
+	0.030792, 0.000000, -0.999526,
+	0.000000, 1.000000, 0.000000,
+	0.999526, 0.000000, 0.030792
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
+$Arrival Location: Hyperspace
++Arrival Delay: 55
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 1600
+
+$Name: GTD Orion 30		;! Object #29
+$Class: GTD Alexander
+$Team: Friendly
+$Location: -2555.382324, 3714.626953, 9383.039063
+$Orientation:
+	-0.009203, 0.000000, -0.999958,
+	0.000000, 1.000000, 0.000000,
+	0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a
++Subsystem: turret02a
++Subsystem: turret03a
++Subsystem: turret04a
++Subsystem: turret05a
++Subsystem: turret06a
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
+$Arrival Location: Hyperspace
++Arrival Delay: 54
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 1000
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
+
+$Name: GTD Orion 31		;! Object #30
+$Class: GTD Stromberg
+$Team: Friendly
+$Location: 1629.207153, 2367.368164, 6986.185059
+$Orientation:
+	-0.009203, 0.000000, -0.999958,
+	0.000000, 1.000000, 0.000000,
+	0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
+$Arrival Location: Hyperspace
++Arrival Delay: 53
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
+
+$Name: GTD Hecate 32		;! Object #31
+$Class: GTD Excalibur
+$Team: Friendly
+$Location: -890.711243, 229.344681, 10283.596680
+$Orientation:
+	-0.999501, 0.000000, -0.031587,
+	0.000000, 1.000000, 0.000000,
+	0.031587, 0.000000, -0.999501
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
+$Arrival Location: Hyperspace
++Arrival Delay: 62
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 1000
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GTD Hecate 33		;! Object #32
+$Class: GTD Hecate
+$Team: Friendly
+$Location: 1090.121704, 1081.480957, 11757.855469
+$Orientation:
+	-0.999501, 0.000000, -0.031587,
+	0.000000, 1.000000, 0.000000,
+	0.031587, 0.000000, -0.999501
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
+$Arrival Location: Hyperspace
++Arrival Delay: 61
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GTCv Deimos 34		;! Object #33
+$Class: GTCv Euphoria
+$Team: Friendly
+$Location: -1771.108643, 2904.565186, 12549.603516
+$Orientation:
+	-0.999501, 0.000000, -0.031587,
+	0.000000, 1.000000, 0.000000,
+	0.031587, 0.000000, -0.999501
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turretm01
++Subsystem: turretm02
++Subsystem: turretm03
++Subsystem: turretm04
++Subsystem: turretb1
+$Arrival Location: Hyperspace
++Arrival Delay: 60
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 35		;! Object #34
+$Class: GTCv Coronis
+$Team: Friendly
+$Location: -774.349976, 2101.720947, 9512.832031
+$Orientation:
+	-0.999501, 0.000000, -0.031587,
+	0.000000, 1.000000, 0.000000,
+	0.031587, 0.000000, -0.999501
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
++Arrival Delay: 59
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 1000
++Group: 0
++Score: 8
+
+$Name: GTCv Deimos 36		;! Object #35
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: 83.803947, 1127.573120, 8069.021484
+$Orientation:
+	-0.999501, 0.000000, -0.031587,
+	0.000000, 1.000000, 0.000000,
+	0.031587, 0.000000, -0.999501
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
++Arrival Delay: 58
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 37		;! Object #36
+$Class: GVCv Hathor
+$Team: Friendly
+$Location: 1158.683105, 5826.639648, -4199.548340
+$Orientation:
+	-0.019202, 0.000000, -0.999816,
+	0.000000, 1.000000, 0.000000,
+	0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01-base
++Subsystem: turret02-base
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
+$Arrival Location: Hyperspace
++Arrival Delay: 66
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 38		;! Object #37
+$Class: GVCv Hathor
+$Team: Friendly
+$Location: 265.819183, 5210.579590, -3411.402100
+$Orientation:
+	-0.019202, 0.000000, -0.999816,
+	0.000000, 1.000000, 0.000000,
+	0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01-base
++Subsystem: turret02-base
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
+$Arrival Location: Hyperspace
++Arrival Delay: 68
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 39		;! Object #38
+$Class: GVD Archania
+$Team: Friendly
+$Location: -1360.669312, 5511.082031, -5096.402344
+$Orientation:
+	-0.019202, 0.000000, -0.999816,
+	0.000000, 1.000000, 0.000000,
+	0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
++Subsystem: turret19-base
++Subsystem: turret20-base
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
++Subsystem: turret53
++Subsystem: turret54
++Subsystem: turret55-base
++Subsystem: turret56-base
+$Arrival Location: Hyperspace
++Arrival Delay: 67
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 40		;! Object #39
+$Class: GVCv Hathor
+$Team: Friendly
+$Location: 2480.880127, 6170.694824, -5078.369629
+$Orientation:
+	-0.019202, 0.000000, -0.999816,
+	0.000000, 1.000000, 0.000000,
+	0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01-base
++Subsystem: turret02-base
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
+$Arrival Location: Hyperspace
++Arrival Delay: 65
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 800
+
+$Name: GTD Orion 41		;! Object #40
+$Class: GTD Stromberg
+$Team: Friendly
+$Location: -7340.754883, 6658.762695, -2345.342285
+$Orientation:
+	-0.019202, 0.000000, -0.999816,
+	0.000000, 1.000000, 0.000000,
+	0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
+$Arrival Location: Hyperspace
++Arrival Delay: 70
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
+
+$Name: GTD Hecate 42		;! Object #41
+$Class: GVD Archania
+$Team: Friendly
+$Location: -4286.745117, 3907.493408, -6294.101074
+$Orientation:
+	-0.019202, 0.000000, -0.999816,
+	0.000000, 1.000000, 0.000000,
+	0.999816, 0.000000, -0.019202
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
++Subsystem: turret19-base
++Subsystem: turret20-base
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
++Subsystem: turret53
++Subsystem: turret54
++Subsystem: turret55-base
++Subsystem: turret56-base
+$Arrival Location: Hyperspace
++Arrival Delay: 69
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1300
+
+$Name: GTD Hecate 43		;! Object #42
+$Class: GTD Sovereign
+$Team: Friendly
+$Location: 9478.219727, 8717.286133, -1289.540771
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
+$Arrival Location: Hyperspace
++Arrival Delay: 79
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1300
+
+$Name: GTD Hecate 44		;! Object #43
+$Class: GTD Hecate
+$Team: Friendly
+$Location: 12505.181641, 6898.797852, 1285.108398
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
+$Arrival Location: Hyperspace
++Arrival Delay: 78
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GTD Orion 45		;! Object #44
+$Class: GTD Stromberg
+$Team: Friendly
+$Location: 10576.655273, 5406.769531, 2321.731934
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
+$Arrival Location: Hyperspace
++Arrival Delay: 77
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
+
+$Name: GTCv Deimos 46		;! Object #45
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 7904.403320, 4345.086914, 2853.850342
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
++Arrival Delay: 76
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 47		;! Object #46
+$Class: GTCv Euphoria
+$Team: Friendly
+$Location: 9139.013672, 3733.683105, 4569.965820
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turretm01
++Subsystem: turretm02
++Subsystem: turretm03
++Subsystem: turretm04
++Subsystem: turretb1
+$Arrival Location: Hyperspace
++Arrival Delay: 75
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 48		;! Object #47
+$Class: GTCv Comet
+$Team: Friendly
+$Location: 9513.166992, 5464.687500, 9957.425781
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
+$Arrival Location: Hyperspace
++Arrival Delay: 73
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 49		;! Object #48
+$Class: GTCv Coronis
+$Team: Friendly
+$Location: 8161.589844, 4125.550293, 11389.678711
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
++Arrival Delay: 72
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 50		;! Object #49
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: 8031.799805, 4203.288086, 7411.661133
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
++Arrival Delay: 74
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 800
+
+$Name: GTCv Deimos 51		;! Object #50
+$Class: GTCv Alexandria
+$Team: Friendly
+$Location: 8696.161133, 4761.999512, 13310.268555
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
++Subsystem: Turret17
++Subsystem: Turret18
++Subsystem: Turret19
++Subsystem: Turret20
++Subsystem: Turret21
++Subsystem: Turret22
++Subsystem: Turret23
++Subsystem: Turret24
++Subsystem: Turret25
++Subsystem: Turret26
++Subsystem: Turret27
++Subsystem: Turret28
++Subsystem: Turret29
++Subsystem: Turret30
+$Arrival Location: Hyperspace
++Arrival Delay: 71
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 52		;! Object #51
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 11055.624023, 7516.164063, -3527.393555
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
++Arrival Delay: 81
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 53		;! Object #52
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 9432.954102, 5499.750977, -5192.200684
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
++Arrival Delay: 81
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 54		;! Object #53
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 8273.763672, 6903.000977, -6838.792480
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
++Arrival Delay: 81
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 55		;! Object #54
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 7765.224609, 6880.958984, -3136.159180
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
++Arrival Delay: 80
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTCv Deimos 56		;! Object #55
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 9983.373047, 6004.253906, -9068.568359
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
++Arrival Delay: 81
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: GTL Anemoi 57		;! Object #56
+$Class: GTL Enterprise
+$Team: Friendly
+$Location: -2680.506592, -558.000732, 2866.966309
+$Orientation:
+	-0.999597, 0.000000, 0.028403,
+	0.000000, 1.000000, 0.000000,
+	-0.028403, 0.000000, -0.999597
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GTA Charybdis 58		;! Object #57
+$Class: GTA Charybdis
+$Team: Friendly
+$Location: -3095.215820, 368.485260, -2890.807617
+$Orientation:
+	-0.998172, 0.039944, -0.045358,
+	0.038525, 0.998753, 0.031747,
+	0.046570, 0.029942, -0.998466
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-music" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 150
+
+$Name: GTD Stromberg 58		;! Object #58
+$Class: GTD Sovereign
+$Team: Friendly
+$Location: 479.978912, 2124.801758, 14804.877930
+$Orientation:
+	-0.999831, 0.000000, -0.018406,
+	0.000000, 1.000000, 0.000000,
+	0.018406, 0.000000, -0.999831
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
+$Arrival Location: Hyperspace
++Arrival Delay: 62
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1300
+
+$Name: GTD Excalibur 59		;! Object #59
+$Class: GTD Alexander
+$Team: Friendly
+$Location: -1386.829102, -631.858093, 15765.662109
+$Orientation:
+	-0.999831, 0.000000, -0.018406,
+	0.000000, 1.000000, 0.000000,
+	0.018406, 0.000000, -0.999831
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a
++Subsystem: turret02a
++Subsystem: turret03a
++Subsystem: turret04a
++Subsystem: turret05a
++Subsystem: turret06a
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
+$Arrival Location: Hyperspace
++Arrival Delay: 63
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1300
+
+$Name: GTD Sovereign 60		;! Object #60
+$Class: GTD Stromberg
+$Team: Friendly
+$Location: 2531.501953, 484.863617, 16789.787109
+$Orientation:
+	-0.999831, 0.000000, -0.018406,
+	0.000000, 1.000000, 0.000000,
+	0.018406, 0.000000, -0.999831
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
+$Arrival Location: Hyperspace
++Arrival Delay: 64
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
+
+$Name: GTCv Rigel 61		;! Object #61
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: -18.129976, 1233.188965, 14869.808594
+$Orientation:
+	-0.998295, 0.000000, 0.058374,
+	0.000000, 1.000000, 0.000000,
+	-0.058374, 0.000000, -0.998295
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
++Arrival Delay: 66
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GTCv Comet 62		;! Object #62
+$Class: GTCv Comet
+$Team: Friendly
+$Location: 1276.400024, 544.192627, 13844.958008
+$Orientation:
+	-0.998295, 0.000000, 0.058374,
+	0.000000, 1.000000, 0.000000,
+	-0.058374, 0.000000, -0.998295
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
+$Arrival Location: Hyperspace
++Arrival Delay: 65
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1500
+
+#Wings		;! 1 total
+
+$Name: alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"alpha 1"
+)
++Hotkey: 0
++Flags: ( )
+
+#Events		;! 30 total
+
+$Formula: ( when 
+   ( true ) 
+   ( never-warp "alpha 1" ) 
+   ( hud-disable-except-messages 1 ) 
+   ( lock-perspective ( true ) ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "alpha 1" 
+      ( ai-play-dead 89 ) 
+   )
+   ( play-sound-from-file "BuildUp.ogg" ) 
+)
++Name: player lock
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when ( true ) ( fade-out 0 0 0 0 ) ) 
++Name: initial black
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position -3916 103 -3426 ) 
+   ( lock-primary-weapon "alpha 1" ) 
+   ( lock-secondary-weapon "alpha 1" ) 
+   ( lock-afterburner "alpha 1" ) 
+   ( fade-in 10000 0 0 0 ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "alpha 1" 
+      ( ai-play-dead 89 ) 
+   )
+)
++Name: position cam and fade in
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-facing-object 
+      "GTCv Deimos 12" 
+   )
+)
++Name: focus on deimos 12
++Repeat Count: 50000
++Interval: 0
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:1" ) 
+      ( get-object-y "Waypoint path 1:1" ) 
+      ( get-object-z "Waypoint path 1:1" ) 
+      6000 
+   )
+)
++Name: pos 1
++Repeat Count: 1
++Interval: 1
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:2" ) 
+      ( get-object-y "Waypoint path 1:2" ) 
+      ( get-object-z "Waypoint path 1:2" ) 
+      6000 
+   )
+)
++Name: pos 2
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:3" ) 
+      ( get-object-y "Waypoint path 1:3" ) 
+      ( get-object-z "Waypoint path 1:3" ) 
+      6000 
+   )
+)
++Name: pos 3
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:4" ) 
+      ( get-object-y "Waypoint path 1:4" ) 
+      ( get-object-z "Waypoint path 1:4" ) 
+      6000 
+   )
+)
++Name: pos 4
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:5" ) 
+      ( get-object-y "Waypoint path 1:5" ) 
+      ( get-object-z "Waypoint path 1:5" ) 
+      6000 
+   )
+)
++Name: pos 5
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:6" ) 
+      ( get-object-y "Waypoint path 1:6" ) 
+      ( get-object-z "Waypoint path 1:6" ) 
+      6000 
+   )
+)
++Name: pos 6
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:7" ) 
+      ( get-object-y "Waypoint path 1:7" ) 
+      ( get-object-z "Waypoint path 1:7" ) 
+      6000 
+   )
+)
++Name: pos 7
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:8" ) 
+      ( get-object-y "Waypoint path 1:8" ) 
+      ( get-object-z "Waypoint path 1:8" ) 
+      6000 
+   )
+)
++Name: pos 8
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:9" ) 
+      ( get-object-y "Waypoint path 1:9" ) 
+      ( get-object-z "Waypoint path 1:9" ) 
+      6000 
+   )
+)
++Name: pos 9
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:10" ) 
+      ( get-object-y "Waypoint path 1:10" ) 
+      ( get-object-z "Waypoint path 1:10" ) 
+      6000 
+   )
+)
++Name: pos 10
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:11" ) 
+      ( get-object-y "Waypoint path 1:11" ) 
+      ( get-object-z "Waypoint path 1:11" ) 
+      6000 
+   )
+)
++Name: pos 11
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:12" ) 
+      ( get-object-y "Waypoint path 1:12" ) 
+      ( get-object-z "Waypoint path 1:12" ) 
+      6000 
+   )
+)
++Name: pos 12
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:13" ) 
+      ( get-object-y "Waypoint path 1:13" ) 
+      ( get-object-z "Waypoint path 1:13" ) 
+      6000 
+   )
+)
++Name: pos 13
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:14" ) 
+      ( get-object-y "Waypoint path 1:14" ) 
+      ( get-object-z "Waypoint path 1:14" ) 
+      6000 
+   )
+)
++Name: pos 14
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:15" ) 
+      ( get-object-y "Waypoint path 1:15" ) 
+      ( get-object-z "Waypoint path 1:15" ) 
+      6000 
+   )
+)
++Name: pos 15
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:16" ) 
+      ( get-object-y "Waypoint path 1:16" ) 
+      ( get-object-z "Waypoint path 1:16" ) 
+      6000 
+   )
+)
++Name: pos 16
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Waypoint path 1:17" ) 
+      ( get-object-y "Waypoint path 1:17" ) 
+      ( get-object-z "Waypoint path 1:17" ) 
+      6000 
+   )
+)
++Name: pos 17
++Repeat Count: 1
++Interval: 1
++Chained: 6
++Team: 0
+
+
+$Formula: ( when 
+   ( has-time-elapsed 94 ) 
+   ( fade-out 3000 ) 
+)
++Name: fade out
++Repeat Count: 1
++Interval: 1
++Team: 0
+
+
+$Formula: ( when ( true ) ( end-mission ) ) 
++Name: end
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Captions-----
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( has-time-elapsed 5 ) 
+   ( show-subtitle-image 
+      "Sub-A4-001.pcx" 
+      15 
+      20 
+      ( false ) 
+      ( false ) 
+      0 
+      0 
+      60000 
+      5000 
+   )
+)
++Name: A
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( show-subtitle-image 
+      "Sub-A4-002.pcx" 
+      15 
+      22 
+      ( false ) 
+      ( false ) 
+      0 
+      0 
+      60000 
+      5000 
+   )
+)
++Name: B
++Repeat Count: 1
++Interval: 1
++Chained: 2
+
+
+$Formula: ( when 
+   ( true ) 
+   ( show-subtitle-image 
+      "Sub-A4-003.pcx" 
+      15 
+      24 
+      ( false ) 
+      ( false ) 
+      0 
+      0 
+      60000 
+      5000 
+   )
+)
++Name: C
++Repeat Count: 1
++Interval: 1
++Chained: 2
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: Continue
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-delay "fade out" 0 ) 
+   ( allow-ship "GTF Dark Angel" ) 
+   ( allow-weapon "Skyrail" ) 
+   ( tech-add-ships 
+      "GTF Dark Angel" 
+      "GVD Archania" 
+      "GVCv Hathor" 
+      "GVC Anubis" 
+   )
+   ( tech-add-weapons "Skyrail" ) 
+   ( script-eval 
+      "jsv('Database', 'angel')" 
+   )
+   ( script-eval 
+      "jsv('Database', 'archania')" 
+   )
+   ( script-eval 
+      "jsv('Database', 'hathor')" 
+   )
+   ( script-eval 
+      "jsv('Database', 'anubis')" 
+   )
+   ( script-eval 
+      "jsv('Database', 'DBSection4')" 
+   )
+)
++Name: Unlock Ships and Weapons
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( script-eval 
+      "jsv('Personal Log', 'a4a')" 
+   )
+)
++Name: Update Journal
++Repeat Count: 1
++Interval: 1
+
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 1 lists total
+
+$Name: Waypoint path 1
+$List: (		;! 17 points in list
+	( -3915.999023, 103.000000, -3426.000000 )
+	( -2649.000000, 106.000000, -3971.000000 )
+	( -441.000000, 111.000000, -4473.000000 )
+	( 2320.000000, 858.000000, -4476.000000 )
+	( 4938.000000, 1671.429077, -3711.000000 )
+	( 6803.000000, 2590.237305, -2632.000000 )
+	( 8285.517578, 3200.000000, -975.652893 )
+	( 9479.867188, 3609.512451, 1380.237305 )
+	( 9986.279297, 3865.999512, 5020.644043 )
+	( 8827.616211, 3852.000000, 8793.691406 )
+	( 6216.235840, 3834.001953, 12247.204102 )
+	( 2535.893799, 3814.997803, 13950.798828 )
+	( -1234.963135, 3789.000732, 14036.054688 )
+	( -5542.785645, 2642.000732, 12812.146484 )
+	( -8344.486328, 1520.002319, 10156.660156 )
+	( -10294.000977, 1514.000000, 6560.000000 )
+	( -11068.063477, 1507.990723, 2453.555908 )
+)
+
+#Messages		;! 0 total
+
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 11 total
+
+$Num stars: 100
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunTaniaAustralisA
++Angles: 0.000000 6.178466 4.363323
++Scale: 2.000000
+$Sun: SunWhite
++Angles: 5.916662 0.000000 4.258600
++Scale: 2.000000
+$Starbitmap: NebulA7-Whisp
++Angles: 0.663225 6.248279 0.418879
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulA1-Main
++Angles: 0.000000 0.052360 4.712385
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.925024 5.113811 5.323250
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulA3-Whisp
++Angles: 0.000000 0.000000 3.316123
++ScaleX: 10.000000
++ScaleY: 10.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulA9-Whisp
++Angles: 1.483529 0.000000 0.663225
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulA10-Whisp
++Angles: 0.436332 0.261799 5.218530
++ScaleX: 4.000000
++ScaleY: 2.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.000000 0.000000 0.000000
++ScaleX: 7.000000
++ScaleY: 7.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planetl
++Angles: 6.021386 5.969026 0.052360
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: neb02
++Angles: 2.356194 0.034907 1.151917
++ScaleX: 8.000000
++ScaleY: 8.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.541052 0.000000 0.855211
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planet3
++Angles: 0.000000 0.663225 5.550147
++ScaleX: 0.400000
++ScaleY: 0.400000
++DivX: 1
++DivY: 1
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: None
+$Briefing Music: None
+
+#End
+

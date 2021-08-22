@@ -1,0 +1,609 @@
+; Main hall 0
+
+; GR_640
+$Main Hall
++Bitmap:                MainHall1
++Mask:                  MainHall1-m
++Music:                 Aquitaine
++Num Intercom Sounds:   3					;; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 0
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 1
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 2
++Intercom sound:        38					;; SND_MAIN_HALL_INT1
++Intercom sound:        39					;; SND_MAIN_HALL_INT2
++Intercom sound:        40					;; SND_MAIN_HALL_INT3
++Intercom pan:          0.0					;; pan for intercom sound 0
++Intercom pan:          0.0					;; pan for intercom sound 1
++Intercom pan:          0.0					;; pan for intercom sound 2
++Num Misc Animations:   3					;; MAX is 10, if you need more, you need to get a programmer
++Misc anim:				mainwalk			;; anim for misc anim 1
++Misc anim:				mainflyby			;; anim for misc anim 2
++Misc anim:				maincrane			;; anim for misc anim 3
++Misc anim delay:       -1 15000 20000      ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 9000 30000       ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 5000 9000        ;; time until we will next play a misc anim, min delay, max delay
++Misc anim coords:		176 70              ;; coords for misc anim 1
++Misc anim coords:		325 0               ;; coords for misc anim 2
++Misc anim coords:		0 195               ;; coords for misc anim 3
++Misc anim mode:		1					;; anim 1 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		2					;; anim 2 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		1					;; anim 3 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim pan:			-0.5				;; pan for anim 1
++Misc anim pan:			-0.2				;; pan for anim 2
++Misc anim pan:			0.0					;; pan for anim 3
++Misc anim sounds:		1 21 				;; # sounds, sound number for each, anim 1
++Misc anim sounds:		2 1 1				;; # sounds, sound number for each, anim 2
++Misc anim sounds:		2 26 31				;; # sounds, sound number for each, anim 3
++Misc anim trigger:		1 1 				;; # of triggers, frame to play sound on, anim 1
++Misc anim trigger:		2 1 245				;; # of triggers, frame to play sound on, anim 2
++Misc anim trigger:		2 1 150				;; # of triggers, frame to play sound on, anim 3
++Misc anim handles:		1					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim flags:		1					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Num Door Animations:   6					;; MAX is 10, if you need more, you need to get a programmer
++Door anim:				mainexit			;; door anim 1
++Door anim:				mainbarracks		;; door anim 2
++Door anim:				mainreadyroom		;; door anim 3
++Door anim:				maintechroom		;; door anim 4
++Door anim:				mainoptions         ;; door anim 5
++Door anim:				maincampaign		;; door anim 6
++Door coords:           437 370 539 425		;; door 1, coords and center of anim
++Door coords:           28 8 110 61			;; door 2, coords and center of anim
++Door coords:           269 187 339 230		;; door 3, coords and center of anim
++Door coords:           381 335 404 367		;; door 4, coords and center of anim
++Door coords:			86 349 174 412		;; door 5, coords and center of anim
++Door coords:			440 134 542 193		;; door 6, coords and center of anim
++Door sounds:			36 37				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			34 35				;; door open, door close
++Door sounds:			32 33				;; door open, door close
++Door sounds:			43 44				;; screen on, screen off
++Door pan:				-0.75				;; door sound pan
++Door pan:				0.05				;; door sound pan
++Door pan:				0.07				;; door sound pan
++Door pan:				0.76				;; door sound pan
++Door pan:				0.8				    ;; door sound pan
++Door pan:				0.09				;; door sound pan
++Tooltip Y:				469				    ;; y coord to draw tooltip text
+
+
+; GR_1024
+$Main Hall
++Min Aspect Ratio: 1.7
++Bitmap: 				2_MainScreen
++Mask: 					2_MainScreen-M
++Music: 				Anthem
++Help Overlay: nohelp
++Num Intercom Sounds:	3					; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 0
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 1
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 2
++Intercom sound:		1					; SND_MAIN_HALL_INT1
++Intercom sound:		1					; SND_MAIN_HALL_INT2
++Intercom sound:		1					; SND_MAIN_HALL_INT3
++Intercom pan:			0.0					; pan for intercom sound 0
++Intercom pan:			0.0					; pan for intercom sound 1
++Intercom pan:			0.0					; pan for intercom sound 2
++Num Misc Animations:   0                   ; MAX is 10, if you need more, you need to get a programmer
++Num Door Animations:	6					; MAX is 10, if you need more, you need to get a programmer
++Door anim:             2_MainExit           ; door anim 1
++Door anim:             2_MainProfile        ; door anim 2
++Door anim:             2_MainReady          ; door anim 3
++Door anim:             2_MainTechroom       ; door anim 4
++Door anim:             2_MainOption         ; door anim 5
++Door anim:             2_MainCampaign       ; door anim 6
++Door coords:           1627 922 1733 945     ; door 1, coords and center of anim
++Door coords:           1261 845 1380 868      ; door 2, coords and center of anim
++Door coords:           1340 614 1459 637      ; door 3, coords and center of anim
++Door coords:           1228 767 1347 790      ; door 4, coords and center of anim
++Door coords:           1339 922 1458 945      ; door 5, coords and center of anim
++Door coords:           1258 691 1377 714      ; door 6, coords and center of anim
++Door sounds:           0 14                 ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; screen on, screen off
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Tooltip Y:				1060					; y coord to draw tooltip text
+
+
+; Main hall 1
+
+$Main Hall 
+
++Bitmap: Vhall 
++Mask: Vhallm 
++Music: Psampik 
+
++Num Intercom Sounds: 		3 			;; MAX is 10, if you need more, you need to get a programmer 
++Intercom delay: 		8000 15000 		;; min and max random delay for intercom sound 0 
++Intercom delay: 		8000 15000 		;; min and max random delay for intercom sound 1 
++Intercom delay: 		8000 15000 		;; min and max random delay for intercom sound 2 
++Intercom sound: 		58 			;; SND_MAIN_HALL_INT1 
++Intercom sound: 		59 			;; SND_MAIN_HALL_INT2 
++Intercom sound: 		60 			;; SND_MAIN_HALL_INT3 
++Intercom pan: 			0.0 			;; pan for intercom sound 0 
++Intercom pan: 			0.0 			;; pan for intercom sound 1 
++Intercom pan: 			0.0 			;; pan for intercom sound 2 
+
++Num Misc Animations: 		4 			;; MAX is 10, if you need more, you need to get a programmer 
++Misc anim: 			vHall_misc1 		;; anim for misc anim 1 
++Misc anim: 			vHall_misc2 		;; anim for misc anim 2 
++Misc anim: 			vHall_misc3 		;; anim for misc anim 3 
++Misc anim: 			vHall_misc4 		;; anim for misc anim 4 
++Misc anim delay: 		-1 8000 8000 		;; time until we will next play a misc anim, min delay, max delay 
++Misc anim delay: 		-1 15000 30000 		;; time until we will next play a misc anim, min delay, max delay 
++Misc anim delay: 		-1 30000 40000 		;; time until we will next play a misc anim, min delay, max delay 
++Misc anim delay: 		-1 15000 25000 		;; time until we will next play a misc anim, min delay, max delay 
++Misc anim coords: 		34 0 			;; coords for misc anim 1 
++Misc anim coords: 		34 0 			;; coords for misc anim 2 
++Misc anim coords: 		174 220 		;; coords for misc anim 3 
++Misc anim coords: 		486 89 			;; coords for misc anim 4 
++Misc anim mode: 		1 			;; anim 1 mode (0 == loop, 1 == hold, 2 == timed) 
++Misc anim mode: 		2 			;; anim 2 mode (0 == loop, 1 == hold, 2 == timed) 
++Misc anim mode:	 	2 			;; anim 3 mode (0 == loop, 1 == hold, 2 == timed) 
++Misc anim mode: 		2 			;; anim 4 mode (0 == loop, 1 == hold, 2 == timed) 
++Misc anim pan: 		-0.5 			;; pan for anim 1 
++Misc anim pan: 		-0.2 			;; pan for anim 2 
++Misc anim pan: 		0.0 			;; pan for anim 3 
++Misc anim pan: 		-0.5 			;; pan for anim 4 
++Misc anim sounds: 		2 1 1 			;; # sounds, sound number for each, anim 1 Ships Outside 
++Misc anim sounds: 		2 1 1 			;; # sounds, sound number for each, anim 2 ?? 
++Misc anim sounds: 		1 53 			;; # sounds, sound number for each, anim 3 Skiff 
++Misc anim sounds: 		2 49 50 		;; # sounds, sound number for each, anim 4 Elevator 
++Misc anim trigger: 		2 0 285 		;; # of triggers, frame to play sound on, anim 1 
++Misc anim trigger: 		2 10 245 		;; # of triggers, frame to play sound on, anim 2 
++Misc anim trigger: 		1 1 			;; # of triggers, frame to play sound on, anim 3 
++Misc anim trigger: 		2 1 69 			;; # of triggers, frame to play sound on, anim 4 
++Misc anim handles: 		2 			;; # sound handles 
++Misc anim handles: 		2 			;; # sound handles 
++Misc anim handles: 		1 			;; # sound handles 
++Misc anim handles: 		2 			;; # sound handles 
++Misc anim flags: 		2 			;; # sound flags 
++Misc anim flags: 		2 			;; # sound flags 
++Misc anim flags: 		1 			;; # sound flags 
++Misc anim flags: 		2 			;; # sound flags 
+
++Num Door Animations: 		6 			;; MAX is 10, if you need more, you need to get a programmer 
++Door anim: 			vhall_exit 		;; door anim 1 
++Door anim: 			vhall_barracks 		;; door anim 2 
++Door anim: 			vhall_ready 		;; door anim 3 
++Door anim: 			vhall_tech 		;; door anim 4 
++Door anim: 			vhall_options 		;; door anim 5 
++Door anim: 			vhall_campaign 		;; door anim 6 
++Door coords: 			545 309 593 339 	;; door 1, coords and center of anim 
++Door coords: 			19 104 97 182 		;; door 2, coords and center of anim 
++Door coords: 			335 26 418 155 		;; door 3, coords and center of anim 
++Door coords: 			551 0 596 135 		;; door 4, coords and center of anim 
++Door coords: 			3 277 98 379 		;; door 5, coords and center of anim 
++Door coords: 			417 354 529 417 	;; door 6, coords and center of anim 
++Door sounds: 			63 64 			;; door open, door close 
++Door sounds: 			47 48 			;; door open, door close 
++Door sounds: 			51 52 			;; door open, door close 
++Door sounds: 			45 46 			;; door open, door close 
++Door sounds: 			56 57 			;; door open, door close 
++Door sounds: 			54 55 			;; screen on, screen off 
++Door pan: 			-0.6 			;; door sound pan 
++Door pan: 			0.06 			;; door sound pan 
++Door pan:	 		0.65 			;; door sound pan 
++Door pan: 			0.2 			;; door sound pan 
++Door pan: 			-0.5 			;; door sound pan 
++Door pan: 			0.4 			;; door sound pan 
+
++Tooltip Y: 			469 			;; y coord to draw tooltip text 
+
+
+; GR_1024
+$Main Hall
++Min Aspect Ratio: 1.7
++Bitmap: 				2_MainScreen2
++Mask: 					2_MainScreen-M
++Music: 				Anthem
++Help Overlay: nohelp
++Num Intercom Sounds:	3					; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 0
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 1
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 2
++Intercom sound:		1					; SND_MAIN_HALL_INT1
++Intercom sound:		1					; SND_MAIN_HALL_INT2
++Intercom sound:		1					; SND_MAIN_HALL_INT3
++Intercom pan:			0.0					; pan for intercom sound 0
++Intercom pan:			0.0					; pan for intercom sound 1
++Intercom pan:			0.0					; pan for intercom sound 2
++Num Misc Animations:   0                   ; MAX is 10, if you need more, you need to get a programmer
++Num Door Animations:	6					; MAX is 10, if you need more, you need to get a programmer
++Door anim:             2_MainExit           ; door anim 1
++Door anim:             2_MainProfile        ; door anim 2
++Door anim:             2_MainReady          ; door anim 3
++Door anim:             2_MainTechroom       ; door anim 4
++Door anim:             2_MainOption         ; door anim 5
++Door anim:             2_MainCampaign       ; door anim 6
++Door coords:           1627 922 1733 945     ; door 1, coords and center of anim
++Door coords:           1261 845 1380 868      ; door 2, coords and center of anim
++Door coords:           1340 614 1459 637      ; door 3, coords and center of anim
++Door coords:           1228 767 1347 790      ; door 4, coords and center of anim
++Door coords:           1339 922 1458 945      ; door 5, coords and center of anim
++Door coords:           1258 691 1377 714      ; door 6, coords and center of anim
++Door sounds:           0 14                 ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; screen on, screen off
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Tooltip Y:				1060					; y coord to draw tooltip text
+
+
+; Tigers Main hall ==================================================================================================================
+
+; GR_640
+$Main Hall
++Name:			Tiger
++Bitmap:                MainHall1
++Mask:                  MainHall1-m
++Music:                 Aquitaine
++Num Intercom Sounds:   3					;; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 0
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 1
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 2
++Intercom sound:        38					;; SND_MAIN_HALL_INT1
++Intercom sound:        39					;; SND_MAIN_HALL_INT2
++Intercom sound:        40					;; SND_MAIN_HALL_INT3
++Intercom pan:          0.0					;; pan for intercom sound 0
++Intercom pan:          0.0					;; pan for intercom sound 1
++Intercom pan:          0.0					;; pan for intercom sound 2
++Num Misc Animations:   3					;; MAX is 10, if you need more, you need to get a programmer
++Misc anim:				mainwalk			;; anim for misc anim 1
++Misc anim:				mainflyby			;; anim for misc anim 2
++Misc anim:				maincrane			;; anim for misc anim 3
++Misc anim delay:       -1 15000 20000      ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 9000 30000       ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 5000 9000        ;; time until we will next play a misc anim, min delay, max delay
++Misc anim coords:		176 70              ;; coords for misc anim 1
++Misc anim coords:		325 0               ;; coords for misc anim 2
++Misc anim coords:		0 195               ;; coords for misc anim 3
++Misc anim mode:		1					;; anim 1 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		2					;; anim 2 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		1					;; anim 3 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim pan:			-0.5				;; pan for anim 1
++Misc anim pan:			-0.2				;; pan for anim 2
++Misc anim pan:			0.0					;; pan for anim 3
++Misc anim sounds:		1 21 				;; # sounds, sound number for each, anim 1
++Misc anim sounds:		2 1 1				;; # sounds, sound number for each, anim 2
++Misc anim sounds:		2 26 31				;; # sounds, sound number for each, anim 3
++Misc anim trigger:		1 1 				;; # of triggers, frame to play sound on, anim 1
++Misc anim trigger:		2 1 245				;; # of triggers, frame to play sound on, anim 2
++Misc anim trigger:		2 1 150				;; # of triggers, frame to play sound on, anim 3
++Misc anim handles:		1					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim flags:		1					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Num Door Animations:   6					;; MAX is 10, if you need more, you need to get a programmer
++Door anim:				mainexit			;; door anim 1
++Door anim:				mainbarracks		;; door anim 2
++Door anim:				mainreadyroom		;; door anim 3
++Door anim:				maintechroom		;; door anim 4
++Door anim:				mainoptions         ;; door anim 5
++Door anim:				maincampaign		;; door anim 6
++Door coords:           437 370 539 425		;; door 1, coords and center of anim
++Door coords:           28 8 110 61			;; door 2, coords and center of anim
++Door coords:           269 187 339 230		;; door 3, coords and center of anim
++Door coords:           381 335 404 367		;; door 4, coords and center of anim
++Door coords:			86 349 174 412		;; door 5, coords and center of anim
++Door coords:			440 134 542 193		;; door 6, coords and center of anim
++Door sounds:			36 37				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			34 35				;; door open, door close
++Door sounds:			32 33				;; door open, door close
++Door sounds:			43 44				;; screen on, screen off
++Door pan:				-0.75				;; door sound pan
++Door pan:				0.05				;; door sound pan
++Door pan:				0.07				;; door sound pan
++Door pan:				0.76				;; door sound pan
++Door pan:				0.8				    ;; door sound pan
++Door pan:				0.09				;; door sound pan
++Tooltip Y:				469				    ;; y coord to draw tooltip text
+
+
+; GR_1024
+$Main Hall
++Min Aspect Ratio: 1.7
++Bitmap: 				2_TigerHall
++Mask: 					2_MainScreen-M
++Music: 				Reconciliation
++Help Overlay: nohelp
++Num Intercom Sounds:	3					; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 0
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 1
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 2
++Intercom sound:		1					; SND_MAIN_HALL_INT1
++Intercom sound:		1					; SND_MAIN_HALL_INT2
++Intercom sound:		1					; SND_MAIN_HALL_INT3
++Intercom pan:			0.0					; pan for intercom sound 0
++Intercom pan:			0.0					; pan for intercom sound 1
++Intercom pan:			0.0					; pan for intercom sound 2
++Num Misc Animations:   0                   ; MAX is 10, if you need more, you need to get a programmer
++Num Door Animations:	6					; MAX is 10, if you need more, you need to get a programmer
++Door anim:             2_MainExit           ; door anim 1
++Door anim:             2_MainProfile        ; door anim 2
++Door anim:             2_MainReady          ; door anim 3
++Door anim:             2_MainTechroom       ; door anim 4
++Door anim:             2_MainOption         ; door anim 5
++Door anim:             2_MainCampaign       ; door anim 6
++Door coords:           1627 922 1733 945     ; door 1, coords and center of anim
++Door coords:           1261 845 1380 868      ; door 2, coords and center of anim
++Door coords:           1340 614 1459 637      ; door 3, coords and center of anim
++Door coords:           1228 767 1347 790      ; door 4, coords and center of anim
++Door coords:           1339 922 1458 945      ; door 5, coords and center of anim
++Door coords:           1258 691 1377 714      ; door 6, coords and center of anim
++Door sounds:           0 14                 ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; screen on, screen off
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Tooltip Y:				1060					; y coord to draw tooltip text
+
+; Police Hall==========================================================================================================
+
+; GR_640
+$Main Hall
++Name:			Police
++Bitmap:                MainHall1
++Mask:                  MainHall1-m
++Music:                 Aquitaine
++Num Intercom Sounds:   3					;; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 0
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 1
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 2
++Intercom sound:        38					;; SND_MAIN_HALL_INT1
++Intercom sound:        39					;; SND_MAIN_HALL_INT2
++Intercom sound:        40					;; SND_MAIN_HALL_INT3
++Intercom pan:          0.0					;; pan for intercom sound 0
++Intercom pan:          0.0					;; pan for intercom sound 1
++Intercom pan:          0.0					;; pan for intercom sound 2
++Num Misc Animations:   3					;; MAX is 10, if you need more, you need to get a programmer
++Misc anim:				mainwalk			;; anim for misc anim 1
++Misc anim:				mainflyby			;; anim for misc anim 2
++Misc anim:				maincrane			;; anim for misc anim 3
++Misc anim delay:       -1 15000 20000      ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 9000 30000       ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 5000 9000        ;; time until we will next play a misc anim, min delay, max delay
++Misc anim coords:		176 70              ;; coords for misc anim 1
++Misc anim coords:		325 0               ;; coords for misc anim 2
++Misc anim coords:		0 195               ;; coords for misc anim 3
++Misc anim mode:		1					;; anim 1 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		2					;; anim 2 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		1					;; anim 3 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim pan:			-0.5				;; pan for anim 1
++Misc anim pan:			-0.2				;; pan for anim 2
++Misc anim pan:			0.0					;; pan for anim 3
++Misc anim sounds:		1 21 				;; # sounds, sound number for each, anim 1
++Misc anim sounds:		2 1 1				;; # sounds, sound number for each, anim 2
++Misc anim sounds:		2 26 31				;; # sounds, sound number for each, anim 3
++Misc anim trigger:		1 1 				;; # of triggers, frame to play sound on, anim 1
++Misc anim trigger:		2 1 245				;; # of triggers, frame to play sound on, anim 2
++Misc anim trigger:		2 1 150				;; # of triggers, frame to play sound on, anim 3
++Misc anim handles:		1					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim flags:		1					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Num Door Animations:   6					;; MAX is 10, if you need more, you need to get a programmer
++Door anim:				mainexit			;; door anim 1
++Door anim:				mainbarracks		;; door anim 2
++Door anim:				mainreadyroom		;; door anim 3
++Door anim:				maintechroom		;; door anim 4
++Door anim:				mainoptions         ;; door anim 5
++Door anim:				maincampaign		;; door anim 6
++Door coords:           437 370 539 425		;; door 1, coords and center of anim
++Door coords:           28 8 110 61			;; door 2, coords and center of anim
++Door coords:           269 187 339 230		;; door 3, coords and center of anim
++Door coords:           381 335 404 367		;; door 4, coords and center of anim
++Door coords:			86 349 174 412		;; door 5, coords and center of anim
++Door coords:			440 134 542 193		;; door 6, coords and center of anim
++Door sounds:			36 37				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			34 35				;; door open, door close
++Door sounds:			32 33				;; door open, door close
++Door sounds:			43 44				;; screen on, screen off
++Door pan:				-0.75				;; door sound pan
++Door pan:				0.05				;; door sound pan
++Door pan:				0.07				;; door sound pan
++Door pan:				0.76				;; door sound pan
++Door pan:				0.8				    ;; door sound pan
++Door pan:				0.09				;; door sound pan
++Tooltip Y:				469				    ;; y coord to draw tooltip text
+
+
+; GR_1024
+$Main Hall
++Min Aspect Ratio: 1.7
++Bitmap: 				2_PoliceHall
++Mask: 					2_MainScreen-M
++Music: 				Reconciliation
++Help Overlay: nohelp
++Num Intercom Sounds:	3					; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 0
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 1
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 2
++Intercom sound:		1					; SND_MAIN_HALL_INT1
++Intercom sound:		1					; SND_MAIN_HALL_INT2
++Intercom sound:		1					; SND_MAIN_HALL_INT3
++Intercom pan:			0.0					; pan for intercom sound 0
++Intercom pan:			0.0					; pan for intercom sound 1
++Intercom pan:			0.0					; pan for intercom sound 2
++Num Misc Animations:   0                   ; MAX is 10, if you need more, you need to get a programmer
++Num Door Animations:	6					; MAX is 10, if you need more, you need to get a programmer
++Door anim:             2_MainExit           ; door anim 1
++Door anim:             2_MainProfile        ; door anim 2
++Door anim:             2_MainReady          ; door anim 3
++Door anim:             2_MainTechroom       ; door anim 4
++Door anim:             2_MainOption         ; door anim 5
++Door anim:             2_MainCampaign       ; door anim 6
++Door coords:           1627 922 1733 945     ; door 1, coords and center of anim
++Door coords:           1261 845 1380 868      ; door 2, coords and center of anim
++Door coords:           1340 614 1459 637      ; door 3, coords and center of anim
++Door coords:           1228 767 1347 790      ; door 4, coords and center of anim
++Door coords:           1339 922 1458 945      ; door 5, coords and center of anim
++Door coords:           1258 691 1377 714      ; door 6, coords and center of anim
++Door sounds:           0 14                 ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; screen on, screen off
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Tooltip Y:				1060					; y coord to draw tooltip text
+
+; Warlock Hall==========================================================================================================
+
+; GR_640
+$Main Hall
++Name:			Warlock
++Bitmap:                MainHall1
++Mask:                  MainHall1-m
++Music:                 Aquitaine
++Num Intercom Sounds:   3					;; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 0
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 1
++Intercom delay:        8000 15000			;; min and max random delay for intercom sound 2
++Intercom sound:        38					;; SND_MAIN_HALL_INT1
++Intercom sound:        39					;; SND_MAIN_HALL_INT2
++Intercom sound:        40					;; SND_MAIN_HALL_INT3
++Intercom pan:          0.0					;; pan for intercom sound 0
++Intercom pan:          0.0					;; pan for intercom sound 1
++Intercom pan:          0.0					;; pan for intercom sound 2
++Num Misc Animations:   3					;; MAX is 10, if you need more, you need to get a programmer
++Misc anim:				mainwalk			;; anim for misc anim 1
++Misc anim:				mainflyby			;; anim for misc anim 2
++Misc anim:				maincrane			;; anim for misc anim 3
++Misc anim delay:       -1 15000 20000      ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 9000 30000       ;; time until we will next play a misc anim, min delay, max delay
++Misc anim delay:		-1 5000 9000        ;; time until we will next play a misc anim, min delay, max delay
++Misc anim coords:		176 70              ;; coords for misc anim 1
++Misc anim coords:		325 0               ;; coords for misc anim 2
++Misc anim coords:		0 195               ;; coords for misc anim 3
++Misc anim mode:		1					;; anim 1 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		2					;; anim 2 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim mode:		1					;; anim 3 mode (0 == loop, 1 == hold, 2 == timed)
++Misc anim pan:			-0.5				;; pan for anim 1
++Misc anim pan:			-0.2				;; pan for anim 2
++Misc anim pan:			0.0					;; pan for anim 3
++Misc anim sounds:		1 21 				;; # sounds, sound number for each, anim 1
++Misc anim sounds:		2 1 1				;; # sounds, sound number for each, anim 2
++Misc anim sounds:		2 26 31				;; # sounds, sound number for each, anim 3
++Misc anim trigger:		1 1 				;; # of triggers, frame to play sound on, anim 1
++Misc anim trigger:		2 1 245				;; # of triggers, frame to play sound on, anim 2
++Misc anim trigger:		2 1 150				;; # of triggers, frame to play sound on, anim 3
++Misc anim handles:		1					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim handles:		2					;; # sound handles
++Misc anim flags:		1					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Misc anim flags:		2					;; # sound flags
++Num Door Animations:   6					;; MAX is 10, if you need more, you need to get a programmer
++Door anim:				mainexit			;; door anim 1
++Door anim:				mainbarracks		;; door anim 2
++Door anim:				mainreadyroom		;; door anim 3
++Door anim:				maintechroom		;; door anim 4
++Door anim:				mainoptions         ;; door anim 5
++Door anim:				maincampaign		;; door anim 6
++Door coords:           437 370 539 425		;; door 1, coords and center of anim
++Door coords:           28 8 110 61			;; door 2, coords and center of anim
++Door coords:           269 187 339 230		;; door 3, coords and center of anim
++Door coords:           381 335 404 367		;; door 4, coords and center of anim
++Door coords:			86 349 174 412		;; door 5, coords and center of anim
++Door coords:			440 134 542 193		;; door 6, coords and center of anim
++Door sounds:			36 37				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			23 24				;; door open, door close
++Door sounds:			34 35				;; door open, door close
++Door sounds:			32 33				;; door open, door close
++Door sounds:			43 44				;; screen on, screen off
++Door pan:				-0.75				;; door sound pan
++Door pan:				0.05				;; door sound pan
++Door pan:				0.07				;; door sound pan
++Door pan:				0.76				;; door sound pan
++Door pan:				0.8				    ;; door sound pan
++Door pan:				0.09				;; door sound pan
++Tooltip Y:				469				    ;; y coord to draw tooltip text
+
+
+; GR_1024
+$Main Hall
++Min Aspect Ratio: 1.7
++Bitmap: 				2_WarlockHall
++Mask: 					2_MainScreen-M
++Music: 				Anthem
++Help Overlay: nohelp
++Num Intercom Sounds:	3					; MAX is 10, if you need more, you need to get a programmer
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 0
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 1
++Intercom delay:		8000 15000			; min and max random delay for intercom sound 2
++Intercom sound:		1					; SND_MAIN_HALL_INT1
++Intercom sound:		1					; SND_MAIN_HALL_INT2
++Intercom sound:		1					; SND_MAIN_HALL_INT3
++Intercom pan:			0.0					; pan for intercom sound 0
++Intercom pan:			0.0					; pan for intercom sound 1
++Intercom pan:			0.0					; pan for intercom sound 2
++Num Misc Animations:   0                   ; MAX is 10, if you need more, you need to get a programmer
++Num Door Animations:	6					; MAX is 10, if you need more, you need to get a programmer
++Door anim:             2_MainExit           ; door anim 1
++Door anim:             2_MainProfile        ; door anim 2
++Door anim:             2_MainReady          ; door anim 3
++Door anim:             2_MainTechroom       ; door anim 4
++Door anim:             2_MainOption         ; door anim 5
++Door anim:             2_MainCampaign       ; door anim 6
++Door coords:           1627 922 1733 945     ; door 1, coords and center of anim
++Door coords:           1261 845 1380 868      ; door 2, coords and center of anim
++Door coords:           1340 614 1459 637      ; door 3, coords and center of anim
++Door coords:           1228 767 1347 790      ; door 4, coords and center of anim
++Door coords:           1339 922 1458 945      ; door 5, coords and center of anim
++Door coords:           1258 691 1377 714      ; door 6, coords and center of anim
++Door sounds:           0 14                 ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:		0 14 		     ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; door open, door close
++Door sounds:           0 14                 ; screen on, screen off
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Door pan:              0.0                  ; door sound pan
++Tooltip Y:				1060					; y coord to draw tooltip text
+
+#end

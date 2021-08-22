@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VBJP-701 $}
+$b{/UPLOADER: $VLT. $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>JTFG-290-LHD-87012 $}
+
+$B{Personal Log:
+August 10, 2370  
+Gamma Draconis $}
+
+Since the first contact, we have been fighting a bloody war against our Shivan invaders. How many lives had been lost? How many have died in upholding the GTVA's cherished principles? But now, I am questioning our motives because we are the invaders this time. Is there good in this? However, recent experiences with our enemy have only proved one thing...The enemy is sure, hell bent, in crushing us. I may be selfish and egocentric, I may not share the common principle but I have no love for the destroyers. My hate for them is just as strong as my fear. And yet that very fear vanished, overpowered by this new motivation I have that came out of nowhere. The motivation to destroy the Shivans, to break the enemy in half and devastate them. I say let them perish...Let them die!
+
+$b{/<END OF LOG> $}

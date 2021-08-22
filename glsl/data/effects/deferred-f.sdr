@@ -1,0 +1,216 @@
+
+#include "lighting.sdr"
+
+#include "shadows.sdr"
+
+in vec3 beamVec;
+in vec3 lightPosition;
+// Revision #1: Pre-calculated texture coordinates for fast fragment fetching
+in vec2 texcoordT;
+in vec2 texcoordB;
+in vec2 texcoordL;
+in vec2 texcoordR;
+out vec4 fragOut0;
+
+uniform sampler2D ColorBuffer;
+uniform sampler2D NormalBuffer;
+uniform sampler2D PositionBuffer;
+uniform sampler2D SpecBuffer;
+uniform sampler2DArray shadow_map;
+
+layout (std140) uniform globalDeferredData {
+	mat4 shadow_mv_matrix;
+	mat4 shadow_proj_matrix[4];
+
+	mat4 inv_view_matrix;
+
+	float veryneardist;
+	float neardist;
+	float middist;
+	float fardist;
+
+	float invScreenWidth;
+	float invScreenHeight;
+};
+
+layout (std140) uniform lightData {
+	vec3 diffuseLightColor;
+	float coneAngle;
+
+	vec3 specLightColor;
+	float coneInnerAngle;
+
+	vec3 coneDir;
+	bool dualCone;
+
+	vec3 scale;
+	float lightRadius;
+
+	vec3 lightDir;
+	int lightType;
+
+	bool enable_shadows;
+};
+
+void GetLightInfo(vec3 position, out vec3 lightDir, out float attenuation)
+{
+	if (lightType == LT_DIRECTIONAL) {
+		lightDir = normalize(lightPosition);
+		attenuation = 1.0;
+	} else {
+		// Positional light source
+		lightDir = lightPosition - position.xyz;
+		float dist = length(lightDir);
+		attenuation = 1.0 - clamp(dist / lightRadius, 0.0, 1.0);
+
+		if(dist > lightRadius && lightType != LT_TUBE) {
+			discard;
+		}
+
+		if (lightType == LT_TUBE) {  // Tube light
+			float beamLength = length(beamVec);
+			vec3 beamDir = beamVec / beamLength;
+			//The actual 'lighting element' is shorter than the light volume cylinder
+			//To compensate the light is moved forward along the beam one radius and the length shortened
+			//this allows room for clean falloff of the light past the ends of beams.
+			vec3 adjustedLightPos = lightPosition - (beamDir * lightRadius);
+			beamLength = beamLength - (lightRadius * 2.0);
+			//adjustments having been made, lightdir needs recalculating
+			lightDir = adjustedLightPos - position.xyz;
+			// Get nearest point on line
+			float neardist = clamp(dot(lightDir, beamDir), 0.0, beamLength);
+			// Move back from the endpoint of the beam along the beam by the distance we calculated
+			vec3 nearest = adjustedLightPos - beamDir * neardist;
+			lightDir = nearest - position.xyz;
+			dist = length(lightDir);
+			if(dist > lightRadius) {
+				discard;
+			}
+			attenuation = 1.0 - clamp(dist / lightRadius, 0.0, 1.0);
+		} else if (lightType == LT_CONE) {
+			float coneDot = dot(normalize(-lightDir), coneDir);
+			if(dualCone) {
+				if(abs(coneDot) < coneAngle) {
+					discard;
+				} else {
+					attenuation *= smoothstep(coneAngle, coneInnerAngle, abs(coneDot));
+				}
+			} else {
+				if (coneDot < coneAngle) {
+					discard;
+				} else {
+					attenuation *= smoothstep(coneAngle, coneInnerAngle, coneDot);
+				}
+			}
+		}
+
+		lightDir = normalize(lightDir);
+	}
+}
+
+// Prototype: For Sobel filtering
+//mat3 sx = mat3(1.0, 2.0, 1.0, 0.0, 0.0, 0.0, -1.0, -2.0, -1.0);
+//mat3 sy = mat3(1.0, 0.0, -1.0, 2.0, 0.0, -2.0, 1.0, 0.0, -1.0);
+
+void main()
+{
+	vec2 screenPos = gl_FragCoord.xy * vec2(invScreenWidth, invScreenHeight);
+	vec3 position = texture(PositionBuffer, screenPos).xyz;
+
+	if(abs(dot(position, position)) < 0.1)
+		discard;
+
+	vec3 lightDir;
+	float attenuation;
+
+	GetLightInfo(position, lightDir, attenuation);
+
+	vec3 color = texture(ColorBuffer, screenPos).rgb;
+	vec4 normalData = texture(NormalBuffer, screenPos);
+	// The vector in the normal buffer could be longer than the unit vector since decal rendering only adds to the normal buffer
+	vec3 normal = normalize(normalData.xyz);
+	float NdotL = dot(normal, lightDir);
+	float x = clamp(NdotL, 0.0, 1.0);
+//	float dx = fwidth(x) * 0.5;
+//	float cel = smoothstep(0.2 - dx, 0.2 + dx, x) * 0.5 + smoothstep(0.95 - dx, 0.95 + dx, x) * 0.5;
+
+	vec4 fragmentColor;
+
+	if (!enable_shadows) {
+//		fragmentColor = vec4(color * (diffuseLightColor * mix(cel,x,0.5) * attenuation), 1.0);
+		fragmentColor = vec4(color * (diffuseLightColor * x * attenuation), 1.0);
+	} else {
+		vec4 fragShadowPos = shadow_mv_matrix * inv_view_matrix * vec4(position, 1.0);
+		vec4 fragShadowUV[4];
+		fragShadowUV[0] = transformToShadowMap(shadow_proj_matrix[0], 0, fragShadowPos);
+		fragShadowUV[1] = transformToShadowMap(shadow_proj_matrix[1], 1, fragShadowPos);
+		fragShadowUV[2] = transformToShadowMap(shadow_proj_matrix[2], 2, fragShadowPos);
+		fragShadowUV[3] = transformToShadowMap(shadow_proj_matrix[3], 3, fragShadowPos);
+
+		attenuation *= getShadowValue(shadow_map, -position.z, fragShadowPos.z, fragShadowUV, fardist, middist,
+								neardist, veryneardist);
+//		fragmentColor = vec4(color * (diffuseLightColor * mix(cel,x,0.5) * attenuation), 1.0);
+		fragmentColor = vec4(color * (diffuseLightColor * x * attenuation), 1.0);
+
+		vec3 eyeDir = normalize(-position);
+		vec3 halfVec = normalize(lightDir + eyeDir);
+		float gloss = normalData.a;
+		vec4 specColor = texture(SpecBuffer, screenPos);
+		float fresnel = specColor.a;
+		vec3 intensity = computeLighting(specColor.rgb, lightDir, normal.xyz, halfVec, eyeDir, gloss, fresnel, x).rgb;
+		fragmentColor.rgb += intensity * specLightColor * attenuation;
+
+// Prototype: Sobel filtering for edge detection
+//		ivec2 screenSize = ivec2(1.0 / invScreenWidth, 1.0 / invScreenHeight) - ivec2(1);
+//		mat4 nn = mat4(0.0);
+//		for (int i = 0; i < 3; i++) {
+//			mat4 I;
+//			for (int j = 0; j < 3; j++) {
+//				I[0][j] = texelFetch(PositionBuffer, clamp(ivec2(gl_FragCoord) + ivec2(i - 1, j - 1), ivec2(1), screenSize), 0).z / fardist * 0.5 + 0.5;
+//				vec3 n = normalize(texelFetch(NormalBuffer, clamp(ivec2(gl_FragCoord) + ivec2(i - 1, j - 1), ivec2(1), screenSize), 0).xyz) * 0.5 + 0.5;
+//				I[1][j] = n.x;
+//				I[2][j] = n.y;
+//				I[3][j] = n.z;
+//			}
+//			nn[0] += vec4(dot(sx[i], I[0].xyz), dot(sy[i], I[0].xyz), dot(sx[i], I[1].xyz), dot(sy[i], I[1].xyz));
+//			nn[1] += vec4(dot(sx[i], I[2].xyz), dot(sy[i], I[2].xyz), dot(sx[i], I[3].xyz), dot(sy[i], I[3].xyz));
+//		}
+//		nn[2] = smoothstep(0.49, 0.51, vec4(length(nn[0].xy), length(nn[0].zw), length(nn[1].xy), length(nn[2].zw)));
+//		fragmentColor.rgb = mix(fragmentColor.rgb, vec3(0.0), max(max(nn[2].x, nn[2].y), max(nn[2].z, nn[2].w)));
+
+// Revision #1: Reduced texture fetch filtering for edge detection
+#define MaxRange 20000.0
+		float depthT = 1.0 + texture(PositionBuffer, max(texcoordT, 0.0)).z / MaxRange;
+		float depthB = 1.0 + texture(PositionBuffer, min(texcoordB, 1.0)).z / MaxRange;
+		float depthL = 1.0 + texture(PositionBuffer, clamp(texcoordL, 0.0, 1.0)).z / MaxRange;
+		float depthR = 1.0 + texture(PositionBuffer, clamp(texcoordR, 0.0, 1.0)).z / MaxRange;
+		vec3 normalT = texture(NormalBuffer, max(texcoordT, 0.0)).xyz;
+		vec3 normalB = texture(NormalBuffer, min(texcoordB, 1.0)).xyz;
+		vec3 normalL = texture(NormalBuffer, clamp(texcoordL, 0.0, 1.0)).xyz;
+		vec3 normalR = texture(NormalBuffer, clamp(texcoordR, 0.0, 1.0)).xyz;
+//  1*L  0*T -1*T	 1*L  2*T  1*T
+//  2*L   X  -2*R	 0*L   Y   0*R
+//  1*B  0*B -1*R	-1*B -2*B -1*R
+#define LineStrength 0.2
+		vec3 edge = min(LineStrength * vec3(
+					length(vec2(normalL.x * -1.0 + normalT.x * -3.0 + normalB.x * 3.0 + normalR.x,
+					normalB.x * -1.0 + normalL.x * -3.0 + normalR.x * 3.0 + normalT.x)),
+					length(vec2(normalL.y * -1.0 + normalT.y * -3.0 + normalB.y * 3.0 + normalR.y,
+					normalB.y * -1.0 + normalL.y * -3.0 + normalR.y * 3.0 + normalT.y)),
+					length(vec2(depthL * -1.0 + depthT * -3.0 + depthB * 3.0 + depthR,
+					depthB * -1.0 + depthL * -3.0 + depthR * 3.0 + depthT))
+					), 1.0);
+// Background (planets, galaxies, etc) reflected light - for dark side edges, requires low -ambient_factor 70-90
+#define backLight 0.002
+		fragmentColor.rgb = mix(fragmentColor.rgb + diffuseLightColor * clamp(-NdotL, 0.0, 1.0) * backLight, vec3(0.0), max(max(edge.x, edge.y), edge.z));
+// Egde colors
+//		fragmentColor.rgb = vec3(length(vec2(normalL.x * -1.0 + normalT.x * -3.0 + normalB.x * 3.0 + normalR.x,
+//					normalB.x * -1.0 + normalL.x * -3.0 + normalR.x * 3.0 + normalT.x)),
+//					length(vec2(normalL.y * -1.0 + normalT.y * -3.0 + normalB.y * 3.0 + normalR.y,
+//					normalB.y * -1.0 + normalL.y * -3.0 + normalR.y * 3.0 + normalT.y)),
+//					length(vec2(depthL * -1.0 + depthT * -3.0 + depthB * 3.0 + depthR,
+//					depthB * -1.0 + depthL * -3.0 + depthR * 3.0 + depthT))
+//					) * LineStrength;
+	}
+	fragOut0 = clamp(fragmentColor, 0.0, 1.0);
+}

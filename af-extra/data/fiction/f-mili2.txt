@@ -1,0 +1,13 @@
+GTF PHOENIX
+
+Type:  Strategic Assault
+Maneuverability:  Poor
+Hull Armor:  Ultra Heavy Duranium
+Manufacturer:  Adhara Orbital Shipyards
+Length:  20 meters
+Gun Mounts:  6 Mounts (4,2)
+Missile Banks:  2 Banks
+Description:  GTVA prototypes
+
+
+With the success of the Dark Angel advanced fighter, another group of researchers and engineers, not part of the Dark Angel Project, endeavored to produce its counterpart, an assault bomber. The purpose of this program is to develop a cross-breed between an interceptor and a bomber. Unfortunately, the outcome was not as it was hoped and it was not even a bomber. During combat evaluation, it was only at par with the Ares heavy fighter. It was apparent that the Phoenix project team had over-designed it and overlooked some important aspects. Nevertheless, the GTF Phoenix has some advantage over the Ares like ultra-heavy shielding, advanced heavy armor and much larger secondary banks.

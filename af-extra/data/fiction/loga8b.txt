@@ -1,0 +1,17 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VHLA-034 $}
+$b{/UPLOADER: $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>UPTD-892-DTX-08004 $}
+
+$B{Personal Log:
+March 23, 2371
+Gamma Draconis $}
+
+All I can say is that the gods of the cosmos have a wicked sense of humor. They gave me another escort mission. An escort mission, can you believe that?! Of all the possible sorties under the stars! Is this their way to remind me of my failure in Capella? Is this one way to humble me? Is this my punishment? Well, I had defended the thousands aboard the Enterprise. I surpassed that kind of mission as I did in many occasion. I should have redeemed myself a number of times now!
+
+I have heard that the 70th Blue Lions had lots of casualties in escorting the Enterprise as it continued its rendezvous with the other fleet in that sector. They had a hard time there but that goes for all of us. What is even harder is that our relation with the Vasudans is getting sketchy. The GTVA could be ripping itself apart. They say that by keeping the Archangel Project a secret, we have a sinister agenda against them. I say, they are saner than we humans are. But I don't want to dwell too much in political issues and all those propgandas. It's too dirty. Maybe the Shivans are right. We are a destructive and barbaric race. It is insane in thinking this. I should turn to a much more pressing issue: keeping myself alive.
+
+$b{/<END OF LOG> $}

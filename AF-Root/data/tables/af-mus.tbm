@@ -1,0 +1,235 @@
+;;====Coded by Herkie423=======
+
+#SoundTrack Start 
+$Soundtrack Name: 8: Indignant
+  $Name: IndAMB.ogg    144.0 	 79522 ; * Ambience
+  $Name: IndARR1.ogg 	 1.0   1022912 ; * Allied Arrival during Normal
+  $Name: IndERR1.ogg 	 1.0 	533248 ; * Enemy Arrival during Normal
+  $Name: IndBAT1.ogg 	65.0 	102855 ; * Battle 1
+  $Name: IndBAT2.ogg 	65.0 	102844 ; * Battle 2
+  $Name: IndBAT3.ogg 	67.0	102841 ; * Battle 3
+  $Name: IndARR2.ogg 	 1.0 	616278; * Allied Arrival during Battle
+  $Name: IndERR2.ogg 	 1.0 	616786 ; * Enemy Arrival during Battle
+  $Name: IndVIC1.ogg 	 1.0   1226112 ; * Victory 1 ( goal completed )
+  $Name: AFvictory2.ogg  1.0   7497026 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath.ogg 	 1.0   1928448 ; * Goal Failed
+  $Name: AFdeath.ogg	 1.0   1928448 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 9: Paranoia
+  $Name: ParAMB.ogg     152.0	82648 ; * Ambience
+  $Name: ParARR1.ogg      1.0   661388 ; * Allied Arrival during Normal
+  $Name: ParERR1.ogg 	 1.0  1291648 ; * Enemy Arrival during Normal
+  $Name: ParBAT1.ogg	95.0    83558 ; * Battle 1
+  $Name: ParBAT2.ogg 	95.0    83558 ; * Battle 2
+  $Name: ParBAT3.ogg    135.0    83293 ; * Battle 3
+  $Name: ParARR2.ogg 	 1.0   661390 ; * Allied Arrival during Battle
+  $Name: ParERR2.ogg 	 1.0   667520 ; * Enemy Arrival during Battle
+  $Name: ParVIC1.ogg 	 1.0  1415040 ; * Victory 1 ( goal completed )
+  $Name: AFvictory3.ogg  1.0  5694346 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath.ogg 	 1.0  1928448 ; * Goal Failed
+  $Name: AFdeath.ogg 	 1.0  1928448 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 10: Chaotic Burn
+  $Name: ChaAMB.ogg 	47.8 	88200 ; * Ambience
+  $Name: ChaARR1.ogg 	 1.8   333682 ; * Allied Arrival during Normal
+  $Name: ChaERR1.ogg 	 1.8   230250 ; * Enemy Arrival during Normal
+  $Name: ChaBAT1.ogg 	35.8 	95348 ; * Battle 1
+  $Name: ChaBAT2.ogg 	35.8 	95343 ; * Battle 2
+  $Name: ChaBAT3.ogg 	59.8 	95136 ; * Battle 3
+  $Name: ChaARR2.ogg 	 1.0   381552 ; * Allied Arrival during Battle
+  $Name: ChaERR2.ogg 	 1.0   381550 ; * Enemy Arrival during Battle
+  $Name: ChaVIC1.ogg 	 1.0   381548 ; * Victory 1 ( goal completed )
+  $Name: AFvictory3.ogg  1.0  5694346 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath3.ogg 	 1.0  1872768 ; * Goal Failed
+  $Name: AFdeath3.ogg 	 1.0  1872768 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 11: Insomnia
+  $Name: InsAMB.OGG 	33.0 	210951 ; * Ambience
+  $Name: InsARR1.OGG 	 1.0 	562672 ; * Allied Arrival during Normal
+  $Name: InsERR1.ogg 	 1.0 	846764 ; * Enemy Arrival during Normal
+  $Name: InsBAT1.ogg 	18.8 	183970 ; * Battle 1
+  $Name: InsBAT2.ogg	19.8 	183878 ; * Battle 2
+  $Name: InsBAT3.ogg 	23.8 	184079 ; * Battle 3
+  $Name: InsARR2.ogg 	 3.8 	183984 ; * Allied Arrival during Battle
+  $Name: InsERR2.ogg 	 3.4 	183488 ; * Enemy Arrival during Battle
+  $Name: InsVIC1.ogg 	 1.8 	402048 ; * Victory 1 ( goal completed )
+  $Name: AFvictory2.ogg  1.0   7497026 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath2.ogg 	 1.0   2654208 ; * Goal Failed
+  $Name: AFdeath2.ogg 	 1.0   2654208 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 12: Trojan Horse
+  $Name: TrojAMB.ogg	64.2	206900 ; * Ambience
+  $Name: TrojARR.ogg	 5.3	171940 ; * Allied Arrival during Normal
+  $Name: TrojERR1.ogg 	 3.8 	205536 ; * Enemy Arrival during Normal
+  $Name: TrojBAT1.ogg 	23.8 	211694 ; * Battle 1
+  $Name: TrojBAT2.ogg 	23.8 	211658 ; * Battle 2
+  $Name: TrojBAT3.ogg 	19.8 	211693 ; * Battle 3
+  $Name: TrojARR.ogg	 5.3	171940 ; * Allied Arrival during Battle
+  $Name: TrojERR1.ogg 	 3.8 	205536 ; * Enemy Arrival during Battle
+  $Name: TrojVIC1.ogg 	 2.8 	212416 ; * Victory 1 ( goal completed )
+  $Name: AFvictory1.ogg  1.0   2808114 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath.ogg 	 1.0   1928448 ; * Goal Failed
+  $Name: AFdeath.ogg 	 1.0   1928448 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start ; Music From Blue Planet 
+$Soundtrack Name: 13: Razorback 
+  $Name: rbamb.ogg 26.6 153668 ; * Ambience 
+  $Name: FS2_Arv_A01.wav 1.8 105840 ; * Allied Arrival during Normal 
+  $Name: FS2_Arv_G02.wav 2.0 88200 ; * Enemy Arrival during Normal 
+  $Name: rbbattle1.ogg 14.0 153668 ; * Battle 1 
+  $Name: rbbattle2.ogg 18.4 153668 ; * Battle 2 
+  $Name: rbbattle3.ogg 27.8 153668 ; * Battle 3 
+  $Name: FS2_AArv_A01.wav 1.8 105840 ; * Allied Arrival during Battle 
+  $Name: FS2_Arv_G02.wav 2.0 88200 ; * Enemy Arrival during Battle 
+  $Name: FS2_Vict_A01.ogg 2.8 52920 ; * Victory 1 ( goal completed ) 
+  $Name: rbamb.ogg 26.7 153668 ; * Victory 2 ( all enemies dead, goals completed ) 
+  $Name: FS2_Dth_A01.wav 23.8 132300 ; * Goal Failed 
+  $Name: FS2_Dth_A01.wav 23.8 132300 ; * Player dies 
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 14: Kill Zone
+  $Name: KzAMB.ogg     150.0 	82739 ; * Ambience
+  $Name: KzARR1.OGG 	 1.0   950424 ; * Allied Arrival during Normal
+  $Name: KzERR1.ogg 	 1.0   596804 ; * Enemy Arrival during Normal
+  $Name: KzBAT1.OGG 	72.0	75715 ; * Battle 1
+  $Name: KzBAT2.OGG 	72.0 	75612 ; * Battle 2
+  $Name: KzBAT3.OGG 	79.0 	76513 ; * Battle 3
+  $Name: KzARR2.OGG 	 1.0   612536 ; * Allied Arrival during Battle
+  $Name: KzERR2.OGG 	 1.0   603294 ; * Enemy Arrival during Battle
+  $Name: KzVIC1.ogg 	 1.0   693376 ; * Victory 1 ( goal completed )
+  $Name: AFvictory3.ogg  1.0  5694346 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath2.ogg    1.0  2654208 ; * Goal Failed
+  $Name: AFdeath2.ogg    1.0  2654208 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start ; Music From Blue Planet
+$Soundtrack Name: 15: Second Reality 
+$Name: 2ndRAmb.ogg 24.0 85022 ; * Ambience 
+$Name: 2ndRGArv.ogg 2.0 170044 ; * Allied Arrival during Normal 
+$Name: 2ndREArv.ogg 4.0 170044 ; * Enemy Arrival during Normal 
+$Name: 2ndRBattle1.ogg 16.0 170044 ; * Battle 1 
+$Name: 2ndRBattle2.ogg 32.0 170044 ; * Battle 2 
+$Name: 2ndRBattle3.ogg 24.0 170044 ; * Battle 3 
+$Name: 2ndRGArv.ogg 2.0 170044 ; * Allied Arrival during Battle 
+$Name: 2ndREArv.ogg 4.0 170044 ; * Enemy Arrival during Battle 
+$Name: 2ndRGoal.ogg 4.0 170044 ; * Victory 1 ( goal completed ) 
+$Name: 2ndRVict.ogg 25.5 170044 ; * Victory 2 ( all enemies dead, goals completed ) 
+$Name: FS2_Dth_A01.wav 23.8 132300 ; * Goal Failed 
+$Name: 2ndRDeath.ogg 24.0 170044 ; * Player dies 
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 16: Nomads
+  $Name: NomAMB.ogg 	72.0 	81475 ; * Ambience
+  $Name: NomARR1.ogg 	 1.0   325530 ; * Allied Arrival during Normal
+  $Name: NomERR1.ogg 	 1.0   312704 ; * Enemy Arrival during Normal
+  $Name: NomBAT1.ogg 	16.0   157047 ; * Battle 1
+  $Name: NomBAT2.ogg 	20.0   157027 ; * Battle 2
+  $Name: NomBAT3.ogg 	24.0   156989 ; * Battle 3
+  $Name: NomARR2.ogg 	 1.0   320640 ; * Allied Arrival during Battle
+  $Name: NomERR2.ogg 	 1.0   636544 ; * Enemy Arrival during Battle
+  $Name: NomVIC1.ogg 	 1.0   975418 ; * Victory 1 ( goal completed )
+  $Name: AFvictory2.ogg  1.0  7497026 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath3.ogg    1.0  1872768 ; * Goal Failed
+  $Name: AFdeath3.ogg    1.0  1872768 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 17: Gladiator
+  $Name: GlaAMB.ogg 	105.0  114231 ; * Ambience
+  $Name: GlaARR1.ogg 	  1.0 1005864 ; * Allied Arrival during Normal
+  $Name: GlaERR1.ogg	  1.0  734592 ; * Enemy Arrival during Normal
+  $Name: GlaBAT1.ogg	 30.0  182926 ; * Battle 1
+  $Name: GlaBAT2.ogg	 52.0 	94471 ; * Battle 2
+  $Name: GlaBAT3.ogg	 49.0   94604 ; * Battle 3
+  $Name: GlaARR2.ogg	  1.0  336096 ; * Allied Arrival during Battle
+  $Name: GlaERR2.ogg	  1.0  473054 ; * Enemy Arrival during Battle
+  $Name: GlaVIC1.ogg	  1.0  475470 ; * Victory 1 ( goal completed )
+  $Name: GlaVIC2.ogg	  1.0 3280216 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath4.ogg 	  1.0 4307352 ; * Goal Failed
+  $Name: AFdeath4.ogg	  1.0 4307352 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 18: Frantic
+  $Name: FraAMB.ogg    100.0 	116777 ; * Ambience
+  $Name: FraARR1.ogg 	 1.0   1086268 ; * Allied Arrival during Normal
+  $Name: FraERR1.ogg 	 1.0 	847006 ; * Enemy Arrival during Normal
+  $Name: FraBAT1.ogg 	24.0 	159963 ; * Battle 1
+  $Name: FraBAT2.ogg 	32.0 	160260 ; * Battle 2
+  $Name: FraBAT3.ogg 	24.0 	159781 ; * Battle 3
+  $Name: FraARR2.ogg 	 1.0 	645788 ; * Allied Arrival during Battle
+  $Name: FraERR2.ogg 	 1.0 	641042 ; * Enemy Arrival during Battle
+  $Name: FraVIC1.ogg 	 1.0 	606206 ; * Victory 1 ( goal completed )
+  $Name: AFvictory3.ogg  1.0   5694346 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: AFdeath2.ogg    1.0   2654208 ; * Goal Failed
+  $Name: AFdeath2.ogg    1.0   2654208 ; * Player dies
+#SoundTrack End 
+
+#SoundTrack Start 
+$Soundtrack Name: 19: The Horde
+  $Name: HorAMB.ogg    107.0 	88200 ; * Ambience
+  $Name: HorARR1.ogg 	 1.0   567316 ; * Allied Arrival during Normal
+  $Name: HorERR1.ogg 	 1.0   229320 ; * Enemy Arrival during Normal
+  $Name: HorBAT1.ogg 	93.0 	94181 ; * Battle 1
+  $Name: HorBAT2.ogg 	99.0 	93903 ; * Battle 2
+  $Name: HorBAT3.ogg   110.0 	79263 ; * Battle 3
+  $Name: HorARR2.ogg	 1.0   943262 ; * Allied Arrival during Battle
+  $Name: HorERR2.ogg	 1.0   469552 ; * Enemy Arrival during Battle
+  $Name: HorVIC1.ogg	 1.0   735872 ; * Victory 1 ( goal completed )
+  $Name: HorVIC2.ogg	 1.0  6423886 ; * Victory 2 ( all enemies dead, goals completed )
+  $Name: HorFAIL.ogg	 1.0  6558848 ; * Goal Failed
+  $Name: HorFAIL.ogg	 1.0  6558848 ; * Player dies
+#SoundTrack End
+
+#Menu Music Start 
+
+$Name: Brief8 
+$Filename: brief08.ogg 
+
+$Name: Brief9 
+$Filename: brief09.ogg
+
+$Name: Brief10 
+$Filename: Brief10.ogg
+
+$Name: Brief11 
+$Filename: Brief11.ogg 
+
+$Name: Brief12 
+$Filename: Brief12.ogg
+
+$Name: Brief13 
+$Filename: Brief13.ogg
+
+$Name: Brief14 
+$Filename: Brief14.ogg
+
+$Name: Brief15 
+$Filename: Brief15.ogg   
+
+$Name: Reconciliation 
+$Filename: Reconciliation.ogg
+
+$Name: Anthem 
+$Filename: Anthem.ogg  
+ 
+$Name: Aney 
+$Filename: aney.ogg 
+
+$Name: Cinema 
++nocreate 
+$Filename: CHF.ogg
+
+
+#Menu Music End 

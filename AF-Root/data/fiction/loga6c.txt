@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VWLZ-001 $}
+$b{/UPLOADER: $VLT. $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>KPFB-503-DYN-07771 $}
+
+$B{Personal Log:
+October 7, 2370
+Gamma Draconis $}
+
+The NTF's supreme commander, Admiral Bosch made a project once and it was his own demise. It's called ETAK. The GTVA had all his research data and kept it locked in their vault. But three weeks ago due the recent events, they have decided to reopen the project and found good results so far. Discoveries that can help win this war. Bosch was researching to make communication with the Shivans possible. Our scientist built a modified ETAK device capable of monitoring Shivan chatters. High Command gathered the best decryptors and xenoliguists they can find and assembled a team to work on deciphering the Shivan language straightaway. At present, we can fairly understand the Shivans now. The enemy should know who they're dealing with.
+
+$b{/<END OF LOG> $}

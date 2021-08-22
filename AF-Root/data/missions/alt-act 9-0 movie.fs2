@@ -1,0 +1,2659 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("In Flagrante - movie", -1)
+$Author: Herkie
+$Created: 10/04/16 at 17:44:46
+$Modified: 07/02/17 at 19:24:39
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 3080
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: 4017.646484, 2594.882813, 9715.866211
++Viewer orient:
+	-0.683368, 0.000006, 0.730074,
+	-0.316944, 0.900850, -0.296675,
+	-0.657689, -0.434131, -0.615610
+
+
+$Load Screen 640:	LoadAct9S.dds
+$Load Screen 1024:	LoadAct9L.dds
+
+$Skybox Model: ShivBox.pof
+
+$AI Profile: AF2
+
+#Sexp_variables
+
+$Variables:
+(
+		0		"CamTracker1"		"0"		"number"
+		1		"CamTracker2"		"0"		"number"
+		2		"CamTracker3"		"0"		"number"
+)
+
+#Command Briefing
+
+#Briefing
+$start_briefing
+$num_stages: 0
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 0
+
+#Players		;! 1 total
+
+$Starting Shipname: alpha 1
+$Ship Choices: (
+	"GTF Ulysses"	5
+	"GTF Hercules"	5
+	"GTF Hercules Mark II"	5
+	"GTF Ares"	5
+	"GTF Erinyes"	5
+	"GTF Loki"	5
+	"GTF Pegasus"	5
+	"GTF Perseus"	5
+	"GTF Myrmidon"	5
+	"SF Mara (terrans)"	5
+	"GTB Artemis"	5
+	"GTB Artemis D.H."	5
+	"GTB Medusa"	5
+	"GTB Ursa"	5
+	"GTB Zeus"	5
+	"GTB Boanerges"	5
+	"GVF Ptah"	5
+	"GTF Enforcer"	5
+	"GTF Falcon"	5
+	"GTF Sparrow"	5
+	"GTF Dark Angel"	5
+	"GTF Phoenix"	5
+	"GTF Avalanche"	5
+	"GTF Raptor"	5
+	"GTB Albatross"	5
+	"SOC Eagle"	5
+	"GTTB Armageddon"	5
+	"SB Seraphim (Terrans)"	5
+	"XJR Phantom"	5
+	"TF Tiger"	5
+	"TF Ghost"	5
+	"UPC Raider"	5
+	"UPC Scorpion"	5
+	"Spacesuit"	5
+)
+
++Weaponry Pool: (
+	"Subach HL-7"	17
+	"Subach HL-D"	16
+	"Mekhu HL-7"	16
+	"Mekhu HL-7D"	16
+	"Akheton SDG"	16
+	"Morning Star"	16
+	"MorningStar D"	16
+	"Prometheus R"	17
+	"Prometheus S"	16
+	"Prometheus D"	16
+	"Maxim"	16
+	"Maxim D"	16
+	"UD-8 Kayser"	16
+	"UD-D Kayser"	16
+	"Circe"	16
+	"Lamprey"	16
+	"Targeting Laser"	16
+	"Skyrail"	16
+	"Ripper"	16
+	"Devastator"	16
+	"Starfury"	16
+	"Blizzard"	16
+	"Mega Laser"	16
+	"Heavy Laser"	16
+	"Railgun"	16
+	"Ion Cannon#Player"	16
+	"AM Cannon"	16
+	"AM Cannon MK II"	16
+	"Rockeye"	500
+	"Rockeye D"	500
+	"Tempest"	500
+	"Tempest D"	500
+	"Hornet"	500
+	"Hornet D"	500
+	"Hornet#Weak"	500
+	"Tornado"	500
+	"Tornado D"	500
+	"Harpoon"	516
+	"Harpoon D"	500
+	"Harpoon#Weak"	500
+	"Trebuchet"	500
+	"TAG-A"	500
+	"TAG-B"	500
+	"TAG-C"	500
+	"Piranha"	500
+	"Stiletto II"	500
+	"Infyrno"	500
+	"Infyrno D"	500
+	"Cyclops"	500
+	"Cyclops#short"	500
+	"Helios"	500
+	"EMP Adv."	500
+	"Rockeye#Shivan"	500
+	"Rockeye D#Shivan"	500
+	"Tempest#Shivan"	500
+	"Tempest D#Shivan"	500
+	"Hornet#Shivan"	500
+	"Hornet D#Shivan"	500
+	"Hornet#Weak#Shivan"	500
+	"Tornado#Shivan"	500
+	"Tornado D#Shivan"	500
+	"Harpoon#Shivan"	500
+	"Harpoon D#Shivan"	500
+	"Harpoon#Weak#Shivan"	500
+	"Trebuchet#Shivan"	500
+	"Piranha#Shivan"	500
+	"Shivan Disruptor"	500
+	"Shivan Area Bomb"	500
+	"Shivan Bomb"	500
+	"Shivan Bomb#Short"	500
+	"Shivan Megabomb"	500
+	"EMP Adv.#Shivan"	500
+	"Screamer"	500
+	"Hunter"	500
+	"Hellstorm"	500
+	"Widowmaker"	500
+)
+
+#Objects		;! 50 total
+
+$Name: alpha 1		;! Object #0
+$Class: GTF Ulysses
+$Team: Friendly
+$Location: -3119.073242, 0.001080, 1031.416748
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "player-start" "invulnerable" "hidden-from-sensors" "stealth" )
++Flags2: ( "no-subspace-drive" "primaries-locked" "secondaries-locked" "afterburners-locked" "immobile" "cloaked" "ship-locked" "weapons-locked" "no-collide" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Knossos 1		;! Object #1
+$Class: Knossos
+$Team: Hostile
+$Location: -4.731514, -1284.478394, 64.916054
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "no-shields" "invulnerable" "beam-protect-ship" "flak-protect-ship" "laser-protect-ship" "missile-protect-ship" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: GTDc Warlock 2		;! Object #2
+$Class: GTDc Warlock
+$Team: Friendly
+$Location: -53.599998, -1050.000000, -2343.000000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Warlock Point" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
++Subsystem: turret45
++Subsystem: turret46
++Subsystem: turret47
++Subsystem: turret48
++Subsystem: turret49
++Subsystem: turret50
++Subsystem: turret51
++Subsystem: turret52
+$Arrival Location: Hyperspace
++Arrival Delay: 8
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10000
+
+$Name: GTCv Copernicus 3		;! Object #3
+$Class: GTCv Copernicus
+$Team: Friendly
+$Location: -1145.225342, -1648.859863, -11.437413
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Copernicus Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
++Subsystem: Turret17
++Subsystem: Turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
++Arrival Delay: 6
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GTCv Olympus 4		;! Object #4
+$Class: GTCv Olympus
+$Team: Friendly
+$Location: 1337.474609, -1919.648560, -578.494995
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Olympus Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
++Arrival Delay: 7
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 40
+
+$Name: GTC Vigilant 5		;! Object #5
+$Class: GTC Vigilant
+$Team: Friendly
+$Location: 560.807983, -1948.131836, 882.025879
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Vigilant Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
+$Arrival Location: Hyperspace
++Arrival Delay: 5
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Scene 1 Raks 1		;! Object #6
+$Class: SC Rakshasa
+$Team: Hostile
+$Location: 8185.006348, 3795.832275, 6491.300293
+$Orientation:
+	-0.339852, 0.000000, 0.940479,
+	-0.382668, 0.913479, -0.138281,
+	-0.859108, -0.406886, -0.310448
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 1 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Scene 1 Garuda 1		;! Object #7
+$Class: SD Garuda
+$Team: Hostile
+$Location: 9655.065430, 5025.553223, 5951.382324
+$Orientation:
+	-0.339852, 0.000000, 0.940479,
+	-0.376105, 0.916555, -0.135910,
+	-0.862001, -0.399908, -0.311494
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
++Arrival Delay: 4
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 1 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: Scene 1 Moloch 1		;! Object #8
+$Class: SCv Moloch
+$Team: Hostile
+$Location: 8263.548828, 3408.456787, 6999.001953
+$Orientation:
+	-0.339852, 0.000000, 0.940479,
+	-0.376171, 0.916525, -0.135933,
+	-0.861972, -0.399978, -0.311483
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
+$Arrival Location: Hyperspace
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 1 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 440
+
+$Name: Scene 1 Moloch 2		;! Object #9
+$Class: SCv Moloch
+$Team: Hostile
+$Location: 8711.218750, 3754.500732, 6080.490723
+$Orientation:
+	-0.339852, 0.000000, 0.940479,
+	-0.376237, 0.916494, -0.135957,
+	-0.861943, -0.400048, -0.311473
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
+$Arrival Location: Hyperspace
++Arrival Delay: 2
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 1 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 440
+
+$Name: Scene 1 Ravana 1		;! Object #10
+$Class: SD Ravana
+$Team: Hostile
+$Location: 9405.899414, 3139.160889, 7122.335449
+$Orientation:
+	-0.339852, 0.000000, 0.940479,
+	-0.376072, 0.916571, -0.135898,
+	-0.862015, -0.399873, -0.311499
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
++Arrival Delay: 5
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 1 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: Scene 2 Luc 1		;! Object #11
+$Class: SD Lucifer
+$Team: Hostile
+$Location: -4919.799805, 1131.111694, 9790.200195
+$Orientation:
+	-0.691503, 0.000000, -0.722373,
+	0.076141, 0.994429, -0.072887,
+	0.718349, -0.105403, -0.687651
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Lucifer Path" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
+$Arrival Location: Hyperspace
++Arrival Delay: 4
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 2 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: Scene 2 Rav 1		;! Object #12
+$Class: SD Ravana
+$Team: Hostile
+$Location: -6341.299805, 144.500000, 8832.299805
+$Orientation:
+	-0.668170, 0.025646, -0.743566,
+	0.102361, 0.993071, -0.057730,
+	0.736933, -0.114686, -0.666166
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Rav 1 Path" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
++Arrival Delay: 5
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 2 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "invulnerable" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: Scene 2 Rav 2		;! Object #13
+$Class: SD Ravana
+$Team: Hostile
+$Location: -3835.100098, 416.508789, 11489.921875
+$Orientation:
+	-0.703521, -0.019424, -0.710409,
+	0.054494, 0.995209, -0.081178,
+	0.708582, -0.095824, -0.699092
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Rav 2 Path" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
++Arrival Delay: 6
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 2 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: Scene 2 Moloch 1		;! Object #14
+$Class: SCv Moloch
+$Team: Hostile
+$Location: -3438.156982, 507.657410, 7014.107422
+$Orientation:
+	-0.692205, 0.000000, -0.721701,
+	0.174342, 0.970383, -0.167217,
+	0.700326, -0.241571, -0.671704
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
+$Arrival Location: Hyperspace
++Arrival Delay: 2
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 2 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "invulnerable" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 440
+
+$Name: Scene 2 Moloch 3		;! Object #15
+$Class: SCv Moloch
+$Team: Hostile
+$Location: -2408.724854, -561.934082, 7114.253906
+$Orientation:
+	-0.690130, 0.000000, -0.723685,
+	0.120515, 0.986037, -0.114927,
+	0.713580, -0.166529, -0.680494
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 2 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 440
+
+$Name: Scene 2 Moloch 2		;! Object #16
+$Class: SCv Moloch
+$Team: Hostile
+$Location: -1849.553467, 287.656250, 7856.229004
+$Orientation:
+	-0.691451, 0.000000, -0.722423,
+	0.187287, 0.965811, -0.179257,
+	0.697724, -0.259248, -0.667811
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Scene 2 Shivans" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "invulnerable" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 440
+
+$Name: SF Astaroth 17		;! Object #17
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -937.646362, -449.502075, 6082.740234
+$Orientation:
+	-0.663644, 0.000000, -0.748049,
+	0.158879, 0.977185, -0.140952,
+	0.730982, -0.212392, -0.648503
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 18		;! Object #18
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -858.404175, -507.471191, 6054.254883
+$Orientation:
+	-0.670643, 0.000000, -0.741780,
+	0.148990, 0.979621, -0.134702,
+	0.726664, -0.200855, -0.656976
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 19		;! Object #19
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -913.212769, -560.150574, 5971.781250
+$Orientation:
+	-0.648444, 0.000000, -0.761263,
+	0.142072, 0.982431, -0.121017,
+	0.747888, -0.186627, -0.637051
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 20		;! Object #20
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -978.512207, -485.226105, 5924.463867
+$Orientation:
+	-0.630383, 0.000000, -0.776284,
+	0.160476, 0.978399, -0.130315,
+	0.759516, -0.206723, -0.616766
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 21		;! Object #21
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1036.438232, -507.471191, 5828.065430
+$Orientation:
+	-0.604010, 0.000000, -0.796977,
+	0.160409, 0.979535, -0.121571,
+	0.780667, -0.201272, -0.591649
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 22		;! Object #22
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1044.522217, -450.247375, 5874.389648
+$Orientation:
+	-0.611589, 0.000000, -0.791176,
+	0.170294, 0.976561, -0.131640,
+	0.772631, -0.215242, -0.597254
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 23		;! Object #23
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1162.538086, -507.471069, 5843.756836
+$Orientation:
+	-0.589126, 0.000000, -0.808041,
+	0.157600, 0.980795, -0.114903,
+	0.792523, -0.195040, -0.577812
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 24		;! Object #24
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -922.397827, -507.471069, 6015.468750
+$Orientation:
+	-0.654623, 0.000000, -0.755955,
+	0.150871, 0.979882, -0.130647,
+	0.740747, -0.199576, -0.641454
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 25		;! Object #25
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1075.413330, -564.699524, 5837.962891
+$Orientation:
+	-0.600290, 0.000000, -0.799782,
+	0.146383, 0.983108, -0.109870,
+	0.786272, -0.183028, -0.590150
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 26		;! Object #26
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1083.066650, -541.692444, 6011.318359
+$Orientation:
+	-0.630722, 0.000000, -0.776009,
+	0.142459, 0.983005, -0.115787,
+	0.762821, -0.183579, -0.620002
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 27		;! Object #27
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -840.831421, -630.706726, 5767.836914
+$Orientation:
+	-0.621716, 0.000000, -0.783243,
+	0.137769, 0.984409, -0.109357,
+	0.771031, -0.175896, -0.612023
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 28		;! Object #28
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1077.115479, -594.459045, 6047.828125
+$Orientation:
+	-0.637828, 0.000000, -0.770179,
+	0.129553, 0.985751, -0.107290,
+	0.759205, -0.168212, -0.628739
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 29		;! Object #29
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1000.471375, -593.295837, 6147.062012
+$Orientation:
+	-0.665017, 0.000000, -0.746828,
+	0.125636, 0.985748, -0.111873,
+	0.736185, -0.168226, -0.655539
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 30		;! Object #30
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -953.240479, -537.708801, 6213.358887
+$Orientation:
+	-0.682073, 0.000000, -0.731284,
+	0.133749, 0.983132, -0.124749,
+	0.718949, -0.182897, -0.670568
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 31		;! Object #31
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -832.418823, -585.904480, 6016.835938
+$Orientation:
+	-0.668307, 0.000000, -0.743886,
+	0.134563, 0.983503, -0.120891,
+	0.731614, -0.180891, -0.657282
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 32		;! Object #32
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1104.008545, -603.338928, 5825.555664
+$Orientation:
+	-0.593851, 0.000000, -0.804575,
+	0.137822, 0.985219, -0.101725,
+	0.792683, -0.171297, -0.585073
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Mara 33		;! Object #33
+$Class: SF Mara
+$Team: Hostile
+$Location: -1510.322021, -419.710693, 6127.745605
+$Orientation:
+	-0.600888, 0.000000, -0.799333,
+	0.150289, 0.982166, -0.112978,
+	0.785078, -0.188018, -0.590172
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 34		;! Object #34
+$Class: SF Mara
+$Team: Hostile
+$Location: -1335.891357, -370.607910, 6106.743652
+$Orientation:
+	-0.624078, 0.000000, -0.781362,
+	0.166001, 0.977172, -0.132586,
+	0.763525, -0.212450, -0.609831
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 35		;! Object #35
+$Class: SF Mara
+$Team: Hostile
+$Location: -1232.785156, -351.516449, 6196.321777
+$Orientation:
+	-0.658677, 0.000000, -0.752426,
+	0.165446, 0.975526, -0.144833,
+	0.734011, -0.219884, -0.642557
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 36		;! Object #36
+$Class: SF Mara
+$Team: Hostile
+$Location: -1286.380615, -384.395508, 6335.236328
+$Orientation:
+	-0.675252, 0.000000, -0.737587,
+	0.148284, 0.979583, -0.135752,
+	0.722528, -0.201039, -0.661466
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 37		;! Object #37
+$Class: SF Mara
+$Team: Hostile
+$Location: -1197.612061, -419.710693, 6362.750000
+$Orientation:
+	-0.694324, 0.000000, -0.719663,
+	0.138950, 0.981184, -0.134058,
+	0.706121, -0.193077, -0.681259
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 38		;! Object #38
+$Class: SF Mara
+$Team: Hostile
+$Location: -1175.804443, -530.068054, 6303.409180
+$Orientation:
+	-0.687702, 0.000000, -0.725993,
+	0.117366, 0.986846, -0.111176,
+	0.716443, -0.161663, -0.678656
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 39		;! Object #39
+$Class: SF Mara
+$Team: Hostile
+$Location: -1368.458496, -419.710693, 6465.187012
+$Orientation:
+	-0.684346, 0.000000, -0.729157,
+	0.132676, 0.983306, -0.124522,
+	0.716985, -0.181958, -0.672922
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 40		;! Object #40
+$Class: SF Mara
+$Team: Hostile
+$Location: -1365.332764, -419.710724, 6258.952148
+$Orientation:
+	-0.648934, 0.000000, -0.760845,
+	0.144429, 0.981817, -0.123185,
+	0.747011, -0.189828, -0.637134
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 41		;! Object #41
+$Class: SF Mara
+$Team: Hostile
+$Location: -1522.814087, -366.873108, 6339.621582
+$Orientation:
+	-0.639452, 0.000000, -0.768831,
+	0.150248, 0.980719, -0.124964,
+	0.754007, -0.195423, -0.627123
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 42		;! Object #42
+$Class: SF Mara
+$Team: Hostile
+$Location: -1612.930298, -472.807800, 6269.551758
+$Orientation:
+	-0.613265, 0.000000, -0.789878,
+	0.129173, 0.986538, -0.100291,
+	0.779244, -0.163536, -0.605008
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 43		;! Object #43
+$Class: SF Mara
+$Team: Hostile
+$Location: -1419.955322, -419.710693, 6185.029297
+$Orientation:
+	-0.626259, 0.000000, -0.779615,
+	0.148224, 0.981760, -0.119067,
+	0.765395, -0.190125, -0.614836
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 44		;! Object #44
+$Class: SF Mara
+$Team: Hostile
+$Location: -1413.416260, -419.710693, 6008.941406
+$Orientation:
+	-0.591065, 0.000000, -0.806624,
+	0.158882, 0.980409, -0.116423,
+	0.790822, -0.196971, -0.579485
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 45		;! Object #45
+$Class: SF Mara
+$Team: Hostile
+$Location: -1634.540405, -495.146271, 6103.010742
+$Orientation:
+	-0.577321, 0.000000, -0.816517,
+	0.131403, 0.986966, -0.092909,
+	0.805875, -0.160931, -0.569796
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 46		;! Object #46
+$Class: SF Mara
+$Team: Hostile
+$Location: -1462.524414, -465.989197, 6403.344238
+$Orientation:
+	-0.659694, 0.000000, -0.751535,
+	0.125517, 0.985955, -0.110178,
+	0.740979, -0.167014, -0.650428
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 47		;! Object #47
+$Class: SF Mara
+$Team: Hostile
+$Location: -1471.619629, -455.805969, 6763.604492
+$Orientation:
+	-0.714011, 0.000000, -0.700134,
+	0.110684, 0.987425, -0.112878,
+	0.691330, -0.158090, -0.705032
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 48		;! Object #48
+$Class: SF Mara
+$Team: Hostile
+$Location: -1095.221680, -419.710693, 6335.498535
+$Orientation:
+	-0.706678, 0.000000, -0.707535,
+	0.140678, 0.980034, -0.140507,
+	0.693409, -0.198828, -0.692569
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF Mara 49		;! Object #49
+$Class: SF Mara
+$Team: Hostile
+$Location: -1118.110840, -419.710724, 6452.150391
+$Orientation:
+	-0.721792, 0.000000, -0.692110,
+	0.133330, 0.981269, -0.139048,
+	0.679146, -0.192642, -0.708272
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Shivan Fighters Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in Shivan Fighters" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+#Wings		;! 1 total
+
+$Name: alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"alpha 1"
+)
++Hotkey: 0
++Flags: ( )
+
+#Events		;! 40 total
+
+$Formula: ( when 
+   ( true ) 
+   ( hud-disable-except-messages 1 ) 
+   ( lock-perspective ( true ) ) 
+   ( protect-ship "alpha 1" ) 
+   ( never-warp "alpha 1" ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "alpha 1" 
+      ( ai-play-dead 89 ) 
+   )
+)
++Name: Init
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when ( true ) ( fade-out 0 0 0 0 ) ) 
++Name: Initial Black
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      1 
+      "GTDc Warlock 2" 
+   )
+   ( turret-lock-all 
+      "GTDc Warlock 2" 
+      "GTCv Copernicus 3" 
+      "GTCv Olympus 4" 
+      "GTC Vigilant 5" 
+   )
+)
++Name: Lock Friendly Turrets
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      1 
+      "Scene 1 Garuda 1" 
+   )
+   ( turret-lock-all "Scene 1 Garuda 1" ) 
+)
++Name: Lock Enemy Turrets
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( change-soundtrack "<No Music>" ) 
+   ( play-sound-from-file "Tactics.ogg" ) 
+)
++Name: Set Music
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Sound Effects Control------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      5 
+      "GTDc Warlock 2" 
+   )
+   ( adjust-audio-volume 
+      "Effects" 
+      0 
+      2000 
+   )
+)
++Name: Sound FX Off
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Cue in Shivan Fighters" 
+      0 
+   )
+   ( adjust-audio-volume 
+      "Effects" 
+      100 
+      2000 
+   )
+)
++Name: Sound FX On
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Camera Trackers------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = @CamTracker1[0] 1 ) 
+   ( set-camera-facing-object 
+      "Cam Focus 1:1" 
+   )
+)
++Name: Cam Tracker 1
++Repeat Count: 20000
++Interval: 0
+
+$Formula: ( when 
+   ( = @CamTracker2[0] 1 ) 
+   ( set-camera-facing-object 
+      "Cam Focus 1A:1" 
+      2000 
+   )
+)
++Name: Cam Tracker 2
++Repeat Count: 50000
++Interval: 0
+
+$Formula: ( when 
+   ( = @CamTracker3[0] 1 ) 
+   ( set-camera-facing-object 
+      "GTDc Warlock 2" 
+   )
+)
++Name: Cam Tracker 3
++Repeat Count: 50000
++Interval: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Scene 1--------------------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Cam Pos A:1" ) 
+      ( get-object-y "Cam Pos A:1" ) 
+      ( get-object-z "Cam Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "Cam Focus 1:1" 
+   )
+   ( fade-in 4000 0 0 0 ) 
+)
++Name: Set Cam A Pos and Fade in
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Cam Pos B:1" ) 
+      ( get-object-y "Cam Pos B:1" ) 
+      ( get-object-z "Cam Pos B:1" ) 
+      20000 
+   )
+)
++Name: Move Cam A to Cam Pos B
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Set Cam A Pos and Fade in" 
+      4000 
+   )
+   ( do-nothing ) 
+)
++Name: Cue in Warlock and Friends
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Set Cam A Pos and Fade in" 
+      20000 
+   )
+   ( do-nothing ) 
+)
++Name: Cue in Scene 1 Shivans
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      10 
+      "Scene 1 Ravana 1" 
+   )
+   ( fade-out 2000 0 0 0 ) 
+)
++Name: Scene 1 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Cam Track Control---------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @CamTracker1[0] 1 ) 
+)
++Name: Activate Cam Tracker 1
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      0 
+      "GTDc Warlock 2" 
+   )
+   ( modify-variable @CamTracker1[0] 2 ) 
+   ( modify-variable @CamTracker2[0] 1 ) 
+)
++Name: Switch To Cam Tracker 2
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Scene 1 Fade Out" 
+      2000 
+   )
+   ( modify-variable @CamTracker2[0] 2 ) 
+)
++Name: Deactivate Cam Tracker 2
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Move Cam E to Cam Pos F" 
+      0 
+   )
+   ( modify-variable @CamTracker3[0] 1 ) 
+)
++Name: Activate Cam Tracker 3
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Scene 2--------------------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Scene 1 Fade Out" 
+      2000 
+   )
+   ( do-nothing ) 
+)
++Name: Cue in Shivan Fighters
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Cue in Shivan Fighters" 
+      500 
+   )
+   ( set-camera-position 
+      ( get-object-x "Cam Pos C:1" ) 
+      ( get-object-y "Cam Pos C:1" ) 
+      ( get-object-z "Cam Pos C:1" ) 
+   )
+   ( set-camera-facing-object 
+      "Cam Focus 2:1" 
+   )
+   ( fade-in 2000 0 0 0 ) 
+)
++Name: Set Cam C Pos and Fade in
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: Cue in Scene 2 Shivans
++Repeat Count: 1
++Interval: 1
++Chained: 20
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Cam Pos D:1" ) 
+      ( get-object-y "Cam Pos D:1" ) 
+      ( get-object-z "Cam Pos D:1" ) 
+      25000 
+   )
+   ( turret-free-all 
+      "GTDc Warlock 2" 
+      "GTCv Copernicus 3" 
+      "GTCv Olympus 4" 
+      "GTC Vigilant 5" 
+   )
+)
++Name: Move Cam C to Cam Pos D
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Move Cam C to Cam Pos D" 
+      23000 
+   )
+   ( fade-out 2000 0 0 0 ) 
+)
++Name: Scene 2 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ---Scene 3---------------------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Scene 2 Fade Out" 
+      2500 
+   )
+   ( set-camera-position 
+      ( get-object-x "Cam Pos E:1" ) 
+      ( get-object-y "Cam Pos E:1" ) 
+      ( get-object-z "Cam Pos E:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GTDc Warlock 2" 
+   )
+   ( fade-in 2000 0 0 0 ) 
+)
++Name: Set Cam E and Fade In
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "Cam Pos F:1" ) 
+      ( get-object-y "Cam Pos F:1" ) 
+      ( get-object-z "Cam Pos F:1" ) 
+      25000 
+   )
+)
++Name: Move Cam E to Cam Pos F
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Move Cam E to Cam Pos F" 
+      19000 
+   )
+   ( fade-out 4000 0 0 0 ) 
+)
++Name: Scene 3 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Scene 3 Fade Out" 
+      5000 
+   )
+   ( end-mission ) 
+)
++Name: END MOVIE
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ---Battle Events---------------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( has-time-elapsed 72 ) 
+   ( fire-beam 
+      "Scene 2 Rav 1" 
+      "turret01" 
+      "GTDc Warlock 2" 
+      "turret46" 
+   )
+   ( fire-beam 
+      "Scene 2 Rav 1" 
+      "turret02" 
+      "GTDc Warlock 2" 
+      "turret14" 
+   )
+)
++Name: Scene 2 Ravana 1 Fire Beam
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( has-time-elapsed 99 ) 
+   ( fire-beam 
+      "Scene 2 Moloch 2" 
+      "turret01" 
+      "GTDc Warlock 2" 
+      "turret06" 
+   )
+)
++Name: Scene 2 Moloch 2 Fire Beam
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( has-time-elapsed 104 ) 
+   ( fire-beam 
+      "Scene 2 Moloch 1" 
+      "turret01" 
+      "GTDc Warlock 2" 
+   )
+)
++Name: Scene 2 Moloch 1 Fire Beam
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( has-time-elapsed 80 ) 
+   ( beam-free-all "GTDc Warlock 2" ) 
+)
++Name: Beam Free All Warlock
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( true ) 
+   ( script-eval 
+      "jsv('Personal Log', 'a9a')" 
+   )
+)
++Name: Update Journal
++Repeat Count: 1
++Interval: 1
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 17 lists total
+
+$Name: Cam Focus 1
+$List: (		;! 1 points in list
+	( -4.700000, -1037.599976, 64.899902 )
+)
+
+$Name: Cam Pos A
+$List: (		;! 1 points in list
+	( -4422.799805, -1175.800049, 5642.000000 )
+)
+
+$Name: Cam Pos B
+$List: (		;! 1 points in list
+	( 8015.799805, 3752.500000, 6323.100098 )
+)
+
+$Name: Cam Focus 2
+$List: (		;! 1 points in list
+	( -3190.871338, 0.004318, 7937.015625 )
+)
+
+$Name: Cam Pos C
+$List: (		;! 1 points in list
+	( -445.599976, -656.500000, 5507.200195 )
+)
+
+$Name: Cam Pos D
+$List: (		;! 1 points in list
+	( 1490.099976, -1105.699951, 3765.399902 )
+)
+
+$Name: Shivan Fighters Point
+$List: (		;! 1 points in list
+	( 3093.699951, -1298.199951, 2339.399902 )
+)
+
+$Name: Warlock Point
+$List: (		;! 1 points in list
+	( -4.700000, -1050.000000, 6898.100098 )
+)
+
+$Name: Cam Focus 1A
+$List: (		;! 1 points in list
+	( -53.599998, -1050.000000, 2939.000000 )
+)
+
+$Name: Cam Pos E
+$List: (		;! 1 points in list
+	( 2978.100098, 992.500000, 1170.300049 )
+)
+
+$Name: Cam Pos F
+$List: (		;! 1 points in list
+	( -5453.600098, 2477.500000, 5176.500000 )
+)
+
+$Name: Copernicus Point
+$List: (		;! 1 points in list
+	( -1145.199951, -1648.900024, 5580.648926 )
+)
+
+$Name: Olympus Point
+$List: (		;! 1 points in list
+	( 1337.500000, -1919.599976, 5525.548828 )
+)
+
+$Name: Vigilant Point
+$List: (		;! 1 points in list
+	( 560.799988, -1948.099976, 6322.248535 )
+)
+
+$Name: Lucifer Path
+$List: (		;! 5 points in list
+	( 649.299500, 1131.000244, 5251.187988 )
+	( 4016.086670, 105.124008, 4423.976563 )
+	( 5001.768066, 461.739777, 6864.403809 )
+	( 4226.239746, 921.066101, 9239.296875 )
+	( 2947.801514, 910.571411, 11329.045898 )
+)
+
+$Name: Rav 1 Path
+$List: (		;! 2 points in list
+	( -2459.688477, -0.007802, 3385.422119 )
+	( -3845.784180, -0.008168, 1529.232910 )
+)
+
+$Name: Rav 2 Path
+$List: (		;! 2 points in list
+	( 4063.771484, -1361.497314, 5326.409668 )
+	( 6637.794922, -2752.454346, 4944.209473 )
+)
+
+#Messages		;! 0 total
+
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 3 total
+
+$Num stars: 500
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunBlue
++Angles: 0.296706 0.000000 5.183628
++Scale: 1.000000
+$Starbitmap: NebulH2-Main
++Angles: 5.532694 0.000000 2.426008
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb04
++Angles: 0.000000 0.000000 2.897247
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: galaxy4
++Angles: 1.029744 0.645772 2.251475
++ScaleX: 7.000000
++ScaleY: 9.000000
++DivX: 1
++DivY: 1
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: None
+$Briefing Music: None
+
+#End
+

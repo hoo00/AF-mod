@@ -1,0 +1,13 @@
+GTF RAPTOR
+
+Type:  Heavy Assault
+Maneuverability:  Medium
+Hull Armor:  Ultra Heavy Duranium
+Manufacturer:  Adhara Orbital Shipyard
+Length:  22 meters
+Gun Mounts:  6 Mounts (4,2)
+Missile Banks:  3 Banks
+Description:  Experimental Fighter
+
+
+Under heavy pressure, the research team of the GTF Phoenix endeavored to make up for their immense failure in their last project and they have succeeded. One of them came up with an idea of a 'cross-wing' design. An idea he took from a popular 20th century sci-fi movie while perusing the archives in a local museum. This concept became the foundation in designing the GTF Raptor and it did not disappoint. In reviewing the design of the Phoenix, they found that the spaceframe is not optimal for large missile compartments and the heavy gun mounts. Even with sophisticated inertial dampeners like the ones used by the GTF Dark Angel will not improve the Phoenix's agility. Hence, another type of frame is needed; the 'X-wing' configuration. The new design was promising and even better. The 4 engines at the tip of each wings balanced the centrifugal force and canceled out the excess inertia making it more maneuverable with heavy weapons like the Maxim or Blizzard SDG. The engines are outfitted with an additional retro boosters for reverse thrusts. The GTF Raptor is a formidable heavy assault craft that can match agile fighters, perform surgical strikes and hammer down large hostile ships. Still, some veteran pilots criticized the gun placements of the fighter making it difficult to target a fast moving enemy in close proximity and the weapon mounts are dangerously close to the engines.

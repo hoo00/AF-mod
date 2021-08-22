@@ -1,0 +1,13 @@
+GTF AVALANCHE
+
+Type:  Advanced Fighter
+Maneuverability:  Excellent
+Hull Armor:  Ultra Heavy Duranium
+Manufacturer:  B. Aquilae Orbital Shipyards
+Length:  27 meters
+Gun Mounts:  8 Mounts (4,4)
+Missile Banks:  3 Banks
+Description:  Experimental Fighter
+
+
+The military engineers working at the Armada Division pushed their designs even further to improve upon the GTF Dark Angel's specifications and performance. The result of this endeavor is the GTF Avalanche. It has 8 gun banks for pure killing power, larger payload capacity and 4 booster engines to enhance its afterburner speed and burn length. Flight records from the SOC's recon of Shiva and the abundant information from previous encounters with Shivan Dragon interceptors helped the war evaluators to examine the Shivan pilot tactics and dogfight patterns and incorporated these data in designing the Avalanche allowing it to almost mimic the Dragon's movements. The Avalanche is the most sophisticated and deadly fighter ever designed and can operate in the most precarious situations.

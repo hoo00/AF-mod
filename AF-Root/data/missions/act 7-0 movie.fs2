@@ -1,0 +1,6825 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("Bordering Chaos - Movie", -1)
+$Author: Herkie
+$Created: 08/27/16 at 13:14:12
+$Modified: 04/14/17 at 14:10:38
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 3080
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: -11179.512695, 4029.904541, 9386.731445
++Viewer orient:
+	-0.977674, 0.000002, 0.210129,
+	-0.129673, 0.786870, -0.603341,
+	-0.165346, -0.617119, -0.769302
+
+
+$Load Screen 640:	LoadAct7S.dds
+$Load Screen 1024:	LoadAct7L.dds
+
+$Skybox Model: Draconis.pof
+
+$AI Profile: AF2
+
+#Sexp_variables
+
+$Variables:
+(
+		0		"AdharaMovieGo"		"0"		"number"
+		1		"Cam2Tracker"		"0"		"number"
+		2		"Cam3Tracker"		"0"		"number"
+		3		"Cam6Tracker"		"0"		"number"
+		4		"Cam7Tracker"		"0"		"number"
+		5		"DraconisMovieGo"		"0"		"number"
+)
+
+#Command Briefing
+
+#Briefing
+$start_briefing
+$num_stages: 0
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 0
+
+#Players		;! 1 total
+
+$Starting Shipname: alpha 1
+$Ship Choices: (
+	"GVF Ptah"	5
+)
+
++Weaponry Pool: (
+	"Ripper"	1
+	"Devastator"	1
+	"Screamer"	480
+	"Hunter"	180
+)
+
+#Objects		;! 145 total
+
+$Name: alpha 1		;! Object #0
+$Class: XJR Phantom
+$Team: Friendly
+$Location: 0.000000, 150.000000, -200.000000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "player-start" "invulnerable" )
++Flags2: ( "immobile" )
++Respawn priority: 0
++Group: 0
++Score: 8
+
+$Name: GD Scene 3 - A		;! Object #1
+$Class: SD Lucifer
+$Team: Hostile
+$Location: -5880.061523, 127.790192, 4813.015137
+$Orientation:
+	-0.009203, 0.000000, -0.999958,
+	0.000000, 1.000000, 0.000000,
+	0.999958, 0.000000, -0.009203
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 3" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 4
+$Departure Cue: ( true ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 3 - B		;! Object #2
+$Class: SD Garuda
+$Team: Hostile
+$Location: -2161.995361, 750.250916, 5410.139160
+$Orientation:
+	-0.009204, 0.000000, -0.999958,
+	0.000000, 1.000000, 0.000000,
+	0.999958, 0.000000, -0.009204
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 3" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 6
+$Departure Cue: ( true ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 3 - C		;! Object #3
+$Class: SD Garuda
+$Team: Hostile
+$Location: -1231.941895, -43.104980, 3546.853271
+$Orientation:
+	-0.009204, 0.000000, -0.999958,
+	0.000000, 1.000000, 0.000000,
+	0.999958, 0.000000, -0.009204
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 3" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 8
+$Departure Cue: ( true ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 3 - D		;! Object #4
+$Class: SD Ravana
+$Team: Hostile
+$Location: -2767.204834, 1050.453247, 3002.044922
+$Orientation:
+	-0.009204, 0.000000, -0.999958,
+	0.000000, 1.000000, 0.000000,
+	0.999958, 0.000000, -0.009204
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 3" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 7
+$Departure Cue: ( true ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 3 - E		;! Object #5
+$Class: SD Ravana
+$Team: Hostile
+$Location: -5003.796387, 814.526550, 6576.857910
+$Orientation:
+	-0.009204, 0.000000, -0.999958,
+	0.000000, 1.000000, 0.000000,
+	0.999958, 0.000000, -0.009204
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 3" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 5
+$Departure Cue: ( true ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 1 Ship - A		;! Object #6
+$Class: SD Lucifer
+$Team: Hostile
+$Location: -5545.776855, -0.005891, -18133.349609
+$Orientation:
+	0.682221, 0.000000, 0.731145,
+	0.000000, 1.000000, 0.000000,
+	-0.731145, 0.000000, 0.682221
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Primary Banks: ( "BFRed" )
++Subsystem: turret02
++Primary Banks: ( "BFRed" )
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 1 Ship - B		;! Object #7
+$Class: SD Garuda
+$Team: Hostile
+$Location: -968.936401, 1596.226685, -18738.562500
+$Orientation:
+	0.682221, 0.000000, 0.731145,
+	0.000000, 1.000000, 0.000000,
+	-0.731145, 0.000000, 0.682221
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 1 Ship - C		;! Object #8
+$Class: SD Garuda
+$Team: Hostile
+$Location: -7429.100098, -363.299988, -19916.900391
+$Orientation:
+	0.682221, 0.000000, 0.731145,
+	0.000000, 1.000000, 0.000000,
+	-0.731145, 0.000000, 0.682221
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 1 Ship - D		;! Object #9
+$Class: SD Ravana
+$Team: Hostile
+$Location: -3672.549316, 2546.727295, -20215.853516
+$Orientation:
+	0.682221, 0.000000, 0.731145,
+	0.000000, 1.000000, 0.000000,
+	-0.731145, 0.000000, 0.682221
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 1 Ship - E		;! Object #10
+$Class: SD Ravana
+$Team: Hostile
+$Location: -6096.275879, 1420.185791, -22178.523438
+$Orientation:
+	0.682221, 0.000000, 0.731145,
+	0.000000, 1.000000, 0.000000,
+	-0.731145, 0.000000, 0.682221
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 1 Ship - F		;! Object #11
+$Class: GTD Excalibur
+$Team: Friendly
+$Location: -14537.979492, -165.969498, -11092.613281
+$Orientation:
+	0.266643, -0.079915, -0.960476,
+	0.021377, 0.996802, -0.077002,
+	0.963558, 0.000000, 0.267499
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GD Scene 1 Ship - G		;! Object #12
+$Class: GTD Sovereign
+$Team: Friendly
+$Location: -12710.277344, -0.045377, -8310.628906
+$Orientation:
+	-0.024263, -0.556361, -0.830586,
+	-0.016245, 0.830941, -0.556124,
+	0.999573, 0.000000, -0.029199
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 1 Ship - H		;! Object #13
+$Class: GTD Stromberg
+$Team: Friendly
+$Location: -12188.783203, -1671.940308, -12894.198242
+$Orientation:
+	0.049551, -0.218230, -0.974639,
+	0.011081, 0.975897, -0.217948,
+	0.998710, 0.000000, 0.050775
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GD Scene 1 Ship - I		;! Object #14
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: -13228.487305, 873.818848, -12510.460938
+$Orientation:
+	-0.214906, -0.589145, -0.778925,
+	-0.156691, 0.808027, -0.567925,
+	0.963983, 0.000000, -0.265964
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 1 Ship - J		;! Object #15
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: -11374.717773, 450.564880, -9227.502930
+$Orientation:
+	-0.286997, -0.227977, -0.930408,
+	-0.067198, 0.973666, -0.217849,
+	0.955571, 0.000000, -0.294759
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 1 Ship - K		;! Object #16
+$Class: GTCv Coronis
+$Team: Friendly
+$Location: -10374.662109, -722.135742, -13273.615234
+$Orientation:
+	-0.065190, -0.333487, -0.940498,
+	-0.023060, 0.942755, -0.332689,
+	0.997606, 0.000000, -0.069148
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1100
+
+$Name: GD Scene 1 Ship - L		;! Object #17
+$Class: GTCv Coronis
+$Team: Friendly
+$Location: -15684.479492, -0.056207, -13320.414063
+$Orientation:
+	-0.376601, 0.247404, -0.892728,
+	0.096162, 0.968912, 0.227951,
+	0.921371, 0.000000, -0.388685
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1100
+
+$Name: GD Scene 2 Ship - 1		;! Object #18
+$Class: SD Garuda
+$Team: Hostile
+$Location: -9833.767578, 0.048042, 4094.704590
+$Orientation:
+	0.959034, 0.274024, 0.071864,
+	-0.270284, 0.961055, -0.057609,
+	-0.084852, 0.035825, 0.995749
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 2 Ship - 2		;! Object #19
+$Class: GTD Sovereign
+$Team: Friendly
+$Location: -11441.111328, 0.047840, 6025.222168
+$Orientation:
+	-0.951438, 0.276356, -0.135624,
+	0.273590, 0.961055, 0.038999,
+	0.141120, 0.000000, -0.989993
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 2 Ship - 3		;! Object #20
+$Class: GTCv Coronis
+$Team: Friendly
+$Location: -8849.299805, 599.099976, 2297.500000
+$Orientation:
+	-0.081055, -0.188859, 0.978653,
+	-0.015640, 0.982004, 0.188210,
+	-0.996587, -0.000050, -0.082550
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 50
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1100
+
+$Name: GD Scene 2 Ship - 4		;! Object #21
+$Class: SD Ravana
+$Team: Hostile
+$Location: -12741.900391, -1331.500000, 6146.200195
+$Orientation:
+	0.921061, -0.389418, 0.000000,
+	0.389418, 0.921061, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "3" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 2 Ship - 5		;! Object #22
+$Class: GTD Stromberg
+$Team: Friendly
+$Location: -8981.026367, 955.342407, 5266.562012
+$Orientation:
+	-0.881388, 0.470749, 0.039382,
+	0.469951, 0.882245, -0.028115,
+	-0.047980, -0.006273, -0.998829
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GD Scene 2 Ship - 6		;! Object #23
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: -13532.444336, 0.062625, 7953.001953
+$Orientation:
+	-0.850908, 0.522687, -0.052476,
+	0.521696, 0.852524, 0.032173,
+	0.061554, 0.000000, -0.998104
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "2" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 2 Ship - 7		;! Object #24
+$Class: GTD Excalibur
+$Team: Friendly
+$Location: -10503.125000, 1049.540527, 5253.561523
+$Orientation:
+	-0.988915, -0.139622, -0.050542,
+	-0.139279, 0.990200, -0.010245,
+	0.051477, -0.003092, -0.998670
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
++Subsystem: turret39
++Subsystem: turret40
++Subsystem: turret41
++Subsystem: turret42
++Subsystem: turret43
++Subsystem: turret44
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: GD Scene 2 Ship - 8		;! Object #25
+$Class: SD Lucifer
+$Team: Hostile
+$Location: -11334.991211, 1309.215454, 630.521240
+$Orientation:
+	0.930240, -0.350145, -0.109778,
+	0.352274, 0.935897, 0.000000,
+	0.102741, -0.038672, 0.993956
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Primary Banks: ( "BFRed" )
++Subsystem: turret02
++Primary Banks: ( "BFRed" )
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: GD Scene 2 Ship - 9		;! Object #26
+$Class: SD Ravana
+$Team: Hostile
+$Location: -7527.251953, -1098.857300, 1801.904541
+$Orientation:
+	0.968912, 0.247404, 0.000000,
+	-0.247404, 0.968912, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "4" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: GD Scene 2 Ship - 10		;! Object #27
+$Class: SD Garuda
+$Team: Hostile
+$Location: -12719.656250, 753.054077, 1377.808228
+$Orientation:
+	0.932202, 0.271179, -0.239712,
+	-0.211445, 0.945559, 0.247404,
+	0.293753, -0.179944, 0.938790
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Draconis Scene 2" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: AD Scene 4 - A		;! Object #28
+$Class: GTD Hecate
+$Team: Friendly
+$Location: 9181.258789, -240.048813, -6431.579102
+$Orientation:
+	0.990216, -0.139543, 0.000000,
+	0.139543, 0.990216, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: AD Scene 4 - B		;! Object #29
+$Class: GTD Hecate
+$Team: Friendly
+$Location: 11753.757813, 875.628845, -8379.640625
+$Orientation:
+	0.751716, 0.398609, 0.525388,
+	-0.326719, 0.917121, -0.228350,
+	-0.572867, 0.000000, 0.819648
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1300
+
+$Name: AD Scene 4 - C		;! Object #30
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 10514.144531, 0.002276, -5019.925293
+$Orientation:
+	0.948466, -0.119712, -0.293395,
+	0.114365, 0.992809, -0.035377,
+	0.295520, 0.000000, 0.955336
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: AD Scene 4 - D		;! Object #31
+$Class: GTCv Deimos
+$Team: Friendly
+$Location: 10151.017578, 416.710602, -4429.716797
+$Orientation:
+	0.700163, -0.434965, -0.566195,
+	0.338217, 0.900447, -0.273503,
+	0.628793, 0.000000, 0.777572
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: AD Scene 4 - E		;! Object #32
+$Class: GTC Aeolus
+$Team: Friendly
+$Location: 8867.335938, 341.970612, -8004.408203
+$Orientation:
+	0.582954, 0.563626, -0.585226,
+	-0.368394, 0.825335, 0.427910,
+	0.724189, -0.033858, 0.688770
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: AD Scene 4 - F		;! Object #33
+$Class: GTC Aeolus
+$Team: Friendly
+$Location: 9231.794922, 401.651306, -8154.570801
+$Orientation:
+	0.656016, 0.293078, -0.695519,
+	-0.148191, 0.953606, 0.262056,
+	0.740054, -0.068843, 0.669014
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Invader Lucifer		;! Object #34
+$Class: SD Lucifer
+$Team: Hostile
+$Location: 18961.466797, 827.226074, -6232.270996
+$Orientation:
+	0.010796, 0.000000, 0.999942,
+	0.000000, 1.000000, 0.000000,
+	-0.999942, 0.000000, 0.010796
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Primary Banks: ( "BFRed" )
++Subsystem: turret02
++Primary Banks: ( "BFRed" )
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in the Invaders" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1000
+
+$Name: Invader Garuda 1		;! Object #35
+$Class: SD Garuda
+$Team: Hostile
+$Location: 17374.306641, -517.446716, -7629.028809
+$Orientation:
+	0.010796, 0.000000, 0.999942,
+	0.000000, 1.000000, 0.000000,
+	-0.999942, 0.000000, 0.010796
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in the Invaders" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: Invader Garuda 2		;! Object #36
+$Class: SD Garuda
+$Team: Hostile
+$Location: 16695.083984, 1248.864136, -4468.074219
+$Orientation:
+	0.010796, 0.000000, 0.999942,
+	0.000000, 1.000000, 0.000000,
+	-0.999942, 0.000000, 0.010796
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01m
++Subsystem: turret02m
++Subsystem: turret03m
++Subsystem: turret04e
++Subsystem: turret05e
++Subsystem: turret06e
++Subsystem: turret07e
++Subsystem: turret08e
++Subsystem: turret09e
++Subsystem: turret10e
++Subsystem: turret11e
++Subsystem: turret12e
++Subsystem: turret13e
++Subsystem: turret14b
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: turret34
++Subsystem: turret35
++Subsystem: turret36
++Subsystem: turret37
++Subsystem: turret38
+$Arrival Location: Hyperspace
++Arrival Delay: 2
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in the Invaders" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: Invader Ravana 1		;! Object #37
+$Class: SD Ravana
+$Team: Hostile
+$Location: 21525.375000, 219.042618, -5240.050781
+$Orientation:
+	0.010796, 0.000000, 0.999942,
+	0.000000, 1.000000, 0.000000,
+	-0.999942, 0.000000, 0.010796
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in the Invaders" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: Invader Ravana 2		;! Object #38
+$Class: SD Ravana
+$Team: Hostile
+$Location: 21372.453125, 2444.300293, -7515.591797
+$Orientation:
+	0.010796, 0.000000, 0.999942,
+	0.000000, 1.000000, 0.000000,
+	-0.999942, 0.000000, 0.010796
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
++Arrival Delay: 4
+$Arrival Cue: ( is-event-true-delay 
+   "Cue in the Invaders" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 670
+
+$Name: SCN 1		;! Object #39
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -636.610718, 2183.624023, -19069.994141
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SCN 2		;! Object #40
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -633.260376, 2183.624268, -19145.597656
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SCN 3		;! Object #41
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -500.684509, 2183.624023, -19081.945313
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SCN 4		;! Object #42
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -517.705261, 2161.072266, -19180.867188
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SCN 5		;! Object #43
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -647.953369, 2183.624268, -19210.794922
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SCN 6		;! Object #44
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -403.616516, 2183.624023, -19260.103516
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SCN 7		;! Object #45
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -402.129395, 2145.953125, -19171.652344
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SCN 8		;! Object #46
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -496.231018, 2183.624023, -19303.093750
+$Orientation:
+	0.589788, 0.000000, 0.807558,
+	0.000000, 1.000000, 0.000000,
+	-0.807558, 0.000000, 0.589788
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: MCN 1		;! Object #47
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6256.991211, 162.169556, -18884.140625
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 2		;! Object #48
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6319.809570, 252.966827, -18911.240234
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 3		;! Object #49
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6145.962891, 35.519058, -18945.449219
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 4		;! Object #50
+$Class: SF Manticore
+$Team: Hostile
+$Location: -5985.831055, 272.558472, -18913.371094
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 5		;! Object #51
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6017.446777, 252.966812, -19003.914063
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 6		;! Object #52
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6059.326660, 103.595955, -18770.373047
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 7		;! Object #53
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6110.025879, 252.966812, -19023.728516
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 8		;! Object #54
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6466.145020, 189.918976, -18819.494141
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 9		;! Object #55
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6194.763672, 268.800720, -18825.423828
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 10		;! Object #56
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6116.694824, 252.966812, -18651.388672
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 12		;! Object #57
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6243.717285, 234.254959, -18669.062500
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 12a		;! Object #58
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6394.733887, 189.989212, -18614.880859
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 14		;! Object #59
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6357.772461, 252.966888, -18788.000000
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 15		;! Object #60
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6276.973145, 174.889587, -19035.851563
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MCN 16		;! Object #61
+$Class: SF Manticore
+$Team: Hostile
+$Location: -6076.859375, 49.731495, -18916.269531
+$Orientation:
+	0.637151, 0.000000, 0.770739,
+	0.000000, 1.000000, 0.000000,
+	-0.770739, 0.000000, 0.637151
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: GTF 1		;! Object #62
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13441.825195, -111.563423, -7494.075684
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 2		;! Object #63
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13379.493164, -155.016922, -7386.621582
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 3		;! Object #64
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13313.928711, -184.703537, -7395.591797
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 4		;! Object #65
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13375.643555, -165.996506, -7448.904785
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 5		;! Object #66
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13262.688477, -155.016861, -7460.057129
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 6		;! Object #67
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13255.184570, -135.140793, -7397.755371
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 7		;! Object #68
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13446.165039, -191.039719, -7320.039063
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 8		;! Object #69
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13494.491211, -155.016800, -7402.431152
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 9		;! Object #70
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13212.289063, -113.791634, -7458.933594
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF 10		;! Object #71
+$Class: GTF Perseus
+$Team: Friendly
+$Location: -13186.347656, -155.016922, -7370.421387
+$Orientation:
+	0.040785, 0.000000, -0.999168,
+	0.000000, 1.000000, 0.000000,
+	0.999168, 0.000000, 0.040785
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 3 Pos B" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 3 Activate Cam3Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: MAR 1		;! Object #72
+$Class: SF Mara
+$Team: Hostile
+$Location: -5136.269531, 386.750977, -19928.771484
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 2		;! Object #73
+$Class: SF Mara
+$Team: Hostile
+$Location: -5169.772461, 424.243561, -19848.429688
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 3		;! Object #74
+$Class: SF Mara
+$Team: Hostile
+$Location: -5102.707031, 453.862549, -19753.957031
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 4		;! Object #75
+$Class: SF Mara
+$Team: Hostile
+$Location: -4942.748535, 423.160919, -19776.554688
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 5		;! Object #76
+$Class: SF Mara
+$Team: Hostile
+$Location: -5031.543945, 389.996094, -19850.619141
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 6		;! Object #77
+$Class: SF Mara
+$Team: Hostile
+$Location: -5212.478027, 366.501038, -19933.082031
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 7		;! Object #78
+$Class: SF Mara
+$Team: Hostile
+$Location: -5121.848145, 412.559509, -20030.419922
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 8		;! Object #79
+$Class: SF Mara
+$Team: Hostile
+$Location: -4971.185547, 480.453430, -19961.818359
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 9		;! Object #80
+$Class: SF Mara
+$Team: Hostile
+$Location: -5094.863281, 319.303955, -19967.746094
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 10		;! Object #81
+$Class: SF Mara
+$Team: Hostile
+$Location: -5104.604004, 313.974121, -19909.753906
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 11		;! Object #82
+$Class: SF Mara
+$Team: Hostile
+$Location: -4921.753906, 376.161804, -19900.445313
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 12		;! Object #83
+$Class: SF Mara
+$Team: Hostile
+$Location: -4973.670410, 341.596008, -19807.427734
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 12a		;! Object #84
+$Class: SF Mara
+$Team: Hostile
+$Location: -4994.533203, 283.620636, -19885.941406
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 14		;! Object #85
+$Class: SF Mara
+$Team: Hostile
+$Location: -5119.329590, 341.596008, -19825.232422
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: MAR 15		;! Object #86
+$Class: SF Mara
+$Team: Hostile
+$Location: -5009.896484, 283.577240, -19997.371094
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "MCN Point" 89 ) ( ai-chase-any 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "GD Cam 2 Activate Cam2Tracker" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: SF 1		;! Object #87
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -769.634094, 1976.354004, -19030.449219
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 2		;! Object #88
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -797.150513, 1976.354004, -19142.968750
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 3		;! Object #89
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -483.670227, 1976.354004, -18973.388672
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 4		;! Object #90
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -618.076904, 2034.729858, -19144.912109
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 5		;! Object #91
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -589.481506, 1976.354004, -19027.558594
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 6		;! Object #92
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -659.376648, 1976.354004, -19207.943359
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 7		;! Object #93
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -537.888306, 2028.161987, -19335.955078
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 8		;! Object #94
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -516.381653, 2027.166016, -19411.144531
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 9		;! Object #95
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -349.212830, 1976.354004, -19399.201172
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 10		;! Object #96
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -312.993317, 1976.354004, -19238.851563
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 11		;! Object #97
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -417.470154, 2054.064941, -19277.980469
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF 12		;! Object #98
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -417.154236, 1976.354004, -19177.960938
+$Orientation:
+	0.703845, 0.000000, 0.710353,
+	0.000000, 1.000000, 0.000000,
+	-0.710353, 0.000000, 0.703845
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "GD Camera 1 Pos A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 1		;! Object #99
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10649.578125, 217.532669, 4027.716553
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 2		;! Object #100
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10747.072266, 217.532700, 3829.758057
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 3		;! Object #101
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10497.367188, 217.158981, 3686.360107
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 4		;! Object #102
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10222.283203, 234.232254, 3819.984619
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 5		;! Object #103
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10100.995117, 230.320328, 4094.466553
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 6		;! Object #104
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10168.070313, 217.532730, 4433.619141
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 7		;! Object #105
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10266.791016, 213.547653, 4036.864990
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 8		;! Object #106
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10516.196289, 217.532715, 4191.417969
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 9		;! Object #107
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10772.248047, 217.532684, 4262.981445
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 10		;! Object #108
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10990.956055, 217.532761, 4231.926758
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 11		;! Object #109
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -11110.845703, 217.532639, 3932.555420
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 12		;! Object #110
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10909.226563, 217.135696, 3508.098877
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 12a		;! Object #111
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10223.304688, 233.001816, 3429.619629
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 14		;! Object #112
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -9965.885742, 540.607300, 3833.009277
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 15		;! Object #113
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -9845.101563, 506.732605, 4147.427734
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 16		;! Object #114
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -9957.203125, 222.275345, 4684.565430
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 17		;! Object #115
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10490.756836, 217.532700, 4726.328125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 18		;! Object #116
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10306.428711, 217.532761, 4409.328125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 19		;! Object #117
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10840.396484, 217.532700, 4558.617188
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 20		;! Object #118
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10574.356445, 216.720749, 3470.734131
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 21		;! Object #119
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10056.171875, 217.532730, 3609.265869
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: AST 22		;! Object #120
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -10338.235352, 217.532761, 3853.830811
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: ERN 1		;! Object #121
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10785.662109, 640.983826, 4054.848877
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 2		;! Object #122
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10635.924805, 640.983643, 3872.897217
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 3		;! Object #123
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10455.164063, 640.983826, 3913.779053
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 4		;! Object #124
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10475.952148, 640.983765, 4034.171631
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 5		;! Object #125
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10258.424805, 640.983765, 4063.754639
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 6		;! Object #126
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -9974.022461, 640.983765, 3947.946045
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 7		;! Object #127
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10080.791992, 640.983765, 3659.928955
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 8		;! Object #128
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10205.104492, 640.983704, 3795.502686
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 9		;! Object #129
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10404.407227, 640.983704, 3637.593994
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 10		;! Object #130
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10571.615234, 640.983704, 3514.670166
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 11		;! Object #131
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10694.932617, 640.983704, 3681.183838
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 12		;! Object #132
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10860.212891, 653.976379, 3815.481689
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 12A		;! Object #133
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10848.021484, 640.983704, 3644.851807
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: ERN 14		;! Object #134
+$Class: GTF Erinyes
+$Team: Friendly
+$Location: -10557.943359, 640.983704, 4172.514648
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase-any 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus R" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-msecs-delay 
+   "GD Fade in and Cam 3 Move" 
+   7000 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 900
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: GTF Perseus 135		;! Object #135
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8611.731445, 464.230194, -7188.784668
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 136		;! Object #136
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8601.512695, 406.568329, -7083.417480
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 137		;! Object #137
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8465.465820, 464.230133, -7384.996094
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 138		;! Object #138
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8579.879883, 361.109802, -7534.517090
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 139		;! Object #139
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8597.573242, 406.216370, -7685.735352
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 140		;! Object #140
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8573.083008, 464.230255, -7850.803223
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 141		;! Object #141
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8636.353516, 309.347992, -7638.962891
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 142		;! Object #142
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8686.102539, 532.541992, -7400.743652
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 143		;! Object #143
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8717.579102, 464.230255, -7026.045898
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+$Name: GTF Perseus 144		;! Object #144
+$Class: GTF Perseus
+$Team: Friendly
+$Location: 8635.762695, 372.342102, -6905.975098
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "AD Scene 4 - A" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Adhara Scene 4" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 14
+
+#Wings		;! 1 total
+
+$Name: alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"alpha 1"
+)
++Hotkey: 0
++Flags: ( )
+
+#Events		;! 78 total
+
+$Formula: ( when 
+   ( true ) 
+   ( never-warp "alpha 1" ) 
+   ( lock-perspective ( true ) ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "alpha 1" 
+      ( ai-play-dead 89 ) 
+   )
+   ( hud-disable-except-messages 1 ) 
+)
++Name: Init
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when ( true ) ( fade-out 0 0 0 0 ) ) 
++Name: Black Initial
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( change-soundtrack "<No Music>" ) 
+   ( play-sound-from-file "Borders.ogg" ) 
+   ( adjust-audio-volume "Music" 100 ) 
+   ( adjust-audio-volume "Effects" 40 ) 
+)
++Name: Start Music
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ====Gamma Draconis Scene 1 ====
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-time-elapsed 1 ) 
+   ( modify-variable 
+      @DraconisMovieGo[0] 
+      1 
+   )
+)
++Name: Start Movie Gamma Draconis
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = @DraconisMovieGo[0] 1 ) 
+   ( do-nothing ) 
+)
++Name: Set Up Draconis Scene 1
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----GD Scene 1 Cam Work-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 1 Pos A:1" ) 
+      ( get-object-y "GD Camera 1 Pos A:1" ) 
+      ( get-object-z "GD Camera 1 Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GD Camera 1 Focus A:1" 
+   )
+)
++Name: GD Cam 1
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 5000 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 1 Pos B:1" ) 
+      ( get-object-y "GD Camera 1 Pos B:1" ) 
+      ( get-object-z "GD Camera 1 Pos B:1" ) 
+      15000 
+   )
+)
++Name: GD Fade in and Camera 1 Move
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in and Camera 1 Move" 
+      12000 
+   )
+   ( fade-out 3000 0 0 0 ) 
+)
++Name: GD Camera 1 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 1 Fade Out" 
+      3000 
+   )
+   ( set-camera-position 
+      ( get-object-x "GD Camera 2 Pos A:1" ) 
+      ( get-object-y "GD Camera 2 Pos A:1" ) 
+      ( get-object-z "GD Camera 2 Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GD Camera 2 Focus A:1" 
+   )
+   ( modify-variable @Cam2Tracker[0] 1 ) 
+)
++Name: GD Cam 2 Activate Cam2Tracker
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 3000 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 2 Pos B:1" ) 
+      ( get-object-y "GD Camera 2 Pos B:1" ) 
+      ( get-object-z "GD Camera 2 Pos B:1" ) 
+      15000 
+   )
+)
++Name: GD Fade in and Cam 2 Move
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in and Cam 2 Move" 
+      14000 
+   )
+   ( fade-out 1000 0 0 0 ) 
+)
++Name: GD Camera 2 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 2 Fade Out" 
+      1000 
+   )
+   ( modify-variable @Cam2Tracker[0] 2 ) 
+)
++Name: Cancel Cam2Tracker
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 3 Pos A:1" ) 
+      ( get-object-y "GD Camera 3 Pos A:1" ) 
+      ( get-object-z "GD Camera 3 Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GD Camera 3 Focus A:1" 
+   )
+   ( modify-variable @Cam3Tracker[0] 1 ) 
+   ( clear-subtitles ) 
+)
++Name: GD Cam 3 Activate Cam3Tracker
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 1000 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 3 Pos B:1" ) 
+      ( get-object-y "GD Camera 3 Pos B:1" ) 
+      ( get-object-z "GD Camera 3 Pos B:1" ) 
+      15000 
+   )
+)
++Name: GD Fade in and Cam 3 Move
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in and Cam 3 Move" 
+      14000 
+   )
+   ( fade-out 1000 0 0 0 ) 
+)
++Name: GD Camera 3 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 3 Fade Out" 
+      1000 
+   )
+   ( modify-variable @Cam3Tracker[0] 2 ) 
+)
++Name: Cancel Cam3Tracker
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Cancel Cam3Tracker" 
+      100 
+   )
+   ( ship-vanish 
+      "GD Scene 1 Ship - A" 
+      "GD Scene 1 Ship - B" 
+      "GD Scene 1 Ship - C" 
+      "GD Scene 1 Ship - D" 
+      "GD Scene 1 Ship - E" 
+      "GD Scene 1 Ship - F" 
+      "GD Scene 1 Ship - G" 
+      "GD Scene 1 Ship - H" 
+      "GD Scene 1 Ship - I" 
+      "GD Scene 1 Ship - J" 
+      "GD Scene 1 Ship - K" 
+      "GD Scene 1 Ship - L" 
+   )
+)
++Name: GD Scene 1 Clean Up
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Scene 1 Fillers Clean Up---
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Cam 2 Activate Cam2Tracker" 
+      0 
+   )
+   ( ship-vanish 
+      "SCN 1" 
+      "SCN 2" 
+      "SCN 3" 
+      "SCN 4" 
+      "SCN 5" 
+      "SCN 6" 
+      "SCN 7" 
+      "SCN 8" 
+      "SF 1" 
+      "SF 2" 
+      "SF 3" 
+      "SF 4" 
+      "SF 5" 
+      "SF 6" 
+      "SF 7" 
+      "SF 8" 
+      "SF 9" 
+      "SF 10" 
+      "SF 11" 
+      "SF 12" 
+   )
+)
++Name: Scene 1 - A Clean
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Cam 3 Activate Cam3Tracker" 
+      0 
+   )
+   ( ship-vanish 
+      "MCN 1" 
+      "MCN 2" 
+      "MCN 3" 
+      "MCN 4" 
+      "MCN 5" 
+      "MCN 6" 
+      "MCN 7" 
+      "MCN 8" 
+      "MCN 9" 
+      "MCN 10" 
+      "MCN 12" 
+      "MCN 12a" 
+      "MCN 14" 
+      "MCN 15" 
+      "MCN 16" 
+      "MAR 1" 
+      "MAR 2" 
+      "MAR 3" 
+      "MAR 4" 
+      "MAR 5" 
+      "MAR 6" 
+      "MAR 7" 
+      "MAR 8" 
+      "MAR 9" 
+      "MAR 10" 
+      "MAR 11" 
+      "MAR 12" 
+      "MAR 12a" 
+      "MAR 14" 
+      "MAR 15" 
+   )
+)
++Name: Scene 1 - B Clean
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Scene 1 Clean Up" 
+      0 
+   )
+   ( ship-vanish 
+      "GTF 1" 
+      "GTF 2" 
+      "GTF 3" 
+      "GTF 4" 
+      "GTF 5" 
+      "GTF 6" 
+      "GTF 7" 
+      "GTF 8" 
+      "GTF 9" 
+      "GTF 10" 
+   )
+)
++Name: Scene 1 - C Clean
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Scene 1 Events------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Fade in and Cam 2 Move" 
+      5 
+   )
+   ( show-subtitle-image 
+      "Sub-A7-001.pcx" 
+      15 
+      80 
+      ( false ) 
+      ( false ) 
+      0 
+      0 
+      7000 
+      3000 
+   )
+)
++Name: Scene 1 Subtitles
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in and Cam 2 Move" 
+      0 
+   )
+   ( add-goal 
+      "GD Scene 1 Ship - A" 
+      ( ai-waypoints-once "5" 89 ) 
+   )
+)
++Name: Scene 1 Lucifer Move
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( fire-beam 
+      "GD Scene 1 Ship - A" 
+      "turret01" 
+      "GD Scene 1 Ship - F" 
+      "turret04" 
+   )
+   ( fire-beam 
+      "GD Scene 1 Ship - A" 
+      "turret02" 
+      "GD Scene 1 Ship - F" 
+      "turret42" 
+   )
+)
++Name: Scene 1 Lucifer Fire
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( true ) 
+   ( fire-beam 
+      "GD Scene 1 Ship - C" 
+      "turret01m" 
+      "GD Scene 1 Ship - L" 
+   )
+   ( fire-beam 
+      "GD Scene 1 Ship - C" 
+      "turret02m" 
+      "GD Scene 1 Ship - L" 
+   )
+   ( fire-beam 
+      "GD Scene 1 Ship - C" 
+      "turret03m" 
+      "GD Scene 1 Ship - L" 
+   )
+)
++Name: Scene 1 Garuda Ship C Fire
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in and Cam 3 Move" 
+      0 
+   )
+   ( add-goal 
+      "GD Scene 1 Ship - C" 
+      ( ai-waypoints-once "6" 89 ) 
+   )
+)
++Name: Scene 1 Garuda Ship C Move
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Fade in and Cam 3 Move" 
+      3 
+   )
+   ( fire-beam 
+      "GD Scene 1 Ship - H" 
+      "turret03" 
+      "GD Scene 1 Ship - A" 
+   )
+)
++Name: Scene 1 Sirona Ship H Fire
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( fire-beam 
+      "GD Scene 1 Ship - G" 
+      "turret17" 
+      "GD Scene 1 Ship - A" 
+   )
+   ( fire-beam 
+      "GD Scene 1 Ship - G" 
+      "turret19" 
+      "GD Scene 1 Ship - A" 
+   )
+)
++Name: Scene 1 Sovereign Ship G Fire
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ====Gamma Draconis Scene 2 ====
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Scene 1 Clean Up" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Set Up Draconis Scene 2
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----GD Scene 2 Cam Work-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Set Up Draconis Scene 2" 
+      100 
+   )
+   ( set-camera-position 
+      ( get-object-x "GD Camera 4 Pos A:1" ) 
+      ( get-object-y "GD Camera 4 Pos A:1" ) 
+      ( get-object-z "GD Camera 4 Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GD Camera 4 Focus A:1" 
+   )
+)
++Name: GD Cam 4
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 2000 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 4 Pos B:1" ) 
+      ( get-object-y "GD Camera 4 Pos B:1" ) 
+      ( get-object-z "GD Camera 4 Pos B:1" ) 
+      15000 
+   )
+)
++Name: GD Fade in Cam 4 and Move To B
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in Cam 4 and Move To B" 
+      14000 
+   )
+   ( fade-out 1000 0 0 0 ) 
+)
++Name: GD Camera 4 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 4 Fade Out" 
+      1000 
+   )
+   ( set-camera-position 
+      ( get-object-x "GD Camera 5 Pos A:1" ) 
+      ( get-object-y "GD Camera 5 Pos A:1" ) 
+      ( get-object-z "GD Camera 5 Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GD Camera 5 Focus A:1" 
+   )
+)
++Name: GD Cam 5
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 1000 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 5 Pos B:1" ) 
+      ( get-object-y "GD Camera 5 Pos B:1" ) 
+      ( get-object-z "GD Camera 5 Pos B:1" ) 
+      35000 
+   )
+)
++Name: GD Fade in Cam 5 and Move To B
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in Cam 5 and Move To B" 
+      34000 
+   )
+   ( fade-out 1000 0 0 0 ) 
+)
++Name: GD Camera 5 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 5 Fade Out" 
+      1000 
+   )
+   ( ship-vanish 
+      "GD Scene 2 Ship - 1" 
+      "GD Scene 2 Ship - 2" 
+      "GD Scene 2 Ship - 3" 
+      "GD Scene 2 Ship - 4" 
+      "GD Scene 2 Ship - 5" 
+      "GD Scene 2 Ship - 6" 
+      "GD Scene 2 Ship - 7" 
+      "GD Scene 2 Ship - 8" 
+      "GD Scene 2 Ship - 9" 
+      "GD Scene 2 Ship - 10" 
+      "AST 1" 
+      "AST 2" 
+      "AST 3" 
+      "AST 4" 
+      "AST 5" 
+      "AST 6" 
+      "AST 7" 
+      "AST 8" 
+      "AST 9" 
+      "AST 10" 
+      "AST 11" 
+      "AST 12" 
+      "AST 12a" 
+      "AST 14" 
+      "AST 15" 
+      "AST 16" 
+      "AST 17" 
+      "AST 18" 
+      "AST 19" 
+      "AST 20" 
+      "AST 21" 
+      "AST 22" 
+      "ERN 1" 
+      "ERN 2" 
+      "ERN 3" 
+      "ERN 4" 
+      "ERN 5" 
+      "ERN 6" 
+      "ERN 7" 
+      "ERN 8" 
+      "ERN 9" 
+      "ERN 10" 
+      "ERN 11" 
+      "ERN 12" 
+      "ERN 12A" 
+      "ERN 14" 
+   )
+)
++Name: GD Scene 2 Clean Up
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Scene 2 Events-------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Fade in Cam 5 and Move To B" 
+      5 
+   )
+   ( fire-beam 
+      "GD Scene 2 Ship - 10" 
+      "turret01m" 
+      "GD Scene 2 Ship - 2" 
+      "turret21" 
+   )
+   ( fire-beam 
+      "GD Scene 2 Ship - 10" 
+      "turret02m" 
+      "GD Scene 2 Ship - 2" 
+      "turret17" 
+   )
+   ( fire-beam 
+      "GD Scene 2 Ship - 10" 
+      "turret03m" 
+      "GD Scene 2 Ship - 2" 
+      "turret19" 
+   )
+   ( set-armor-type 
+      "GD Scene 2 Ship - 2" 
+      ( true ) 
+      "Armor Instant Pierced" 
+      "Hull" 
+   )
+)
++Name: Scene 2 Garuda Ship 10 Fire 2
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( self-destruct "GD Scene 2 Ship - 2" ) 
+   ( turret-lock 
+      "GD Scene 2 Ship - 1" 
+      "turret04e" 
+      "turret05e" 
+      "turret06e" 
+      "turret07e" 
+      "turret08e" 
+      "turret09e" 
+      "turret10e" 
+      "turret11e" 
+      "turret12e" 
+      "turret13e" 
+      "turret14b" 
+   )
+   ( turret-lock 
+      "GD Scene 2 Ship - 10" 
+      "turret04e" 
+      "turret05e" 
+      "turret06e" 
+      "turret07e" 
+      "turret08e" 
+      "turret09e" 
+      "turret10e" 
+      "turret11e" 
+      "turret12e" 
+      "turret13e" 
+      "turret14b" 
+   )
+)
++Name: Explode Scene 2 Ship 2
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Fade in Cam 5 and Move To B" 
+      8 
+   )
+   ( fire-beam 
+      "GD Scene 2 Ship - 8" 
+      "turret01" 
+      "GD Scene 2 Ship - 7" 
+      "turret04" 
+   )
+   ( fire-beam 
+      "GD Scene 2 Ship - 8" 
+      "turret02" 
+      "GD Scene 2 Ship - 7" 
+      "turret07" 
+   )
+   ( set-armor-type 
+      "GD Scene 2 Ship - 7" 
+      ( true ) 
+      "Armor Instant Pierced" 
+      "Hull" 
+   )
+)
++Name: Scene 2 Lucifer Fire
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( self-destruct "GD Scene 2 Ship - 7" ) 
+)
++Name: Explode Scene 2 Ship 7
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ====Gamma Draconis Scene 3 ====
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Scene 2 Clean Up" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Set Up Draconis Scene 3
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----GD Scene 3 Cam Work-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 5 Fade Out" 
+      1000 
+   )
+   ( set-camera-position 
+      ( get-object-x "GD Camera 6 Pos A:1" ) 
+      ( get-object-y "GD Camera 6 Pos A:1" ) 
+      ( get-object-z "GD Camera 6 Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GD Scene 3 - A" 
+   )
+   ( modify-variable @Cam6Tracker[0] 1 ) 
+)
++Name: GD Cam 6 Activate Cam6Tracker
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 2000 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 6 Pos B:1" ) 
+      ( get-object-y "GD Camera 6 Pos B:1" ) 
+      ( get-object-z "GD Camera 6 Pos B:1" ) 
+      16000 
+   )
+)
++Name: GD Fade in Cam 6 and Move To B
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in Cam 6 and Move To B" 
+      14000 
+   )
+   ( fade-out 2000 0 0 0 ) 
+)
++Name: GD Camera 6 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 6 Fade Out" 
+      2000 
+   )
+   ( modify-variable @Cam6Tracker[0] 0 ) 
+)
++Name: Cancel Cam6Tracker
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Draconis Scene 3" 
+      5 
+   )
+   ( warp-effect 
+      ( get-object-x "Jump Point:1" ) 
+      ( get-object-y "Jump Point:1" ) 
+      ( get-object-z "Jump Point:1" ) 
+      ( get-object-x "GD Scene 3 - A" ) 
+      ( get-object-y "GD Scene 3 - A" ) 
+      ( get-object-z "GD Scene 3 - A" ) 
+      7000 
+      10 
+      69 
+      70 
+      1 
+      1 
+   )
+)
++Name: Create Jump Effect Scene3
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: >>>>>GD Carmera Trackers<<<<<
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = @Cam2Tracker[0] 1 ) 
+   ( set-camera-facing-object 
+      "GD Camera 2 Focus A:1" 
+   )
+)
++Name: Camera 2 Tracker
++Repeat Count: 20000
++Interval: 0
+
+$Formula: ( when 
+   ( = @Cam3Tracker[0] 1 ) 
+   ( set-camera-facing-object 
+      "GD Camera 3 Focus A:1" 
+   )
+)
++Name: Camera 3 Tracker
++Repeat Count: 20000
++Interval: 0
+
+$Formula: ( when 
+   ( = @Cam6Tracker[0] 1 ) 
+   ( set-camera-facing-object 
+      "GD Scene 3 - A" 
+   )
+)
++Name: Camera 6 Tracker
++Repeat Count: 20000
++Interval: 0
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ====Adhara Segment=============
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 6 Fade Out" 
+      2100 
+   )
+   ( modify-variable @AdharaMovieGo[0] 1 ) 
+)
++Name: Start Movie Adhara
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = @AdharaMovieGo[0] 1 ) 
+   ( set-skybox-model "Adhara.pof" ) 
+)
++Name: Set Up Adhara Scene 4
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----AD Scene 4 Cam Work--------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "Set Up Adhara Scene 4" 
+      100 
+   )
+   ( set-camera-position 
+      ( get-object-x "GD Camera 7 Pos A:1" ) 
+      ( get-object-y "GD Camera 7 Pos A:1" ) 
+      ( get-object-z "GD Camera 7 Pos A:1" ) 
+   )
+   ( set-camera-facing-object 
+      "GD Camera 7 Focus A:1" 
+   )
+   ( modify-variable @Cam7Tracker[0] 1 ) 
+)
++Name: GD Cam 7 Activate Cam7Tracker
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( fade-in 2000 0 0 0 ) 
+   ( set-camera-position 
+      ( get-object-x "GD Camera 7 Pos B:1" ) 
+      ( get-object-y "GD Camera 7 Pos B:1" ) 
+      ( get-object-z "GD Camera 7 Pos B:1" ) 
+      30000 
+   )
+)
++Name: GD Fade in Cam 7 and Move To B
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Fade in Cam 7 and Move To B" 
+      26000 
+   )
+   ( fade-out 4000 0 0 0 ) 
+)
++Name: GD Camera 7 Fade Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( = @Cam7Tracker[0] 1 ) 
+   ( set-camera-facing-object 
+      "GD Camera 7 Focus A:1" 
+   )
+)
++Name: Camera 7 Tracker
++Repeat Count: 20000
++Interval: 0
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----AD Scene 4 Events----------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Fade in Cam 7 and Move To B" 
+      5 
+   )
+   ( show-subtitle-image 
+      "Sub-A7-002.pcx" 
+      15 
+      80 
+      ( false ) 
+      ( false ) 
+      0 
+      0 
+      7000 
+      3000 
+   )
+)
++Name: Scene 4 Subtitles
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "GD Cam 7 Activate Cam7Tracker" 
+      6 
+   )
+   ( warp-effect 
+      ( get-object-x "Jump Point 2:1" ) 
+      ( get-object-y "Jump Point 2:1" ) 
+      ( get-object-z "Jump Point 2:1" ) 
+      ( get-object-x 
+         "Jump Point 2 Direction:1" 
+      )
+      ( get-object-y 
+         "Jump Point 2 Direction:1" 
+      )
+      ( get-object-z 
+         "Jump Point 2 Direction:1" 
+      )
+      4000 
+      10 
+      69 
+      70 
+      1 
+      1 
+   )
+)
++Name: Create Jump Effect Scene 4
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: Cue in the Invaders
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      7 
+      "Invader Lucifer" 
+   )
+   ( fire-beam 
+      "Invader Lucifer" 
+      "turret01" 
+      "AD Scene 4 - A" 
+      "turret19" 
+   )
+   ( fire-beam 
+      "Invader Lucifer" 
+      "turret02" 
+      "AD Scene 4 - A" 
+      "turret12" 
+   )
+)
++Name: Lucifer Fire
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      7 
+      "Invader Garuda 1" 
+   )
+   ( fire-beam 
+      "Invader Ravana 2" 
+      "turret01" 
+      "AD Scene 4 - B" 
+      "turret19" 
+   )
+   ( fire-beam 
+      "Invader Ravana 2" 
+      "turret02" 
+      "AD Scene 4 - B" 
+      "turret12" 
+   )
+)
++Name: Ravana 2 Fire
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      7 
+      "Invader Ravana 1" 
+   )
+   ( fire-beam 
+      "Invader Ravana 1" 
+      "turret01" 
+      "AD Scene 4 - C" 
+   )
+   ( fire-beam 
+      "Invader Ravana 1" 
+      "turret02" 
+      "AD Scene 4 - C" 
+   )
+)
++Name: Ravana 1 Fire
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ==============================
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-msecs-delay 
+      "GD Camera 7 Fade Out" 
+      1000 
+   )
+   ( adjust-audio-volume 
+      "Effects" 
+      0 
+      3000 
+   )
+)
++Name: fade out sounds and music
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( end-mission ) ) 
++Name: END CUTSCENE
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ==============================
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: Continue
++Repeat Count: 1
++Interval: 1
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 32 lists total
+
+$Name: GD Camera 1 Focus A
+$List: (		;! 1 points in list
+	( -2224.768311, -0.000020, -17552.572266 )
+)
+
+$Name: GD Camera 1 Pos A
+$List: (		;! 1 points in list
+	( -2017.699951, 2195.100098, -17750.800781 )
+)
+
+$Name: GD Camera 1 Pos B
+$List: (		;! 1 points in list
+	( -349.599976, 2320.199951, -19298.800781 )
+)
+
+$Name: GD Camera 2 Focus A
+$List: (		;! 1 points in list
+	( -6218.342285, 14.022021, -18208.320313 )
+)
+
+$Name: GD Camera 2 Pos A
+$List: (		;! 1 points in list
+	( -7670.899902, 105.400002, -17911.300781 )
+)
+
+$Name: GD Camera 2 Pos B
+$List: (		;! 1 points in list
+	( -4536.200195, 444.799988, -20106.599609 )
+)
+
+$Name: GD Camera 3 Focus A
+$List: (		;! 1 points in list
+	( -10254.970703, 0.005394, -12732.032227 )
+)
+
+$Name: GD Camera 3 Pos A
+$List: (		;! 1 points in list
+	( -14965.599609, -135.000000, -6831.000000 )
+)
+
+$Name: GD Camera 3 Pos B
+$List: (		;! 1 points in list
+	( -10903.099609, -266.299988, -8015.500000 )
+)
+
+$Name: 1
+$List: (		;! 4 points in list
+	( -10050.816406, 599.039185, 2197.974854 )
+	( -11244.947266, 599.039063, 2576.636230 )
+	( -12265.629883, 599.039307, 3526.761963 )
+	( -13088.881836, 599.039307, 4811.544434 )
+)
+
+$Name: 2
+$List: (		;! 5 points in list
+	( -13501.841797, 0.013339, 6506.675293 )
+	( -13206.034180, -207.143860, 5040.313965 )
+	( -12572.395508, -509.415833, 3638.657959 )
+	( -11860.423828, -709.156738, 2609.486328 )
+	( -10222.682617, -1041.028931, 1737.490723 )
+)
+
+$Name: 3
+$List: (		;! 4 points in list
+	( -12334.000000, -1331.500000, 8933.400391 )
+	( -11768.540039, -1331.500000, 9516.219727 )
+	( -10611.489258, -1331.469971, 9806.236328 )
+	( -9228.458008, -1331.469727, 9630.897461 )
+)
+
+$Name: 4
+$List: (		;! 2 points in list
+	( -7555.190918, -371.994141, 6355.161133 )
+	( -6555.806641, -371.988647, 8025.317383 )
+)
+
+$Name: GD Camera 4 Focus A
+$List: (		;! 1 points in list
+	( -10346.692383, 419.533569, 7026.382324 )
+)
+
+$Name: GD Camera 4 Pos A
+$List: (		;! 1 points in list
+	( -10316.700195, 358.799988, 3242.500000 )
+)
+
+$Name: GD Camera 4 Pos B
+$List: (		;! 1 points in list
+	( -10296.099609, 380.799988, 1187.199951 )
+)
+
+$Name: GD Camera 4 Pos C
+$List: (		;! 1 points in list
+	( -8621.799805, -350.500000, -720.700012 )
+)
+
+$Name: GD Camera 4 Focus B
+$List: (		;! 1 points in list
+	( -17361.410156, 3755.774414, 7689.209961 )
+)
+
+$Name: GD Camera 5 Focus A
+$List: (		;! 1 points in list
+	( -8937.264648, 706.383667, -13155.604492 )
+)
+
+$Name: GD Camera 5 Pos A
+$List: (		;! 1 points in list
+	( -11278.599609, 476.299988, 8541.900391 )
+)
+
+$Name: GD Camera 5 Pos B
+$List: (		;! 1 points in list
+	( -11120.161133, 465.800018, 6748.821289 )
+)
+
+$Name: 5
+$List: (		;! 1 points in list
+	( -7350.798340, -0.021905, -16478.773438 )
+)
+
+$Name: 6
+$List: (		;! 1 points in list
+	( -8946.700195, -363.299988, -18468.900391 )
+)
+
+$Name: Jump Point
+$List: (		;! 1 points in list
+	( 3270.371094, 0.115523, 4713.438965 )
+)
+
+$Name: GD Camera 6 Pos A
+$List: (		;! 1 points in list
+	( -4006.800049, 444.500000, 3177.500000 )
+)
+
+$Name: GD Camera 6 Pos B
+$List: (		;! 1 points in list
+	( -8180.700195, 1649.099976, 5586.799805 )
+)
+
+$Name: GD Camera 7 Focus A
+$List: (		;! 1 points in list
+	( 14248.539063, 0.002328, -6413.831055 )
+)
+
+$Name: GD Camera 7 Pos A
+$List: (		;! 1 points in list
+	( 8450.799805, 483.799988, -7947.200195 )
+)
+
+$Name: GD Camera 7 Pos B
+$List: (		;! 1 points in list
+	( 8365.599609, 483.799988, -4861.299805 )
+)
+
+$Name: Jump Point 2
+$List: (		;! 1 points in list
+	( 15353.799805, 0.000000, -6153.399902 )
+)
+
+$Name: Jump Point 2 Direction
+$List: (		;! 1 points in list
+	( 13009.010742, 0.000000, -6153.399902 )
+)
+
+$Name: MCN Point
+$List: (		;! 1 points in list
+	( -8111.393066, 225.575333, -16547.103516 )
+)
+
+#Messages		;! 0 total
+
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 0 total
+
+$Num stars: 500
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunGammaDraconis
++Angles: 0.122173 0.000000 0.942478
++Scale: 1.000000
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: None
+$Briefing Music: None
+
+#End
+

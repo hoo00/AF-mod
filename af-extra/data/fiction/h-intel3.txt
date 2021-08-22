@@ -1,0 +1,13 @@
+UPC SCORPION
+
+Type:  Heavy Assault
+Maneuverability:  Average
+Hull Armor:  Heavy
+Manufacturer:  Unknown Deneb Shipyards
+Length:  17 meters
+Gun Mounts:  8 Mounts (4,4)
+Missile Banks:  2 Banks
+Description:  UPC Heavy Fighter
+
+
+The pride ship of the United Pirate Coalition which is intended to mock the GTVA military. The Scorpion-class fighter is agile and fearsome with firepower boasting to rival the Erinyes class. Many GTVA police have lost their lives engaging these crafts and it is indeed a nightmare to peace and order.

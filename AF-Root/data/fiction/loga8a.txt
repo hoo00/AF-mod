@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VLMX-337 $}
+$b{/UPLOADER: $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>AGTY-692-JKL-09773 $}
+
+$B{Personal Log:
+March 21, 2371
+Gamma Draconis $}
+
+The fighting went on for three months. The missions seem to go forever. It was more of the same; destroy this, protect that. At times, it got very tedious. Nevertheless, it was hell and space becomes colder and crueler. I have lost many of my pilots. I have already developed a strong attachment to them. But it's very hard to make new friends at this time. In fact, two days ago, I met this new pilot replacement. He was good and skillful as a Dark Angel elite could be. A while ago, I saw him crashed into a Rakshasa cruiser. He never made it. Gods! I hate watching them die. I don't want to be too close to replacements but I can't help it. They are like my family now. Come to think of it, I wonder how manage to survive all of this? Is it my blue guardian? Somehow, I acclimated to him... "HIM"--- did I just treated him like a real person? I have grown weary of trying to justify the existence of this imaginary guide. So I listen to him as long as his guidance keeps me alive. Probably, this other voice in my head is just me, my subconscious escaping from its cranium confines.
+
+$b{/<END OF LOG> $}

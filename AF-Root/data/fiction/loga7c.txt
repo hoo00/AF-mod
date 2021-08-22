@@ -1,0 +1,16 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VQWD-177 $}
+$b{/UPLOADER: $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>XZFM-772-HJL-11559 $}
+
+$B{Personal Log:
+November 30, 2370
+Mutara Nebula
+On route to the Knossos $}
+
+News came to us that the GTVA High Council is panicking. There were heated debates from both sides. This new weapon of mass destruction came as a shock and will pose a serious threat to our military forces. Some of the GTVA High Council delegates voted to seal off Gamma Draconis just like they did Capella. The majority opposed this idea saying that this solution is temporary and useless. The war in the political chamber went on for one month while soldiers died in the thousands. The Council is faced with a seemingly inescapable dilemma. It was only Admiral Cartwright, who laid out a military tactical solution that gave the GTVA a glimmer of hope. I believe in him. This might work.
+
+$b{/<END OF LOG> $}

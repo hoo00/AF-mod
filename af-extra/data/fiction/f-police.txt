@@ -1,0 +1,13 @@
+GTF ENFORCER
+
+Type:  Standard Police Fighter
+Maneuverability:  High
+Hull Armor:  Heavy
+Manufacturer:  Vega Corporation
+Length:  17 meters
+Gun Mounts:  4 Mounts (2,2)
+Missile Banks:  2 Banks
+Description:  Rapid Response and Tactics
+
+
+The GTF Enforcer is the standard issue of the GTVA Police. It can rival almost any military fighter in most aspects including agility and fire power plus it is heavily armored using the latest technology. Most of the law enforcers who are ex-military pilots compared this ship to the Perseus interceptor.

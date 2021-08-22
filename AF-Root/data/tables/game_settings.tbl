@@ -1,0 +1,10 @@
+   
+#HUD SETTINGS
+   $Directive Wait Time: 500
+   
+#SOUND SETTINGS
+   $Default Sound Volume: 0.6
+   $Default Music Volume: 0.5
+   $Default Voice Volume: 1.0
+
+#END

@@ -1,0 +1,59 @@
+#Target Priorities
+
+$Name: bombs
+	+Weapon Class Flags: ( "bomb" )
+$Name: asteroids
+	+Object Type: asteroid
+$Name: weapons
+	+Object Type: weapon
+$Name: bombers
+$Name: fighters
+$Name: cruisers
+$Name: corvettes
+$Name: capitals
+$Name: super caps
+$Name: ships
+	+Object Type: ship
+
+#End
+
+;Example of turret target priorities setup, not currently in use
+;#Weapon Targeting Priorities
+
+;$Name: Terran Turret
+;+Target Priority: ( "bombs" )
+;This would make Terran Turret only fire at weapons that have "bomb" flag
+
+;#End
+
+#Ship Types
+
+$Name:                  fighter
++nocreate
+	$Target Priority Groups: ( "fighters" )
+	$Turrets prioritize ship target: NO
+	$No Huge Beam Impact Effects:	YES
+
+$Name:                  bomber
++nocreate
+	$Target Priority Groups: ( "bombers" )
+	$Turrets prioritize ship target: NO
+	$No Huge Beam Impact Effects:	YES
+
+$Name:                  cruiser
++nocreate
+	$Target Priority Groups: ( "cruisers" )
+
+$Name:                  corvette
++nocreate
+	$Target Priority Groups: ( "corvettes" )
+
+$Name:                  capital
++nocreate
+	$Target Priority Groups: ( "capitals" )
+
+$Name:                  super cap
++nocreate
+	$Target Priority Groups: ( "super caps" )
+
+#End

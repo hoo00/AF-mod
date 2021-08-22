@@ -1,0 +1,1129 @@
+$Bitmap: blackhole
+$Bitmap: blackhole2
+$Bitmap: blackhole3
+$Bitmap: supernova1
+$Bitmap: supernova2
+$Bitmap: supernova3
+
+$Bitmap: fire06
+$Bitmap: fire07
+$Bitmap: fire08
+$Bitmap: fire01
+$Bitmap: fire02
+$Bitmap: fire03
+$Bitmap: fire04
+$Bitmap: galaxy1
+$Bitmap: galaxy2
+$Bitmap: galaxy3
+$Bitmap: galaxy4
+$Bitmap: galaxy5
+$Bitmap: crab
+$Bitmap: earthlikeplanet
+ 
+$BitmapX: wormhole
+$BitmapX: planeti
+$BitmapX: planetl
+$BitmapX: planetj
+$BitmapX: planet6
+$BitmapX: planet7
+$BitmapX: planet8
+$BitmapX: planet9
+$BitmapX: planet1
+$BitmapX: planet2
+$BitmapX: planet3
+$BitmapX: planet4
+$BitmapX: planet5
+$BitmapX: planet10
+$BitmapX: planet11
+$BitmapX: planet12
+$BitmapX: planetk
+$BitmapX: planetm
+$BitmapX: planetn
+$BitmapX: planeto
+$BitmapX: SFleet01
+$BitmapX: SFleet02
+$BitmapX: SFleet03
+$BitmapX: TerFleet01
+$BitmapX: TerFleet02
+$BitmapX: TerFleet03
+$BitmapX: VasFleet01
+$BitmapX: VasFleet02
+$BitmapX: VasFleet03
+
+#End
+
+$Sun:		SunWhite
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 1.0 1.0 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: WhiteCorona001
+$FlareTexture2: WhiteCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunRed
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.1 0.1 0.6
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: RedCorona001
+$FlareTexture2: RedCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunGreen
+$Sunglow:	SunGlow
+$SunRGBI:	0.5 1.0 0.5 0.8
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: GreenCorona001
+$FlareTexture2: GreenCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunBlue
+$Sunglow:	SunGlow
+$SunRGBI:	0.2 0.2 1.0 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: BlueCorona001
+$FlareTexture2: BlueCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunGold
+$Sunglow:	SunGlow
+$SunRGBI:	0.74 0.76 0.44 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: GoldCorona001
+$FlareTexture2: GoldCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunViolet
+$Sunglow:	SunGlow
+$SunRGBI:	0.66 0.44 0.54 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: VioletCorona001
+$FlareTexture2: VioletCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunAdharaA
+$Sunglow:	SunGlow
+$SunRGBI:	0.69 0.77 1.0 1.0
+
+$Sun:		SunAdharaB
+$Sunglow:	SunGlow
+$SunRGBI:	0.63 0.71 1.0 1.0
+
+$Sun:		SunAlbireoAa
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.86 0.65 1.0
+
+$Sun:		SunAlbireoAb
+$Sunglow:	SunGlow
+$SunRGBI:	0.73 0.79 1.0 1.0
+
+$Sun:		SunAlbireoB
+$Sunglow:	SunGlow
+$SunRGBI:	0.69 0.76 1.0 1.0
+
+$Sun:		SunAldebaranA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.8 0.54 1.0
+
+$Sun:		SunAldebaranB
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.77 0.51 1.0
+
+$Sun:		SunAlphaAquilae
+$Sunglow:	SunGlow
+$SunRGBI:	0.78 0.84 1.0 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: AlphaAquilaeCorona001
+$FlareTexture2: AlphaAquilaeCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunAlphaCentauriA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.96 0.95 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: AlphaCentauriACorona001
+$FlareTexture2: AlphaCentauriACorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunAlphaCentauriB
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.88 0.74 1.0
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: AlphaCentauriBCorona001
+$FlareTexture2: AlphaCentauriBCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+
+$Sun:		SunAlphaCrucisAa
+$Sunglow:	SunGlow
+$SunRGBI:	0.61 0.7 1.0 1.0
+
+$Sun:		SunAlphaCrucisAb
+$Sunglow:	SunGlow
+$SunRGBI:	0.67 0.75 1.0 1.0
+
+$Sun:		SunAlphaCrucisB
+$Sunglow:	SunGlow
+$SunRGBI:	0.63 0.71 1.0 1.0
+
+$Sun:		SunAlphaCrucisCa
+$Sunglow:	SunGlow
+$SunRGBI:	0.64 0.72 1.0 1.0
+
+$Sun:		SunAlphaCrucisCb
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.97 0.97 1.0
+
+$Sun:		SunAlphaCrucisD
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.76 0.55 1.0
+
+$Sun:		SunAlphardA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.86 0.65 1.0
+
+$Sun:		SunAlphardB
+$Sunglow:	SunGlow
+$SunRGBI:	0.75 0.81 1.0 1.0
+
+$Sun:		SunAntaresA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.76 0.41 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: AntaresACorona001
+$FlareTexture2: AntaresACorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunAntaresB
+$Sunglow:	SunGlow
+$SunRGBI:	0.65 0.73 1.0 1.0
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: AntaresBCorona001
+$FlareTexture2: AntaresBCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+
+$Sun:		SunBetaAquilaeA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.91 0.83 1.0
+
+$Sun:		SunBetaAquilaeBa
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.81 0.51 1.0
+
+$Sun:		SunBetaAquilaeBb
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.81 0.51 1.0
+
+$Sun:		SunBetaHydri
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.96 0.95 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: SolCorona001
+$FlareTexture2: SolCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunBetelgeuse
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.76 0.41 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: AntaresACorona001
+$FlareTexture2: AntaresACorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunCapellaA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.91 0.78 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: CapellaACorona001
+$FlareTexture2: CapellaACorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunCapellaB
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.95 0.91 0.6
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: CapellaBCorona001
+$FlareTexture2: CapellaBCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	2
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	7
+
+$Sun:		SunCapellaC
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.8 0.56 0.1
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: CapellaCCorona001
+$FlareTexture2: CapellaCCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	0.5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	2
+
+$Sun:		SunCapellaD
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.8 0.44 0.1
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: CapellaDCorona001
+$FlareTexture2: CapellaDCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	0.5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	2
+
+$Sun:		SunDeltaSerpentisA
+$Sunglow:	SunGlow
+$SunRGBI:	0.85 0.88 1.0 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: DeltaSerpentisCorona001
+$FlareTexture2: DeltaSerpentisCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunDeltaSerpentisB
+$Sunglow:	SunGlow
+$SunRGBI:	0.85 0.88 1.0 0.2
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: DeltaSerpentisCorona001
+$FlareTexture2: DeltaSerpentisCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+
+$Sun:		SunDeltaSerpentisC
+$Sunglow:	SunGlow
+$SunRGBI:	0.88 0.9 1.0 1.0
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: DeltaSerpentisCorona001
+$FlareTexture2: DeltaSerpentisCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+
+$Sun:		SunDeltaSerpentisD
+$Sunglow:	SunGlow
+$SunRGBI:	0.88 0.9 1.0 0.1
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: DeltaSerpentisCorona001
+$FlareTexture2: DeltaSerpentisCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+
+$Sun:		SunDeneb
+$Sunglow:	SunGlow
+$SunRGBI:	0.78 0.84 1.0 0.8
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: DenebCorona001
+$FlareTexture2: DenebCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunDubheA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.89 0.75 1.0
+
+$Sun:		SunDubheB
+$Sunglow:	SunGlow
+$SunRGBI:	0.88 0.9 1.0 1.0
+
+$Sun:		SunDubheCa
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.97 0.99 1.0
+
+$Sun:		SunDubheCb
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.97 0.99 1.0
+
+$Sun:		SunEnif
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.83 0.53 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: EnifCorona001
+$FlareTexture2: EnifCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunEtamin
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.8 0.54 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: EtaminCorona001
+$FlareTexture2: EtaminCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunGammaDraconis
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.89 0.75 1.0
+
+$Sun:		SunGienahCygniA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.89 0.75 1.0
+
+$Sun:		SunGienahCygniB
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.81 0.51 1.0
+
+$Sun:		SunKausBorealis
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.87 0.71 1.0
+
+$Sun:		SunMintakaAa
+$Sunglow:	SunGlow
+$SunRGBI:	0.64 0.74 1.0 1.0
+
+$Sun:		SunMintakaB
+$Sunglow:	SunGlow
+$SunRGBI:	0.63 0.71 1.0 0.5
+
+$Sun:		SunMintakaCa
+$Sunglow:	SunGlow
+$SunRGBI:	0.63 0.71 1.0 0.1
+
+$Sun:		SunMintakaCb
+$Sunglow:	SunGlow
+$SunRGBI:	0.63 0.71 1.0 0.1
+
+$Sun:		SunMirfak
+$Sunglow:	SunGlow
+$SunRGBI:	0.86 0.88 1.0 1.0
+
+$Sun:		SunNaos
+$Sunglow:	SunGlow
+$SunRGBI:	0.61 0.69 1.0 1.0
+
+$Sun:		SunPhiEridaniA
+$Sunglow:	SunGlow
+$SunRGBI:	0.69 0.76 1.0 1.0
+
+$Sun:		SunPhiEridaniB
+$Sunglow:	SunGlow
+$SunRGBI:	0.69 0.76 1.0 1.0
+
+$Sun:		SunPolarisAa
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.95 0.98 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: PolarisAaCorona001
+$FlareTexture2: PolarisAaCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunPolarisAb
+$Sunglow:	SunGlow
+$SunRGBI:	0.9 0.91 1.0 0.2
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: PolarisAbCorona001
+$FlareTexture2: PolarisAbCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	1
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	2
+
+$Sun:		SunPolarisB
+$Sunglow:	SunGlow
+$SunRGBI:	0.9 0.91 1.0 0.1
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: PolarisBCorona001
+$FlareTexture2: PolarisBCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	2.5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	8
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	1
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	0.5
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	3
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	2
+
+$Sun:		SunProcyonA
+$Sunglow:	SunGlow
+$SunRGBI:	0.95 0.94 1.0 1.0
+
+$Sun:		SunProcyonB
+$Sunglow:	SunGlow
+$SunRGBI:	0.81 0.85 1.0 1.0
+
+$Sun:		SunSiriusA
+$Sunglow:	SunGlow
+$SunRGBI:	0.71 0.78 1.0 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: SiriusACorona001
+$FlareTexture2: SiriusACorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunSiriusB
+$Sunglow:	SunGlow
+$SunRGBI:	0.66 0.74 1.0 0.1
+$Flare:
+	+FlareCount:	2
+$FlareTexture1: SiriusBCorona001
+$FlareTexture2: SiriusBCorona002
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	1
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	3
+
+$Sun:		SunSol
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.96 0.95 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: SolCorona001
+$FlareTexture2: SolCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SunTaniaAustralisA
+$Sunglow:	SunGlow
+$SunRGBI:	1.0 0.8 0.52 1.0
+
+$Sun:		SunTaniaAustralisB
+$Sunglow:	SunGlow
+$SunRGBI:	0.97 0.97 1.0 1.0
+
+$Sun:		SunVega
+$Sunglow:	SunGlow
+$SunRGBI:	0.73 0.79 1.0 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: VegaCorona001
+$FlareTexture2: VegaCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+#end
+
+#end
+
+#end
+
+#end

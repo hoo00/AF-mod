@@ -1,0 +1,14 @@
+TF GHOST
+
+Type:  Interceptor
+Maneuverability:  Excellent
+Hull Armor:  Ultra Heavy
+Manufacturer:  Neil Kozloff and Frank Heinz
+Length:  28 meters
+Gun Mounts:  2 Mounts (3,2)
+Missile Banks:  3 Banks
+Description:  Privately Constructed Ship
+
+
+The TF Ghost is a customized and heavily armored fighter designed and jealously planned to exceed the specifications of the XJR Phantom built by Neil Kozloff and Frank Heinz of the Tiger Mercenaries. After one of their colleague acquired the XJR Phantom as payment from one of his missions which is a very valuable piece of hardware, Neil and Fred secretly 'reverse engineered' the Phantom and improved its design dramatically. Through secret connections, probably the UPC, they had two of these prototypes constructed practically from used parts of dismantled GTVA fighters in exchange for a series of important and expensive mercenary bookings. It is rumored that the TF Ghost is the most deadly fighter in the GTVA and the Shivans combine but it was proven wrong when both was destroyed by the mercenary pilot who owned the XJR in a single dogfight.
+

@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VBJP-701 $}
+$b{/UPLOADER: $VLT. $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>JTFG-290-LHD-87012 $}
+
+$B{Personal Log:
+July 18, 2370
+Adhara System $}
+
+What is this? They have promoted me? Putting an entire squadron under my command? This soon? Do they even know me? Steven Grant said that I'm an open book. What is going on in his damn mind? There is a big difference between what is digitally recorded and what actually happened. I am a deserter. I abandoned that transport I was escorting to save my own skin. There was never any hope. The Capella star was already exploding. My wing leader shouted orders to form up but I had refuse to listen to him. He had stayed behind. Everybody remembered him as the hero of Capella. But he is dead. The thousands I left behind were good as dead! Still, their ghostly visages appear to me in the dead of night every time I try to go to sleep. Am I the man to trust and depend on? A broken shell of a man? A man with no purpose. The screaming voices of my past continue to shatter me, crumbling my bones into dust. But one voice above all gives me the will to rise from the ashes and move on. That a greater purpose awaits me. Whatever that is.
+
+$b{/<END OF LOG> $}

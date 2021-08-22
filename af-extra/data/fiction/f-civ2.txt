@@ -1,0 +1,13 @@
+TF TIGER
+
+Type:  Interceptor
+Maneuverability:  Average
+Hull Armor:  Average
+Manufacturer:  Unknown Deneb Shipyards
+Length:  22 meters
+Gun Mounts:  4 Mounts (2,2)
+Missile Banks:  2 Banks
+Description:  UPC Standard Fighter
+
+
+The TF Tiger is a fighter craft commonly used by mercenaries. It is custom built to suit the needs of these pilots. They are manufactured illegally by a secret shipyard in Beta Aquilae.

@@ -1,0 +1,13 @@
+GTTB ARMAGEDDON
+
+Type:  Tactical Bomber
+Maneuverability:  Abysmal
+Hull Armor:  Impregnable
+Manufacturer:  Han-Ronald Corp
+Length:  84 meters
+Gun Mounts:  10 Mounts (4,4,2)
+Missile Banks:  4 Banks
+Description:  New Heavy Bomber Design
+
+
+Designed to take out the biggest enemy warships, the Armageddon is a sight to behold. Measuring at almost 100 meters it can only be carried by heavy carriers. Armed with twin Railgun Cannons, 2 standard primary banks, 4 defensive turrets and 4 secondary banks with an unparalleled secondary capacity it can unleash tremendous destruction at a moment's notice. Ultra-thick 'Ablative' armor plating and impregnable shields are needed, for it handles like a cruiser.

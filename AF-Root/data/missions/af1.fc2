@@ -1,0 +1,1074 @@
+$Name: The Aftermath
+$Type: single
++Description:
+ XSTR("Three years have passed after the tragedy of Capella, the GTVA rebuilds from the ashes ravaged by the Second Shivan War only to find that a much bigger threat is just stalking in the shadows.", -1)
+$end_multi_text
+$Flags: 1
+
+
++Starting Ships: ()
+
++Starting Weapons: ()
+
+
+$Mission: Act 0-Intro.fs2
++Briefing Cutscene: endpart1
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 1-a.fs2" ) )
+)
+
++Level: 0
++Position: 0
+
+$Mission: Act 1-a.fs2
++Flags: 0
++Main Hall: Tiger
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 1-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 1-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 1-a.fs2" ) )
+)
+
++Level: 1
++Position: 0
+
+$Mission: Act 1-b.fs2
++Flags: 0
++Main Hall: Tiger
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 1-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 1-c.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 1-b.fs2" ) )
+)
+
++Level: 2
++Position: 0
+
+$Mission: Act 1-c.fs2
++Flags: 0
++Main Hall: Tiger
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 1-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 1-d.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 1-c.fs2" ) )
+)
+
++Level: 3
++Position: 0
+
+$Mission: Act 1-d.fs2
++Flags: 0
++Main Hall: Tiger
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 1-d.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 1-e.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 1-d.fs2" ) )
+)
+
++Level: 4
++Position: 0
+
+$Mission: Act 1-e.fs2
++Flags: 0
++Main Hall: Tiger
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 1-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 2-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 1-e.fs2" ) )
+)
+
++Level: 5
++Position: 0
+
+$Mission: Act 2-0 movie.fs2
++Flags: 0
++Main Hall: Police
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 2-a.fs2" ) )
+)
+
++Level: 6
++Position: 0
+
+$Mission: Act 2-a.fs2
++Flags: 0
++Main Hall: Police
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 2-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 2-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 2-a.fs2" ) )
+)
+
++Level: 7
++Position: 0
+
+$Mission: Act 2-b.fs2
++Flags: 0
++Main Hall: Police
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 2-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 2-c.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 2-b.fs2" ) )
+)
+
++Level: 8
++Position: 0
+
+$Mission: Act 2-c.fs2
++Flags: 0
++Main Hall: Police
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 2-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 2-d.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 2-c.fs2" ) )
+)
+
++Level: 9
++Position: 0
+
+$Mission: Act 2-d.fs2
++Flags: 0
++Main Hall: Police
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 2-d.fs2" 
+         "init" 
+      )
+      ( next-mission "Act 2-e.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 2-d.fs2" ) )
+)
+
++Level: 10
++Position: 0
+
+$Mission: Act 2-e.fs2
++Flags: 0
++Main Hall: Police
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 2-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 2-f.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 2-e.fs2" ) )
+)
+
++Level: 11
++Position: 0
+
+$Mission: Act 2-f.fs2
++Flags: 0
++Main Hall: Police
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 2-f.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 3-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 2-f.fs2" ) )
+)
+
++Level: 12
++Position: 0
+
+$Mission: Act 3-0 movie.fs2
++Flags: 0
++Main Hall: Tiger
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 3-0 movie.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 3-a.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 3-0 movie.fs2" ) )
+)
+
++Level: 13
++Position: 0
+
+$Mission: Act 3-a.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 3-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 3-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 3-a.fs2" ) )
+)
+
++Level: 14
++Position: 0
+
+$Mission: Act 3-b.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 3-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 3-c.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 3-b.fs2" ) )
+)
+
++Level: 15
++Position: 0
+
+$Mission: Act 3-c.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 3-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 3-d.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 3-c.fs2" ) )
+)
+
++Level: 16
++Position: 0
+
+$Mission: Act 3-d.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 3-d.fs2" 
+         "Proceed to Next Mission" 
+      )
+      ( next-mission "Act 3-e.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 3-d.fs2" ) )
+)
+
++Level: 17
++Position: 0
+
+$Mission: Act 3-e.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 3-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 3-f.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 3-e.fs2" ) )
+)
+
++Level: 18
++Position: 0
+
+$Mission: Act 3-f.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 3-f.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 4-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 3-f.fs2" ) )
+)
+
++Level: 19
++Position: 0
+
+$Mission: Act 4-0 movie.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 4-a.fs2" ) )
+)
+
++Level: 20
++Position: 0
+
+$Mission: Act 4-a.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 4-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 4-b movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 4-a.fs2" ) )
+)
+
++Level: 21
++Position: 0
+
+$Mission: Act 4-b movie.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 4-c.fs2" ) )
+)
+
++Level: 22
++Position: 0
+
+$Mission: Act 4-c.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 4-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 4-d.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 4-c.fs2" ) )
+)
+
++Level: 23
++Position: 0
+
+$Mission: Act 4-d.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 4-d.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 4-e.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 4-d.fs2" ) )
+)
+
++Level: 24
++Position: 0
+
+$Mission: Act 4-e.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 4-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 4-f.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 4-e.fs2" ) )
+)
+
++Level: 25
++Position: 0
+
+$Mission: Act 4-f.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 4-f.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 4-g.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 4-f.fs2" ) )
+)
+
++Level: 26
++Position: 0
+
+$Mission: Act 4-g.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 4-g.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 5-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 4-g.fs2" ) )
+)
+
++Level: 27
++Position: 0
+
+$Mission: Act 5-0 movie.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 5-a.fs2" ) )
+)
+
++Level: 28
++Position: 0
+
+$Mission: Act 5-a.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 5-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 5-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 5-a.fs2" ) )
+)
+
++Level: 29
++Position: 0
+
+$Mission: Act 5-b.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 5-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 5-c.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 5-b.fs2" ) )
+)
+
++Level: 30
++Position: 0
+
+$Mission: Act 5-c.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 5-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 5-d.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 5-c.fs2" ) )
+)
+
++Level: 31
++Position: 0
+
+$Mission: Act 5-d.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 5-d.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 6-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 5-d.fs2" ) )
+)
+
++Level: 32
++Position: 0
+
+$Mission: Act 6-0 movie.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 6-a.fs2" ) )
+)
+
++Level: 33
++Position: 0
+
+$Mission: Act 6-a.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 6-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 6-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 6-a.fs2" ) )
+)
+
++Level: 34
++Position: 0
+
+$Mission: Act 6-b.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 6-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 6-c.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 6-b.fs2" ) )
+)
+
++Level: 35
++Position: 0
+
+$Mission: Act 6-c.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 6-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 6-d.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 6-c.fs2" ) )
+)
+
++Level: 36
++Position: 0
+
+$Mission: Act 6-d.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 6-d.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 6-e.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 6-d.fs2" ) )
+)
+
++Level: 37
++Position: 0
+
+$Mission: Act 6-e.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 6-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 6-f.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 6-e.fs2" ) )
+)
+
++Level: 38
++Position: 0
+
+$Mission: Act 6-f.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 6-f.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 6-g.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 6-f.fs2" ) )
+)
+
++Level: 39
++Position: 0
+
+$Mission: Act 6-g.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 6-g.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 7-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 6-g.fs2" ) )
+)
+
++Level: 40
++Position: 0
+
+$Mission: Act 7-0 movie.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 7-a.fs2" ) )
+)
+
++Level: 41
++Position: 0
+
+$Mission: Act 7-a.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 7-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 7-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 7-a.fs2" ) )
+)
+
++Level: 42
++Position: 0
+
+$Mission: Act 7-b.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 7-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 7-c.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 7-b.fs2" ) )
+)
+
++Level: 43
++Position: 0
+
+$Mission: Act 7-c.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 7-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 7-d.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 7-c.fs2" ) )
+)
+
++Level: 44
++Position: 0
+
+$Mission: Act 7-d.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 7-d.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 7-e.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 7-d.fs2" ) )
+)
+
++Level: 45
++Position: 0
+
+$Mission: Act 7-e.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 7-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 8-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 7-e.fs2" ) )
+)
+
++Level: 46
++Position: 0
+
+$Mission: Act 8-0 movie.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 8-a.fs2" ) )
+)
+
++Level: 47
++Position: 0
+
+$Mission: Act 8-a.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 8-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 8-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 8-a.fs2" ) )
+)
+
++Level: 48
++Position: 0
+
+$Mission: Act 8-b.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 8-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 8-c.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 8-b.fs2" ) )
+)
+
++Level: 49
++Position: 0
+
+$Mission: Act 8-c.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 8-c.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 8-d movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 8-c.fs2" ) )
+)
+
++Level: 50
++Position: 0
+
+$Mission: Act 8-d movie.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 8-e.fs2" ) )
+)
+
++Level: 51
++Position: 0
+
+$Mission: Act 8-e.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 8-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 8-f.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 8-e.fs2" ) )
+)
+
++Level: 52
++Position: 0
+
+$Mission: Act 8-f.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 8-f.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 8-g.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 8-f.fs2" ) )
+)
+
++Level: 53
++Position: 0
+
+$Mission: Act 8-g.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 8-g.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 9-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 8-g.fs2" ) )
+)
+
++Level: 54
++Position: 0
+
+$Mission: Act 9-0 movie.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 9-a.fs2" ) )
+)
+
++Level: 55
++Position: 0
+
+$Mission: Act 9-a.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 9-a.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 9-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 9-a.fs2" ) )
+)
+
++Level: 56
++Position: 0
+
+$Mission: Act 9-b.fs2
++Flags: 0
++Main Hall: 1
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 9-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 9-c movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 9-b.fs2" ) )
+)
+
++Level: 57
++Position: 0
+
+$Mission: Act 9-c movie.fs2
++Flags: 0
++Main Hall: Warlock
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 9-d.fs2" ) )
+)
+
++Level: 58
++Position: 0
+
+$Mission: Act 9-d.fs2
++Flags: 0
++Main Hall: Warlock
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 9-d.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 9-e.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 9-d.fs2" ) )
+)
+
++Level: 59
++Position: 0
+
+$Mission: Act 9-e.fs2
++Flags: 0
++Main Hall: Warlock
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 9-e.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 9-f.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 9-e.fs2" ) )
+)
+
++Level: 60
++Position: 0
+
+$Mission: Act 9-f.fs2
++Flags: 0
++Main Hall: Warlock
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 9-f.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 10-0 movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 9-f.fs2" ) )
+)
+
++Level: 61
++Position: 0
+
+$Mission: Act 10-0 movie.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 10-a.fs2" ) )
+)
+
++Level: 62
++Position: 0
+
+$Mission: Act 10-a.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 10-a.fs2" 
+         "init" 
+      )
+      ( next-mission "Act 10-b.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 10-a.fs2" ) )
+)
+
++Level: 63
++Position: 0
+
+$Mission: Act 10-b.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 10-b.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 10-c movie.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 10-b.fs2" ) )
+)
+
++Level: 64
++Position: 0
+
+$Mission: Act 10-c movie.fs2
++Flags: 0
++Main Hall: 
++Formula: ( cond
+   ( ( true ) ( next-mission "Act 10-d.fs2" ) )
+)
+
++Level: 65
++Position: 0
+
+$Mission: Act 10-d.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   (
+      ( is-previous-event-true 
+         "Act 10-d.fs2" 
+         "Continue" 
+      )
+      ( next-mission "Act 10-e Credits.fs2" )
+   )
+   ( ( true ) ( next-mission "Act 10-d.fs2" ) )
+)
+
++Level: 66
++Position: 0
+
+$Mission: Act 10-e Credits.fs2
++Flags: 0
++Main Hall: 0
++Formula: ( cond
+   ( ( true ) ( end-of-campaign ) )
+)
+
++Level: 67
++Position: 0
+
+#End
+

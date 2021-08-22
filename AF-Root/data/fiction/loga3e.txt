@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VSMZ-002 $}
+$b{/UPLOADER: $VLT. $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>HVWC-992-XDF-90023 $}
+
+$B{Personal Log:
+July 24, 2370 
+Adhara System $}
+
+The nightmare I have dreaded for three years is back. I can't believe this is happening. The Shivans had cracked me open and wounded me. The reason I left the military after Capella. Now, they come to finish the job. I don't know which is stronger, my fear or my anger. But one thing is sure. Hell has come to devour us again and this time it will be ghastlier. The Shivans are near. I can feel them. My memories of the enemy are still very frighteningly fresh. And so it begins---The Third Shivan War.
+
+$b{/<END OF LOG> $}

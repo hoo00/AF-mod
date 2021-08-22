@@ -1,0 +1,17 @@
+SOC EAGLE
+
+Type:  Space Superiority
+Maneuverability:  Average
+Hull Armor:  Average
+Manufacturer:  Polaris Shipyards
+Length:  25 meters
+Gun Mounts:  6 Mounts (2,4)
+Missile Banks:  3 Banks
+Description:  SOC Standard Issue
+
+
+The SOC Eagle is a standard issue for Special Operations Command. It is similar to the new Dark Angel fighter with regards to handling and firepower. It is well shielded and heavily armored fighter designed for its purpose. All other data are classified.
+
+
+
+

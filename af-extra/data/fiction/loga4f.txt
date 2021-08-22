@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VWQB-912 $}
+$b{/UPLOADER: $VLT. $VCOMMANDER $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>LZDN-116-MKP-85024 $}
+
+$B{Personal Log:
+August 14, 2370
+Shiva System $}
+
+I had a bad dream and woke up sweating. Usually the memory of it will just fade in a few minutes but this one stayed and it is very clear. I saw an image of a blue dragon while sitting by the rocky shore, the ocean was pretty distraught. The beast was talking to me of things to come. I suddenly recognized the voice. It's him. The one who is always whispering to me, who seem to guide me, directing my urges and controlling my maneuvers that enabled me to survive the most petrifying combat situations. My blue guardian. He was speaking of purpose, of dignity and of events that will slowly unfold but I haven't got all of it especially the prophetic part. After the gibberish that seemed to go for a long time, he shouted "WAKE UP!" Then the dream ended. Ok...I'm really going nuts. I need a psychiatrist.
+
+$b{/<END OF LOG> $}

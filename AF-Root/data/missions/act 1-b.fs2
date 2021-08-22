@@ -1,0 +1,2990 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("Shadow Raiders", -1)
+$Author: Herkie D.S.
+$Created: 10/23/15 at 23:57:48
+$Modified: 07/02/17 at 20:08:48
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Stardate: May 2, 2370 Raiding a convoy", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 262144
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: -5400.230957, 671.567444, 3317.731445
++Viewer orient:
+	-0.434262, 0.000012, -0.900787,
+	0.196564, 0.975902, -0.094749,
+	0.879079, -0.218208, -0.423800
+
+$Starting wing names: ( "Tiger" "Lion" "Puma" )
+$Squadron wing names: ( "Tiger" "Lion" "Puma" "Leopard" "Cheetah" )
+$Team-versus-team wing names: ( "Tiger" "Lion" )
+
+$Load Screen 640:	LoadAct1Sa.dds
+$Load Screen 1024:	LoadAct1La.dds
+
+$Skybox Model: Starfield.pof
+
+$AI Profile: AF1
+
+#Sexp_variables
+
+$Variables:
+(
+		0		"DamnIt"		"0"		"number"
+		1		"OnCourse"		"0"		"number"		"campaign-persistent"
+		2		"TimeStart"		"0"		"number"
+)
+
+#Command Briefing
+
+$Stage Text:
+ XSTR("$B{ From The Director
+Triton Dynamics Incorporated $}
+
+We have some special work for you tigers and we believe that you professionals will accomplish this smoothly and quietly. 
+
+Our longtime rival, the $R{ Akheton Corporation $} , have been making illicit deals with the  $R{ United Pirate Coalition $} in $Y Deneb. We have learned that they plan to sell a weapon prototype which was actually ours. It was stolen from our research department 3 months ago. 
+
+Now, our competition have their hands on what is rightfully the property of this company. We condemn this foul business practice. So I want you Tigers to teach them a lesson. Give them a blow they will never forget and a generous compensation is waiting for you upon completion of our agreement.", -1)
+$end_multi_text
+$Ani Filename: cb_Act1b.ani
++Wave Filename: none
+
+#Briefing
+$start_briefing
+$num_stages: 3
+$start_stage
+$multi_text
+ XSTR("Good day, I am James Blanco of the $G{ Triton Dynamics Incorporated $}, Operations Division. I will be briefing you in this mission.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: -6592.000488, 8685.757813, -23.357433
+$camera_orient:
+	0.008975, 0.000010, -0.999960,
+	0.901213, 0.433301, 0.008093,
+	0.433283, -0.901249, 0.003879
+$camera_time: 3000
+$num_lines: 0
+$num_icons: 1
+$Flags: 1
+$Formula: ( true ) 
+$start_icon
+$type: 1
+$team: Friendly
+$class: TF Tiger
+$pos: -2844.837891, 653.797119, -19.305275
+$label: Tigers
++id: 1
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("The $R{ Akheton Corporation $} has a $R{ convoy with fighter escorts $} here in $Y Sirius traveling to the $V Deneb $V Jump $V Node. The contents of these vessels are new weapons developed by them ready for market. Aboard one of these cargo vessels is the prototype of a new projectile weapon that was invented by us. You have to $B{ destroy this convoy and its escorts $}, the prototype and all their shipments, $B{ leaving no witnesses behind $}.
+", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: -2382.061523, 7493.492676, -37.661346
+$camera_orient:
+	0.003421, 0.000011, -0.999994,
+	0.901245, 0.433300, 0.003088,
+	0.433297, -0.901250, 0.001473
+$camera_time: 500
+$num_lines: 0
+$num_icons: 9
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 1
+$team: Friendly
+$class: TF Tiger
+$pos: -2844.837891, 653.797119, -19.305275
+$label: Tigers
++id: 1
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 34
+$team: Friendly
+$class: GTT Neptune
+$pos: 721.034485, -132.702042, 195.249741
+$label: Miranda
++id: 2
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 34
+$team: Friendly
+$class: GTT Argo
+$pos: 1715.789795, -75.040848, 1931.987427
+$label: Veronica
++id: 3
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 34
+$team: Friendly
+$class: GTT Argo
+$pos: 1633.571533, 220.349289, 191.565521
+$label: Sabrina
++id: 4
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 11
+$team: Friendly
+$class: GTFR Triton
+$pos: 1508.320190, 218.717514, -1428.281250
+$label: Gregory
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Ulysses
+$pos: 367.087128, -132.666306, 2495.608643
+$label: Delta
++id: 6
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Ulysses
+$pos: 2372.964111, -119.893227, 2741.173584
+$label: Gamma
++id: 7
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Hercules Mark II
+$pos: 255.176620, 182.567993, -2086.412598
+$label: Beta
++id: 8
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Hercules Mark II
+$pos: 2125.687988, 329.524689, -2386.311279
+$label: Alpha
++id: 9
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("You must also know that these freighters have $P{ advanced alarm systems $} installed. In the $B{ event of an attack $} or if the $B{ convoy is alerted $}, a warning beam burst will be transmitted to the nearest police spaceport and it will take the authorities just $V{ 5 minutes $} to reach the location. You will not be able to jam their comms systems. Therefore $G{ the operation must be done in that time frame $}. We do not want an incident that will incriminate this company.
+
+", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: -1734.003174, 6987.281738, -563.996582
+$camera_orient:
+	0.582681, 0.000013, -0.812701,
+	0.745353, 0.398578, 0.534401,
+	0.323932, -0.917134, 0.232234
+$camera_time: 500
+$num_lines: 0
+$num_icons: 9
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 1
+$team: Friendly
+$class: TF Tiger
+$pos: -2844.837891, 653.797119, -19.305275
+$label: Tigers
++id: 1
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 34
+$team: Friendly
+$class: GTT Neptune
+$pos: 171.443924, -132.698669, 1033.363770
+$label: Miranda
++id: 2
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 34
+$team: Friendly
+$class: GTT Argo
+$pos: 113.662407, -75.038200, 2700.796143
+$label: Veronica
++id: 3
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 34
+$team: Friendly
+$class: GTT Argo
+$pos: 911.777832, 220.348938, 1498.563965
+$label: Sabrina
++id: 4
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 11
+$team: Friendly
+$class: GTFR Triton
+$pos: 1601.366943, 218.713074, 441.217102
+$label: Gregory
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Ulysses
+$pos: 24.606564, -132.666733, 3730.629639
+$label: Delta
++id: 6
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Ulysses
+$pos: -1063.178101, -119.893387, 2726.968994
+$label: Gamma
++id: 7
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Hercules Mark II
+$pos: 1237.388550, 182.567551, -790.906982
+$label: Beta
++id: 8
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Hercules Mark II
+$pos: 2475.620117, 329.524811, -76.655113
+$label: Alpha
++id: 9
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 4
+
+$Formula: ( and 
+   ( is-goal-true-delay 
+      "Destroy Convoy" 
+      0 
+   )
+   ( not 
+      ( is-event-true-delay 
+         "Cue for the Police" 
+         0 
+      )
+   )
+)
+$Multi text
+    XSTR("$B{ From the Director
+Triton Dynamics Incorporated $}
+
+Mission success. That was a job well done. You have all our thanks. We have surely gave them a hell of a reprimand. They must realize that unfair business practices are not tolerated in this galaxy.
+
+For your inexplicable talents, a compensation of 400,000 credits have been transferred to your account. Have a good time, Tigers and remember don't spend it in one place.
+
+$P{ LCARS UPDATE: $} $G{New entries in Techroom Database $}", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( is-goal-false-delay 
+      "Destroy Convoy" 
+      0 
+   )
+   ( is-event-true-delay 
+      "Cue for the Police" 
+      0 
+   )
+)
+$Multi text
+    XSTR("$B{ From the Director
+Triton Dynamics Incorporated $}
+
+The mission was a failure. The Akkerton Corporation have gained the stolen prototype of our new weapon. For sure, they will begin a mass production of this technology and sell it to the GTVA military. We will lose our bid for a military contract and leaving us nothing but bitter shame.
+
+Much worse than that, the Akkerton officials in the scene have traced your jump signatures and we are in effect implicated. While Triton Dynamics will be vindicated and sued by our dirty rival company, you will be hunted down by every police force in the GTVA. There will be no escape for you.
+", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("FOLLOW INSTRUCTIONS. Your team leader will tell you the best time to attack. If you go in quickly leaving your team behind, you will be dealing with the enemy alone while your companions catches up. KILL THE FIGHTERS FIRST. Those fighters will scatter once the transports are destroyed. Don't fire your weapons early. The transports will be alerted and the clock runs.", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( is-goal-true-delay 
+      "Destroy Convoy" 
+      0 
+   )
+   ( is-event-true-delay 
+      "Cue for the Police" 
+      0 
+   )
+)
+$Multi text
+    XSTR("$B{ From the Director
+Triton Dynamics Incorporated $}
+
+That was a disaster, John Richter. Despite the completion of your objectives, you failed to jump out of there before the law enforcers arrive. And even though you had fled the scene, the entire GTVA police force will be hunting you down. There will be no escape for you. This will be our last message. Further communications will not be possible and a credit transfer will establish a trace to implicate us. Good luck.
+
+", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("JUMP OUT QUICKLY once this mission is complete and you are told to depart. The clock is still running even after your success.", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( is-goal-false-delay 
+      "Destroy Convoy" 
+      0 
+   )
+   ( is-event-false-delay 
+      "Cue for the Police" 
+      0 
+   )
+   ( has-departed-delay 0 "Tiger 1" ) 
+)
+$Multi text
+    XSTR("$B{ Message from Neil $quoteTiger$quote Sutherland
+Tiger 2 of the Tiger Mercenaries $}
+
+You son of a bitch! Jumping out like that! Abandoning us! Is this how you treat your teammates? We cannot make that run if we are one man short. This gig was our jackpot and you blew it. You wasted it! I am suspicious about you, Richter. I think you are working for the enforcers. Do you know what will happen now? I'm going to hunt you down and destroy you until you and your stupid ship will be nothing but handful of dust!
+
+", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("You are not suppose to jump out without completing your mission.", -1)
+$end_multi_text
+
+#Alternate Types:
+$Alt: Tiger Mercenaries
+$Alt: Akkerton Corporation
+$Alt: Armed Escort
+$Alt: Vega Police Enforcer
+$Alt: Vega Police
+$Alt: Police Enforcer
+
+#end
+
+
+#Callsigns:
+$Callsign: Fred
+$Callsign: Niel
+$Callsign: Frank
+
+#end
+
+
+#Players		;! 1 total
+
+$Starting Shipname: Tiger 1
+$Ship Choices: (
+	"GTF Hercules Mark II"	1
+	"GTF Ares"	1
+	"GTF Perseus"	1
+	"TF Tiger"	1
+)
+
++Weaponry Pool: (
+	"Prometheus R"	2
+	"Prometheus S"	2
+	"Maxim"	1
+	"UD-8 Kayser"	4
+	"Rockeye"	100
+	"Tempest"	800
+	"Harpoon"	220
+	"Trebuchet"	100
+	"Ripper"	3
+	"Tornado"	288
+)
+
+#Objects		;! 43 total
+
+$Name: Tiger 1		;! Object #0
+$Class: XJR Phantom
+$Team: Friendly
+$Location: -5343.435547, 653.799988, 3292.957764
+$Orientation:
+	-0.535062, 0.000000, -0.844813,
+	0.060909, 0.997398, -0.038577,
+	0.842614, -0.072098, -0.533669
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Gregory" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "Ripper" "Prometheus S" )
++Secondary Banks: ( "Tornado" "Tornado" "Harpoon" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 8
+
+$Name: Gregory		;! Object #1
+$Class: GTFR Triton
+$Alt: Akkerton Corporation
+
+$Team: Friendly
+$Location: 864.884644, 218.716187, 175.180847
+$Orientation:
+	1.000000, -0.000000, -0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Gregory Point" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 257		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 20
+
+$Name: Special Cargo 7D		;! Object #2
+$Class: TC-TRI
+$Alt: Akkerton Corporation
+
+$Team: Friendly
+$Location: 864.190430, 229.636703, 366.140106
+$Orientation:
+	1.000000, -0.000000, 0.000004,
+	0.000000, 1.000000, -0.000108,
+	-0.000004, 0.000108, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Stolen Prototype", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Docked With: Gregory
+$Docker Point: Cargo Dock01
+$Dockee Point: Cargo Dockpoint
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Miranda		;! Object #3
+$Class: GTT Neptune
+$Alt: Akkerton Corporation
+
+$Team: Friendly
+$Location: 636.171692, -132.701080, 477.442841
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Miranda Point" 89 ) )
+$Cargo 1:  XSTR("Weapon Shipments", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Primary Banks: ( "Terran Turret" )
++Subsystem: turret02
++Primary Banks: ( "Terran Turret" )
++Subsystem: turret03
++Primary Banks: ( "Terran Turret" )
++Subsystem: turret04
++Primary Banks: ( "Terran Turret" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 12000
++Orders Accepted: 257		;! note that this is a bitfield!!!
++Group: 0
++Score: 40
+
+$Name: Sabrina		;! Object #4
+$Class: GTT Argo
+$Alt: Akkerton Corporation
+
+$Team: Friendly
+$Location: 870.148254, 220.345352, 705.136780
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Sabrina Point" 89 ) )
+$Cargo 1:  XSTR("Weapon Shipments", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 257		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 40
+
+$Name: Veronica		;! Object #5
+$Class: GTT Argo
+$Alt: Akkerton Corporation
+
+$Team: Friendly
+$Location: 984.652039, -75.045639, 999.593506
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Veronica Point" 89 ) )
+$Cargo 1:  XSTR("User Electronics", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 257		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 40
+
+$Name: Tiger 2		;! Object #6
+$Class: TF Tiger
+$Alt: Tiger Mercenaries
+
+$Callsign: Niel
+
+$Team: Friendly
+$Location: -5258.617188, 613.152222, 3182.429688
+$Orientation:
+	-0.536337, 0.000000, -0.844004,
+	0.056343, 0.997769, -0.035804,
+	0.842121, -0.066757, -0.535140
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Miranda" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "UD-8 Kayser" "Ripper" )
++Secondary Banks: ( "Tornado" "Harpoon" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "guardian" )
++Flags2: ( "ship-locked" "weapons-locked" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 40
++Persona Index: 0
+
+$Name: Tiger 3		;! Object #7
+$Class: TF Tiger
+$Alt: Tiger Mercenaries
+
+$Callsign: Frank
+
+$Team: Friendly
+$Location: -5217.805176, 625.048889, 3288.405762
+$Orientation:
+	-0.546165, 0.000000, -0.837678,
+	0.056982, 0.997684, -0.037152,
+	0.835737, -0.068024, -0.544900
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Miranda" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "UD-8 Kayser" "Ripper" )
++Secondary Banks: ( "Tornado" "Harpoon" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "guardian" )
++Flags2: ( "ship-locked" "weapons-locked" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 40
++Persona Index: 1
+
+$Name: Alpha 1		;! Object #8
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 460.975159, 329.519806, 76.454941
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Gregory" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Alpha 2		;! Object #9
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 1374.265503, 46.643044, 453.346649
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Gregory" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Alpha 3		;! Object #10
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 856.078186, 329.519836, 512.069092
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Gregory" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Alpha 4		;! Object #11
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 685.725891, 329.519928, 345.652283
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Gregory" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Beta 1		;! Object #12
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: -41.184498, 182.568512, 446.008087
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Miranda" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Beta 2		;! Object #13
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 45.414074, 182.568588, 669.538574
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Miranda" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Beta 3		;! Object #14
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 281.394226, 182.568817, 476.838654
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Miranda" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Beta 4		;! Object #15
+$Class: GTF Hercules Mark II
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 285.774170, 0.004926, 206.454117
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$AI Goals: ( goals ( ai-guard "Miranda" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Gamma 1		;! Object #16
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 1237.965942, 119.335297, 899.853149
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Sabrina" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Gamma 2		;! Object #17
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 1171.170044, -179.959076, 876.890137
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Sabrina" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Gamma 3		;! Object #18
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 1470.159546, -0.000023, 619.087463
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Sabrina" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Gamma 4		;! Object #19
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 1566.415405, -119.892525, 841.700562
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Sabrina" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Delta 1		;! Object #20
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 148.024673, -132.662689, 1251.250122
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Veronica" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Delta 2		;! Object #21
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 311.839111, 207.889206, 1392.434692
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Veronica" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Delta 3		;! Object #22
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 511.180420, 141.010315, 1205.295654
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Veronica" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Delta 4		;! Object #23
+$Class: GTF Ulysses
+$Alt: Armed Escort
+
+$Team: Friendly
+$Location: 311.346283, 40.762714, 1028.036743
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$AI Goals: ( goals ( ai-guard "Veronica" 89 ) ( ai-chase-any 88 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: GTF Enforcer 30		;! Object #24
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1701.201782, 0.002439, 12293.712891
+$Orientation:
+	-0.469923, 0.000000, 0.882707,
+	0.000000, 1.000000, 0.000000,
+	-0.882707, 0.000000, -0.469923
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Hyperion		;! Object #25
+$Class: GTC Hyperion
+$Alt: Vega Police
+
+$Team: Hostile
+$Location: 1864.311401, 71.135239, 12116.045898
+$Orientation:
+	-0.461073, 0.000000, 0.887363,
+	0.000000, 1.000000, 0.000000,
+	-0.887363, 0.000000, -0.461073
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: GTF Enforcer 32		;! Object #26
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1672.808105, 33.638165, 12474.791016
+$Orientation:
+	-0.469923, 0.000000, 0.882707,
+	0.000000, 1.000000, 0.000000,
+	-0.882707, 0.000000, -0.469923
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 33		;! Object #27
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1576.849731, 25.521370, 12607.656250
+$Orientation:
+	-0.469923, 0.000000, 0.882707,
+	0.000000, 1.000000, 0.000000,
+	-0.882707, 0.000000, -0.469923
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 34		;! Object #28
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1433.545044, 0.002401, 12691.265625
+$Orientation:
+	-0.469923, 0.000000, 0.882707,
+	0.000000, 1.000000, 0.000000,
+	-0.882707, 0.000000, -0.469923
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 35		;! Object #29
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1217.373047, -46.021225, 12759.166016
+$Orientation:
+	-0.469923, 0.000000, 0.882707,
+	0.000000, 1.000000, 0.000000,
+	-0.882707, 0.000000, -0.469923
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 36		;! Object #30
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2036.918335, 36.362377, 11953.157227
+$Orientation:
+	-0.496189, 0.000000, 0.868214,
+	0.000000, 1.000000, 0.000000,
+	-0.868214, 0.000000, -0.496189
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 37		;! Object #31
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2053.017334, 24.154087, 11839.513672
+$Orientation:
+	-0.496189, 0.000000, 0.868214,
+	0.000000, 1.000000, 0.000000,
+	-0.868214, 0.000000, -0.496189
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 38		;! Object #32
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2139.718994, 0.002301, 11599.876953
+$Orientation:
+	-0.496189, 0.000000, 0.868214,
+	0.000000, 1.000000, 0.000000,
+	-0.868214, 0.000000, -0.496189
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 39		;! Object #33
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2268.501953, 44.294407, 11431.061523
+$Orientation:
+	-0.496189, 0.000000, 0.868214,
+	0.000000, 1.000000, 0.000000,
+	-0.868214, 0.000000, -0.496189
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 40		;! Object #34
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2299.017822, 71.560410, 11258.670898
+$Orientation:
+	-0.496189, 0.000000, 0.868214,
+	0.000000, 1.000000, 0.000000,
+	-0.868214, 0.000000, -0.496189
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 1
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 41		;! Object #35
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2348.689697, 266.953278, 11746.750977
+$Orientation:
+	-0.563985, 0.000000, 0.825785,
+	0.000000, 1.000000, 0.000000,
+	-0.825785, 0.000000, -0.563985
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 42		;! Object #36
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2368.159424, 244.124084, 11896.976563
+$Orientation:
+	-0.563985, 0.000000, 0.825785,
+	0.000000, 1.000000, 0.000000,
+	-0.825785, 0.000000, -0.563985
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 43		;! Object #37
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2347.155518, 227.764191, 12020.811523
+$Orientation:
+	-0.563985, 0.000000, 0.825785,
+	0.000000, 1.000000, 0.000000,
+	-0.825785, 0.000000, -0.563985
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 2
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 44		;! Object #38
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2254.479004, 275.831665, 12182.209961
+$Orientation:
+	-0.563985, 0.000000, 0.825785,
+	0.000000, 1.000000, 0.000000,
+	-0.825785, 0.000000, -0.563985
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 2
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 45		;! Object #39
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 2039.412598, 287.690338, 12467.329102
+$Orientation:
+	-0.530512, 0.000000, 0.847678,
+	0.000000, 1.000000, 0.000000,
+	-0.847678, 0.000000, -0.530512
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 2
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 46		;! Object #40
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1955.610474, 246.189041, 12612.605469
+$Orientation:
+	-0.530512, 0.000000, 0.847678,
+	0.000000, 1.000000, 0.000000,
+	-0.847678, 0.000000, -0.530512
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 2
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 47		;! Object #41
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1889.859497, 255.889130, 12676.835938
+$Orientation:
+	-0.530512, 0.000000, 0.847678,
+	0.000000, 1.000000, 0.000000,
+	-0.847678, 0.000000, -0.530512
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: GTF Enforcer 48		;! Object #42
+$Class: GTF Enforcer
+$Alt: Police Enforcer
+
+$Team: Hostile
+$Location: 1785.496826, 235.014999, 12757.220703
+$Orientation:
+	-0.530512, 0.000000, 0.847678,
+	0.000000, 1.000000, 0.000000,
+	-0.847678, 0.000000, -0.530512
+$AI Behavior: None
++AI Class: Colonel
+$AI Goals: ( goals ( ai-chase-wing "Tiger" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "Cue for the Police" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+#Wings		;! 5 total
+
+$Name: Tiger
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Tiger 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 3 total
+	"Tiger 1"
+	"Tiger 2"
+	"Tiger 3"
+)
++Flags: ( )
+
+$Name: Alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Alpha 1"
+	"Alpha 2"
+	"Alpha 3"
+	"Alpha 4"
+)
++Flags: ( )
+
+$Name: Beta
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Beta 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Beta 1"
+	"Beta 2"
+	"Beta 3"
+	"Beta 4"
+)
++Flags: ( )
+
+$Name: Gamma
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Gamma 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Gamma 1"
+	"Gamma 2"
+	"Gamma 3"
+	"Gamma 4"
+)
++Flags: ( )
+
+$Name: Delta
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Delta 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Delta 1"
+	"Delta 2"
+	"Delta 3"
+	"Delta 4"
+)
++Flags: ( )
+
+#Events		;! 51 total
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable 
+      @OnCourse[0] 
+      ( + @OnCourse[0] 1 ) 
+   )
+   ( ship-guardian-threshold 
+      57 
+      "Tiger 2" 
+   )
+   ( ship-guardian-threshold 
+      43 
+      "Tiger 3" 
+   )
+)
++Name: Init
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Proximity Check-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Tiger 2" "Miranda" ) 
+      700 
+   )
+   ( change-iff 
+      "Hostile" 
+      "Gregory" 
+      "Special Cargo 7D" 
+      "Miranda" 
+      "Sabrina" 
+      "Veronica" 
+      "Alpha" 
+      "Beta" 
+      "Gamma" 
+      "Delta" 
+   )
+   ( clear-goals "Tiger" ) 
+   ( modify-variable 
+      @OnCourse[0] 
+      ( + @OnCourse[0] 5 ) 
+   )
+   ( modify-variable @DamnIt[0] 1 ) 
+)
++Name: Proxinity Reached
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase-any 89 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Alpha" 88 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Beta" 87 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Gamma" 86 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Delta" 85 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Veronica" 84 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Miranda" 83 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Gregory" 84 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Special Cargo 7D" 83 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Sabrina" 83 ) 
+   )
+)
++Name: Tigers Attack
++Repeat Count: 1
++Interval: 1
++Chained: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Action Checks--------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( or 
+         ( primary-fired-since "Tiger 1" 0 50 ) 
+         ( primary-fired-since "Tiger 1" 1 50 ) 
+      )
+      ( or 
+         ( secondary-fired-since 
+            "Tiger 1" 
+            0 
+            50 
+         )
+         ( secondary-fired-since 
+            "Tiger 1" 
+            1 
+            50 
+         )
+         ( secondary-fired-since 
+            "Tiger 1" 
+            2 
+            50 
+         )
+      )
+   )
+   ( modify-variable 
+      @OnCourse[0] 
+      ( + @OnCourse[0] 5 ) 
+   )
+)
++Name: If Alpha fires weapons
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( change-iff 
+      "Hostile" 
+      "Gregory" 
+      "Special Cargo 7D" 
+      "Miranda" 
+      "Sabrina" 
+      "Veronica" 
+      "Alpha" 
+      "Beta" 
+      "Gamma" 
+      "Delta" 
+   )
+   ( send-message 
+      "Miranda" 
+      "High" 
+      "Alerted" 
+   )
+)
++Name: Convoy Alerted
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( clear-goals "Tiger" ) 
+)
++Name: Tigers Reset Goals
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase-any 89 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Alpha" 88 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Beta" 87 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Gamma" 86 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Delta" 85 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Veronica" 84 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Miranda" 83 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Gregory" 84 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Special Cargo 7D" 83 ) 
+   )
+   ( add-goal 
+      "Tiger" 
+      ( ai-chase "Sabrina" 82 ) 
+   )
+)
++Name: Tigers Attack Now
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ---Mission Time Counter----
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( is-event-true-delay 
+         "Proxinity Reached" 
+         0 
+      )
+      ( is-event-true-delay 
+         "Convoy Alerted" 
+         0 
+      )
+   )
+   ( modify-variable 
+      @TimeStart[0] 
+      ( + @TimeStart[0] ( mission-time ) ) 
+   )
+   ( training-msg "start" ) 
+)
++Name: Mission Time Mark
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-time-elapsed 
+      ( + @TimeStart[0] 60 ) 
+   )
+   ( training-msg "1min" ) 
+)
++Name: 1 min warning
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( has-time-elapsed 
+      ( + @TimeStart[0] 120 ) 
+   )
+   ( training-msg "2min" ) 
+)
++Name: 2 min warning
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( has-time-elapsed 
+      ( + @TimeStart[0] 180 ) 
+   )
+   ( training-msg "3min" ) 
+)
++Name: 3 min warning
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( has-time-elapsed 
+      ( + @TimeStart[0] 240 ) 
+   )
+   ( training-msg "4min" ) 
+)
++Name: 4 min warning
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( has-time-elapsed 
+      ( + @TimeStart[0] 300 ) 
+   )
+   ( training-msg "TimeUp" ) 
+)
++Name: 5 min warning
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: Cue for the Police
++Repeat Count: 1
++Interval: 1
++Chained: 12
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Directives----------------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "Gregory" 
+      "Special Cargo 7D" 
+      "Miranda" 
+      "Sabrina" 
+      "Veronica" 
+   )
+   ( do-nothing ) 
+)
++Name: Destroy Convoy
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Convoy", -1)
+
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Alpha" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Alpha
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Alpha", -1)
+
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Beta" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Beta
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Beta", -1)
+
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Gamma" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Gamma
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Gamma", -1)
+
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Delta" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Delta
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Delta", -1)
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Dialogues----
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( = @OnCourse[0] 1 ) 
+   ( send-message 
+      "Tiger 2" 
+      "High" 
+      "Neil1" 
+   )
+)
++Name: Attack on my signal
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( and 
+      ( is-event-true-delay 
+         "If Alpha fires weapons" 
+         0 
+      )
+      ( = @DamnIt[0] 0 ) 
+   )
+   ( send-message 
+      "Tiger 2" 
+      "High" 
+      "Neil1a" 
+   )
+   ( modify-variable 
+      @DamnIt[0] 
+      ( + @DamnIt[0] 1 ) 
+   )
+)
++Name: Damn it Richter
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( and 
+      ( < 
+         ( distance "Tiger 2" "Miranda" ) 
+         5000 
+      )
+      ( = @OnCourse[0] 1 ) 
+   )
+   ( send-message 
+      "Alpha 1" 
+      "High" 
+      "escort1" 
+   )
+)
++Name: 1st warning
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( = @OnCourse[0] 1 ) 
+   ( send-message 
+      "Tiger 2" 
+      "High" 
+      "Neil2" 
+   )
+)
++Name: No response
++Repeat Count: 1
++Interval: 1
++Chained: 7
+
+
+$Formula: ( when 
+   ( = @OnCourse[0] 1 ) 
+   ( send-message 
+      "Tiger 3" 
+      "High" 
+      "Frank1" 
+   )
+)
++Name: Got it boss
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+
+$Formula: ( when 
+   ( and 
+      ( < 
+         ( distance "Tiger 2" "Miranda" ) 
+         3000 
+      )
+      ( = @OnCourse[0] 1 ) 
+   )
+   ( send-message 
+      "Alpha 1" 
+      "High" 
+      "escort2" 
+   )
+)
++Name: 2nd warning
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( and 
+      ( < 
+         ( distance "Tiger 2" "Miranda" ) 
+         2000 
+      )
+      ( = @OnCourse[0] 1 ) 
+   )
+   ( send-message 
+      "Alpha 1" 
+      "High" 
+      "escort3" 
+   )
+)
++Name: Last warning
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Proxinity Reached" 
+      0 
+   )
+   ( send-message 
+      "Tiger 2" 
+      "High" 
+      "Neil3" 
+   )
+   ( training-msg "start" ) 
+)
++Name: Attack now
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Alpha 1" 
+      "High" 
+      "escort4" 
+   )
+)
++Name: We are under attack
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Attack Begins-----------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "1 min warning" 
+      0 
+   )
+   ( send-message 
+      "Tiger 3" 
+      "High" 
+      "Frank2" 
+   )
+)
++Name: 4 min remaining
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "2 min warning" 
+      0 
+   )
+   ( send-message 
+      "Tiger 3" 
+      "High" 
+      "Frank3" 
+   )
+)
++Name: 3 min remaining
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Tiger 2" 
+      "High" 
+      "Neil4" 
+   )
+)
++Name: Counting not helping
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Tiger 3" 
+      "High" 
+      "Frank4" 
+   )
+)
++Name: Sorry boss
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+
+$Formula: ( when 
+   ( and 
+      ( is-goal-true-delay 
+         "Destroy Convoy" 
+         0 
+      )
+      ( not 
+         ( is-event-true-delay 
+            "Cue for the Police" 
+            0 
+         )
+      )
+   )
+   ( send-message 
+      "Tiger 2" 
+      "High" 
+      "Neil5" 
+   )
+)
++Name: Nice work
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+
+$Formula: ( when 
+   ( true ) 
+   ( clear-goals "Tiger" ) 
+)
++Name: Clear Goals Tigers
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+
+$Formula: ( when 
+   ( true ) 
+   ( add-goal "Tiger" ( ai-warp-out 89 ) ) 
+)
++Name: Tigers Jump Out
++Repeat Count: 1
++Interval: 1
++Chained: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Scenarios------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-goal-incomplete "Destroy Convoy" ) 
+      ( is-event-true-delay 
+         "Cue for the Police" 
+         0 
+      )
+   )
+   ( send-message 
+      "Tiger 2" 
+      "High" 
+      "Neil6" 
+   )
+)
++Name: The cops are here
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "The cops are here" 
+      4 
+   )
+   ( clear-goals "Tiger" ) 
+)
++Name: Clear Goals Tigers 2
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( add-goal "Tiger" ( ai-warp-out 89 ) ) 
+)
++Name: Tigers Bug Out - Failure
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( has-departed-delay 0 "Tiger 1" ) 
+   ( do-nothing ) 
+)
++Name: RTB Fail
++Repeat Count: 1
++Interval: 1
++Chained: 5
++Objective:  XSTR("Jump Out", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Clear Goals Tigers" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Goals Completed
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-departed-delay 0 "Tiger 1" ) 
+   ( do-nothing ) 
+)
++Name: RTB Success
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Jump Out Quick", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -------------------------------
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( and 
+      ( is-goal-true-delay 
+         "Destroy Convoy" 
+         0 
+      )
+      ( not 
+         ( is-event-true-delay 
+            "Cue for the Police" 
+            0 
+         )
+      )
+   )
+   ( script-eval 
+      "jsv('Personal Log', 'a1c')" 
+   )
+)
++Name: Update Journal
++Repeat Count: 1
++Interval: 1
+
+
+$Formula: ( when 
+   ( and 
+      ( is-goal-true-delay 
+         "Destroy Convoy" 
+         0 
+      )
+      ( not 
+         ( is-event-true-delay 
+            "Cue for the Police" 
+            0 
+         )
+      )
+   )
+   ( do-nothing ) 
+)
++Name: Continue
++Repeat Count: 1
++Interval: 1
+
+
+#Goals		;! 1 total
+
+$Type: Primary
++Name: Destroy Convoy
+$MessageNew:  XSTR("Destroy everything in 5 minutes", -1)
+$end_multi_text
+$Formula: ( is-destroyed-delay 
+   0 
+   "Gregory" 
+   "Special Cargo 7D" 
+   "Miranda" 
+   "Sabrina" 
+   "Veronica" 
+   "Alpha" 
+   "Beta" 
+   "Gamma" 
+   "Delta" 
+)
+
+#Waypoints		;! 4 lists total
+
+$Name: Miranda Point
+$List: (		;! 1 points in list
+	( 636.200012, -207.600006, 30798.177734 )
+)
+
+$Name: Gregory Point
+$List: (		;! 1 points in list
+	( 864.900024, 143.799988, 30797.396484 )
+)
+
+$Name: Sabrina Point
+$List: (		;! 1 points in list
+	( 870.099976, 145.399994, 30798.671875 )
+)
+
+$Name: Veronica Point
+$List: (		;! 1 points in list
+	( 984.700012, -75.000000, 30798.300781 )
+)
+
+#Messages		;! 23 total
+
+
+$Name: 1min
+$Team: -1
+$MessageNew:  XSTR("4 minutes Remaining", -1)
+$end_multi_text
+
+$Name: 2min
+$Team: -1
+$MessageNew:  XSTR("3 minutes Remaining", -1)
+$end_multi_text
+
+$Name: 3min
+$Team: -1
+$MessageNew:  XSTR("2 Minutes Remaining", -1)
+$end_multi_text
+
+$Name: 4min
+$Team: -1
+$MessageNew:  XSTR("1 minute Remaining", -1)
+$end_multi_text
+
+$Name: start
+$Team: -1
+$MessageNew:  XSTR("Burst Transmission detected. GTVA Police deployed. ETA 5 minutes.", -1)
+$end_multi_text
+
+$Name: Neil1
+$Team: -1
+$MessageNew:  XSTR("<Secure> Right. Don't fire your weapons or they will get suspicious. Let's get closer first and attack on my signal.", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: Neil1a
+$Team: -1
+$MessageNew:  XSTR("<Secure> Damn it, Richter! I told you to wait for my signal. Ok, let's get this show on the road. Attack!", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: escort1
+$Team: -1
+$MessageNew:  XSTR("Unknown crafts, you are prohibited to approach this convoy. State your intentions.", -1)
+$end_multi_text
++AVI Name: Head-TP3
+
+$Name: Neil2
+$Team: -1
+$MessageNew:  XSTR("<Secure> No response, Frank.", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: Frank1
+$Team: -1
+$MessageNew:  XSTR("<Secure> Got it, boss.", -1)
+$end_multi_text
++AVI Name: Head-TP2
+
+$Name: escort2
+$Team: -1
+$MessageNew:  XSTR("Unknown crafts. Do not approach or we will open fire.", -1)
+$end_multi_text
++AVI Name: Head-TP3
+
+$Name: escort3
+$Team: -1
+$MessageNew:  XSTR("This is your final warning. Do not approach.", -1)
+$end_multi_text
++AVI Name: Head-TP3
+
+$Name: Neil3
+$Team: -1
+$MessageNew:  XSTR("<Secure> Tigers! Attack now! We have five minutes!", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: escort4
+$Team: -1
+$MessageNew:  XSTR("All ships protect the convoy. We are under attack!", -1)
+$end_multi_text
++AVI Name: Head-TP3
+
+$Name: Frank2
+$Team: -1
+$MessageNew:  XSTR("<Secure> Four minutes remaining.", -1)
+$end_multi_text
++AVI Name: Head-TP2
+
+$Name: Frank3
+$Team: -1
+$MessageNew:  XSTR("<Secure> Three minutes remaining.", -1)
+$end_multi_text
++AVI Name: Head-TP2
+
+$Name: Neil4
+$Team: -1
+$MessageNew:  XSTR("<Secure> Frank, your counting is not helping!", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: Frank4
+$Team: -1
+$MessageNew:  XSTR("<Secure> Sorry, boss. I can't help it. It's flashing in my screen.", -1)
+$end_multi_text
++AVI Name: Head-TP2
+
+$Name: Neil5
+$Team: -1
+$MessageNew:  XSTR("<Secure> Nice work. Let's get out of here.", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: Neil6
+$Team: -1
+$MessageNew:  XSTR("<Secure> Shit! The cops are here! Jump out now!", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: TimeUp
+$Team: -1
+$MessageNew:  XSTR("Time's Up", -1)
+$end_multi_text
+
+$Name: Firing
+$Team: -1
+$MessageNew:  XSTR("Weapon Fire Detected", -1)
+$end_multi_text
+
+$Name: Alerted
+$Team: -1
+$MessageNew:  XSTR("Alert! We got hostile incoming!", -1)
+$end_multi_text
++AVI Name: Head-TP3
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 14 total
+
+$Num stars: 500
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunAntaresB
++Angles: 6.126106 0.000000 2.914700
++Scale: 1.000000
+$Sun: SunAntaresA
++Angles: 6.143559 0.000000 5.934120
++Scale: 2.000000
+$Sun: SunGold
++Angles: 6.178466 0.000000 5.986479
++Scale: 1.000000
+$Starbitmap: fire03
++Angles: 0.000000 0.000000 0.000000
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 2
++DivY: 2
+$Starbitmap: fire02
++Angles: 0.349066 5.480334 5.881760
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: fire04
++Angles: 0.750492 5.707227 5.707227
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb18
++Angles: 5.637414 3.979351 1.169371
++ScaleX: 4.000000
++ScaleY: 15.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulG9-Whisp
++Angles: 0.942478 5.602507 0.000000
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.000000 0.000000 0.000000
++ScaleX: 9.000000
++ScaleY: 9.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.000000 0.000000 5.235988
++ScaleX: 10.000000
++ScaleY: 10.000000
++DivX: 1
++DivY: 1
+$Starbitmap: fire02
++Angles: 5.969026 0.959931 0.366519
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: fire06
++Angles: 5.759587 0.000000 0.593412
++ScaleX: 3.000000
++ScaleY: 2.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb18
++Angles: 6.003933 4.764749 1.064651
++ScaleX: 5.000000
++ScaleY: 10.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulA5-Whisp
++Angles: 4.869469 0.349066 5.742134
++ScaleX: 10.000000
++ScaleY: 10.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.733038 0.000000 0.506145
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+$Starbitmap: fire01
++Angles: 0.261799 5.969026 0.296706
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planet2
++Angles: 5.288348 0.820305 5.148721
++ScaleX: 1.000000
++ScaleY: 0.980000
++DivX: 1
++DivY: 1
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: 10: Chaotic Burn
+$Briefing Music: Brief8
+
+#End
+

@@ -1,0 +1,36 @@
+#Start 
+
+$Name: exp04 
+    +Explosion_Medium 
+$LOD: 1 
+
+$Name: WarpMap01 
+    +Warp_Effect 
+$LOD: 1 
+
+$Name: WarpMap02 
+    +Knossos_Effect 
+$LOD: 1 
+
+$Name: Rock_Exp 
+    +Asteroid 
+$LOD: 1 
+
+$Name: exp06 
+    +Explosion_Large1 
+$LOD: 1 
+
+$Name: exp07 
+    +Explosion_Large2 
+$LOD: 1 
+
+;;$Name: expx
+;;    +Custom_Fireball1 
+;;$LOD: 1 
+
+;;$Name: expy
+;;    +Custom_Fireball 
+;;$LOD: 1 
+
+#End 
+

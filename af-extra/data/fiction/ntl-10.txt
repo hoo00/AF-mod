@@ -1,0 +1,13 @@
+SUBSPACE
+
+In simple terms, subspace is an n-dimensional tunnel between one point in the universe and another. A vessel can travel through this tunnel in a matter of minutes, making a journey that might otherwise take decades or even centuries at light speed. 
+
+A jump drive causes a ship to vibrate in multiple dimensions until its modulations are in perfect synchronization with the subspace continuum. A vortex opens, creating an aperture from an infinitesimally small point in the cosmos, enabling the vessel to cross the subspace threshold. 
+
+Two types of jumps are possible. 
+
+First, an intrasystem jump can occur between two points in a star system. Most small, space-faring vessels are equipped with motivators capable of these short jumps. The presence of an intense gravitational field is required, prohibiting travel beyond the boundaries of a star system. 
+
+Second, ships can jump from system to system via nodes. Until the Great War, only larger ships could generate sufficient power to use jump nodes. The development of jump drives for fighters and bombers in 2335 enabled the Alliance to destroy the SD Lucifer in subspace. Producing these small jump drives is prohibitively expensive, so they are restricted to missions that require pilots to travel between systems. The Head-Up Display indicates the location of jump nodes with a green sphere. 
+
+The vast majority of subspace nodes are extremely unstable, forming and dissipating in nanoseconds. Other nodes have a longer lifespan, existing for centuries or millennia before collapsing. The jump nodes sanctioned by the GTVA for interstellar travel are expected to remain stable for many years.

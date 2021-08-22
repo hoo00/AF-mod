@@ -1,0 +1,242 @@
+--------------------------------------------------------------------
+XSTR("THE AFTERMATH - REBOOT", -1)
+--------------------------------------------------------------------
+
+XSTR("Herkie423", -1)
+
+Overall Concept
+Story plot and Fiction
+Briefings and Dialogues
+Tech Entry Descriptions
+Intel Database
+Mission design and coding
+FRED Cutscene design
+Modular Tables
+Proofreading
+
+XSTR("Cyborg17", -1)
+
+Model Debugging and Fix
+Model Editing and Testing
+Mission Debugging
+Overall Campaign Testing
+
+
+
+--------------------------------------------------------------------
+XSTR("MODEL CREDITS:", -1)
+--------------------------------------------------------------------
+
+Model re-texturing and final POF editing
+by Herkie423
+
+GTD Excelsior, GTD Titan, GTCv Capella, GTCv Olympus,
+GTCv Babylon, GTC Vigilant - Original version by Stratcomm
+and rebuilds by Aesaar
+
+GTDc Warlock - Moonred, Hades, FreeSpaceFreak for UVmapping, 
+Galemp for texturing, and Yarn and Hades for POF editing.
+Original (lower-poly) model by Aldo.
+
+GVD Archania, GVCv Hathor, GTF Falcon,
+GTF Avalanche, GTTB Armageddon - by Esarai 
+
+GTVA Archangel, GTF Raptor - Vengence
+GTSD Jupiter - Aldo, Betrayal, Teeraal
+GTD Hercules, GTD Galileo, GTCv Copernicus - Steve-O
+GTD Excalibur (Reyena), GTM Odyssey, GTT Neptune - c914 
+GTD Stromberg (Sirona) - c914 and Trivial Psychic
+GTD Damocles - Aldo and conversion by Blackwolf
+GTD Sovereign (Raynor), GTC Hyperion - StratComm
+GTD Alexander (GTD Moscow) - Blackwolf
+GTXV Avenger and GTSa Boreas - Startrek
+GTCv Comet, GTC Khitomer, GTC Orca - Inferno, Trashman
+GTCv Rigel - Aldo conversion by FSF
+GTCv Alexandria - Axem, AndrewofDoom
+GTCv Euphoria - Trashman, Blackwolf
+GTCv Coronis - PeterV and Droid803
+GTCv Serenity - Shivan Hunter,
+GTC Dauntless, GTC Minos - Cadius
+GTC Bajoran (NJord) - Aldo
+GTC Adamant - Droid803
+GTc Hestia - PeterV
+GTL Enterprise (Providence) from EVE Online by CCP
+GTL Opulence - blowfish, Trashman
+GTF Enforcer - Venom, textures by freespaceking
+GTF Dark Angel, GTF Phoenix, GTB Albatross, XJR Phantom - Steve-O
+GTF Sparrow - Stratcomm & Black Wolf
+UPC Raider, UPC Scorpion - Taristin
+SOC Eagle - Steve Tyler
+TF Tiger - Trashman
+SJR Sathanas - MediaAVP 2014
+SSD Bhaal - Night Eyes, FSK, Betrayal
+SD Garuda (SC Raquel) by Betrayal
+SCv Scylla, SCv Diablo - Inferno
+SC Asura - Axem and NightEyes
+SC Lamia - Axem
+Orion Refit - Hamano
+GTFr Demeter - Scooby Doo
+GTT Damascus - Steve-O 
+GTT Cradle - Aldo_14
+GTT Corsair - Oddgrim
+Space Port - Shadows of Lylat
+Luna City - Parts from various models
+Polaris (Eos), Novatron (Supernova) - Trashman
+
+GTG Pandora, TF Ghost, GTI Andromeda,
+GTI Persephone, Sector Comms,
+GTVA Headquarters, Spacesuit
+From Various Modelers
+
+
+
+XSTR("MUSIC:", -1)
+
+Music Coding, Sound Editing and re-mixes
+by Herkie423
+
+Event Triggered In-Game Soundtracks:
+
+Chaotic Burn, Frantic, Indignant, Insomnia, 
+Kill Zone, Trojan Horse - from various music parts
+of the game Star Wolves 2 and Freelancer
+The Horde, Gladiator - from the movie Gladiator
+Paranoia - game sound track from Halo 2
+Nomads - space combat music from Freelancer
+Second Reality - Song of the same name by Skaven, remastered in FL Studio
+Razorback - Those Who Fight Further, Final Fantasy VII Advent Children OST
+
+Briefing Music:
+
+Brief08, Brief11, Brief14 - end credits from the movie Battleship
+Brief09, Brief10, Brief12, Brief13, Brief15 - Air Conflict Pacific Wars
+and Secret Wars
+
+SEXP-Event Triggered and Cutscene Music:
+
+Anthem - from the movie American Anthem, performed by Herkie423
+Armageddon, Secrets, Tactics, Knossos - Air Conflict in-game music
+Reconciliation - from Halo 2
+HumanStep - Human Step (Aramaki's Theme) by Yoko Kanno
+Freedom - Freedom Fighters by Two Steps to Hell  
+Empire - K9 Empire by X-Ray Dog
+Liberty - Liberty Shield by Immediate Music   
+Aney - Unborn Child by Origa
+Raging War, Barsoom - From the movie John Carter
+Solitude - From the movie Gladiator
+SectorComms - From the game Freelancer and FS2
+Tactics, Secrets - From the game Air Conflict Secret Wars
+
+
+XSTR("IN-GAME BACKGROUNDS:", -1)
+
+In-Game Backgrounds elements and Skyboxes
+by Herkie423 and MediaAVPs
+
+Alien Planets and cosmic objects from Amazing Space Wallpapers,
+Nearwoo.co, Heaven HD Wallpapers, Wallensteyn and various websites
+
+Sol starfield source - NASA/Goddard Scientific Visualization Studio
+Deep space images for sky boxes from NASA/Hubble Archives
+
+earthlikeplanet - Beyond the Red Line 
+
+
+XSTR("INTERFACE:", -1)
+
+User Interface and buttons, Main Halls,
+Command Briefing Anims, Shield Icons, GTVA logo,
+Credits Images and Font Re-Color - Herkie423
+
+Briefing icons - Herkie423, MediaAVPs and Snail
+UI Backgrounds and Loading Screens from various websites
+
+
+XSTR("SOUNDS", -1)
+
+Tachyon Beams, Gravimetric Beams loops
+base sounds from Gee Raw re-edited by Herkie423
+
+Neutron Beams, Shivan Beam Shots, Gravimetric Beam Shots,
+Antimatter Cannon, Meson Cannon, Skyfury Scatter Gun, Skyrail,
+Ripper, Blizzard, Shivan Mega and Heavy Lasers by Herkie423
+
+Devastator from Star Wars, sampled and edited by herkie423
+
+Massive Explosion Sounds - combined explosion sound elements
+from the movies Tron Legacy and Super 8, edited by Herkie423
+
+XSTR("EFFECTS:", -1) 
+
+Tachyon Beams, Gravimetric Beams, new Shivan Beams,
+Antimatter Cannon, Meson Cannon, Skyfury Scatter Gun,
+Skyrail, Ripper, Devastator and Blizzard by Herkie423
+
+Bomb_flare - Beyond the Red Line / DaBrain
+various explosions - Diaspora 
+missile trails - Diaspora
+
+
+----------------------------------
+XSTR("ALPHA Testers - Local", -1)
+----------------------------------
+
+Maciste Del Socorro
+Ulysses Del Socorro
+
+and my daughters
+Adelaide and Zhanty
+
+----------------------------------
+XSTR("BETA Testers - Local", -1)
+----------------------------------
+
+Kenneth Baling
+Neil Ricafort
+Christian Bongat
+
+----------------------------------
+Credits Music
+
+XSTR("COULD HAVE FELT", -1)
+Written and Permformed
+by Herkie Del Socorro
+
+Keyboards, Sythn Effects, 
+Drum Sequence Programming
+and Backing Vocals by
+Herkie423
+
+Guitars: Raymond Azarcon
+Bass: Danny Penaranda
+Additional Drum Sections by
+Celerino Villarin
+
+Copyright 2001 Hercules Del Socorro
+Philippines
+
+-----------------------------------
+
+Special Thanks To:
+
+Volition Freespace 2
+The Source Code Protect Team
+
+CT27
+Lepanto
+Betrayal
+Darius
+AdmiralRalwood
+Blackwolf
+
+To creators of Blue Planet
+for giving me inspiration
+
+To Hardlight Production Community,
+SectorGames and to all the fans and
+believers of Freespace
+
+For comments and info, visit the
+HLP Community Forum 
+
+#end

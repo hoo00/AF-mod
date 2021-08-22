@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VHDS-009 $}
+$b{/UPLOADER: $VMR. $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>JKVW-412-OPS-07881 $}
+
+$B{Personal Log:
+June 12, 2370
+Beta Aquilae $}
+
+Space is a lonely place and it's very cold. Sometimes, I just coast along the void gazing at the stars and let my ship drift for several hours. That was one way to throw my worries to the wind and a weird way of soul searching. I looked at myself sitting in my cockpit staring at nothing. There is a deep gaping hole in my chest. I felt it. For three years, I tried to outrun the ghosts that haunted me day by day. The nightmare of a great supernova. Since then, the universe was getting stranger and stranger. The Terrans and the Vasudans despise one another but, ironically, still working together. My guess is that both sides are just waiting for one to make that fatal move. The tension is real. Most of us had been blanketed in a canopic shade of mistrust. I admit it is bothering me but I always push aside those suspicions. The Vasudans are noble. I had Vasudan comrades during the Second Shivan War. Are we willing to spark another war? Are we willing to risk that? I hope not for the sake of all for a voice is whispering to me that something even bigger is coming. This fear is the burden I carry every day.
+
+$b{/<END OF LOG> $}

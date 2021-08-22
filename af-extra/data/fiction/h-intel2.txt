@@ -1,0 +1,13 @@
+UPC RAIDER
+
+Type:  Recon
+Maneuverability:  Good
+Hull Armor:  Light
+Manufacturer:  Unknown Deneb Shipyards
+Length:  20 meters
+Gun Mounts:  4 Mounts (2,2)
+Missile Banks:  1 Banks
+Description:  UPC Recon Fighter
+
+
+The UPC Raider is a fast and agile fighter with similar handling and capabilities of the GTF Loki fighters except that it is very hard to target due to its body configuration and hull color. Ever since the United Pirate Coalition captured the Deneb system and its facilities, the pirates have the capabilities of manufacturing their own arsenal.

@@ -1,0 +1,12 @@
+GTB ALBATROSS
+
+Type:  Assault Bomber
+Maneuverability:  Average
+Hull Armor:  Heavy Duranium
+Manufacturer:  B. Aquilae Orbital Shipyards
+Length:  37 meters
+Gun Mounts:  1 Mounts (2)
+Missile Banks:  3 Banks
+Description:  GTVA Prototypes
+
+The GTVA High Command felt that the 7th BG Squadrons will not be really complete without the development of a new type of bomber so they pressured the research department to build one. Now, the researchers knew that they have failed miserably in the 'Phoenix' project where they tried to design an interceptor bomber so they scratched their heads once more. One of them came up with an idea to improve upon the 'Artemis D.H.' blueprint and this was the result, the Albatross heavy assault bomber. It handles like the old Artemis but it has a much larger payload and very heavy shield and armor.

@@ -1,0 +1,13 @@
+GTF SPARROW
+
+Type:  Stealth and Recon
+Maneuverability:  Average
+Hull Armor:  Heavy
+Manufacturer:  Adhara Orbital Shipyards
+Length:  22 meters
+Gun Mounts:  6 Mounts (4,2)
+Missile Banks:  1 Bank
+Description:  GTVA Prototypes
+
+
+The GTF Sparrow is the next generation stealth and recon fighter that was recently produced from the Adharan shipyards. It is a radical upgrade of the GTVA's current model, the Pegasus. The Sparrow is outfitted with latest scanning modules and sensor package almost equivalent to an AWAC. Its onboard radar scrambler and jamming devices complemented with a full load of long range Trebuchet missiles makes it a deadly stalker, very lethal against transports and patrolling fighters but firing weapons will also compromise stealth capabilities. Although its design sacrifices maneuverability and load out compatibility, the fighter's impressive speed and afterburner time can evade and outrun any craft in a knife-fight situation. The first batch of these ships was almost destroyed in transit along with GTD Alexander. It is only through the timely intervention of the 7th Battlegroup, their destruction was averted

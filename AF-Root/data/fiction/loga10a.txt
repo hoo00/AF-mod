@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VTTG-565 $}
+$b{/UPLOADER: $VCAPTAIN $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>GHLP-155-JZW-79012 $}
+
+$B{Personal Log:
+December 7, 2371
+Shiva System $}
+
+The war in Shiva rages on for months and it seemed to go on forever. It has been more than one year since. So much have happened. GTVA clashed with Shivan Forces. Fleet against fleet. In some places, we were winning, yet in some, we have lost many. Everything is on fire. A whole system in total madness. The greatest battle we have ever fought. I have witnessed it all. But the future is not certain and I am left with one question. Will this be our last and our doom or will this be our glory and victory?
+
+$b{/<END OF LOG> $}

@@ -1,0 +1,468 @@
+#Armor Type
+
+; Only huge flagged weapons can trigger piercing effects when hull reaches 5%. Puncture weapons deal 100% damage. Spawn weapons deal 20% damage. Mainly used for large warships, cruisers and up.
+
+;=====Experimental Armors=============================
+
+$Name: Ablative Armor   ;;For the 7th Battlegroup
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 0.5
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 0.7
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+$Name: Romulan Armor    ;;For Strike Group Alpha
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 0.5
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 0.5
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+$Name: Duranium Armor  ;;For the Dark Angels and Ice Queens Squadrons
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 0.5
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 0.5
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 0.9
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+;;=====Standard Armors=================================================
+
+$Name:  Heavy Armor 100
+	$Damage Type: NormalWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+
+
+; All weapons can trigger piercing effects when hull reaches 5%. Puncture weapons deal 100% damage. Spawn weapons deal 20% damage. Mainly used for transports, freighters, etc bigger non-warships.
+
+
+$Name:  Medium Armor 100
+	$Damage Type: NormalWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: HugeWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: SmallBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: HugeBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+
+
+; All weapons can trigger piercing effects when hull reaches 10%. Mainly used for fighters and bombers. Also useful to protect subsystems and turrets against puncture type weapons.
+
+
+$Name:  Light Armor 100
+	$Damage Type: NormalWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 10
+		+Weapon Piercing Type: Default
+	$Damage Type: HugeWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 10
+		+Weapon Piercing Type: None
+	$Damage Type: NormalFlak
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 10
+		+Weapon Piercing Type: Default
+	$Damage Type: SmallBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 10
+		+Weapon Piercing Type: Default
+	$Damage Type: HugeBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 10
+		+Weapon Piercing Type: None
+	$Damage Type: PunctureWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 10
+		+Weapon Piercing Type: Default
+	$Damage Type: SpawnWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 10
+		+Weapon Piercing Type: Default
+
+
+
+;=====Special Armors================================================
+
+
+$Name: God Armor ;; This is rediculous
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 0.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 0.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 0.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 0.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 0.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 0.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+$Name: Cinematic Armor 1 ;; Armor used for scripted deaths, strong against beams
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 0.3
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+$Name: Cinematic Armor 2 ;; Resilient armor but not against beams
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 0.4
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 0.4
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 0.4
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 0.5
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.1
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+$Name: Cinematic Armor 3 ;; Armor used for scripted deaths, weak against beams
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 1.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 1.4
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+
+$Name: Armor Instant Pierced ;; Armor class where huge weapons trigger piercing effect at 100% hull integrity. Can be used for critical hits.
+	$Damage Type: NormalWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 100
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 100
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+;		+Calculation: Multiplicative
+;		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+		
+$Name: Armor Except Beams
+	$Damage Type: NormalWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: NormalFlak
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SmallBeam
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: HugeBeam
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: Default
+	$Damage Type: PunctureWeapon
+		+Calculation: Multiplicative
+		+Value: 1.0
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+	$Damage Type: SpawnWeapon
+		+Calculation: Multiplicative
+		+Value: 0.2
+		+Weapon Piercing Effect Start Limit: 5
+		+Weapon Piercing Type: None
+
+#End

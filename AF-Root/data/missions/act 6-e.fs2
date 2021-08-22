@@ -1,0 +1,7052 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("Somewhere in the Rocks", -1)
+$Author: Herkie
+$Created: 08/17/16 at 16:36:55
+$Modified: 10/12/20 at 12:29:58
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 2097152
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
++All Teams Attack
+
++Viewer pos: -143598.109375, 384.542999, -126077.242188
++Viewer orient:
+	0.993365, 0.000018, -0.115002,
+	0.007152, 0.998055, 0.061934,
+	0.114779, -0.062346, 0.991433
+
+
+$Load Screen 640:	LoadAct6Sa.dds
+$Load Screen 1024:	LoadAct6La.dds
+
+$Skybox Model: Draconis.pof
+
+$AI Profile: AF2
+
+#Sexp_variables
+
+$Variables:
+(
+		0		"AutopilotON"		"0"		"number"
+		1		"Branch1Go"		"0"		"number"
+		2		"Branch2Go"		"0"		"number"
+		3		"SkiptoBranch1"		"0"		"number"
+		4		"SkiptoBranch2"		"0"		"number"
+)
+
+#Command Briefing
+
+$Stage Text:
+ XSTR("$B{To the Officers and Crew
+of the 7th Battlegroup $}
+
+We are still locked in a mortal conflict between the $R Shivans and ourselves with no signs or indication of who is winning. We have the strength and they have the numbers. However, we are losing many warships and other military assets very fast. Our war factories and shipyards are already straining beyond their capacity to build more ships and weapons. It is apparent that we may not keep up with these losses. We have reports that battle groups engaged in a losing battle $P could $P not $P retreat to save themselves. Our war analysts and strategists were baffled by this. We have improved jump recharge times so it is puzzling. And, now, we know why. The Shivans introduced a new piece in the board, the $R Asura cruiser. A cruiser with the technology to inhibit the subspace field, it can even reduce our weapons effectiveness. The enemy is committed to hold us in the shackles of war where our fleet have no choice but to destroy the opposing force completely in an encounter. This must be averted. Our priority is to $V capture $V this $V vessel for study. To find a way to counter this tactic and even use it against them.
+
+$B{Admiral William Cartwright
+7th Battlegroup $}", -1)
+$end_multi_text
+$Ani Filename: cb_Act6e.ani
++Wave Filename: none
+
+$Stage Text:
+ XSTR("$B{New Weapon for Testing$}
+
+The Weapons Divisions recently released a new addition to our arsenal, the $b GTW $b Blizzard $b SDG. A powerful quantum disruptor that can destroy hardened or heavily shielded subsystems. This is the replacement for the $P Akheton $P SDG disruptor cannon. Since we are engaging huge enemy fleet almost at a daily basis, the availability of this weapon is timely. However, we have only 1 unit available for now. The War Department expects you to field test this new weapon and hope that you find it satisfactory.
+
+$B{Lt. Commander Greg Virgil
+Fleet Quarter Master $}", -1)
+$end_multi_text
+$Ani Filename: cb_Blizzard.ani
++Wave Filename: none
+
+#Briefing
+$start_briefing
+$num_stages: 3
+$start_stage
+$multi_text
+ XSTR("Commander Richter, this briefing is addressed directly to you. Admiral Cartwright have assembled $G Task $G Force $G Omega for this mission. This group is composed of our cruisers, the $G Adamant and the $G Reaper tactical cruisers, the $G Vigilant and the $G Defiant escort cruisers, and the $G Dauntless command cruiser which will serve as your fighter wing home base.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: -143136.125000, 5971.203613, -124536.914063
+$camera_orient:
+	0.999998, 0.000020, 0.001963,
+	-0.001963, 0.021704, 0.999763,
+	-0.000023, -0.999765, 0.021704
+$camera_time: 500
+$num_lines: 0
+$num_icons: 7
+$Flags: 1
+$Formula: ( true ) 
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Adamant
+$pos: -144660.546875, 0.028772, -123912.343750
+$label: Reaper
++id: 1
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Adamant
+$pos: -144561.343750, 433.907562, -124870.406250
+$label: Adamant
++id: 2
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Vigilant
+$pos: -143442.859375, 0.027835, -124894.117188
+$label: Defiant
++id: 3
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Vigilant
+$pos: -143358.296875, -340.308716, -123874.015625
+$label: Vigilant
++id: 4
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Dark Angel
+$pos: -141653.734375, 0.011828, -123906.429688
+$label: Alpha
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Dark Angel
+$pos: -141657.437500, 0.025083, -124989.640625
+$label: Beta
++id: 6
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Dauntless
+$pos: -142679.078125, 0.028327, -124456.078125
+$label: Dauntless
++id: 7
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("We have the last known position of another Asura cruiser designated as the $R Anagora. This cruiser is also coordinating strikes against stranded or disabled GTVA ships and doubles as a 'tactical spotter' informing their high command of our fleet disposition in that sector. Its location is $Y Sector $Y GD35. $b Captain $b Peter $b Johnson of the $G GTC $G Dauntless has mission control but you will have tactical command of our cruisers.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: -47.434090, 19534.648438, -200307.406250
+$camera_orient:
+	0.999998, 0.000020, 0.001963,
+	-0.001963, 0.021704, 0.999763,
+	-0.000023, -0.999765, 0.021704
+$camera_time: 4000
+$num_lines: 0
+$num_icons: 11
+$Flags: 2
+$Formula: ( true ) 
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Adamant
+$pos: -144660.546875, 0.028772, -123912.343750
+$label: Reaper
++id: 1
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Adamant
+$pos: -144561.343750, 433.907562, -124870.406250
+$label: Adamant
++id: 2
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Vigilant
+$pos: -143442.859375, 0.027835, -124894.117188
+$label: Defiant
++id: 3
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Vigilant
+$pos: -143358.296875, -340.308716, -123874.015625
+$label: Vigilant
++id: 4
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Dark Angel
+$pos: -141653.734375, 0.011828, -123906.429688
+$label: Alpha
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Dark Angel
+$pos: -141657.437500, 0.025083, -124989.640625
+$label: Beta
++id: 6
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Dauntless
+$pos: -142679.078125, 0.028327, -124456.078125
+$label: Dauntless
++id: 7
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Hostile
+$class: SC Asura
+$pos: 70.116859, 1840.898926, -200011.421875
+$label: Anagora
++id: 8
+$hlight: 1
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 19
+$team: Friendly
+$class: GTC Dauntless
+$pos: -19148.189453, -0.007837, -199229.140625
+$label: Cruiser Task Force
++id: 9
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 23
+$team: Friendly
+$class: GTF Dark Angel
+$pos: 20732.544922, -0.006513, -191796.000000
+$label: Alpha
++id: 10
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 23
+$team: Friendly
+$class: GTF Dark Angel
+$pos: 20351.742188, -0.005236, -207713.281250
+$label: Beta
++id: 11
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("Jump to that sector immediately. When the $R Anagora is sighted, disable its engines so that it will be ready for capture. Brief you wings and set your load outs, Commander. Good luck.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: -47.434090, 19534.648438, -200307.406250
+$camera_orient:
+	0.999998, 0.000020, 0.001963,
+	-0.001963, 0.021704, 0.999763,
+	-0.000023, -0.999765, 0.021704
+$camera_time: 500
+$num_lines: 0
+$num_icons: 11
+$Flags: 2
+$Formula: ( true ) 
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Adamant
+$pos: -144660.546875, 0.028772, -123912.343750
+$label: Reaper
++id: 1
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Adamant
+$pos: -144561.343750, 433.907562, -124870.406250
+$label: Adamant
++id: 2
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Vigilant
+$pos: -143442.859375, 0.027835, -124894.117188
+$label: Defiant
++id: 3
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Vigilant
+$pos: -143358.296875, -340.308716, -123874.015625
+$label: Vigilant
++id: 4
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Dark Angel
+$pos: -141653.734375, 0.011828, -123906.429688
+$label: Alpha
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: GTF Dark Angel
+$pos: -141657.437500, 0.025083, -124989.640625
+$label: Beta
++id: 6
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Friendly
+$class: GTC Dauntless
+$pos: -142679.078125, 0.028327, -124456.078125
+$label: Dauntless
++id: 7
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 18
+$team: Hostile
+$class: SC Asura
+$pos: 70.116859, 1840.898926, -200011.421875
+$label: Anagora
++id: 8
+$hlight: 1
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 19
+$team: Friendly
+$class: GTC Dauntless
+$pos: -3948.032959, -0.009486, -200118.578125
+$label: Task Force Omega
++id: 9
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 23
+$team: Friendly
+$class: GTF Dark Angel
+$pos: 3108.125732, -0.012827, -198443.921875
+$label: Alpha
++id: 10
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 23
+$team: Friendly
+$class: GTF Dark Angel
+$pos: 3135.463135, -0.002950, -201759.359375
+$label: Beta
++id: 11
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 2
+
+$Formula: ( is-destroyed-delay 0 "Diadem" ) 
+$Multi text
+    XSTR("$B{To 7th BG Cruiser Task Force $}
+
+I don't know where to begin except to say that we are really in hot water now. We have failed to protect the $G Diadem. We failed to save $b Dr. $b Mina $b Hargrove and she is dead. She was the key to everything, in stopping the $R Shivans, in saving lives, in our dream of returning to Earth. All of it has gone up in smoke with her passing.
+
+I know that was not your mission and I don't question your dedication. Still, we must carry on with our duties with effectiveness, even sacrificing our lives and the lives of thousands in our commitment. $b High $b Command have ordered us to stand down from this war. All of us, I and all the officers, will be demoted. Our crew will be reassigned, and our squadrons will be disbanded. Those who are directly responsible for $b Hargrove's death will be stripped of their military status. You are lucky that you will not be executed. The $G 7th $G Battlegroup will have a new commander and new squadrons.
+
+Pack your things and clean up your bunks. Tomorrow, submit yourselves to Sector Comms for investigation.
+
+$B{ William Cartwright
+Galactic Terran-Vasudan Alliance $}
+", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+$Formula: ( is-event-true-delay 
+   "Engage your jump drives" 
+   11 
+)
+$Multi text
+    XSTR("$B{To 7th BG Cruiser Task Force $}
+
+We have determined the Anagora's jump trajectory and we are heading there now. I just wish that we capture it this time. That cruiser is really vexing me.
+
+$B{ Captain Peter Johnson
+Task Force Commander $}
+
+$P{ LCARS UPDATE: $} $G{New entries in Techroom Database $}", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+#Alternate Types:
+$Alt: Hargrove's Vessel
+
+#end
+
+
+#Players		;! 1 total
+
+$Starting Shipname: alpha 1
+$Ship Choices: (
+	"GTF Phoenix"	4
+)
+
++Weaponry Pool: (
+	"Akheton SDG"	4
+	"Ripper"	16
+	"Devastator"	16
+	"Starfury"	16
+	"Blizzard"	1
+	"Hornet"	500
+	"Tornado"	500
+	"Harpoon"	100
+	"Trebuchet"	100
+	"Piranha"	100
+	"UD-8 Kayser"	8
+	"Skyrail"	8
+	"Screamer"	2880
+	"Hunter"	640
+)
+
+#Objects		;! 102 total
+
+$Name: alpha 1		;! Object #0
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -142521.656250, -0.000268, -124449.765625
+$Orientation:
+	0.343646, 0.000000, 0.939100,
+	0.000000, 1.000000, 0.000000,
+	-0.939100, 0.000000, 0.343646
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Score: 8
+
+$Name: Sector Comms		;! Object #1
+$Class: Sector Comms
+$Team: Friendly
+$Location: -145778.468750, 0.000602, -122978.476563
+$Orientation:
+	0.958244, -0.285824, 0.008577,
+	0.285952, 0.957813, -0.028743,
+	0.000000, 0.029995, 0.999550
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Vigilant		;! Object #2
+$Class: GTC Vigilant
+$Team: Friendly
+$Location: -143133.734375, -340.308441, -123801.820313
+$Orientation:
+	0.577500, -0.069635, -0.813416,
+	0.119712, 0.992809, -0.000000,
+	0.807566, -0.097376, 0.581683
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
++Departure delay: 2
+$Departure Cue: ( or 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      11 
+   )
+   ( is-event-true-delay 
+      "Let's go home" 
+      3 
+   )
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 100000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Defiant		;! Object #3
+$Class: GTC Vigilant
+$Team: Friendly
+$Location: -143245.953125, 0.027918, -124861.757813
+$Orientation:
+	0.581683, 0.000000, -0.813415,
+	-0.000000, 1.000000, 0.000000,
+	0.813415, 0.000000, 0.581683
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
++Departure delay: 3
+$Departure Cue: ( or 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      11 
+   )
+   ( is-event-true-delay 
+      "Let's go home" 
+      3 
+   )
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 100000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Reaper		;! Object #4
+$Class: GTC Adamant
+$Team: Friendly
+$Location: -143983.718750, 0.028595, -124706.781250
+$Orientation:
+	0.581683, 0.000000, -0.813415,
+	-0.000000, 1.000000, 0.000000,
+	0.813415, 0.000000, 0.581683
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
++Departure delay: 4
+$Departure Cue: ( or 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      11 
+   )
+   ( is-event-true-delay 
+      "Let's go home" 
+      3 
+   )
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 110000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Adamant		;! Object #5
+$Class: GTC Adamant
+$Team: Friendly
+$Location: -143601.328125, 433.907379, -124760.289063
+$Orientation:
+	0.581683, 0.000000, -0.813415,
+	-0.000000, 1.000000, 0.000000,
+	0.813415, 0.000000, 0.581683
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
++Departure delay: 5
+$Departure Cue: ( or 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      11 
+   )
+   ( is-event-true-delay 
+      "Let's go home" 
+      3 
+   )
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 110000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Dauntless		;! Object #6
+$Class: GTC Dauntless
+$Team: Friendly
+$Location: -142636.140625, 0.028250, -123920.226563
+$Orientation:
+	0.581683, 0.000000, -0.813415,
+	-0.000000, 1.000000, 0.000000,
+	0.813415, 0.000000, 0.581683
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
++Departure delay: 6
+$Departure Cue: ( or 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      11 
+   )
+   ( is-event-true-delay 
+      "Let's go home" 
+      3 
+   )
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 120000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 180
+
+$Name: alpha 2		;! Object #7
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -142644.359375, 45.227688, -124373.968750
+$Orientation:
+	0.380925, 0.000000, 0.924607,
+	0.000000, 1.000000, 0.000000,
+	-0.924607, 0.000000, 0.380925
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: alpha 3		;! Object #8
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -142572.546875, 15.096147, -124489.523438
+$Orientation:
+	0.380925, 0.000000, 0.924607,
+	0.000000, 1.000000, 0.000000,
+	-0.924607, 0.000000, 0.380925
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: alpha 4		;! Object #9
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -142669.140625, -51.683132, -124476.273438
+$Orientation:
+	0.380925, 0.000000, 0.924607,
+	0.000000, 1.000000, 0.000000,
+	-0.924607, 0.000000, 0.380925
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: beta 1		;! Object #10
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -143460.640625, 53.734177, -123668.632813
+$Orientation:
+	0.710914, 0.000000, -0.703279,
+	0.000000, 1.000000, 0.000000,
+	0.703279, 0.000000, 0.710914
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: beta 2		;! Object #11
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -143537.937500, 18.437559, -123660.820313
+$Orientation:
+	0.710914, 0.000000, -0.703279,
+	0.000000, 1.000000, 0.000000,
+	0.703279, 0.000000, 0.710914
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: beta 3		;! Object #12
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -143482.828125, 31.428371, -123774.164063
+$Orientation:
+	0.710914, 0.000000, -0.703279,
+	0.000000, 1.000000, 0.000000,
+	0.703279, 0.000000, 0.710914
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: beta 4		;! Object #13
+$Class: GTF Dark Angel
+$Team: Friendly
+$Location: -143539.078125, 0.024985, -123761.054688
+$Orientation:
+	0.710914, 0.000000, -0.703279,
+	0.000000, 1.000000, 0.000000,
+	0.703279, 0.000000, 0.710914
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: SF Astaroth 14		;! Object #14
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1785.565063, -0.005670, -197960.765625
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 15		;! Object #15
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1829.074219, -0.005883, -198307.156250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 16		;! Object #16
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1735.984497, -0.006191, -198774.406250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 17		;! Object #17
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1679.592163, -0.006192, -199242.546875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 18		;! Object #18
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1774.837036, -0.006268, -199416.781250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 19		;! Object #19
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1768.023926, -0.006198, -199848.578125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 20		;! Object #20
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1761.405518, -0.006228, -200268.046875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 21		;! Object #21
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1755.954956, -0.006267, -200613.484375
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 22		;! Object #22
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1713.185913, -0.005642, -200995.609375
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 23		;! Object #23
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1828.782471, -0.005470, -201428.359375
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 24		;! Object #24
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1404.350830, -0.006303, -198027.156250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 25		;! Object #25
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1397.527344, -0.005592, -198459.593750
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 26		;! Object #26
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1362.635986, -0.005832, -199114.046875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 27		;! Object #27
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1307.070313, -0.005856, -199521.093750
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 28		;! Object #28
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1396.153320, -0.005806, -200103.171875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 29		;! Object #29
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1506.391235, -0.006080, -200894.984375
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 30		;! Object #30
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1435.303711, -0.005446, -201511.984375
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 31		;! Object #31
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1353.854126, -0.006122, -202005.671875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 32		;! Object #32
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1182.420288, -0.005923, -201967.718750
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 33		;! Object #33
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -1224.566528, -0.005450, -201634.156250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 34		;! Object #34
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2428.909668, -0.005642, -198220.093750
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 35		;! Object #35
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2509.303711, -0.005930, -198529.328125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 36		;! Object #36
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2466.562500, -0.005616, -198922.421875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 37		;! Object #37
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2496.686035, -0.005774, -199329.046875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 38		;! Object #38
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2488.339355, -0.006280, -199858.093750
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 39		;! Object #39
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2482.321289, -0.005393, -200239.500000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 40		;! Object #40
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2386.966309, -0.005750, -200878.484375
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 41		;! Object #41
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2453.644531, -0.006091, -201285.203125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 42		;! Object #42
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2482.990723, -0.005850, -201740.671875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: SF Astaroth 43		;! Object #43
+$Class: SF Astaroth
+$Team: Hostile
+$Location: -2535.116699, -0.005543, -202294.515625
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
++Arrival Delay: 3
+$Arrival Cue: ( is-event-true-delay 
+   "We'll have its trajectory" 
+   ( rand 0 7 ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 13
+
+$Name: Anagora		;! Object #44
+$Class: SC Asura
+$Team: Hostile
+$Location: 595.035583, 1840.897705, -199475.093750
+$Orientation:
+	-0.729266, -0.581788, -0.360132,
+	-0.682199, 0.577706, 0.448174,
+	-0.052691, 0.572519, -0.818196
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 2 Sector GD35" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 20
+$Departure Cue: ( is-event-true-delay 
+   "Set Up Nav 2 Sector GD35" 
+   0 
+)
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" "beam-protect-ship" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 210
+
+$Name: Hamatus		;! Object #45
+$Class: GVCv Hathor
+$Team: Friendly
+$Location: 104922.312500, 40.909077, -96333.781250
+$Orientation:
+	-0.843746, -0.503132, 0.186953,
+	-0.482010, 0.557022, -0.676308,
+	0.236135, -0.660745, -0.712500
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01-base
++Subsystem: turret02-base
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turret31
++Subsystem: turret32
++Subsystem: turret33
++Subsystem: engine01
+$Damage: 100
++Subsystem: engine02
+$Damage: 100
++Subsystem: engine03
+$Damage: 100
++Subsystem: engine04
+$Damage: 100
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 3 Sector GD35-A" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "escort" "no-arrival-warp" "guardian" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 2
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Kerrus		;! Object #46
+$Class: SCv Moloch
+$Team: Hostile
+$Location: 103059.000000, -739.099976, -95658.601563
+$Orientation:
+	-0.340678, 0.000000, -0.940180,
+	-0.344321, 0.930525, 0.124766,
+	0.874861, 0.366229, -0.317010
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Hamatus" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 3 Sector GD35-A" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 1
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 440
+
+$Name: Sippus		;! Object #47
+$Class: SC Rakshasa
+$Team: Hostile
+$Location: 102464.601563, 779.400024, -96422.500000
+$Orientation:
+	0.036075, 0.000000, -0.999349,
+	0.287410, 0.957751, 0.010375,
+	0.957128, -0.287597, 0.034551
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Hamatus" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 3 Sector GD35-A" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Diadem		;! Object #48
+$Class: GTSC Faustus
+$Alt: Hargrove's Vessel
+
+$Team: Friendly
+$Location: 129839.375000, 66.868355, -231346.812500
+$Orientation:
+	0.941986, -0.088258, 0.323840,
+	0.010253, 0.971927, 0.235059,
+	-0.335495, -0.218102, 0.916447
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: engine
+$Damage: 100
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 4 Sector GD35-B" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 2
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 50
+
+$Name: Zulus		;! Object #49
+$Class: SC Rakshasa
+$Team: Hostile
+$Location: 134739.500000, 4106.500000, -231812.000000
+$Orientation:
+	0.094509, 0.000000, 0.995524,
+	-0.631565, 0.773001, 0.059957,
+	-0.769541, -0.634405, 0.073055
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Diadem" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 4 Sector GD35-B" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 2
+$Departure Cue: ( is-destroyed-delay 0 "Diadem" ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 1
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Garona		;! Object #50
+$Class: SC Rakshasa
+$Team: Hostile
+$Location: 135430.000000, 4651.573730, -234294.390625
+$Orientation:
+	0.466384, 0.000000, 0.884583,
+	-0.519418, 0.809449, 0.273856,
+	-0.716024, -0.587190, 0.377514
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Diadem" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 4 Sector GD35-B" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 3
+$Departure Cue: ( is-destroyed-delay 0 "Diadem" ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Shivan Comm Unit 1		;! Object #51
+$Class: Shivan Comm Node
+$Team: Hostile
+$Location: -466.422028, 345.391083, -3988.223877
+$Orientation:
+	0.909844, 0.405821, -0.086550,
+	-0.395826, 0.911415, 0.112441,
+	0.124513, -0.068045, 0.989881
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 4
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Shivan Comm Unit 2		;! Object #52
+$Class: Shivan Comm Node
+$Team: Hostile
+$Location: 333.281738, 907.349365, -3756.486572
+$Orientation:
+	0.909845, 0.405822, -0.086550,
+	-0.395827, 0.911416, 0.112441,
+	0.124514, -0.068046, 0.989882
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" "don't-collide-invisible" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 3
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Jacca		;! Object #53
+$Class: SCv Moloch
+$Team: Hostile
+$Location: 551.707397, 658.070068, -4619.182129
+$Orientation:
+	-0.682318, -0.590299, 0.431264,
+	-0.481222, 0.806752, 0.342895,
+	-0.550333, 0.026430, -0.834527
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 2
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 440
+
+$Name: Luzca		;! Object #54
+$Class: SC Rakshasa
+$Team: Hostile
+$Location: 609.993408, 1369.142212, -5131.504395
+$Orientation:
+	-0.682319, -0.590299, 0.431265,
+	-0.481222, 0.806752, 0.342894,
+	-0.550334, 0.026429, -0.834526
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 1
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Otris		;! Object #55
+$Class: SC Rakshasa
+$Team: Hostile
+$Location: -1138.399048, 4.779968, -3427.420410
+$Orientation:
+	-0.017619, -0.704300, -0.709684,
+	0.849980, -0.384330, 0.360312,
+	-0.526520, -0.596869, 0.605412
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Cetus 1		;! Object #56
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -387.441833, 691.105225, -4382.910645
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Cetus 2		;! Object #57
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -359.124634, 759.372803, -4464.527832
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Cetus 3		;! Object #58
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -253.040436, 764.997803, -4501.279785
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Cetus 4		;! Object #59
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -195.173004, 700.960693, -4449.155762
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Cetus 5		;! Object #60
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -240.629425, 671.179443, -4403.971191
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Cetus 6		;! Object #61
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -305.643616, 675.933350, -4390.266113
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Errai 1		;! Object #62
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -1018.816406, 512.197754, -4007.762695
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Errai 2		;! Object #63
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -1067.117798, 567.827759, -4053.612793
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Errai 3		;! Object #64
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -1038.513550, 636.509521, -4135.760254
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Errai 4		;! Object #65
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -919.872192, 638.698975, -4172.450684
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Errai 5		;! Object #66
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -910.925659, 575.265259, -4106.815430
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Errai 6		;! Object #67
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -990.837036, 582.948853, -4091.952148
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Dosadi 1		;! Object #68
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -755.861206, 855.671631, -4453.274902
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Dosadi 2		;! Object #69
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -722.736084, 818.164795, -4422.523926
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Dosadi 3		;! Object #70
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -663.092773, 825.304443, -4447.464355
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Dosadi 4		;! Object #71
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -607.340942, 853.794678, -4494.241699
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Dosadi 5		;! Object #72
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -670.477173, 898.599365, -4524.154785
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Dosadi 6		;! Object #73
+$Class: SF Basilisk
+$Team: Hostile
+$Location: -695.415039, 860.072021, -4475.501465
+$Orientation:
+	0.966390, -0.171439, 0.191570,
+	0.000000, 0.745174, 0.666870,
+	-0.257081, -0.644456, 0.720129
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Avalon 1		;! Object #74
+$Class: SF Mara
+$Team: Hostile
+$Location: 103156.687500, 679.835327, -95984.648438
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Avalon 2		;! Object #75
+$Class: SF Mara
+$Team: Hostile
+$Location: 103101.882813, 679.835327, -95938.953125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Avalon 3		;! Object #76
+$Class: SF Mara
+$Team: Hostile
+$Location: 103033.773438, 679.835205, -95998.867188
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Avalon 4		;! Object #77
+$Class: SF Mara
+$Team: Hostile
+$Location: 103083.898438, 679.835327, -96080.625000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Avalon 5		;! Object #78
+$Class: SF Mara
+$Team: Hostile
+$Location: 103149.562500, 679.835327, -96062.382813
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Avalon 6		;! Object #79
+$Class: SF Mara
+$Team: Hostile
+$Location: 103210.421875, 679.835205, -96018.960938
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Badoon 1		;! Object #80
+$Class: SF Mara
+$Team: Hostile
+$Location: 103610.351563, 0.046587, -95746.015625
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Badoon 2		;! Object #81
+$Class: SF Mara
+$Team: Hostile
+$Location: 103664.445313, 0.046596, -95699.132813
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Badoon 3		;! Object #82
+$Class: SF Mara
+$Team: Hostile
+$Location: 103678.093750, 0.046716, -95644.531250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Badoon 4		;! Object #83
+$Class: SF Mara
+$Team: Hostile
+$Location: 103551.812500, 0.046560, -95580.750000
+$Orientation:
+	0.999550, 0.000000, -0.029995,
+	0.000000, 1.000000, 0.000000,
+	0.029995, 0.000000, 0.999550
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Badoon 5		;! Object #84
+$Class: SF Mara
+$Team: Hostile
+$Location: 103503.500000, 0.046551, -95678.921875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Badoon 6		;! Object #85
+$Class: SF Mara
+$Team: Hostile
+$Location: 103588.375000, 0.046681, -95668.750000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Asura Objective Cue		;! Object #86
+$Class: GTF Ulysses
+$Team: Friendly
+$Location: -352.519196, 0.231765, -100656.218750
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "no-departure-warp" "invulnerable" "hidden-from-sensors" "stealth" "friendly-stealth-invisible" )
++Flags2: ( "immobile" "cloaked" "no-collide" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Aaryn 1		;! Object #87
+$Class: SF Mara
+$Team: Hostile
+$Location: 130611.875000, 351.755310, -232547.375000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aaryn 2		;! Object #88
+$Class: SF Mara
+$Team: Hostile
+$Location: 130798.937500, 351.755463, -232438.703125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aaryn 3		;! Object #89
+$Class: SF Mara
+$Team: Hostile
+$Location: 130921.578125, 351.755280, -232191.156250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aaryn 4		;! Object #90
+$Class: SF Mara
+$Team: Hostile
+$Location: 130943.781250, 351.755157, -231946.203125
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aaryn 5		;! Object #91
+$Class: SF Mara
+$Team: Hostile
+$Location: 131011.742188, 351.755493, -231653.390625
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aaryn 6		;! Object #92
+$Class: SF Mara
+$Team: Hostile
+$Location: 131022.929688, 351.758453, -231359.640625
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Betel 1		;! Object #93
+$Class: SF Mara
+$Team: Hostile
+$Location: 130938.429688, -417.515533, -230131.187500
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Betel 2		;! Object #94
+$Class: SF Mara
+$Team: Hostile
+$Location: 130780.804688, -417.515564, -229930.750000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Betel 3		;! Object #95
+$Class: SF Mara
+$Team: Hostile
+$Location: 130598.304688, -417.515381, -229704.046875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Betel 4		;! Object #96
+$Class: SF Mara
+$Team: Hostile
+$Location: 130432.632813, -417.515564, -229551.562500
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Betel 5		;! Object #97
+$Class: SF Mara
+$Team: Hostile
+$Location: 130266.695313, -417.515533, -229466.015625
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Betel 6		;! Object #98
+$Class: SF Mara
+$Team: Hostile
+$Location: 131065.062500, -417.515625, -230316.062500
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Ciranu		;! Object #99
+$Class: SC Cain
+$Team: Hostile
+$Location: 133923.203125, 5484.600098, -235818.593750
+$Orientation:
+	0.738412, 0.000000, 0.674350,
+	-0.449619, 0.745287, 0.492332,
+	-0.502584, -0.666744, 0.550329
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Diadem" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 4 Sector GD35-B" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 1
+$Departure Cue: ( is-destroyed-delay 0 "Diadem" ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 150
+
+$Name: Latiza		;! Object #100
+$Class: SC Lilith
+$Team: Hostile
+$Location: 135733.296875, 7165.700195, -232912.796875
+$Orientation:
+	0.256786, 0.000000, 0.966468,
+	-0.733098, 0.651635, 0.194780,
+	-0.629784, -0.758533, 0.167330
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Diadem" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 4 Sector GD35-B" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 4
+$Departure Cue: ( is-destroyed-delay 0 "Diadem" ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" "no-arrival-warp" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 210
+
+$Name: Anagora#2		;! Object #101
+$Class: SC Asura
+$Team: Hostile
+$Location: -746.197632, 0.037569, -4746.020020
+$Orientation:
+	0.667463, 0.000000, -0.744643,
+	0.462413, 0.783822, 0.414485,
+	0.583667, -0.620986, 0.523172
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 14
+$Departure Cue: ( is-event-true-delay 
+   "There she is!" 
+   0 
+)
+$Determination: 10
++Flags: ( "no-shields" "no-arrival-warp" "beam-protect-ship" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 210
+
+#Wings		;! 9 total
+
+$Name: alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( or 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      11 
+   )
+   ( is-event-true-delay 
+      "Let's go home" 
+      3 
+   )
+)
+$Ships: (		;! 4 total
+	"alpha 1"
+	"alpha 2"
+	"alpha 3"
+	"alpha 4"
+)
+$AI Goals: ( goals ( ai-guard "Dauntless" 50 ) )
++Hotkey: 0
++Flags: ( )
+
+$Name: beta
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! beta 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
++Departure delay: 1
+$Departure Cue: ( or 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      11 
+   )
+   ( is-event-true-delay 
+      "Let's go home" 
+      3 
+   )
+)
+$Ships: (		;! 4 total
+	"beta 1"
+	"beta 2"
+	"beta 3"
+	"beta 4"
+)
+$AI Goals: ( goals ( ai-guard "Vigilant" 50 ) )
++Hotkey: 1
++Flags: ( )
+
+$Name: Avalon
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Avalon 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 3 Sector GD35-A" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 6 total
+	"Avalon 1"
+	"Avalon 2"
+	"Avalon 3"
+	"Avalon 4"
+	"Avalon 5"
+	"Avalon 6"
+)
+$AI Goals: ( goals ( ai-guard "Sippus" 50 ) )
++Flags: ( "no-arrival-warp" )
+
+$Name: Badoon
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Badoon 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 3 Sector GD35-A" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 6 total
+	"Badoon 1"
+	"Badoon 2"
+	"Badoon 3"
+	"Badoon 4"
+	"Badoon 5"
+	"Badoon 6"
+)
+$AI Goals: ( goals ( ai-guard "Kerrus" 50 ) )
++Flags: ( "no-arrival-warp" )
+
+$Name: Cetus
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Cetus 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 6 total
+	"Cetus 1"
+	"Cetus 2"
+	"Cetus 3"
+	"Cetus 4"
+	"Cetus 5"
+	"Cetus 6"
+)
+$AI Goals: ( goals ( ai-guard "Jacca" 50 ) )
++Flags: ( "no-arrival-warp" )
+
+$Name: Dosadi
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Dosadi 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 6 total
+	"Dosadi 1"
+	"Dosadi 2"
+	"Dosadi 3"
+	"Dosadi 4"
+	"Dosadi 5"
+	"Dosadi 6"
+)
+$AI Goals: ( goals ( ai-guard "Luzca" 50 ) )
++Flags: ( "no-arrival-warp" )
+
+$Name: Errai
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Errai 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 1 Sector GD35-C" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 6 total
+	"Errai 1"
+	"Errai 2"
+	"Errai 3"
+	"Errai 4"
+	"Errai 5"
+	"Errai 6"
+)
+$AI Goals: ( goals ( ai-guard "Otris" 50 ) )
++Flags: ( "no-arrival-warp" )
+
+$Name: Aaryn
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Aaryn 1
+
+$Arrival Location: Hyperspace
++Arrival delay: 7
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 4 Sector GD35-B" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 3
+$Departure Cue: ( is-destroyed-delay 0 "Diadem" ) 
+$Ships: (		;! 6 total
+	"Aaryn 1"
+	"Aaryn 2"
+	"Aaryn 3"
+	"Aaryn 4"
+	"Aaryn 5"
+	"Aaryn 6"
+)
+$AI Goals: ( goals ( ai-chase "Diadem" 50 ) )
++Flags: ( "no-arrival-message" )
+
+$Name: Betel
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Betel 1
+
+$Arrival Location: Hyperspace
++Arrival delay: 10
+$Arrival Cue: ( is-event-true-delay 
+   "Set Up Nav 4 Sector GD35-B" 
+   0 
+)
+$Departure Location: Hyperspace
++Departure delay: 2
+$Departure Cue: ( is-destroyed-delay 0 "Diadem" ) 
+$Ships: (		;! 6 total
+	"Betel 1"
+	"Betel 2"
+	"Betel 3"
+	"Betel 4"
+	"Betel 5"
+	"Betel 6"
+)
+$AI Goals: ( goals ( ai-chase-any 50 ) )
++Flags: ( "no-arrival-message" )
+
+#Events		;! 176 total
+
+$Formula: ( when 
+   ( true ) 
+   ( set-armor-type 
+      "Vigilant" 
+      ( true ) 
+      "Cinematic Armor 1" 
+      "Hull" 
+   )
+   ( set-armor-type 
+      "Defiant" 
+      ( true ) 
+      "Cinematic Armor 1" 
+      "Hull" 
+   )
+   ( set-armor-type 
+      "Reaper" 
+      ( true ) 
+      "Cinematic Armor 1" 
+      "Hull" 
+   )
+   ( set-armor-type 
+      "Adamant" 
+      ( true ) 
+      "Cinematic Armor 1" 
+      "Hull" 
+   )
+   ( set-armor-type 
+      "Dauntless" 
+      ( true ) 
+      "Cinematic Armor 1" 
+      "Hull" 
+   )
+   ( ship-subsys-guardian-threshold 
+      ( rand 75 96 ) 
+      "Vigilant" 
+      "<all engines>" 
+      "<all turrets>" 
+   )
+   ( ship-subsys-guardian-threshold 
+      ( rand 75 96 ) 
+      "Defiant" 
+      "<all engines>" 
+      "<all turrets>" 
+   )
+   ( ship-subsys-guardian-threshold 
+      ( rand 75 96 ) 
+      "Reaper" 
+      "<all engines>" 
+      "<all turrets>" 
+   )
+   ( ship-subsys-guardian-threshold 
+      ( rand 75 96 ) 
+      "Adamant" 
+      "<all engines>" 
+      "<all turrets>" 
+   )
+   ( ship-subsys-guardian-threshold 
+      ( rand 75 96 ) 
+      "Dauntless" 
+      "<all engines>" 
+      "<all turrets>" 
+   )
+   ( never-warp "alpha 1" ) 
+   ( ship-guardian-threshold 
+      ( rand 30 80 ) 
+      "alpha 2" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 30 80 ) 
+      "alpha 4" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 30 80 ) 
+      "beta 1" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 30 80 ) 
+      "beta 3" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 80 90 ) 
+      "Vigilant" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 80 90 ) 
+      "Defiant" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 80 90 ) 
+      "Adamant" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 80 90 ) 
+      "Reaper" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 80 90 ) 
+      "Dauntless" 
+   )
+   ( modify-variable @AutopilotON[0] 0 ) 
+)
++Name: Init
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Nav Points Settings-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( add-nav-waypoint 
+      "Sector GD35-C" 
+      "Nav Point 1" 
+      1 
+   )
+   ( set-nav-carry 
+      "Vigilant" 
+      "Defiant" 
+      "Reaper" 
+      "Adamant" 
+      "Dauntless" 
+      "alpha" 
+      "beta" 
+   )
+   ( use-autopilot ( true ) ) 
+   ( hud-set-max-targeting-range 20000 ) 
+   ( add-nav-waypoint 
+      "Sector GD35" 
+      "Nav Point 2" 
+      1 
+   )
+   ( add-nav-waypoint 
+      "Sector GD35-A" 
+      "Nav Point 3" 
+      1 
+   )
+   ( add-nav-waypoint 
+      "Sector GD35-B" 
+      "Nav Point 4" 
+      1 
+   )
+   ( hide-nav "Sector GD35-A" ) 
+   ( hide-nav "Sector GD35-B" ) 
+   ( hide-nav "Sector GD35-C" ) 
+   ( hide-nav "Sector GD35" ) 
+)
++Name: Set Up Nav Status
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance-to-nav "Sector GD35" ) 
+      1000 
+   )
+   ( ship-vanish "Sector Comms" ) 
+   ( hide-nav "Sector GD35" ) 
+   ( hud-disable-except-messages 0 ) 
+   ( modify-variable @AutopilotON[0] 0 ) 
+)
++Name: Set Up Nav 2 Sector GD35
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance-to-nav "Sector GD35-A" ) 
+      2000 
+   )
+   ( hide-nav "Sector GD35-A" ) 
+   ( hud-disable-except-messages 0 ) 
+   ( modify-variable @AutopilotON[0] 0 ) 
+)
++Name: Set Up Nav 3 Sector GD35-A
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance-to-nav "Sector GD35-B" ) 
+      1000 
+   )
+   ( hide-nav "Sector GD35-B" ) 
+   ( hud-disable-except-messages 0 ) 
+   ( modify-variable @AutopilotON[0] 0 ) 
+)
++Name: Set Up Nav 4 Sector GD35-B
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance-to-nav "Sector GD35-C" ) 
+      20000 
+   )
+   ( hide-nav "Sector GD35-C" ) 
+   ( hud-disable-except-messages 0 ) 
+   ( modify-variable @AutopilotON[0] 0 ) 
+)
++Name: Set Up Nav 1 Sector GD35-C
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay "Show Hint 1" 0 ) 
+   ( unhide-nav "Sector GD35-A" ) 
+   ( unhide-nav "Sector GD35-B" ) 
+)
++Name: Reveal Nav Points GD35 A and B
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Show Hint - Final" 
+      0 
+   )
+   ( unhide-nav "Sector GD35-C" ) 
+   ( modify-variable @AutopilotON[0] 1 ) 
+   ( key-reset "Alt-A" ) 
+   ( key-reset "Alt-N" ) 
+)
++Name: Reveal Final Nav GD35-C
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( not 
+         ( is-event-true-delay 
+            "Set Up Nav 3 Sector GD35-A" 
+            0 
+         )
+      )
+      ( is-event-true-delay 
+         "Set Up Nav 4 Sector GD35-B" 
+         0 
+      )
+   )
+   ( modify-variable 
+      @SkiptoBranch1[0] 
+      ( + @SkiptoBranch1[0] 1 ) 
+   )
+)
++Name: Skip to Branch 1 - Vasudan
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-event-true-delay 
+         "Set Up Nav 3 Sector GD35-A" 
+         0 
+      )
+      ( not 
+         ( is-event-true-delay 
+            "Set Up Nav 4 Sector GD35-B" 
+            0 
+         )
+      )
+   )
+   ( modify-variable 
+      @SkiptoBranch2[0] 
+      ( + @SkiptoBranch2[0] 1 ) 
+   )
+)
++Name: Skip to Branch 2 - Hargrove
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "Asura Objective Cue" 
+   )
+   ( do-nothing ) 
+)
++Name: Main Directive
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Disable Anagora", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Sector Comms Events--------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-time-elapsed 3 ) 
+   ( send-message 
+      "#Command" 
+      "High" 
+      "SectorComms" 
+   )
+)
++Name: This is Sector Command
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless22" 
+   )
+   ( training-msg "Nav Point Selection" ) 
+   ( unhide-nav "Sector GD35" ) 
+   ( modify-variable @AutopilotON[0] 1 ) 
+)
++Name: Press the button
++Repeat Count: 1
++Interval: 1
++Chained: 8
+
+$Formula: ( when 
+   ( key-pressed "Alt-N" ) 
+   ( training-msg "Engage Auto" ) 
+   ( key-reset "Alt-A" ) 
+)
++Name: Select Nav Point GD35
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Select Nav Point", -1)
++Objective key:  XSTR("Press $Alt-N$", -1)
+
+$Formula: ( when 
+   ( key-pressed "Alt-A" ) 
+   ( key-reset "Alt-A" ) 
+   ( hud-disable-except-messages 1 ) 
+   ( key-reset "Alt-N" ) 
+)
++Name: Move to Location
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Move to Location", -1)
++Objective key:  XSTR("Press $Alt-A$", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Sector GD35 Events---------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 2 Sector GD35" 
+      0 
+   )
+   ( remove-background-bitmap 15 ) 
+   ( add-background-bitmap 
+      "planet11" 
+      0 
+      51 
+      22 
+      200 
+      200 
+      1 
+      1 
+   )
+)
++Name: Set Up Background GD35
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 2 Sector GD35" 
+      0 
+   )
+   ( clear-goals "alpha" "beta" ) 
+   ( add-goal 
+      "alpha" 
+      ( ai-chase "Anagora" 89 ) 
+   )
+   ( add-goal 
+      "beta" 
+      ( ai-chase "Anagora" 89 ) 
+   )
+)
++Name: All Wings Attack Asura
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We'll have its trajectory" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Cue in Shivans
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < ( hits-left "Anagora" ) 83 ) 
+   ( add-goal 
+      "Anagora" 
+      ( ai-warp-out 89 ) 
+   )
+)
++Name: Asura Jumps Out
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "All fighters engage!" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Shivans
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "SF Astaroth 14" 
+      "SF Astaroth 15" 
+      "SF Astaroth 16" 
+      "SF Astaroth 17" 
+      "SF Astaroth 18" 
+      "SF Astaroth 19" 
+      "SF Astaroth 20" 
+      "SF Astaroth 21" 
+      "SF Astaroth 22" 
+      "SF Astaroth 23" 
+      "SF Astaroth 24" 
+      "SF Astaroth 25" 
+      "SF Astaroth 26" 
+      "SF Astaroth 27" 
+      "SF Astaroth 28" 
+      "SF Astaroth 29" 
+      "SF Astaroth 30" 
+      "SF Astaroth 31" 
+      "SF Astaroth 32" 
+      "SF Astaroth 33" 
+      "SF Astaroth 34" 
+      "SF Astaroth 35" 
+      "SF Astaroth 36" 
+      "SF Astaroth 37" 
+      "SF Astaroth 38" 
+      "SF Astaroth 39" 
+      "SF Astaroth 40" 
+      "SF Astaroth 41" 
+      "SF Astaroth 42" 
+      "SF Astaroth 43" 
+   )
+   ( do-nothing ) 
+)
++Name: Destroy Shivans 1
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Shivans", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Nav points are added" 
+      9 
+   )
+   ( training-msg "Nav Point Selection" ) 
+   ( modify-variable @AutopilotON[0] 1 ) 
+   ( key-reset "Alt-A" ) 
+   ( key-reset "Alt-N" ) 
+)
++Name: Show Hint 1
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD25 Dialogues-------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 2 Sector GD35" 
+      2 
+   )
+   ( send-message 
+      "<any wingman>" 
+      "High" 
+      "Anywing1" 
+   )
+)
++Name: We have the Anagora
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless1" 
+   )
+)
++Name: disable it not destroy it
++Repeat Count: 1
++Interval: 1
++Chained: 11
+
+$Formula: ( when 
+   ( has-departed-delay 1 "Anagora" ) 
+   ( send-message 
+      "<any wingman>" 
+      "High" 
+      "Anywing2" 
+   )
+)
++Name: She escaped! Damn!
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless2" 
+   )
+)
++Name: We'll have its trajectory
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "<any wingman>" 
+      "High" 
+      "Anywing3" 
+   )
+)
++Name: It's an ambush!
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless3" 
+   )
+)
++Name: All fighters engage!
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "SF Astaroth 14" 
+      "SF Astaroth 15" 
+      "SF Astaroth 16" 
+      "SF Astaroth 17" 
+      "SF Astaroth 18" 
+      "SF Astaroth 19" 
+      "SF Astaroth 20" 
+      "SF Astaroth 21" 
+      "SF Astaroth 22" 
+      "SF Astaroth 23" 
+      "SF Astaroth 24" 
+      "SF Astaroth 25" 
+      "SF Astaroth 26" 
+      "SF Astaroth 27" 
+      "SF Astaroth 28" 
+      "SF Astaroth 29" 
+      "SF Astaroth 30" 
+      "SF Astaroth 31" 
+      "SF Astaroth 32" 
+      "SF Astaroth 33" 
+      "SF Astaroth 34" 
+      "SF Astaroth 35" 
+      "SF Astaroth 36" 
+      "SF Astaroth 37" 
+      "SF Astaroth 38" 
+      "SF Astaroth 39" 
+      "SF Astaroth 40" 
+      "SF Astaroth 41" 
+      "SF Astaroth 42" 
+      "SF Astaroth 43" 
+   )
+   ( send-message 
+      "beta 1" 
+      "High" 
+      "Beta1a" 
+   )
+)
++Name: Shivans destroyed!
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless4" 
+   )
+)
++Name: two probable locations
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless5" 
+   )
+)
++Name: Nav points are added
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Sector GD35-A Events-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 3 Sector GD35-A" 
+      0 
+   )
+   ( remove-background-bitmap 15 ) 
+   ( add-background-bitmap 
+      "dneb01" 
+      0 
+      0 
+      0 
+      900 
+      900 
+      1 
+      1 
+   )
+)
++Name: Set Up Background GD35-A
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 3 Sector GD35-A" 
+      0 
+   )
+   ( hide-nav "Sector GD35-B" ) 
+)
++Name: Hide Nav GD35-B for now
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 3 Sector GD35-A" 
+      0 
+   )
+   ( beam-free-all 
+      "Hamatus" 
+      "Kerrus" 
+      "Sippus" 
+   )
+)
++Name: Beam Free All Ships in Sector
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( beam-free-all 
+      "Reaper" 
+      "Adamant" 
+      "Dauntless" 
+      "Vigilant" 
+      "Defiant" 
+   )
+)
++Name: Beam Free All 7th BG Cruisers
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Don't leave us" 
+      3 
+   )
+   ( unhide-nav "Sector GD35-B" ) 
+)
++Name: Unhide Nav GD35-B
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Unhide Nav GD35-B" 
+      0 
+   )
+   ( training-msg "Nav Point Selection" ) 
+   ( modify-variable @AutopilotON[0] 1 ) 
+   ( key-reset "Alt-A" ) 
+   ( key-reset "Alt-N" ) 
+)
++Name: Show Hint 2
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-A Directives----------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "not in this location" 
+      7 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Avalon
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Avalon" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Avalon
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Avalon", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "not in this location" 
+      7 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Badoon
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Badoon" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Badoon
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Badoon", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "not in this location" 
+      7 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Sippus
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Sippus" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Sippus
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Sippus", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "not in this location" 
+      7 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Kerrus
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Kerrus" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Kerrus
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Kerrus", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-A Clean Up------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-destroyed-delay 
+         0 
+         "Avalon" 
+         "Badoon" 
+         "Sippus" 
+         "Kerrus" 
+      )
+      ( is-event-true-delay 
+         "Set Up Nav 3 Sector GD35-A" 
+         0 
+      )
+      ( > 
+         ( distance "alpha 1" "Nav Point 3:1" ) 
+         40000 
+      )
+   )
+   ( ship-vanish "Hamatus" ) 
+)
++Name: Erase GD35-A Elements
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-A Dialogues-----------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 3 Sector GD35-A" 
+      2 
+   )
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless6" 
+   )
+)
++Name: not in this location
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-destroyed-delay 
+         1 
+         "Sippus" 
+         "Kerrus" 
+         "Avalon" 
+         "Badoon" 
+      )
+      ( = @SkiptoBranch1[0] 0 ) 
+   )
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless7" 
+   )
+)
++Name: All hostiles destroyed
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "All hostiles destroyed" 
+      6 
+   )
+   ( send-message 
+      "Hamatus" 
+      "High" 
+      "Vasudan1" 
+   )
+)
++Name: you must protect us
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless8" 
+   )
+)
++Name: We can not engage
++Repeat Count: 1
++Interval: 1
++Chained: 8
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Hamatus" 
+      "High" 
+      "Vasudan2" 
+   )
+)
++Name: Don't leave us
++Repeat Count: 1
++Interval: 1
++Chained: 7
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Sector GD35-B Events-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 4 Sector GD35-B" 
+      0 
+   )
+   ( remove-background-bitmap 15 ) 
+   ( add-background-bitmap 
+      "planet12" 
+      0 
+      0 
+      0 
+      800 
+      900 
+      1 
+      1 
+   )
+)
++Name: Set Up Background GD35-B
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 4 Sector GD35-B" 
+      0 
+   )
+   ( hide-nav "Sector GD35-A" ) 
+)
++Name: Hide Nav GD35-A for now
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 4 Sector GD35-B" 
+      0 
+   )
+   ( beam-free-all 
+      "Reaper" 
+      "Adamant" 
+      "Vigilant" 
+      "Defiant" 
+   )
+)
++Name: Beam Free 7th BG Cruisers
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 4 Sector GD35-B" 
+      0 
+   )
+   ( clear-goals 
+      "Vigilant" 
+      "Defiant" 
+      "Reaper" 
+      "Adamant" 
+      "Dauntless" 
+      "alpha" 
+      "beta" 
+   )
+   ( add-goal 
+      "alpha" 
+      ( ai-guard "Diadem" 70 ) 
+   )
+   ( add-goal 
+      "beta" 
+      ( ai-guard "Diadem" 70 ) 
+   )
+   ( add-goal 
+      "Adamant" 
+      ( ai-waypoints-once "A" 89 ) 
+   )
+   ( add-goal 
+      "Reaper" 
+      ( ai-waypoints-once "B" 89 ) 
+   )
+   ( add-goal 
+      "Vigilant" 
+      ( ai-waypoints-once "C" 89 ) 
+   )
+   ( add-goal 
+      "Defiant" 
+      ( ai-waypoints-once "D" 89 ) 
+   )
+)
++Name: Cruisers move into position
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Zulus" "Diadem" ) 
+      2000 
+   )
+   ( beam-free-all "Zulus" ) 
+)
++Name: Rakshasa 1 in Range
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Garona" "Diadem" ) 
+      2000 
+   )
+   ( beam-free-all "Garona" ) 
+)
++Name: Rakshasa 2 in Range
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Ciranu" "Diadem" ) 
+      2000 
+   )
+   ( beam-free-all "Garona" ) 
+)
++Name: Cain in Range
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Latiza" "Diadem" ) 
+      2000 
+   )
+   ( beam-free-all "Garona" ) 
+)
++Name: Lilith in Range
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      2 
+      "Aaryn" 
+      "Betel" 
+      "Zulus" 
+      "Latiza" 
+      "Garona" 
+      "Ciranu" 
+   )
+   ( repair-subsystem 
+      "Diadem" 
+      "engine" 
+      100 
+   )
+)
++Name: Repair Diadem Engines
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Let's move on" 
+      3 
+   )
+   ( unhide-nav "Sector GD35-A" ) 
+)
++Name: Unhide Nav GD35-A
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( is-event-true-delay 
+         "We are jumping out 1" 
+         7 
+      )
+      ( is-event-true-delay 
+         "We are jumping out 2" 
+         5 
+      )
+   )
+   ( add-goal 
+      "Diadem" 
+      ( ai-warp-out 89 ) 
+   )
+)
++Name: Diadem Jump Out
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Protect her at all cost" 
+      0 
+   )
+   ( validate-goal "Protect Diadem" ) 
+)
++Name: Validate Goal Hargrove
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Unhide Nav GD35-A" 
+      0 
+   )
+   ( modify-variable @AutopilotON[0] 1 ) 
+   ( key-reset "Alt-A" ) 
+   ( key-reset "Alt-N" ) 
+   ( training-msg "Nav Point Selection" ) 
+)
++Name: Show Hint 3
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-B Directives----------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Protect her at all cost" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Aaryn
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Aaryn" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Aaryn
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Aaryn", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Protect her at all cost" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Betel
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Betel" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Betel
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Betel", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Protect her at all cost" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Zulus
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Zulus" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Zulus
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Zulus", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Protect her at all cost" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Latiza
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Latiza" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Latiza
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Latiza", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Protect her at all cost" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Garona
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Garona" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Garona
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Garona", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Protect her at all cost" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Ciranu
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Ciranu" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Ciranu
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Ciranu", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-B Clean Up------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-destroyed-delay 
+         0 
+         "Zulus" 
+         "Garona" 
+         "Aaryn" 
+         "Betel" 
+         "Ciranu" 
+         "Latiza" 
+      )
+      ( is-event-true-delay 
+         "Set Up Nav 4 Sector GD35-B" 
+         0 
+      )
+      ( > 
+         ( distance "alpha 1" "Nav Point 4:1" ) 
+         40000 
+      )
+   )
+   ( ship-vanish "Diadem" ) 
+)
++Name: Erase GD35-B Elements
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-B Dialogues-----------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 4 Sector GD35-B" 
+      2 
+   )
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless9" 
+   )
+)
++Name: Negative in this location
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "beta 1" 
+      "High" 
+      "Anywing4" 
+   )
+)
++Name: What is she doing here
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless10" 
+   )
+)
++Name: we found Hargrove's ship
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "#Sector Comms" 
+      "High" 
+      "Command1" 
+   )
+)
++Name: Protect her at all cost
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( and 
+      ( is-destroyed-delay 
+         2 
+         "Aaryn" 
+         "Betel" 
+         "Zulus" 
+         "Latiza" 
+         "Garona" 
+         "Ciranu" 
+      )
+      ( not 
+         ( is-destroyed-delay 0 "Diadem" ) 
+      )
+   )
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless11" 
+   )
+   ( clear-goals 
+      "alpha" 
+      "beta" 
+      "Vigilant" 
+      "Defiant" 
+      "Reaper" 
+      "Adamant" 
+      "Dauntless" 
+   )
+)
++Name: You're safe for now
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Diadem" 
+      "High" 
+      "Diadem1" 
+   )
+)
++Name: looking for a strange Shivan
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless12" 
+   )
+)
++Name: As a matter of fact
++Repeat Count: 1
++Interval: 1
++Chained: 12
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Diadem" 
+      "High" 
+      "Diadem2" 
+   )
+)
++Name: it went this way
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless12a" 
+   )
+)
++Name: We have a mission
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ---------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-event-true-delay 
+         "We have a mission" 
+         4 
+      )
+      ( = @SkiptoBranch2[0] 0 ) 
+   )
+   ( send-message 
+      "Diadem" 
+      "High" 
+      "Diadem3" 
+   )
+)
++Name: We are jumping out 1
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless14" 
+   )
+)
++Name: Let's move on
++Repeat Count: 1
++Interval: 1
++Chained: 7
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----GF35-B Failure scenario---
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Diadem" ) 
+   ( send-message 
+      "beta 1" 
+      "High" 
+      "Anywing8" 
+   )
+)
++Name: Hargrove's ship is destroyed
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless19" 
+   )
+)
++Name: We lost Dr. Mina
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "#Sector Comms" 
+      "High" 
+      "Command4" 
+   )
+)
++Name: That...is disappointing
++Repeat Count: 1
++Interval: 1
++Chained: 7
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless20" 
+   )
+)
++Name: What about our mission
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "#Sector Comms" 
+      "High" 
+      "Command5" 
+   )
+)
++Name: Just return to base
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless21" 
+   )
+)
++Name: Let's go home
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Branch 1 messages---------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-destroyed-delay 
+         1 
+         "Sippus" 
+         "Kerrus" 
+         "Avalon" 
+         "Badoon" 
+      )
+      ( = @SkiptoBranch1[0] 1 ) 
+   )
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless23" 
+   )
+)
++Name: All hostiles destroyed 2
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Hamatus" 
+      "High" 
+      "VasudanA1" 
+   )
+)
++Name: thank you for your help
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "DauntlessA1" 
+   )
+)
++Name: Do you know where
++Repeat Count: 1
++Interval: 1
++Chained: 8
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Hamatus" 
+      "High" 
+      "VasudanA2" 
+   )
+)
++Name: We are sending the data now
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "DauntlessA2" 
+   )
+)
++Name: Good work, Hamatus
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Hamatus" 
+      "High" 
+      "VasudanA3" 
+   )
+)
++Name: Shivan battlegroup
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "DauntlessA3" 
+   )
+)
++Name: Let's go to the final location
++Repeat Count: 1
++Interval: 1
++Chained: 7
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Hamatus" 
+      "High" 
+      "VasudanA4" 
+   )
+)
++Name: please don't leave us
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -----Branch 2 messages---------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-event-true-delay 
+         "We have a mission" 
+         4 
+      )
+      ( = @SkiptoBranch2[0] 1 ) 
+   )
+   ( send-message 
+      "Diadem" 
+      "High" 
+      "DiademB1" 
+   )
+)
++Name: You're in luck
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "DauntlessB1" 
+   )
+)
++Name: Your help is appreciated
++Repeat Count: 1
++Interval: 1
++Chained: 8
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Diadem" 
+      "High" 
+      "DiademB2" 
+   )
+)
++Name: We are jumping out 2
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "DauntlessB2" 
+   )
+)
++Name: Let's head to that Location
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -------------------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( is-event-true-delay 
+         "please don't leave us" 
+         4 
+      )
+      ( is-event-true-delay 
+         "Let's head to that Location" 
+         4 
+      )
+   )
+   ( training-msg "Nav Point Selection" ) 
+)
++Name: Show Hint - Final
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Sector GD35-C Events-------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 1 Sector GD35-C" 
+      0 
+   )
+   ( remove-background-bitmap 15 ) 
+   ( add-background-bitmap 
+      "supernova2" 
+      327 
+      51 
+      300 
+      900 
+      700 
+      1 
+      1 
+   )
+)
++Name: Set Up Background GD35-C
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( protect-ship 
+      "Shivan Comm Unit 1" 
+      "Shivan Comm Unit 2" 
+      "Jacca" 
+      "Luzca" 
+      "Otris" 
+   )
+)
++Name: Don't  Attack Yet -Protect Ship
++Repeat Count: 1
++Interval: 1
++Chained: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-player-orders 
+      "Vigilant" 
+      ( false ) 
+      "Destroy my target" 
+   )
+   ( set-player-orders 
+      "Defiant" 
+      ( false ) 
+      "Destroy my target" 
+   )
+   ( set-player-orders 
+      "Reaper" 
+      ( false ) 
+      "Destroy my target" 
+   )
+   ( set-player-orders 
+      "Adamant" 
+      ( false ) 
+      "Destroy my target" 
+   )
+   ( set-player-orders 
+      "Dauntless" 
+      ( false ) 
+      "Destroy my target" 
+   )
+)
++Name: Cancel player fleet command
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 1 Sector GD35-C" 
+      3 
+   )
+   ( clear-goals "alpha" "beta" ) 
+   ( add-goal 
+      "alpha" 
+      ( ai-disable-ship "Anagora#2" 89 ) 
+   )
+   ( add-goal 
+      "beta" 
+      ( ai-disable-ship "Anagora#2" 89 ) 
+   )
+)
++Name: Wings Attempt to disable Asura
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-departed-delay 0 "Anagora#2" ) 
+   ( clear-goals "alpha" "beta" ) 
+   ( add-goal 
+      "alpha" 
+      ( ai-guard "Dauntless" 50 ) 
+   )
+   ( add-goal 
+      "beta" 
+      ( ai-guard "Dauntless" 50 ) 
+   )
+)
++Name: Reform Wings
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay "Copy that" 5 ) 
+   ( add-goal 
+      "Otris" 
+      ( ai-chase "Adamant" 89 ) 
+   )
+   ( add-goal 
+      "Luzca" 
+      ( ai-chase "Reaper" 89 ) 
+   )
+   ( add-goal 
+      "Jacca" 
+      ( ai-chase "Dauntless" 89 ) 
+   )
+   ( unprotect-ship 
+      "Shivan Comm Unit 1" 
+      "Shivan Comm Unit 2" 
+      "Jacca" 
+      "Luzca" 
+      "Otris" 
+   )
+)
++Name: Shivans Attack - Unprotect them
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( add-goal 
+      "Adamant" 
+      ( ai-chase "Otris" 70 ) 
+   )
+   ( add-goal 
+      "Reaper" 
+      ( ai-chase "Luzca" 70 ) 
+   )
+   ( add-goal 
+      "Vigilant" 
+      ( ai-chase "Jacca" 70 ) 
+   )
+   ( add-goal 
+      "Defiant" 
+      ( ai-chase "Jacca" 70 ) 
+   )
+   ( clear-goals "alpha" "beta" ) 
+   ( add-goal 
+      "alpha" 
+      ( ai-chase-any 50 ) 
+   )
+   ( add-goal "beta" ( ai-chase-any 50 ) ) 
+)
++Name: 7th BG Attack
++Repeat Count: 1
++Interval: 1
++Chained: 2
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 1 Sector GD35-C" 
+      5 
+   )
+   ( beam-free-all 
+      "Jacca" 
+      "Luzca" 
+      "Otris" 
+   )
+)
++Name: Beam Free All in this Sector
++Repeat Count: 1
++Interval: 1
++Chained: 15
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( validate-goal "Destroy Comm Nodes" ) 
+)
++Name: Validate Goal Comm Nodes
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-C Directives----------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Cetus
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Cetus" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Cetus
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Cetus", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Dosadi
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Dosadi" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Dosadi
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Dosadi", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Errai
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Errai" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Errai
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Errai", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Comm Node 1
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "Shivan Comm Unit 1" 
+   )
+   ( do-nothing ) 
+)
++Name: Comm Node 1
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Comm Node 1", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Comm Node 2
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "Shivan Comm Unit 2" 
+   )
+   ( do-nothing ) 
+)
++Name: Comm Node 2
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Comm Node 2", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Jacca
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Jacca" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Jacca
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Jacca", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Luzca
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Luzca" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Luzca
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Luzca", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "We have a new mission" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Trigger Dir Otris
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Otris" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Otris
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Otris", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-C Clean Up------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "Jacca" 
+      "Luzca" 
+      "Otris" 
+   )
+   ( clear-goals 
+      "Vigilant" 
+      "Defiant" 
+      "Adamant" 
+      "Reaper" 
+   )
+   ( add-goal 
+      "Adamant" 
+      ( ai-chase "Shivan Comm Unit 1" 89 ) 
+   )
+   ( add-goal 
+      "Vigilant" 
+      ( ai-chase "Shivan Comm Unit 1" 89 ) 
+   )
+   ( add-goal 
+      "Reaper" 
+      ( ai-chase "Shivan Comm Unit 2" 89 ) 
+   )
+   ( add-goal 
+      "Defiant" 
+      ( ai-chase "Shivan Comm Unit 2" 89 ) 
+   )
+)
++Name: 7th BG Cruisers target Nodes
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----GD35-C Dialogues-----------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Set Up Nav 1 Sector GD35-C" 
+      3 
+   )
+   ( send-message 
+      "alpha 2" 
+      "High" 
+      "Anywing5" 
+   )
+)
++Name: There she is!
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-departed-delay 2 "Anagora#2" ) 
+   ( send-message 
+      "beta 1" 
+      "High" 
+      "Anywing6" 
+   )
+)
++Name: Anagora escaped us again
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "<any wingman>" 
+      "High" 
+      "Anywing7" 
+   )
+)
++Name: We have Shivan installations
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless15" 
+   )
+)
++Name: We need an update
++Repeat Count: 1
++Interval: 1
++Chained: 7
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "#Sector Comms" 
+      "High" 
+      "Command2" 
+   )
+)
++Name: Nodes must be destroyed
++Repeat Count: 1
++Interval: 1
++Chained: 11
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless16" 
+   )
+)
++Name: How about our mission
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "#Sector Comms" 
+      "High" 
+      "Command3" 
+   )
+)
++Name: You'll get to that later
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless17" 
+   )
+   ( validate-goal "Destroy Comm Nodes" ) 
+)
++Name: We have a new mission
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Adamant" 
+      "High" 
+      "Adamant1" 
+   )
+)
++Name: Copy that
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      5 
+      "Cetus" 
+      "Dosadi" 
+      "Errai" 
+      "Shivan Comm Unit 1" 
+      "Shivan Comm Unit 2" 
+      "Jacca" 
+      "Luzca" 
+      "Otris" 
+   )
+   ( send-message 
+      "Adamant" 
+      "High" 
+      "Adamant2" 
+   )
+)
++Name: I hope you get a read
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Dauntless" 
+      "High" 
+      "Dauntless18" 
+   )
+)
++Name: Engage your jump drives
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -------------------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( key-pressed "Alt-A" ) 
+      ( = @AutopilotON[0] 1 ) 
+      ( key-pressed "Alt-N" ) 
+   )
+   ( hud-disable-except-messages 1 ) 
+   ( key-reset "Alt-A" ) 
+)
++Name: Autopilot - Deactivate HUD
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( is-event-true-delay 
+         "Engage your jump drives" 
+         11 
+      )
+      ( is-event-true-delay 
+         "Let's go home" 
+         3 
+      )
+   )
+   ( show-subtitle-image 
+      "JumpOn.png" 
+      0 
+      28 
+      ( true ) 
+      ( false ) 
+      0 
+      0 
+      4000 
+   )
+   ( allow-warp "alpha 1" ) 
+)
++Name: Authorize Jump
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-departed-delay 0 "alpha 1" ) 
+   ( do-nothing ) 
+)
++Name: Jump Out
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Depart", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -------------------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( key-pressed "Alt-J" ) 
+      ( not 
+         ( is-event-true-delay 
+            "Authorize Jump" 
+            0 
+         )
+      )
+   )
+   ( show-subtitle-image 
+      "JumpX.png" 
+      0 
+      28 
+      ( true ) 
+      ( false ) 
+      0 
+      0 
+      4000 
+   )
+   ( key-reset "Alt-J" ) 
+)
++Name: Player Alt-J Action
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "Alt-J" ) 
+      ( is-event-true-delay 
+         "Authorize Jump" 
+         0 
+      )
+   )
+   ( clear-subtitles ) 
+   ( key-reset "Alt-J" ) 
+)
++Name: Clear Message on Jump
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -------------------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      0 
+   )
+   ( tech-add-intel-xstr 
+      "Hargrove's Vision" 
+      -1 
+   )
+   ( script-eval 
+      "jsv('Intelligence', 'i20')" 
+   )
+)
++Name: Update Database
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Engage your jump drives" 
+      0 
+   )
+   ( do-nothing ) 
+)
++Name: Continue
++Repeat Count: 1
++Interval: 1
+
+#Goals		;! 3 total
+
+$Type: Primary
++Name: Capture the Asura
+$MessageNew:  XSTR("Hunt down the Asura cruiser and Disable it.", -1)
+$end_multi_text
+$Formula: ( is-destroyed-delay 
+   0 
+   "Asura Objective Cue" 
+)
+
+$Type: Primary
++Name: Protect Diadem
+$MessageNew:  XSTR("Protect the science vessel, Diadem. Dr. Hargrove must survive.", -1)
+$end_multi_text
+$Formula: ( has-departed-delay 0 "Diadem" ) 
++Invalid
+
+$Type: Primary
++Name: Destroy Comm Nodes
+$MessageNew:  XSTR("Destroy the Shivan communications array and all hostiles.", -1)
+$end_multi_text
+$Formula: ( is-destroyed-delay 
+   0 
+   "Cetus" 
+   "Dosadi" 
+   "Errai" 
+   "Shivan Comm Unit 1" 
+   "Shivan Comm Unit 2" 
+   "Jacca" 
+   "Luzca" 
+   "Otris" 
+)
++Invalid
+
+#Waypoints		;! 8 lists total
+
+$Name: Nav Point 1
+$List: (		;! 1 points in list
+	( -0.729884, 475.888306, -4069.625732 )
+)
+
+$Name: Nav Point 2
+$List: (		;! 1 points in list
+	( 499.333557, 0.021541, -199144.875000 )
+)
+
+$Name: Nav Point 3
+$List: (		;! 1 points in list
+	( 103000.757813, -9.879491, -97000.406250 )
+)
+
+$Name: Nav Point 4
+$List: (		;! 1 points in list
+	( 129762.093750, -9.867908, -231365.031250 )
+)
+
+$Name: A
+$List: (		;! 1 points in list
+	( 129755.718750, 3.836951, -230703.671875 )
+)
+
+$Name: B
+$List: (		;! 1 points in list
+	( 129757.695313, -12.104001, -232057.640625 )
+)
+
+$Name: C
+$List: (		;! 1 points in list
+	( 129749.804688, -139.568863, -231054.531250 )
+)
+
+$Name: D
+$List: (		;! 1 points in list
+	( 129770.664063, 203.523605, -231725.390625 )
+)
+
+#Messages		;! 66 total
+
+
+$Name: Anywing1
+$Team: -1
+$MessageNew:  XSTR("We have the Anagora! Moving in to engage!", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: Dauntless1
+$Team: -1
+$MessageNew:  XSTR("Pilots, we need to disable it not destroy it!", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Anywing2
+$Team: -1
+$MessageNew:  XSTR("She escaped! Damn!", -1)
+$end_multi_text
++AVI Name: Head-TP2
+
+$Name: Dauntless2
+$Team: -1
+$MessageNew:  XSTR("We'll have its trajectory in a moment.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Anywing3
+$Team: -1
+$MessageNew:  XSTR("Shit! It's an ambush!", -1)
+$end_multi_text
++AVI Name: Head-TP4
+
+$Name: Dauntless3
+$Team: -1
+$MessageNew:  XSTR("All fighters engage!", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Beta1a
+$Team: -1
+$MessageNew:  XSTR("Shivans destroyed!", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: Dauntless4
+$Team: -1
+$MessageNew:  XSTR("Stow your emotions, Sanders. That goes for all of you. It's a little bit fuzzy but we have two probable locations.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Dauntless5
+$Team: -1
+$MessageNew:  XSTR("Nav points are added to your navigation, Commander. Remember, we can't engage the Autopilot if there are hostiles. Where shall we go first?", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Nav Point Selection
+$Team: -1
+$MessageNew:  XSTR("Press $Alt-N$ repeatedly to cycle selection and press $Alt-A$ to engage Autopilot.", -1)
+$end_multi_text
+
+$Name: Engage Auto
+$Team: -1
+$MessageNew:  XSTR("Press $Alt-A$ to engage Autopilot.", -1)
+$end_multi_text
+
+$Name: ==================
+$Team: -1
+$MessageNew:  XSTR("Event Divider", -1)
+$end_multi_text
+
+$Name: Dauntless6
+$Team: -1
+$MessageNew:  XSTR("The Anagora is not in this location but we have a disabled Vasudan corvette. Let's take on these hostiles.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Dauntless7
+$Team: -1
+$MessageNew:  XSTR("All hostiles destroyed. Move on to second location.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Vasudan1
+$Team: -1
+$MessageNew:  XSTR("Dauntless, you must protect us. We detect a full Shivan battlegroup heading this way.", -1)
+$end_multi_text
++AVI Name: Head-VC2
+
+$Name: Dauntless8
+$Team: -1
+$MessageNew:  XSTR("<SECURED CHANNEL>We cannot engage a Shivan battle group, Commander. We must leave them behind.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Vasudan2
+$Team: -1
+$MessageNew:  XSTR("Don't leave us, Dauntless!", -1)
+$end_multi_text
++AVI Name: Head-VC2
+
+$Name: =================
+$Team: -1
+$MessageNew:  XSTR("Event Divider", -1)
+$end_multi_text
+
+$Name: Dauntless9
+$Team: -1
+$MessageNew:  XSTR("Negative in this location.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Anywing4
+$Team: -1
+$MessageNew:  XSTR("Isn't that Dr. Hargrove's science vessel? What is she doing here?", -1)
+$end_multi_text
++AVI Name: Head-TP2
+
+$Name: Dauntless10
+$Team: -1
+$MessageNew:  XSTR("Command, we found Hargrove's ship. What are your orders?", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Command1
+$Team: -1
+$MessageNew:  XSTR("This is Command. Protect her at all cost. Shivans are converging to that position.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: Dauntless11
+$Team: -1
+$MessageNew:  XSTR("You're safe for now, Diadem.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Diadem1
+$Team: -1
+$MessageNew:  XSTR("Thank you, Dauntless. Our jump systems are online and we will leave immediately. Strange, it was disabled a moment ago. Were you looking for a strange Shivan craft?", -1)
+$end_multi_text
++AVI Name: head-cm15.ani
+
+$Name: Dauntless12
+$Team: -1
+$MessageNew:  XSTR("As a matter of fact, we are.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Diadem2
+$Team: -1
+$MessageNew:  XSTR("It went this way and attacked us. We attempted a scan but our fighter escort was lost before we can obtain it.", -1)
+$end_multi_text
++AVI Name: head-cm15.ani
+
+$Name: Dauntless12a
+$Team: -1
+$MessageNew:  XSTR("We have a mission to capture that ship.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Diadem3
+$Team: -1
+$MessageNew:  XSTR("That's good for our research. We are jumping out and godspeed to your mission.", -1)
+$end_multi_text
++AVI Name: head-cm15.ani
+
+$Name: Dauntless14
+$Team: -1
+$MessageNew:  XSTR("Let's move on to the next Nav point.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: ===FINAL MESSAGES====
+$Team: -1
+$MessageNew:  XSTR("Event Divider", -1)
+$end_multi_text
+
+$Name: VasudanA1
+$Team: -1
+$MessageNew:  XSTR("We thank you for your help. A new Shivan cruiser went through here and leaving these enemy crafts to finish us.", -1)
+$end_multi_text
++AVI Name: Head-VC2
+
+$Name: DauntlessA1
+$Team: -1
+$MessageNew:  XSTR("Do you know where this Shivan cruiser is headed?", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: VasudanA2
+$Team: -1
+$MessageNew:  XSTR("Yes. We are sending the data now.", -1)
+$end_multi_text
++AVI Name: Head-VC2
+
+$Name: DauntlessA2
+$Team: -1
+$MessageNew:  XSTR("Good work, Hamatus.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: VasudanA3
+$Team: -1
+$MessageNew:  XSTR("We detect a full Shivan battle group heading this way. You must protect us.", -1)
+$end_multi_text
++AVI Name: Head-VC2
+
+$Name: DauntlessA3
+$Team: -1
+$MessageNew:  XSTR("<SECURED CHANNEL>Commander, we cannot engage a Shivan battle group. We must leave them behind. Let's go to the final location.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: VasudanA4
+$Team: -1
+$MessageNew:  XSTR("Dauntless, please, don't leave us.", -1)
+$end_multi_text
++AVI Name: Head-VC2
+
+$Name: --------------------------
+$Team: -1
+$MessageNew:  XSTR("<put description here>", -1)
+$end_multi_text
+
+$Name: DiademB1
+$Team: -1
+$MessageNew:  XSTR("You're in luck. We tracked it. Transmitting its location to your NavCom.", -1)
+$end_multi_text
++AVI Name: head-cm15.ani
+
+$Name: DauntlessB1
+$Team: -1
+$MessageNew:  XSTR("Your help is appreciated, Dr. Hargrove.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: DiademB2
+$Team: -1
+$MessageNew:  XSTR("Well, godspeed to your mission. We are jumping out.", -1)
+$end_multi_text
++AVI Name: head-cm15.ani
+
+$Name: DauntlessB2
+$Team: -1
+$MessageNew:  XSTR("Let's head to that Location. I hope we find it this time.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: ===Final Nav Point=====
+$Team: -1
+$MessageNew:  XSTR("Event Divider", -1)
+$end_multi_text
+
+$Name: Anywing5
+$Team: -1
+$MessageNew:  XSTR("There she is!", -1)
+$end_multi_text
++AVI Name: Head-TP3
+
+$Name: Anywing6
+$Team: -1
+$MessageNew:  XSTR("The Anagora escaped us again! Slippery bitch!", -1)
+$end_multi_text
++AVI Name: Head-TP4
+
+$Name: Anywing7
+$Team: -1
+$MessageNew:  XSTR("Hey, what do we have here? We have Shivan installations, Dauntless. ", -1)
+$end_multi_text
++AVI Name: Head-TP1
+
+$Name: Dauntless15
+$Team: -1
+$MessageNew:  XSTR("It's a Communications Array. Command, this is Dauntless. We need an update. We sighted an enemy Comms Array.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Command2
+$Team: -1
+$MessageNew:  XSTR("Those Shivan Comm Nodes must be destroyed.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: Dauntless16
+$Team: -1
+$MessageNew:  XSTR("How about our mission, Command?", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Command3
+$Team: -1
+$MessageNew:  XSTR("You'll get to that later.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: Dauntless17
+$Team: -1
+$MessageNew:  XSTR("Right. We have a new mission, people.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Adamant1
+$Team: -1
+$MessageNew:  XSTR("Copy that. We are already targeting them.", -1)
+$end_multi_text
++AVI Name: Head-CM3
+
+$Name: Adamant2
+$Team: -1
+$MessageNew:  XSTR("Dauntless, I hope you get a read of our quarry's heading.", -1)
+$end_multi_text
++AVI Name: Head-CM3
+
+$Name: Dauntless18
+$Team: -1
+$MessageNew:  XSTR("We have them, Adamant. Pilots, the info is downloaded to your Navs. Engage your jump drives. We are going to Sector GD48.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: --- --Failure Scenarios-- ----
+$Team: -1
+$MessageNew:  XSTR("<put description here>", -1)
+$end_multi_text
+
+$Name: Anywing8
+$Team: -1
+$MessageNew:  XSTR("Dr. Hargrove's ship is destroyed! Damn!", -1)
+$end_multi_text
++AVI Name: Head-TP2
+
+$Name: Dauntless19
+$Team: -1
+$MessageNew:  XSTR("Command, Dauntless here. We lost Dr. Mina Hargrove.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Command4
+$Team: -1
+$MessageNew:  XSTR("That...is disappointing. Recall your task force and return to base.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: Dauntless20
+$Team: -1
+$MessageNew:  XSTR("What about our mission, Admiral? The Anagora?", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Command5
+$Team: -1
+$MessageNew:  XSTR("We are going to take care of that somehow. Just return to base. That's an order!", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: Dauntless21
+$Team: -1
+$MessageNew:  XSTR("Engage your jump drives, pilots. Let's go home.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: ==========================
+$Team: -1
+$MessageNew:  XSTR("<put description here>", -1)
+$end_multi_text
+
+$Name: SectorComms
+$Team: -1
+$MessageNew:  XSTR("This is Sector Command. I will be monitoring your progress. The Nav Point for GD35 is being sent to your Navs.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: Dauntless22
+$Team: -1
+$MessageNew:  XSTR("Press the button assigned to Cycle Nav Points. Then Press the button for Autopilot. Let us move to that location, Commander.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Dauntless23
+$Team: -1
+$MessageNew:  XSTR("All Hostiles destroyed.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: DEBUG
+$Team: -1
+$MessageNew:  XSTR("VARIABLE = $AutopilotON$", -1)
+$end_multi_text
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 16 total
+
+$Num stars: 500
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunEtamin
++Angles: 5.602507 0.000000 5.305801
++Scale: 4.000000
+$Starbitmap: NebulB1-Main
++Angles: 5.183628 0.000000 5.916667
++ScaleX: 1.000000
++ScaleY: 1.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB5-Whisp
++Angles: 5.096362 0.000000 6.021386
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB11-Whisp
++Angles: 5.235988 6.108653 5.742134
++ScaleX: 4.000000
++ScaleY: 1.200000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB12-Whisp
++Angles: 5.288348 2.740167 5.916667
++ScaleX: 4.000000
++ScaleY: 1.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB2-Main
++Angles: 5.550147 2.495821 5.305801
++ScaleX: 4.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulG5-Whisp
++Angles: 5.602507 6.178466 5.340708
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB9-Whisp
++Angles: 5.602507 0.000000 5.288348
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB2-Main
++Angles: 0.000000 5.602507 0.000000
++ScaleX: 13.000000
++ScaleY: 10.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB2-Main
++Angles: 1.553343 1.308997 0.000000
++ScaleX: 10.000000
++ScaleY: 8.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB9-Whisp
++Angles: 0.000000 0.000000 0.000000
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB10-Whisp
++Angles: 6.056293 3.036873 0.174533
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulB2-Main
++Angles: 6.178466 1.710423 2.495821
++ScaleX: 9.000000
++ScaleY: 9.000000
++DivX: 1
++DivY: 1
+$Starbitmap: galaxy5
++Angles: 5.724680 0.000000 3.752458
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulE2-Main
++Angles: 5.724680 0.000000 3.752458
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.000000 1.431170 4.031711
++ScaleX: 2.000000
++ScaleY: 2.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planet11
++Angles: 0.000000 0.890118 0.366519
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+
+#Asteroid Fields
+
+$Density: 512
++Field Type: 1
++Debris Genre: 0
++Field Debris Type: 0
+$Average Speed: 0.000000
+$Minimum: -10000.000000, -10000.000000, -10000.000000
+$Maximum: 10000.000000, 10000.000000, 10000.000000
+
+#Music
+
+$Event Music: 14: Kill Zone
+$Briefing Music: Brief13
+
+#End
+

@@ -1,0 +1,23 @@
+GTSD JUPITER
+soc Dreadnaught
+
+Dimension
+
+Length:  4,882 meters
+Height:  1,140 meters
+Beam:   1,165 meters
+
+Crew Compliment:  31,000 Officers and Staff
+
+Armaments:
+
+1 Tachton Beam Emitter
+8 Plasma Beam Cannons
+6 Antimatter Cannons
+4 MK7 Plasma Turrets
+19 MKII Plasma Turrets
+9 Long Range Flak Guns
+6 Anti-Fighters Beams
+
+
+The GTSD Jupiter was a top secret warship in service for the SOC which is a result of a few years of joint efforts of engineers and specialists from the most reputable GTVA corporations in a very secluded shipyard in Polaris. It's collection of anti-warship arsenals are 6 long-range Antimatter cannons to destroy enemy critical subsystems from a safe distance and 9 beam cannons: 2 slash-type beams, 6 heavy beams and a Tachyon beam emitter for its main cannon. It is also equipped with a score of anti-fighter and anti-bomber batteries from flak cannons, fighter beams to heavy point defense turrets. The Jupiter also has a huge hangar bay that can house several squadrons and only the best, skillful and suicidal pilots can be stationed there. This dreadnaught is also the central operating base of Special Operations Command and GTVI. This ship stayed out of view for some time until it came into the open at the height of the Third Shivan Incursion, aiding the GTVA fleet in eliminating the Shivan forces in Gamma Draconis. Its first appearance in the building up in Adhara shocked Admiral Cartwright at the sight of this massive warcraft.", 

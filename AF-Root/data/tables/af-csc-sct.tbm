@@ -1,0 +1,1296 @@
+;;--------------------------------------------------------------------------------
+;; I have re-coded this script to accommodate "The Blue Guardian" sequel, adding more
+;; ships instead of two. Originally, I made a separate CSC script for TBG and placed
+;; it in the mod's respective folder but there was an anomally in the "Turret Mode" 
+;; functionality. It did not really work in TBG. The two CSC scripts were fighting
+;; for control. The solution is to have only one script that will be used by both
+;; mod and this script is placed here in "The Aftermath" mod folder. One more change
+;; I made is are additional script codes that let me turn it on and off in-game at
+;; will in-game via 'script-eval' SEXP line. Useful for cutscenes. -- Herkie423
+;;--------------------------------------------------------------------------------
+
+#Conditional Hooks 
+
+$Application: FS2_Open 
+
+$On Key Pressed: [[csc_KeyPressed.lua]] 
+$On Key Released: [[csc_KeyReleased.lua]] 
+
+$On Game Init: 
+[ 
+    ui_keyToggleFunctions = {} 
+    InputStates = {} 
+
+    ui_keyToggleFunctions["Up Arrow"] = function(val) InputStates.up = val end 
+    ui_keyToggleFunctions["Down Arrow"] = function(val) InputStates.down = val end 
+    ui_keyToggleFunctions["Left Arrow"] = function(val) InputStates.left = val end 
+    ui_keyToggleFunctions["Right Arrow"] = function(val) InputStates.right = val end 
+    ui_keyToggleFunctions["0"] = function(val) InputStates.zero = val end 
+
+    function getTargetName(target) 
+    	local targetname 
+            if target then 
+    		local sig = target:getSignature() 
+    		    if sig > 0 then 
+    		        local targetship = mn.getObjectFromSignature(sig) 
+    			    if targetship:isValid() then 
+    			        if targetship:getBreedName() == "Ship" then 
+    				    targetname = targetship.Name 
+    				end 
+    				else 
+    				    targetname = "None" 
+    					end 
+    				end 
+    				else 
+    				    targetname = "None" 
+    			    end 
+    		    return targetname 
+    end 
+
+
+
+    function getTargetClass(target) 
+    	local targetname 
+    	    if target then 
+                local sig = target:getSignature() 
+                    if sig > 0 then 
+                    local targetship = mn.getObjectFromSignature(target:getSignature()) 
+                        if targetship:isValid() then 
+                            if targetship:getBreedName() == "Ship" then 
+                                targetname = targetship.Class.Type.Name 
+                            end 
+    			else 
+    			    targetname = "None" 
+    			end 
+    		    end 
+    		else 
+    		    targetname = "None" 
+    		end 
+    	    return targetname 
+    end 
+
+    function drawTurretUIAvenger()
+
+    --Current Target
+
+    	gr.setColor(255, 50, 50) 
+    	local targetname = getTargetName(csc.CurrentTarget) 
+    	local classname = getTargetClass(csc.CurrentTarget) 
+    	    if not classname then classname = "None" end 
+    	    if not targetname then targetname = "Invalid" end 
+    	gr.drawString("Current Target: " .. targetname .. " Class: " .. classname, 5, gr.getScreenHeight() * 0.5)
+
+    --Neutron Beam Main 
+            if csc.acnum == 1 then 
+                gr.setColor(255, 255, 0) 
+            else 
+                gr.setColor(185, 127, 255) 
+            end 
+        gr.drawString("Primary Beams: " .. csc.MBmode[csc.MBstatus] )
+ 
+        gr.setColor(255, 80, 255)
+        for i = 1, #csc.MainBeams, 1 do 
+            local targetname = getTargetName(csc.MainBeams[i].Target) 
+                if not targetname then targetname = "None" end 
+            gr.drawString(" " .. csc.MainBeams[i].Name .. ": " .. targetname) 
+    	end 
+
+    --Long Range neutron Beams 
+            if csc.acnum == 2 then 
+                gr.setColor(255, 255, 0) 
+            else 
+                gr.setColor(185, 127, 255) 
+            end 
+        gr.drawString("Secondary Beams: " .. csc.LRBmode[csc.LRBstatus])
+ 
+        gr.setColor(51, 255, 51)
+        for i = 1, #csc.LRBeam, 1 do 
+            local targetname = getTargetName(csc.LRBeam[i].Target) 
+                if not targetname then targetname = "None" end 
+            gr.drawString(" " .. csc.LRBeam[i].Name .. ": " .. targetname) 
+        end 
+
+    --Antimatter Cannons 
+            if csc.acnum == 3 then 
+    		gr.setColor(255, 255, 0) 
+    	    else 
+    		gr.setColor(185, 127, 255) 
+    	    end 
+    	gr.drawString("Antimatter Guns: " .. csc.AMCannonsmode[csc.AMstatus])
+ 
+    	gr.setColor(0, 255, 255)
+     	for i = 1, #csc.AMCannons, 1 do 
+    	    local targetname = getTargetName(csc.AMCannons[i].Target) 
+    		if not targetname then targetname = "None" end 
+    	    gr.drawString(" " .. csc.AMCannons[i].Name .. ": " .. targetname) 
+        end
+ 
+    end 
+
+    function drawTurretUIBoreas()
+
+    --Current Target
+
+    	gr.setColor(255, 50, 50) 
+    	local targetname = getTargetName(csc.CurrentTarget) 
+    	local classname = getTargetClass(csc.CurrentTarget) 
+    	    if not classname then classname = "None" end 
+    	    if not targetname then targetname = "Invalid" end 
+    	gr.drawString("Current Target: " .. targetname .. " Class: " .. classname, 5, gr.getScreenHeight() * 0.5)
+
+    --Neutron Beam Main 
+            if csc.acnum == 1 then 
+                gr.setColor(255, 255, 0) 
+            else 
+                gr.setColor(185, 127, 255) 
+            end 
+        gr.drawString("Main Beam Cannons: " .. csc.MBmode[csc.MBstatus] )
+ 
+        gr.setColor(255, 80, 255)
+        for i = 1, #csc.MainBeams, 1 do 
+            local targetname = getTargetName(csc.MainBeams[i].Target) 
+                if not targetname then targetname = "None" end 
+            gr.drawString(" " .. csc.MainBeams[i].Name .. ": " .. targetname) 
+    	end
+
+    --Defense Turrets  
+    	   if csc.acnum == 2 then 
+    		gr.setColor(255, 255, 255) 
+    	   else 
+    		gr.setColor(185, 127, 255) 
+    	   end 
+    gr.drawString("Point Defense turrets: " .. csc.pdmode[csc.pdstatus])
+ 
+    gr.setColor(61, 93, 255) 
+ 	for i = 1, #csc.pdTurrets, 1 do 
+    	    local targetname = getTargetName(csc.pdTurrets[i].Target) 
+    		if not targetname then targetname = "None" end 
+    	    gr.drawString(" " .. csc.pdTurrets[i].Name .. ": " .. targetname) 
+    	end 
+
+
+    end 
+
+
+    function drawTurretUIBattleship()
+
+    --Current Target
+
+    	gr.setColor(255, 50, 50) 
+    	local targetname = getTargetName(csc.CurrentTarget) 
+    	    if not targetname then targetname = "Invalid" end 
+    	gr.drawString("Current Target: " .. targetname, 5, gr.getScreenHeight() * 0.5)
+
+    --Neutron Beam Main 
+            if csc.acnum == 1 then 
+                gr.setColor(255, 255, 0) 
+            else 
+                gr.setColor(185, 127, 255) 
+            end 
+        gr.drawString("Main Neutron Beams: " .. csc.MBmode[csc.MBstatus] )
+ 
+        gr.setColor(255, 80, 255)
+        for i = 1, #csc.MainBeams, 1 do 
+            local targetname = getTargetName(csc.MainBeams[i].Target) 
+                if not targetname then targetname = "None" end 
+            gr.drawString(" " .. csc.MainBeams[i].Name .. ": " .. targetname) 
+    	end 
+
+    --Long Range neutron Beams 
+            if csc.acnum == 2 then 
+                gr.setColor(255, 255, 0) 
+            else 
+                gr.setColor(185, 127, 255) 
+            end 
+        gr.drawString("Secondary Neutron Beams: " .. csc.LRBmode[csc.LRBstatus])
+ 
+        gr.setColor(51, 255, 51)
+        for i = 1, #csc.LRBeam, 1 do 
+            local targetname = getTargetName(csc.LRBeam[i].Target) 
+                if not targetname then targetname = "None" end 
+            gr.drawString(" " .. csc.LRBeam[i].Name .. ": " .. targetname) 
+        end 
+
+    --Neutron Bolts 
+            if csc.acnum == 3 then 
+    		gr.setColor(255, 255, 0) 
+    	    else 
+    		gr.setColor(185, 127, 255) 
+    	    end 
+    	gr.drawString("Energy Bolter Guns: " .. csc.AMCannonsmode[csc.AMstatus])
+ 
+    	gr.setColor(0, 255, 255)
+     	for i = 1, #csc.AMCannons, 1 do 
+    	    local targetname = getTargetName(csc.AMCannons[i].Target) 
+    		if not targetname then targetname = "None" end 
+    	    gr.drawString(" " .. csc.AMCannons[i].Name .. ": " .. targetname) 
+        end
+    end 
+
+    function drawTurretUIChimera()
+
+    --Current Target
+
+    	gr.setColor(255, 50, 50) 
+    	local targetname = getTargetName(csc.CurrentTarget) 
+    	local classname = getTargetClass(csc.CurrentTarget) 
+    	    if not classname then classname = "None" end 
+    	    if not targetname then targetname = "Invalid" end 
+    	gr.drawString("Current Target: " .. targetname .. " Class: " .. classname, 5, gr.getScreenHeight() * 0.5)
+
+    --Neutron Beam Main 
+            if csc.acnum == 1 then 
+                gr.setColor(255, 255, 0) 
+            else 
+                gr.setColor(185, 127, 255) 
+            end 
+        gr.drawString("Main Beam Cannons: " .. csc.MBmode[csc.MBstatus] )
+ 
+        gr.setColor(255, 80, 255)
+        for i = 1, #csc.MainBeams, 1 do 
+            local targetname = getTargetName(csc.MainBeams[i].Target) 
+                if not targetname then targetname = "None" end 
+            gr.drawString(" " .. csc.MainBeams[i].Name .. ": " .. targetname) 
+    	end
+
+    --Antimatter Cannons 
+            if csc.acnum == 2 then 
+    		gr.setColor(255, 255, 0) 
+    	    else 
+    		gr.setColor(185, 127, 255) 
+    	    end 
+    	gr.drawString("Antimatter Cannons: " .. csc.AMCannonsmode[csc.AMstatus])
+ 
+    	gr.setColor(0, 255, 255)
+     	for i = 1, #csc.AMCannons, 1 do 
+    	    local targetname = getTargetName(csc.AMCannons[i].Target) 
+    		if not targetname then targetname = "None" end 
+    	    gr.drawString(" " .. csc.AMCannons[i].Name .. ": " .. targetname) 
+        end
+ 
+    end 
+
+
+    function fillturretlist(ship) 
+        local turretnum = 1 
+        ba.print("CSC: Entered fillturretlist\n") 
+        csc.turrets = {} 
+
+        for i = 1, 60, 1 do 
+    	    if i < 10 then 
+    		turretname = "turret0" .. i 
+    	    else 
+    		turretname = "turret" .. i 
+    	end 
+
+    	ba.print("CSC: Looking for turret: " .. turretname .. "\n") 
+
+    	    if ship[turretname]:isValid() then 
+    		csc.turrets[turretnum] = ship[turretname] 
+    		ba.print("CSC: Found Turret.\n") 
+    		turretnum = turretnum + 1 
+    	    end 
+        end 
+    end 
+
+    function groupTurrets() 
+
+    	local pdnum = 1 
+    	local flaknum = 1 
+    	local LRBnum = 1 
+    	local MBnum = 1 
+    	local AMnum = 1 
+    	local AAAnum = 1 
+
+    	ba.print("CSC: Entered GroupTurrets\n")
+
+    	    for i = 1, #csc.turrets, 1 do 
+    		if csc.turrets[i].PrimaryBanks[1].WeaponClass:isValid() or csc.turrets[i].SecondaryBanks[1].WeaponClass:isValid() then
+
+    		    if string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "NeutronBeamH") then 
+    		        csc.MainBeams[MBnum] = csc.turrets[i] 
+    	                ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " MBnum: " .. MBnum .. "\n") 
+    		        MBnum = MBnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "NeutronBeamM") then 
+    		        csc.MainBeams[MBnum] = csc.turrets[i] 
+    	                ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " MBnum: " .. MBnum .. "\n") 
+    		        MBnum = MBnum + 1
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "NeutronBeamH 2") then 
+    		        csc.MainBeams[MBnum] = csc.turrets[i] 
+    	                ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " MBnum: " .. MBnum .. "\n") 
+    		        MBnum = MBnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "NeutronBeamH#NormWep") then 
+    		        csc.MainBeams[MBnum] = csc.turrets[i] 
+    	                ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " MBnum: " .. MBnum .. "\n") 
+    		        MBnum = MBnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "BGrv") then 
+    		        csc.MainBeams[MBnum] = csc.turrets[i] 
+    	                ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " MBnum: " .. MBnum .. "\n") 
+    		        MBnum = MBnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "MGrv") then 
+    		        csc.MainBeams[MBnum] = csc.turrets[i] 
+    	                ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " MBnum: " .. MBnum .. "\n") 
+    		        MBnum = MBnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "NeutronBeamLR") then 
+    		        csc.LRBeam[LRBnum] = csc.turrets[i] 
+    		        ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " LRBnum: " .. LRBnum .. "\n") 
+    		        LRBnum = LRBnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "NeutronBeamLR 2") then 
+    		        csc.LRBeam[LRBnum] = csc.turrets[i] 
+    		        ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " LRBnum: " .. LRBnum .. "\n") 
+    		        LRBnum = LRBnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "NeutronBeamLR#NormWep") then 
+    		        csc.LRBeam[LRBnum] = csc.turrets[i] 
+    		        ba.print("CSC: Found Beam Cannon. Turret Number: " .. i .. " LRBnum: " .. LRBnum .. "\n") 
+    		        LRBnum = LRBnum + 1
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "AM Cannon") then 
+    			csc.AMCannons[AMnum] = csc.turrets[i] 
+    			ba.print("CSC: Found AM Cannons. Turret Number: " .. i .. " AMnum: " .. AMnum .. "\n") 
+    			AMnum = AMnum + 1 
+
+    		    elseif string.find(csc.turrets[i].SecondaryBanks[1].WeaponClass.Name, "Neutron Bolts 2") then 
+    			csc.AMCannons[AMnum] = csc.turrets[i] 
+    			ba.print("CSC: Found Bolter Cannons. Turret Number: " .. i .. " AMnum: " .. AMnum .. "\n") 
+    			AMnum = AMnum + 1 
+
+    		    elseif string.find(csc.turrets[i].SecondaryBanks[1].WeaponClass.Name, "Neutron Bolts#NormWep") then 
+    			csc.AMCannons[AMnum] = csc.turrets[i] 
+    			ba.print("CSC: Found Bolter Cannons. Turret Number: " .. i .. " AMnum: " .. AMnum .. "\n") 
+    			AMnum = AMnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "AM Cannon MK III") then 
+    			csc.AMCannons[AMnum] = csc.turrets[i] 
+    			ba.print("CSC: Found AM Cannons. Turret Number: " .. i .. " AMnum: " .. AMnum .. "\n") 
+    			AMnum = AMnum + 1 
+
+		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "Pyros Gun") then 
+    			csc.pdTurrets[pdnum] = csc.turrets[i] 
+    			ba.print("CSC: Found PD Turret. Turret Number: " .. i .. " pdnum: " .. pdnum .. "\n") 
+    			pdnum = pdnum + 1 
+
+		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "Flux Gun") then 
+    			csc.pdTurrets[pdnum] = csc.turrets[i] 
+    			ba.print("CSC: Found PD Turret. Turret Number: " .. i .. " pdnum: " .. pdnum .. "\n") 
+    			pdnum = pdnum + 1
+
+		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "Mk7 Plasma Gun") then 
+    			csc.pdTurrets[pdnum] = csc.turrets[i] 
+    			ba.print("CSC: Found PD Turret. Turret Number: " .. i .. " pdnum: " .. pdnum .. "\n") 
+    			pdnum = pdnum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "Long Range Flak") then 
+    		        csc.flakTurrets[flaknum] = csc.turrets[i] 
+    		        ba.print("CSC: Found Flak Turret. Turret Number: " .. i .. " flaknum: " .. flaknum .. "\n") 
+        	        flaknum = flaknum + 1 
+
+    		    elseif string.find(csc.turrets[i].PrimaryBanks[1].WeaponClass.Name, "AAAf") then 
+    			csc.AAA[AAAnum] = csc.turrets[i] 
+    			ba.print("CSC: Found AAA. Turret Number: " .. i .. " AAAnum: " .. AAAnum .. "\n") 
+
+    		    end 
+    		end 
+            end 
+
+        csc.initComplete = true 
+    end 
+
+    function drawTargets(turrets, r, g, b, padding) 
+        gr.setColor(r, g, b) 
+    	    for i = 1, #turrets, 1 do 
+    	    target = turrets[i].Target 
+    		if target:isValid() then 
+    		    gr.drawTargetingBrackets(target, true, padding) 
+    		end 
+    	    end 
+    end 
+
+    function doInput() 
+        MissionTime = mn.getMissionTime() 
+
+    	if OldMissionTime ~= MissionTime and MissionTime ~= 0 then 
+    	    if InputStates.up and not csc.inputstates.keyup then 
+    		csc.acnum = csc.acnum - 1 
+    		    if csc.ship == "Avenger" then 
+    			if csc.acnum == 0 then 
+    				csc.acnum = 3 
+    			end 
+    		    elseif csc.ship == "Boreas" then 
+    			if csc.acnum == 0 then 
+    			    csc.acnum = 2 
+    			end
+		    elseif csc.ship == "Battleship" then 
+			if csc.acnum == 0 then 
+    			    csc.acnum = 3 
+    			end
+		    elseif csc.ship == "BattleshipF" then 
+			if csc.acnum == 0 then 
+    			    csc.acnum = 3 
+    			end 
+		    elseif csc.ship == "Chimera" then 
+			if csc.acnum == 0 then 
+    			    csc.acnum = 2 
+    			end
+		    end 
+    	    csc.inputstates.keyup = true 
+    	    elseif not InputStates.up then 
+    		csc.inputstates.keyup = false 
+    	    end 
+
+    	    if InputStates.down and not csc.inputstates.keydown then 
+    		csc.acnum = csc.acnum + 1 
+    		    if csc.ship == "Avenger" then 
+    			if csc.acnum == 4 then 
+    			    csc.acnum = 1 
+    			end 
+    		    elseif csc.ship == "Boreas" then 
+    	    		if csc.acnum == 3 then 
+    			    csc.acnum = 1 
+    	    		end 
+    		    elseif csc.ship == "Battleship" then 
+    	    		if csc.acnum == 4 then 
+    			    csc.acnum = 1 
+    	    		end
+    		    elseif csc.ship == "BattleshipF" then 
+    	    		if csc.acnum == 4 then 
+    			    csc.acnum = 1 
+    	    		end 
+    		    elseif csc.ship == "Chimera" then 
+    	    		if csc.acnum == 3 then 
+    			    csc.acnum = 1 
+    	    		end 
+    	    	    end 
+    	    csc.inputstates.keydown = true 
+    	    elseif not InputStates.down then 
+    	        csc.inputstates.keydown = false 
+    	    end 
+
+    	    if InputStates.left and not csc.inputstates.keyleft then 
+    		if csc.ship == "Avenger" then 
+    		    if csc.acnum == 1 then 
+    		    	csc.MBstatus = csc.MBstatus - 1 
+    			if csc.MBstatus == 0 then 
+    			    csc.MBstatus = 4 
+    			end 
+    		    end 
+    		    if csc.acnum == 2 then 
+    		    	csc.LRBstatus = csc.LRBstatus - 1 
+    			if csc.LRBstatus == 0 then 
+    			    csc.LRBstatus = 4 
+    			end 
+    		    end 
+    	    	    if csc.acnum == 3 then 
+    			csc.AMstatus = csc.AMstatus - 1 
+    		    	if csc.AMstatus == 0 then 
+    		    	    csc.AMstatus = 4 
+    		    	end 
+    	    	    end 
+    	    	elseif csc.ship == "Boreas" then
+    		    if csc.acnum == 1 then 
+    		    	csc.MBstatus = csc.MBstatus - 1 
+    			if csc.MBstatus == 0 then 
+    			    csc.MBstatus = 4 
+    			end 
+    		    end 
+    		    if csc.acnum == 2 then 
+    		    	csc.pdstatus = csc.pdstatus - 1 
+    			if csc.pdstatus == 0 then 
+    			    csc.pdstatus = 4 
+    			end 
+    		    end 
+    		elseif csc.ship == "Battleship" then 
+    		    if csc.acnum == 1 then 
+    		    	csc.MBstatus = csc.MBstatus - 1 
+    			if csc.MBstatus == 0 then 
+    			    csc.MBstatus = 4 
+    			end 
+    		    end 
+    		    if csc.acnum == 2 then 
+    		    	csc.LRBstatus = csc.LRBstatus - 1 
+    			if csc.LRBstatus == 0 then 
+    			    csc.LRBstatus = 4 
+    			end 
+    		    end 
+    	    	    if csc.acnum == 3 then 
+    			csc.AMstatus = csc.AMstatus - 1 
+    		    	if csc.AMstatus == 0 then 
+    		    	    csc.AMstatus = 4 
+    		    	end 
+    	    	    end 
+    		elseif csc.ship == "BattleshipF" then 
+    		    if csc.acnum == 1 then 
+    		    	csc.MBstatus = csc.MBstatus - 1 
+    			if csc.MBstatus == 0 then 
+    			    csc.MBstatus = 4 
+    			end 
+    		    end 
+    		    if csc.acnum == 2 then 
+    		    	csc.LRBstatus = csc.LRBstatus - 1 
+    			if csc.LRBstatus == 0 then 
+    			    csc.LRBstatus = 4 
+    			end 
+    		    end 
+    	    	    if csc.acnum == 3 then 
+    			csc.AMstatus = csc.AMstatus - 1 
+    		    	if csc.AMstatus == 0 then 
+    		    	    csc.AMstatus = 4 
+    		    	end 
+    	    	    end
+    	    	elseif csc.ship == "Chimera" then
+    		    if csc.acnum == 1 then 
+    		    	csc.MBstatus = csc.MBstatus - 1 
+    			if csc.MBstatus == 0 then 
+    			    csc.MBstatus = 4 
+    			end 
+    		    end 
+    	    	    if csc.acnum == 2 then 
+    			csc.AMstatus = csc.AMstatus - 1 
+    		    	if csc.AMstatus == 0 then 
+    		    	    csc.AMstatus = 4 
+    		    	end 
+    		    end 
+ 
+    	    	end 
+    	    	csc.inputstates.keyleft = true 
+    	    elseif not InputStates.left then 
+    	    	csc.inputstates.keyleft = false 
+    	    end 
+
+    	    if InputStates.right and not csc.inputstates.keyright then 
+    		if csc.ship == "Avenger" then 
+    		    if csc.acnum == 1 then 
+    			csc.MBstatus = csc.MBstatus + 1 
+   			    if csc.MBstatus == 5 then 
+    			    	csc.MBstatus = 1 
+    			    end 
+        		end 
+    	    	    if csc.acnum == 2 then 
+    			csc.LRBstatus = csc.LRBstatus + 1 
+    		    	    if csc.LRBstatus == 5 then 
+    			        csc.LRBstatus = 1 
+    		            end 
+    		    end 
+    	            if csc.acnum == 3 then 
+    		        csc.AMstatus = csc.AMstatus + 1 
+    		            if csc.AMstatus == 5 then 
+    			        csc.AMstatus = 1 
+    		            end 
+    		    end 
+    	    	elseif csc.ship == "Boreas" then 
+    		    if csc.acnum == 1 then 
+    			csc.MBstatus = csc.MBstatus + 1 
+   			if csc.MBstatus == 5 then 
+    			    csc.MBstatus = 1 
+    			end 
+        	    end
+    		    if csc.acnum == 2 then 
+    		        csc.pdstatus = csc.pdstatus + 1 
+    			if csc.pdstatus == 5 then 
+    			   csc.pdstatus = 1 
+    			end 
+    		    end 
+    		elseif csc.ship == "Battleship" then 
+    		    if csc.acnum == 1 then 
+    			csc.MBstatus = csc.MBstatus + 1 
+   			    if csc.MBstatus == 5 then 
+    			    	csc.MBstatus = 1 
+    			    end 
+        		end 
+    	    	    if csc.acnum == 2 then 
+    			csc.LRBstatus = csc.LRBstatus + 1 
+    		    	    if csc.LRBstatus == 5 then 
+    			        csc.LRBstatus = 1 
+    		            end 
+    		    end 
+    	            if csc.acnum == 3 then 
+    		        csc.AMstatus = csc.AMstatus + 1 
+    		            if csc.AMstatus == 5 then 
+    			        csc.AMstatus = 1 
+    		            end 
+    		    end 
+    		elseif csc.ship == "BattleshipF" then 
+    		    if csc.acnum == 1 then 
+    			csc.MBstatus = csc.MBstatus + 1 
+   			    if csc.MBstatus == 5 then 
+    			    	csc.MBstatus = 1 
+    			    end 
+        		end 
+    	    	    if csc.acnum == 2 then 
+    			csc.LRBstatus = csc.LRBstatus + 1 
+    		    	    if csc.LRBstatus == 5 then 
+    			        csc.LRBstatus = 1 
+    		            end 
+    		    end 
+    	            if csc.acnum == 3 then 
+    		        csc.AMstatus = csc.AMstatus + 1 
+    		            if csc.AMstatus == 5 then 
+    			        csc.AMstatus = 1 
+    		            end 
+    		    end 
+    	    	elseif csc.ship == "Chimera" then 
+    		    if csc.acnum == 1 then 
+    			csc.MBstatus = csc.MBstatus + 1 
+   			if csc.MBstatus == 5 then 
+    			    csc.MBstatus = 1 
+    			end 
+        	    end
+    		    if csc.acnum == 2 then 
+    		        csc.AMstatus = csc.AMstatus + 1 
+    			if csc.AMstatus == 5 then 
+    			   csc.AMstatus = 1 
+    			end 
+    		    end 
+   	    	end 
+    	    	csc.inputstates.keyright = true 
+    	    elseif not InputStates.right then 
+    	    	csc.inputstates.keyright = false 
+    	    end 
+
+    	    if InputStates.zero or io.isMouseButtonDown(MOUSE_LEFT_BUTTON) then 
+    		csc.CurrentTarget = csc.plrship.Target 
+    		csc.inputstates.zero = true 
+    	    elseif not InputStates.zero or not io.isMouseButtonDown(MOUSE_LEFT_BUTTON) then 
+    		csc.inputstates.zero = false 
+    	    end 
+    	OldMissionTime = MissionTime 
+    	end 
+    end 
+
+    function doTurretModeAvenger()
+
+	--Primary Beams Mode------------------------------------------------ 
+    		if csc.MBstatus == 1 then 
+    	    		for i = 1, #csc.MainBeams do 
+    	    			csc.MainBeams[i]:targetingOverride(false) 
+    	    	end 
+    		elseif csc.MBstatus == 2 then 
+    	    		for i = 1, #csc.MainBeams do 
+    			csc.MainBeams[i].Target = csc.plrship.Target 
+    	    	end 
+    		elseif csc.MBstatus == 3 then 
+    	    		if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    		    			for i = 1, #csc.MainBeams do 
+    		    				csc.MainBeams[i].Target = csc.CurrentTarget 
+    					end 
+    	    			end 
+    			end 
+    		elseif csc.MBstatus == 4 then 
+    	    		for i = 1, #csc.MainBeams do 
+    				csc.MainBeams[i]:targetingOverride(true) 
+    	    		end 
+    		end
+ 
+	--Secondary Beams Mode-----------------------------------------------
+    		if csc.LRBstatus == 1 then 
+    	    		for i = 1, #csc.LRBeam do 
+    				csc.LRBeam[i]:targetingOverride(false) 
+    	    		end 
+    		elseif csc.status == 2 then 
+    	    		for i = 1, #csc.LRBeam do 
+    			csc.LRBeam[i].Target = csc.plrship.Target 
+    	    	end 
+    		elseif csc.LRBstatus == 3 then 
+    	    		if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    		    			for i = 1, #csc.LRBeam do 
+    						csc.LRBeam[i].Target = csc.CurrentTarget 
+    		    			end 
+    				end 
+    	    		end 
+    		elseif csc.LRBstatus == 4 then 
+    	    		for i = 1, #csc.LRBeam do 
+    				csc.LRBeam[i]:targetingOverride(true) 
+    	    		end 
+    		end
+
+	--AM Cannon Mode------------------------------------------------------
+    		if csc.AMstatus == 1 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i]:targetingOverride(false) 
+    			end 
+    		elseif csc.AMstatus == 2 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i].Target = csc.plrship.Target 
+    			end 
+    		elseif csc.AMstatus == 3 then 
+    			if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    					for i = 1, #csc.AMCannons do 
+    						csc.AMCannons[i].Target = csc.CurrentTarget 
+    					end 
+    				end 
+    			end 
+    		elseif csc.AMstatus == 4 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i]:targetingOverride(true) 
+    			end 
+    		end 
+    end 
+
+    function doTurretModeBoreas()
+
+	--Main Beam Mode-------------------------------------------- 
+    		if csc.MBstatus == 1 then 
+    	    		for i = 1, #csc.MainBeams do 
+    	    			csc.MainBeams[i]:targetingOverride(false) 
+    	    	end 
+    		elseif csc.MBstatus == 2 then 
+    	    		for i = 1, #csc.MainBeams do 
+    			csc.MainBeams[i].Target = csc.plrship.Target 
+    	    	end 
+    		elseif csc.MBstatus == 3 then 
+    	    		if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    		    			for i = 1, #csc.MainBeams do 
+    		    				csc.MainBeams[i].Target = csc.CurrentTarget 
+    					end 
+    	    			end 
+    			end 
+    		elseif csc.MBstatus == 4 then 
+    	    		for i = 1, #csc.MainBeams do 
+    				csc.MainBeams[i]:targetingOverride(true) 
+    	    		end 
+    		end 
+
+	--Point Defense Mode------------------------------------------
+    		if csc.pdstatus == 1 then 
+    		    for i = 1, #csc.pdTurrets do 
+    			csc.pdTurrets[i]:targetingOverride(false) 
+        	    end 
+    		elseif csc.pdstatus == 2 then 
+    		    for i = 1, #csc.pdTurrets do 
+    			csc.pdTurrets[i].Target = csc.plrship.Target 
+    		    end 
+    		elseif csc.pdstatus == 3 then 
+    		    if csc.CurrentTarget then 
+    			if csc.CurrentTarget:isValid() then 
+    			    for i = 1, #csc.pdTurrets do 
+    				csc.pdTurrets[i].Target = csc.CurrentTarget 
+    			    end 
+    			end 
+    		    end 
+    		elseif csc.pdstatus == 4 then 
+    		    for i = 1, #csc.pdTurrets do 
+    			csc.pdTurrets[i]:targetingOverride(true) 
+    		    end 
+    		end
+     end
+
+
+    function doTurretModeBattleship()
+
+	--Primary Beams Mode------------------------------------------------ 
+    		if csc.MBstatus == 1 then 
+    	    		for i = 1, #csc.MainBeams do 
+    	    			csc.MainBeams[i]:targetingOverride(false) 
+    	    	end 
+    		elseif csc.MBstatus == 2 then 
+    	    		for i = 1, #csc.MainBeams do 
+    			csc.MainBeams[i].Target = csc.plrship.Target 
+    	    	end 
+    		elseif csc.MBstatus == 3 then 
+    	    		if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    		    			for i = 1, #csc.MainBeams do 
+    		    				csc.MainBeams[i].Target = csc.CurrentTarget 
+    					end 
+    	    			end 
+    			end 
+    		elseif csc.MBstatus == 4 then 
+    	    		for i = 1, #csc.MainBeams do 
+    				csc.MainBeams[i]:targetingOverride(true) 
+    	    		end 
+    		end
+ 
+	--Secondary Beams Mode-----------------------------------------------
+    		if csc.LRBstatus == 1 then 
+    	    		for i = 1, #csc.LRBeam do 
+    				csc.LRBeam[i]:targetingOverride(false) 
+    	    		end 
+    		elseif csc.status == 2 then 
+    	    		for i = 1, #csc.LRBeam do 
+    			csc.LRBeam[i].Target = csc.plrship.Target 
+    	    	end 
+    		elseif csc.LRBstatus == 3 then 
+    	    		if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    		    			for i = 1, #csc.LRBeam do 
+    						csc.LRBeam[i].Target = csc.CurrentTarget 
+    		    			end 
+    				end 
+    	    		end 
+    		elseif csc.LRBstatus == 4 then 
+    	    		for i = 1, #csc.LRBeam do 
+    				csc.LRBeam[i]:targetingOverride(true) 
+    	    		end 
+    		end
+
+	--AM Cannon Mode------------------------------------------------------
+    		if csc.AMstatus == 1 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i]:targetingOverride(false) 
+    			end 
+    		elseif csc.AMstatus == 2 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i].Target = csc.plrship.Target 
+    			end 
+    		elseif csc.AMstatus == 3 then 
+    			if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    					for i = 1, #csc.AMCannons do 
+    						csc.AMCannons[i].Target = csc.CurrentTarget 
+    					end 
+    				end 
+    			end 
+    		elseif csc.AMstatus == 4 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i]:targetingOverride(true) 
+    			end 
+    		end 
+    end 
+
+    function doTurretModeChimera()
+
+	--Main Beam Mode-------------------------------------------- 
+    		if csc.MBstatus == 1 then 
+    	    		for i = 1, #csc.MainBeams do 
+    	    			csc.MainBeams[i]:targetingOverride(false) 
+    	    	end 
+    		elseif csc.MBstatus == 2 then 
+    	    		for i = 1, #csc.MainBeams do 
+    			csc.MainBeams[i].Target = csc.plrship.Target 
+    	    	end 
+    		elseif csc.MBstatus == 3 then 
+    	    		if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    		    			for i = 1, #csc.MainBeams do 
+    		    				csc.MainBeams[i].Target = csc.CurrentTarget 
+    					end 
+    	    			end 
+    			end 
+    		elseif csc.MBstatus == 4 then 
+    	    		for i = 1, #csc.MainBeams do 
+    				csc.MainBeams[i]:targetingOverride(true) 
+    	    		end 
+    		end 
+
+	--AM Cannon Mode------------------------------------------------------
+    		if csc.AMstatus == 1 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i]:targetingOverride(false) 
+    			end 
+    		elseif csc.AMstatus == 2 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i].Target = csc.plrship.Target 
+    			end 
+    		elseif csc.AMstatus == 3 then 
+    			if csc.CurrentTarget then 
+    				if csc.CurrentTarget:isValid() then 
+    					for i = 1, #csc.AMCannons do 
+    						csc.AMCannons[i].Target = csc.CurrentTarget 
+    					end 
+    				end 
+    			end 
+    		elseif csc.AMstatus == 4 then 
+    			for i = 1, #csc.AMCannons do 
+    				csc.AMCannons[i]:targetingOverride(true) 
+    			end 
+    		end 
+    end
+
+
+    function drawRangeDisplayAvenger() 
+    		csc.range = nil 
+    		csc.range = {} 
+    		csc.range.Shipname = {} 
+    		csc.range.Range = {} 
+    		local plrship = hv.Player 
+    	    		if plrship:isValid() then 
+    				plrship = mn.getObjectFromSignature(csc.plr:getSignature()) 
+    	    		end 
+    		local turpos1 = (plrship.Position + plrship["turret01"].Position) 
+    		local turpos2 = (plrship.Position + plrship["turret02"].Position) 
+    		local turpos3 = (plrship.Position + plrship["turret07"].Position) 
+    		local turpos4 = (plrship.Position + plrship["turret08"].Position) 
+    		items = 1 
+    	    		for i = 1, #mn.Ships do 
+    				local tempship = mn.Ships[i] 
+    				local class = getTargetClass(tempship) 
+    				if class ~= "Fighter" and class ~= "Bomber" then 
+    					if tempship ~= csc.plrship then 
+    			    			local temp = tempship.Position 
+    			    			local temprange1 = math.sqrt( (temp[1] - turpos1[1])^2 + (temp[2] - turpos1[2])^2 + (temp[3] - turpos1[3])^2 ) 
+    			    			local temprange2 = math.sqrt( (temp[1] - turpos2[1])^2 + (temp[2] - turpos2[2])^2 + (temp[3] - turpos2[3])^2 ) 
+    			    			local temprange3 = math.sqrt( (temp[1] - turpos3[1])^2 + (temp[2] - turpos3[2])^2 + (temp[3] - turpos3[3])^2 ) 
+    			    			local temprange4 = math.sqrt( (temp[1] - turpos4[1])^2 + (temp[2] - turpos4[2])^2 + (temp[3] - turpos4[3])^2 ) 
+						csc.range.Shipname[items] = tempship.Name 
+    	 					csc.range.Range[items] = math.floor( (temprange1 + temprange2 + temprange3 + temprange4) / 4 ) 
+    						items = items + 1 
+    					end 
+    				end 
+    	    		end 
+    		gr.setColor(255,255,255) 
+    		gr.drawString("Range:", gr.getScreenWidth() * 0.17, gr.getScreenHeight() * 0.78) 
+    			for i = 1, #csc.range.Shipname do 
+    				if csc.range.Range[i] < 1000 then 
+    					local c = math.floor((csc.range.Range[i] / 4)) + 5 
+    					gr.setColor(255, c, c) 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    					gr.setColor(255, 255, 255) 
+    				else 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    				end 
+    			end 
+    end 
+
+    function drawRangeDisplayBoreas() 
+    		csc.range = nil 
+    		csc.range = {} 
+    		csc.range.Shipname = {} 
+    		csc.range.Range = {} 
+    		local plrship = hv.Player 
+    	    		if plrship:isValid() then 
+    				plrship = mn.getObjectFromSignature(csc.plr:getSignature()) 
+    	    		end 
+    		local turpos1 = (plrship.Position + plrship["turret01"].Position) 
+    		local turpos2 = (plrship.Position + plrship["turret02"].Position) 
+ 
+    		items = 1 
+    	    		for i = 1, #mn.Ships do 
+    				local tempship = mn.Ships[i] 
+    				local class = getTargetClass(tempship) 
+    				if class ~= "Fighter" and class ~= "Bomber" then 
+    					if tempship ~= csc.plrship then 
+    			    			local temp = tempship.Position 
+    			    			local temprange1 = math.sqrt( (temp[1] - turpos1[1])^2 + (temp[2] - turpos1[2])^2 + (temp[3] - turpos1[3])^2 ) 
+    			    			local temprange2 = math.sqrt( (temp[1] - turpos2[1])^2 + (temp[2] - turpos2[2])^2 + (temp[3] - turpos2[3])^2 )  
+						csc.range.Shipname[items] = tempship.Name 
+    	 					csc.range.Range[items] = math.floor( (temprange1 + temprange2) / 2 ) 
+    						items = items + 1 
+    					end 
+    				end 
+    	    		end 
+    		gr.setColor(255,255,255) 
+    		gr.drawString("Range:", gr.getScreenWidth() * 0.17, gr.getScreenHeight() * 0.78) 
+    			for i = 1, #csc.range.Shipname do 
+    				if csc.range.Range[i] < 1000 then 
+    					local c = math.floor((csc.range.Range[i] / 2)) + 5 
+    					gr.setColor(255, c, c) 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    					gr.setColor(255, 255, 255) 
+    				else 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    				end 
+    			end 
+    end
+
+    function drawRangeDisplayBattleship() 
+    		csc.range = nil 
+    		csc.range = {} 
+    		csc.range.Shipname = {} 
+    		csc.range.Range = {} 
+    		local plrship = hv.Player 
+    	    		if plrship:isValid() then 
+    				plrship = mn.getObjectFromSignature(csc.plr:getSignature()) 
+    	    		end 
+    		local turpos1 = (plrship.Position + plrship["turret01"].Position) 
+    		local turpos2 = (plrship.Position + plrship["turret02"].Position) 
+    		local turpos3 = (plrship.Position + plrship["turret07"].Position) 
+    		local turpos4 = (plrship.Position + plrship["turret08"].Position) 
+    		items = 1 
+    	    		for i = 1, #mn.Ships do 
+    				local tempship = mn.Ships[i] 
+    				local class = getTargetClass(tempship) 
+    				if class ~= "Fighter" and class ~= "Bomber" then 
+    					if tempship ~= csc.plrship then 
+    			    			local temp = tempship.Position 
+    			    			local temprange1 = math.sqrt( (temp[1] - turpos1[1])^2 + (temp[2] - turpos1[2])^2 + (temp[3] - turpos1[3])^2 ) 
+    			    			local temprange2 = math.sqrt( (temp[1] - turpos2[1])^2 + (temp[2] - turpos2[2])^2 + (temp[3] - turpos2[3])^2 ) 
+    			    			local temprange3 = math.sqrt( (temp[1] - turpos3[1])^2 + (temp[2] - turpos3[2])^2 + (temp[3] - turpos3[3])^2 ) 
+    			    			local temprange4 = math.sqrt( (temp[1] - turpos4[1])^2 + (temp[2] - turpos4[2])^2 + (temp[3] - turpos4[3])^2 ) 
+						csc.range.Shipname[items] = tempship.Name 
+    	 					csc.range.Range[items] = math.floor( (temprange1 + temprange2 + temprange3 + temprange4) / 4 ) 
+    						items = items + 1 
+    					end 
+    				end 
+    	    		end 
+    		gr.setColor(255,255,255) 
+    		gr.drawString("Range:", gr.getScreenWidth() * 0.17, gr.getScreenHeight() * 0.78) 
+    			for i = 1, #csc.range.Shipname do 
+    				if csc.range.Range[i] < 1000 then 
+    					local c = math.floor((csc.range.Range[i] / 4)) + 5 
+    					gr.setColor(255, c, c) 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    					gr.setColor(255, 255, 255) 
+    				else 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    				end 
+    			end 
+    	end 
+
+
+    function drawRangeDisplayBattleshipF() 
+    		csc.range = nil 
+    		csc.range = {} 
+    		csc.range.Shipname = {} 
+    		csc.range.Range = {} 
+    		local plrship = hv.Player 
+    	    		if plrship:isValid() then 
+    				plrship = mn.getObjectFromSignature(csc.plr:getSignature()) 
+    	    		end 
+    		local turpos1 = (plrship.Position + plrship["turret01"].Position) 
+    		local turpos2 = (plrship.Position + plrship["turret02"].Position) 
+    		local turpos3 = (plrship.Position + plrship["turret07"].Position) 
+    		local turpos4 = (plrship.Position + plrship["turret08"].Position) 
+    		items = 1 
+    	    		for i = 1, #mn.Ships do 
+    				local tempship = mn.Ships[i] 
+    				local class = getTargetClass(tempship) 
+    					if tempship ~= csc.plrship then 
+    			    			local temp = tempship.Position 
+    			    			local temprange1 = math.sqrt( (temp[1] - turpos1[1])^2 + (temp[2] - turpos1[2])^2 + (temp[3] - turpos1[3])^2 ) 
+    			    			local temprange2 = math.sqrt( (temp[1] - turpos2[1])^2 + (temp[2] - turpos2[2])^2 + (temp[3] - turpos2[3])^2 ) 
+    			    			local temprange3 = math.sqrt( (temp[1] - turpos3[1])^2 + (temp[2] - turpos3[2])^2 + (temp[3] - turpos3[3])^2 ) 
+    			    			local temprange4 = math.sqrt( (temp[1] - turpos4[1])^2 + (temp[2] - turpos4[2])^2 + (temp[3] - turpos4[3])^2 ) 
+						csc.range.Shipname[items] = tempship.Name 
+    	 					csc.range.Range[items] = math.floor( (temprange1 + temprange2 + temprange3 + temprange4) / 4 ) 
+    						items = items + 1 
+    					end  
+    	    		end 
+    		gr.setColor(255,255,255) 
+    		gr.drawString("Range:", gr.getScreenWidth() * 0.17, gr.getScreenHeight() * 0.78) 
+    			for i = 1, #csc.range.Shipname do 
+    				if csc.range.Range[i] < 1000 then 
+    					local c = math.floor((csc.range.Range[i] / 4)) + 5 
+    					gr.setColor(255, c, c) 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    					gr.setColor(255, 255, 255) 
+    				else 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    				end 
+    			end 
+    	end 
+
+
+
+    function drawRangeDisplayChimera() 
+    		csc.range = nil 
+    		csc.range = {} 
+    		csc.range.Shipname = {} 
+    		csc.range.Range = {} 
+    		local plrship = hv.Player 
+    	    		if plrship:isValid() then 
+    				plrship = mn.getObjectFromSignature(csc.plr:getSignature()) 
+    	    		end 
+    		local turpos1 = (plrship.Position + plrship["turret01"].Position) 
+    		local turpos2 = (plrship.Position + plrship["turret02"].Position) 
+    		local turpos3 = (plrship.Position + plrship["turret07"].Position) 
+    		local turpos4 = (plrship.Position + plrship["turret08"].Position) 
+    		items = 1 
+    	    		for i = 1, #mn.Ships do 
+    				local tempship = mn.Ships[i] 
+    				local class = getTargetClass(tempship) 
+    				if class ~= "Fighter" and class ~= "Bomber" then 
+    					if tempship ~= csc.plrship then 
+    			    			local temp = tempship.Position 
+    			    			local temprange1 = math.sqrt( (temp[1] - turpos1[1])^2 + (temp[2] - turpos1[2])^2 + (temp[3] - turpos1[3])^2 ) 
+    			    			local temprange2 = math.sqrt( (temp[1] - turpos2[1])^2 + (temp[2] - turpos2[2])^2 + (temp[3] - turpos2[3])^2 ) 
+    			    			local temprange3 = math.sqrt( (temp[1] - turpos3[1])^2 + (temp[2] - turpos3[2])^2 + (temp[3] - turpos3[3])^2 ) 
+    			    			local temprange4 = math.sqrt( (temp[1] - turpos4[1])^2 + (temp[2] - turpos4[2])^2 + (temp[3] - turpos4[3])^2 ) 
+						csc.range.Shipname[items] = tempship.Name 
+    	 					csc.range.Range[items] = math.floor( (temprange1 + temprange2 + temprange3 + temprange4) / 4 ) 
+    						items = items + 1 
+    					end 
+    				end 
+    	    		end 
+    		gr.setColor(255,255,255) 
+    		gr.drawString("Range:", gr.getScreenWidth() * 0.17, gr.getScreenHeight() * 0.78) 
+    			for i = 1, #csc.range.Shipname do 
+    				if csc.range.Range[i] < 1000 then 
+    					local c = math.floor((csc.range.Range[i] / 4)) + 5 
+    					gr.setColor(255, c, c) 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    					gr.setColor(255, 255, 255) 
+    				else 
+    					gr.drawString(" " .. csc.range.Shipname[i] .. ": " .. csc.range.Range[i]) 
+    				end 
+    			end 
+    end 
+
+
+
+    function cscInit()
+    		csc = {}
+    		if not csc.initComplete then
+    			if not csc.plrship then
+    				csc.plr = hv.Player
+				if csc.plr:isValid() then 
+					csc.plrship = mn.getObjectFromSignature(csc.plr:getSignature())
+				end
+				if csc.plrship:getBreedName() == "Ship" then
+    					if csc.plrship.Class.Name == "GTXV Avenger" then 
+						csc.ship = "Avenger"
+					elseif csc.plrship.Class.Name == "GTSa Boreas#Player" then 
+						csc.ship = "Boreas"
+					elseif csc.plrship.Class.Name == "Battleship#PL1" then 
+						csc.ship = "Battleship"
+					elseif csc.plrship.Class.Name == "Battleship#FIGHTER" then 
+						csc.ship = "BattleshipF"
+					elseif csc.plrship.Class.Name == "GTCv Chimera X1" then 
+						csc.ship = "Chimera"
+					else
+						csc.disable = true
+					end
+				else
+					csc.disable = true
+				end
+    				if not csc.disable then
+					if not csc.turrets then
+    						csc.pdTurrets = {} 
+    						csc.pdmode = {"Automatic", "Track", "Lock", "Offline"} 
+    						csc.pdstatus = 1 
+
+    						csc.flakTurrets = {} 
+
+    						csc.LRBeam = {} 
+    						csc.LRBmode = {"Automatic", "Track", "Lock", "Offline"} 
+    						csc.LRBstatus = 1 
+
+    						csc.MainBeams = {} 
+    						csc.MBmode = {"Automatic", "Track", "Lock", "Offline"} 
+    						csc.MBstatus = 1 
+
+    						csc.AMCannons = {} 
+    						csc.AMCannonsmode = {"Automatic", "Track", "Lock", "Offline"} 
+    						csc.AMstatus = 1 
+
+    						csc.AAA = {} 
+    						csc.AAAmode = {"Automatic", "Track", "Lock", "Offline"} 
+    						csc.AAAstatus = 1 
+
+  						csc.active = {"*", " ", " "} 
+    						csc.acnum = 1 
+    						csc.inputstates = {} 
+
+    						inputlocked = false 
+
+    						fillturretlist(csc.plrship) 
+    						groupTurrets() 
+    						--ShieldmanOverride = true 
+    						--BettyOverride = true 
+    						OldMissionTime = cscMissionTime 
+					end
+				end
+			end
+		end
+	end
+
+
+	function CscHud(Activate)
+
+		if Activate == 1 then
+    			cscInit()
+		elseif Activate == 0 then
+			csc.disable = true
+		end 
+
+	end
+			
+
+] 
+
+$State: GS_STATE_GAME_PLAY 
+
+$On Frame: 
+[ 
+    	cscMissionTime = mn.getMissionTime() 
+
+
+    		if cscOldMissionTime ~= cscMissionTime and cscMissionTime ~= 0 then 
+    			if not csc then 
+    				CscHud(Activate) 
+    			end 
+
+    		if csc then 
+    			if not csc.disable and csc.initComplete then 
+    				doInput() 
+    					if csc.ship == "Avenger" then 
+    						doTurretModeAvenger() 
+     						drawTargets(csc.MainBeams, 255, 80, 255, 11) 
+    						drawTargets(csc.LRBeam, 51, 255, 51, 14) 
+    						drawTargets(csc.AMCannons, 0, 255, 255, 17)
+    						drawTargets(csc.pdTurrets, 61, 93, 255, 8) 
+    						drawTargets(csc.flakTurrets, 61, 93, 255, 8)
+    						drawTargets(csc.AAA, 61, 93, 255, 8) 
+    					elseif csc.ship == "Boreas" then 
+    						doTurretModeBoreas() 
+    						drawTargets(csc.MainBeams, 255, 93, 48, 11)
+    						drawTargets(csc.pdTurrets, 61, 93, 255, 8)
+    						drawTargets(csc.AAA, 61, 93, 255, 8)
+					elseif csc.ship == "Battleship" then
+						doTurretModeBattleship()
+     						drawTargets(csc.MainBeams, 255, 80, 255, 11) 
+    						drawTargets(csc.LRBeam, 51, 255, 51, 14) 
+    						drawTargets(csc.AMCannons, 0, 255, 255, 17)
+    						drawTargets(csc.pdTurrets, 61, 93, 255, 8)
+					elseif csc.ship == "BattleshipF" then
+						doTurretModeBattleship()
+     						drawTargets(csc.MainBeams, 255, 80, 255, 11) 
+    						drawTargets(csc.LRBeam, 51, 255, 51, 14) 
+    						drawTargets(csc.AMCannons, 0, 255, 255, 17)
+    						drawTargets(csc.pdTurrets, 61, 93, 255, 8)
+    					elseif csc.ship == "Chimera" then 
+    						doTurretModeChimera() 
+    						drawTargets(csc.MainBeams, 255, 93, 48, 11)
+    						drawTargets(csc.AMCannons, 0, 255, 255, 17)
+    						drawTargets(csc.pdTurrets, 61, 93, 255, 8)
+    						drawTargets(csc.AAA, 61, 93, 255, 8)  
+    					end 
+    				end 
+    			end 
+    		cscOldMissionTime = cscMissionTime 
+    	end 
+] 
+
+$On HUD Draw: 
+[ 
+    		if csc then 
+    			if not csc.disable and csc.initComplete then 
+    				if csc.ship == "Avenger" then 
+    					drawRangeDisplayAvenger() 
+    					drawTurretUIAvenger() 
+    				elseif csc.ship == "Boreas" then 
+    					drawRangeDisplayBoreas() 
+    					drawTurretUIBoreas()
+    				elseif csc.ship == "Battleship" then 
+    					drawRangeDisplayBattleship() 
+    					drawTurretUIBattleship()
+    				elseif csc.ship == "BattleshipF" then 
+    					drawRangeDisplayBattleshipF() 
+    					drawTurretUIBattleship()
+    				elseif csc.ship == "Chimera" then 
+    					drawRangeDisplayChimera() 
+    					drawTurretUIChimera()
+    				end 
+    			end 
+    		end 
+] 
+
+$On State End: 
+[ 
+    csc = nil 
+    --ShieldmanOverride = false 
+    --BettyOverride = false 
+] 
+
+#End 
+

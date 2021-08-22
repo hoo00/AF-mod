@@ -1,0 +1,3233 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("Making a run for it", -1)
+$Author: Herkie Del Socorro
+$Created: 05/21/11 at 15:51:17
+$Modified: 03/26/20 at 18:10:27
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("July 10, 2370", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 8
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: 19202.460938, 117.290222, 6798.639648
++Viewer orient:
+	0.787901, 0.000000, 0.615802,
+	-0.141843, 0.973110, 0.181484,
+	-0.599243, -0.230339, 0.766715
+
+
+$Load Screen 640:	LoadAct2Sa.dds
+$Load Screen 1024:	LoadAct2La.dds
+
+$Skybox Model: SpaceBox.pof
+
+$AI Profile: AF1
+#Fiction Viewer
+
+$File: LogA2E.txt
+$Font: font01.vf
+
+#Command Briefing
+
+$Stage Text:
+ XSTR("$B{ To Lieutenant John Richter
+Vega Police Department $}
+
+Because of your involvement in your recent mission to capture one of the $R{ pirate high leaders, $} the entire pirate organization was agitated and the $G GTVI feared for the security of a number of covert operatives in the $Y UPC's $Y home $Y system. Plans were drawn up to recover them. In fact, only three days ago,  $G Police $G Central $G Command was assigned to immediately assist an $P{ undercover agent $} when this agent contacted his superiors and requested his exfiltration. He is now currently aboard the $G{ GTCv Stargazer $} making his escape towards the $Y Vega jump node.
+
+$B{ Robert Prescott
+Chief of Police, VPD $}", -1)
+$end_multi_text
+$Ani Filename: cb_Act2e.ani
++Wave Filename: none
+
+#Briefing
+$start_briefing
+$num_stages: 1
+$start_stage
+$multi_text
+ XSTR("The $G Stargazer is currently on route to the $Y Vega jump node. Your mission is to escort and provide support to this craft. Be aware that pirate intervention is certain. So stay focus. The Stargazer must survive. You must realize that we cannot send additional ships or wings. As far as the $R UPC's concern, the Stargazer is a defector and the aid of the police will rouse their suspicion and jeopardize the lives of other deep cover agents so you will not be flying police colors.  Except for the $b GTF $b Enforcer, We have all the ships and weapons we can spare at your disposal and that includes your $b Phantom.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: -593.099609, 799.663025, -7529.866699
+$camera_orient:
+	0.982633, -0.000001, -0.185562,
+	0.024843, 0.990998, 0.131550,
+	0.183891, -0.133875, 0.973787
+$camera_time: 500
+$num_lines: 0
+$num_icons: 3
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 0
+$team: Friendly
+$class: GTF Ares
+$pos: -135.179199, -0.000018, -4296.261719
+$label: alpha 1
++id: 1
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 28
+$team: Friendly
+$class: GTCv Rigel
+$pos: 1434.049683, -0.000274, -2244.487061
+$label: Stargazer
++id: 4
+$hlight: 1
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 33
+$team: Friendly
+$class: GTNB Pharos
+$pos: -1201.351563, -0.000024, -1314.434570
+$label: Vega Jump Node
++id: 6
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 6
+
+$Formula: ( is-goal-true-delay 
+   "protect Deimos 1" 
+   0 
+)
+$Multi text
+    XSTR("$B{ To lieutenant John Richter
+Vega Police Department $}
+
+Because of your efforts, our fleeing corvette has escaped and our $V agent survived, carrying with him vital information of the $R pirate's whereabouts, the extent of their military capabilities, their illegal trade routes and most importantly, the location of the $R Mafia $R boss himself. The agent is also a high ranking official and wishes to thank you for his life and he will give his recommendations to the $G GTVA $G High $G Command.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+$Formula: ( is-goal-true-delay 
+   "Disable Skull Hunter" 
+   0 
+)
+$Multi text
+    XSTR("Well done. By incapacitating the $R Skull $R Hunter, you have displayed your keen judgment and initiative on this mission.  You gave the $G Stargazer a fighting chance.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Good thinking! That is SOP in dealing with larger enemy ships. Without beams or engines, those ships are helpless.", -1)
+$end_multi_text
+
+$Formula: ( is-goal-true-delay 
+   "Wipe out squadron" 
+   0 
+)
+$Multi text
+    XSTR("The $G GTVA $G Police has also noted your tremendous combat skills. No one here in the police force is able to engage and wipe out an entire squadron alone. Only a handful of combat military pilots with superior skills can survive such a predicament. We are now contemplating as to where to assign you.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Great job!, you have the combat skill to take on the later missions of this campaign.", -1)
+$end_multi_text
+
+$Formula: ( is-goal-true-delay "Survive" 0 ) 
+$Multi text
+    XSTR("And sorry for the inconvenience, Alpha 1. We were not able to pull you out of there immediately and that was a close call. Excellent job pilot.
+", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("That's the disadvantage of Mission Protocol 729. It's a crappy directive by the GTVA. But orders are orders.", -1)
+$end_multi_text
+
+$Formula: ( is-goal-true-delay "Survive" 0 ) 
+$Multi text
+    XSTR("
+$B{ Robert Prescott
+Chief of Police, VPD $}
+
+$P{ LCARS UPDATE: $} $G{New entries in Techroom Database $}", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+$Formula: ( is-goal-false-delay 
+   "protect Deimos 1" 
+   0 
+)
+$Multi text
+    XSTR("$B{ To John Richter $}
+
+The loss of Stargazer was unacceptable. The agent in that corvette had vital information about these pirates. It was a tough mission but your failure will cripple us more and our countering these pirates will be difficult.
+
+The GTVI ordered your expulsion from the police force so I have no choice but to release you from your duties and responsibilities. You are lucky. If you were in the military, you will be executed for this failure. Clean up your quarters and good luck.
+
+$B{ Robert Prescott
+Chief of Police $}", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Take my hint. Destroy the Skull Hunter's beam cannon that is firing at the stargazer. That should do the trick. You may want to disable the Skull Hunter, its turrets can still do damage to the Stargazer. Take out the enemy cruisers' beam cannons immediately. Ignore the fighters, they don't do much damage to the corvette. The use of the XJR Phantom and high ROF weapons is highly recommended.", -1)
+$end_multi_text
+
+#Alternate Types:
+$Alt: United Pirate Coalition
+$Alt: Skull Demons
+
+#end
+
+
+#Callsigns:
+$Callsign: Skull Hunters
+
+#end
+
+
+#Players		;! 1 total
+
+$Starting Shipname: alpha 1
+$Ship Choices: (
+	"GTF Hercules Mark II"	1
+	"GTF Erinyes"	1
+	"GTF Perseus"	1
+	"GTF Myrmidon"	1
+	"XJR Phantom"	1
+)
+
++Weaponry Pool: (
+	"Subach HL-7"	1
+	"Morning Star"	1
+	"Prometheus R"	1
+	"Prometheus S"	1
+	"Ripper"	1
+	"Rockeye"	100
+	"Tempest"	500
+	"Tornado"	300
+	"Harpoon"	136
+	"Trebuchet"	100
+	"Stiletto II"	100
+	"Maxim"	1
+	"UD-8 Kayser"	1
+	"Hornet"	100
+)
+
+#Objects		;! 59 total
+
+$Name: alpha 1		;! Object #0
+$Class: GTF Ares
+$Team: Friendly
+$Location: 16259.037109, 381.600189, 7160.583008
+$Orientation:
+	0.827137, 0.000000, -0.562001,
+	0.110813, 0.980368, 0.163091,
+	0.550968, -0.197176, 0.810898
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 30
++Initial Hull: 100
++Subsystem: Pilot
++Primary Banks: ( "UD-8 Kayser" "Maxim" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 8
+
+$Name: Stargazer		;! Object #1
+$Class: GTCv Rigel
+$Team: Friendly
+$Location: 17925.437500, 0.000183, 8980.535156
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Waypoint path 1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( are-waypoints-done-delay 
+   "Stargazer" 
+   "Waypoint path 1" 
+   0 
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 0
++Special Hitpoints: 150000
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 800
+
+$Name: Skull Hunter		;! Object #2
+$Class: NTF Iceni
+$Alt: United Pirate Coalition
+
+$Team: Hostile
+$Location: 18389.746094, -401.985809, 7937.240234
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Stargazer" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01a
++Primary Banks: ( "" )
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11a
++Primary Banks: ( "Shivan Mega Laser" )
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Sbank Ammo: ( 0 )
++Subsystem: turret17
++Subsystem: turret18
++Sbank Ammo: ( 0 )
++Subsystem: turret19
++Subsystem: turret20
++Sbank Ammo: ( 0 )
++Subsystem: turret21a
++Subsystem: turret22a
++Subsystem: turret23a
++Subsystem: turret24a
++Subsystem: turret25a
++Sbank Ammo: ( 0 )
++Subsystem: engine01
+$Damage: 25
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( < ( hits-left "Skull Hunter" ) 10 ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 150000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 300
+
+$Name: Vargi 1		;! Object #3
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17286.402344, -0.000575, 7775.932129
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Vargi 2		;! Object #4
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17298.074219, -0.000575, 7715.961426
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Vargi 3		;! Object #5
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17339.683594, -0.000430, 7806.444336
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Pirate Strikers 1		;! Object #6
+$Class: UPC Raider
+$Team: Hostile
+$Location: 18293.132813, 0.000125, 6844.939453
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Score: 12
+
+$Name: Pirate Strikers 2		;! Object #7
+$Class: UPC Raider
+$Team: Hostile
+$Location: 18290.550781, 0.000125, 6866.501953
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "hide-ship-name" )
++Respawn priority: 0
++Group: 0
++Score: 12
+
+$Name: Fenrir 1		;! Object #8
+$Class: GTF Perseus
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 563.140259, 0.000000, 17534.923828
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye D" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 12
+
+$Name: Fenrir 3		;! Object #9
+$Class: GTF Perseus
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 688.262695, 0.000000, 17488.845703
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye D" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 12
+
+$Name: Fenrir 4		;! Object #10
+$Class: GTF Perseus
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 561.944580, 0.000000, 17687.046875
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye D" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 12
+
+$Name: Fenrir 2		;! Object #11
+$Class: GTF Perseus
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 687.139648, 0.000000, 17651.214844
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye D" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Score: 12
+
+$Name: Freyja 1		;! Object #12
+$Class: GTF Erinyes
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 972.276733, -0.000762, 17034.498047
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Freyja 2		;! Object #13
+$Class: GTF Erinyes
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 947.246948, -0.000762, 17131.033203
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Freyja 3		;! Object #14
+$Class: GTF Erinyes
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1065.861084, -0.000762, 17034.390625
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Freyja 4		;! Object #15
+$Class: GTF Erinyes
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1042.364990, -0.000762, 16954.560547
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Roskva 1		;! Object #16
+$Class: GTF Myrmidon
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1641.486084, 0.000000, 18910.804688
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye" "Rockeye" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Roskva 2		;! Object #17
+$Class: GTF Myrmidon
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1619.042358, 0.000000, 18952.351563
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye" "Rockeye" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Roskva 3		;! Object #18
+$Class: GTF Myrmidon
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1590.147949, 0.000000, 18898.164063
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye" "Rockeye" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Roskva 4		;! Object #19
+$Class: GTF Myrmidon
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1541.063110, 0.000000, 18954.923828
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
++AI Class: Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Secondary Banks: ( "Rockeye" "Rockeye" "Tempest" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Skadi 1		;! Object #20
+$Class: GTF Hercules Mark II
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1311.175293, 0.000000, 19353.972656
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Skadi 2		;! Object #21
+$Class: GTF Hercules Mark II
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1300.150635, 0.000000, 19447.285156
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Skadi 3		;! Object #22
+$Class: GTF Hercules Mark II
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1410.262451, 0.000000, 19383.308594
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Skadi 4		;! Object #23
+$Class: GTF Hercules Mark II
+$Alt: Skull Demons
+
+$Team: Hostile
+$Location: 1405.546753, 0.000000, 19495.222656
+$Orientation:
+	0.497571, -0.000000, 0.867423,
+	0.000000, 1.000000, 0.000000,
+	-0.867423, 0.000000, 0.497571
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Spectre		;! Object #24
+$Class: GTC Fenris
+$Alt: United Pirate Coalition
+
+$Team: Hostile
+$Location: 5058.786621, 1785.095459, 11239.550781
+$Orientation:
+	0.756489, 0.000000, -0.654006,
+	0.222064, 0.940590, 0.256861,
+	0.615152, -0.339543, 0.711546
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Waypoint path 3" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09a-01-main
+$Arrival Location: Hyperspace
+$Arrival Cue: ( < 
+   ( distance 
+      "Stargazer" 
+      "Spectre Cue:1" 
+   )
+   4000 
+)
+$Departure Location: Hyperspace
++Departure delay: 20
+$Departure Cue: ( has-departed-delay 0 "Stargazer" ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 30000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 100
+
+$Name: Anubis		;! Object #25
+$Class: GTC Fenris
+$Alt: United Pirate Coalition
+
+$Team: Hostile
+$Location: 7624.488281, -1714.904541, 18430.564453
+$Orientation:
+	-0.877337, 0.000000, -0.479875,
+	-0.220559, 0.888117, 0.403240,
+	0.426185, 0.459618, -0.779178
+$AI Behavior: None
+$AI Goals: ( goals ( ai-waypoints-once "Waypoint path 5" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09a-01-main
+$Arrival Location: Hyperspace
+$Arrival Cue: ( < 
+   ( distance "Stargazer" "Anubis Cue:1" ) 
+   4000 
+)
+$Departure Location: Hyperspace
++Departure delay: 15
+$Departure Cue: ( has-departed-delay 0 "Stargazer" ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 20000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 100
+
+$Name: Poltergeist		;! Object #26
+$Class: GTC Fenris
+$Alt: United Pirate Coalition
+
+$Team: Hostile
+$Location: 2217.819824, -814.703064, 12271.713867
+$Orientation:
+	0.070910, 0.000000, -0.997483,
+	-0.094707, 0.995482, -0.006733,
+	0.992976, 0.094946, 0.070589
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09a-01-main
+$Arrival Location: Hyperspace
++Arrival Delay: 30
+$Arrival Cue: ( has-arrived-delay 0 "Anubis" ) 
+$Departure Location: Hyperspace
++Departure delay: 30
+$Departure Cue: ( or 
+   ( is-subsystem-destroyed-delay 
+      "Poltergeist" 
+      "turret02" 
+      0 
+   )
+   ( has-departed-delay 0 "Stargazer" ) 
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 30000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 100
+
+$Name: Semerket		;! Object #27
+$Class: GTC Fenris
+$Alt: United Pirate Coalition
+
+$Team: Hostile
+$Location: 5847.376953, 911.641846, 20890.294922
+$Orientation:
+	-0.853566, 0.000000, -0.520984,
+	0.050357, 0.995318, -0.082504,
+	0.518545, -0.096658, -0.849570
+$AI Behavior: None
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09a-01-main
++Sbank Ammo: ( 0 )
+$Arrival Location: Hyperspace
++Arrival Delay: 32
+$Arrival Cue: ( has-arrived-delay 0 "Anubis" ) 
+$Departure Location: Hyperspace
++Departure delay: 33
+$Departure Cue: ( or 
+   ( is-subsystem-destroyed-delay 
+      "Semerket" 
+      "turret02" 
+      0 
+   )
+   ( has-departed-delay 0 "Stargazer" ) 
+)
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 30000
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 100
+
+$Name: Baldr 1		;! Object #28
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17451.421875, 0.000373, 7742.064941
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Baldr 2		;! Object #29
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17415.722656, 0.000204, 7664.002930
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Baldr 3		;! Object #30
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17388.375000, 0.000862, 7734.537598
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Grida 1		;! Object #31
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17568.855469, 0.000378, 8058.273438
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Grida 2		;! Object #32
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17550.593750, 0.000350, 8024.958984
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Grida 3		;! Object #33
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17586.562500, 0.000338, 8007.364746
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Grida 4		;! Object #34
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17605.488281, 0.000253, 8043.375000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Hersir 1		;! Object #35
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17539.660156, 0.000747, 7894.183594
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Hersir 2		;! Object #36
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17514.714844, 0.000694, 7844.542969
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Hersir 3		;! Object #37
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17483.089844, 0.000498, 7890.406250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Loki 1		;! Object #38
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17384.636719, -0.000404, 7965.797852
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Loki 2		;! Object #39
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17363.238281, -0.000428, 7931.031250
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Loki 3		;! Object #40
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17414.582031, -0.000337, 7903.144531
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Loki 4		;! Object #41
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17438.695313, -0.000399, 7939.982422
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aenir 1		;! Object #42
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17466.281250, 0.000517, 8058.896484
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aenir 2		;! Object #43
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17502.175781, 0.000542, 8118.548828
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aenir 3		;! Object #44
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17450.925781, 0.000563, 8109.327637
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Njord 1		;! Object #45
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17550.406250, 0.000366, 7635.283691
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Njord 2		;! Object #46
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17582.625000, 0.000306, 7702.901367
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Njord 3		;! Object #47
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17528.261719, 0.000300, 7696.118164
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Vanir 1		;! Object #48
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17594.296875, 0.000264, 7826.008301
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Vanir 2		;! Object #49
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17616.812500, 0.000286, 7878.963379
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Vanir 3		;! Object #50
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17639.835938, 0.000243, 7810.178711
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Vanir 4		;! Object #51
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17661.082031, 0.000228, 7850.751953
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Odur 1		;! Object #52
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17561.031250, -0.000214, 8220.263672
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Odur 2		;! Object #53
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17591.062500, -0.000200, 8274.308594
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Odur 3		;! Object #54
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17513.531250, -0.000241, 8256.941406
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Odur 4		;! Object #55
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17533.273438, -0.000157, 8309.046875
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Frigg 1		;! Object #56
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17673.578125, 0.000444, 8002.298340
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Frigg 2		;! Object #57
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17683.332031, 0.000409, 7949.345215
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Frigg 3		;! Object #58
+$Class: UPC Scorpion
+$Team: Hostile
+$Location: 17716.554688, 0.000457, 8007.897949
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+#Wings		;! 16 total
+
+$Name: alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"alpha 1"
+)
++Hotkey: 0
++Flags: ( )
+
+$Name: Vargi
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Vargi 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 60
+$Arrival Cue: ( and 
+   ( or 
+      ( is-event-true-delay 
+         "Hunter Disabled-Beam active" 
+         5 
+      )
+      ( is-event-true-delay 
+         "Hunter Beam gone-not disabled" 
+         5 
+      )
+   )
+   ( is-goal-incomplete 
+      "protect Deimos 1" 
+   )
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 0 "Stargazer" ) 
+$Ships: (		;! 3 total
+	"Vargi 1"
+	"Vargi 2"
+	"Vargi 3"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
++Wave Delay Min: 10
++Wave Delay Max: 20
+
+$Name: Pirate Strikers
+$Waves: 3
+$Wave Threshold: 0
+$Special Ship: 1		;! Pirate Strikers 2
+
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: alpha 1
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 0 "Stargazer" ) 
+$Ships: (		;! 2 total
+	"Pirate Strikers 1"
+	"Pirate Strikers 2"
+)
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
++Flags: ( )
++Wave Delay Min: 45
++Wave Delay Max: 70
+
+$Name: Fenrir
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Fenrir 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 700
+$Arrival Anchor: alpha 1
++Arrival delay: 35
+$Arrival Cue: ( is-goal-true-delay 
+   "protect Deimos 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Fenrir 1"
+	"Fenrir 2"
+	"Fenrir 3"
+	"Fenrir 4"
+)
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
++Flags: ( )
+
+$Name: Freyja
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Freyja 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 700
+$Arrival Anchor: alpha 1
++Arrival delay: 35
+$Arrival Cue: ( is-goal-true-delay 
+   "protect Deimos 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Freyja 1"
+	"Freyja 2"
+	"Freyja 3"
+	"Freyja 4"
+)
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
++Flags: ( )
+
+$Name: Roskva
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Roskva 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 700
+$Arrival Anchor: alpha 1
++Arrival delay: 35
+$Arrival Cue: ( is-goal-true-delay 
+   "protect Deimos 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Roskva 1"
+	"Roskva 2"
+	"Roskva 3"
+	"Roskva 4"
+)
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
++Flags: ( )
+
+$Name: Skadi
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Skadi 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 700
+$Arrival Anchor: alpha 1
++Arrival delay: 35
+$Arrival Cue: ( is-goal-true-delay 
+   "protect Deimos 1" 
+   0 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Skadi 1"
+	"Skadi 2"
+	"Skadi 3"
+	"Skadi 4"
+)
+$AI Goals: ( goals ( ai-chase "alpha 1" 50 ) )
++Flags: ( )
+
+$Name: Baldr
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Baldr 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 16
+$Arrival Cue: ( is-destroyed-delay 0 "Vargi" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 3 total
+	"Baldr 1"
+	"Baldr 2"
+	"Baldr 3"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Njord
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Njord 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 20
+$Arrival Cue: ( is-destroyed-delay 0 "Baldr" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 3 total
+	"Njord 1"
+	"Njord 2"
+	"Njord 3"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Loki
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Loki 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 17
+$Arrival Cue: ( is-destroyed-delay 0 "Njord" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 4 total
+	"Loki 1"
+	"Loki 2"
+	"Loki 3"
+	"Loki 4"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Hersir
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Hersir 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 15
+$Arrival Cue: ( is-destroyed-delay 0 "Loki" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 3 total
+	"Hersir 1"
+	"Hersir 2"
+	"Hersir 3"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Vanir
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Vanir 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 14
+$Arrival Cue: ( is-destroyed-delay 0 "Hersir" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 4 total
+	"Vanir 1"
+	"Vanir 2"
+	"Vanir 3"
+	"Vanir 4"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Aenir
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Aenir 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 20
+$Arrival Cue: ( is-destroyed-delay 0 "Vanir" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 3 total
+	"Aenir 1"
+	"Aenir 2"
+	"Aenir 3"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Grida
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Grida 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: <any friendly>
++Arrival delay: 17
+$Arrival Cue: ( is-destroyed-delay 0 "Aenir" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 4 total
+	"Grida 1"
+	"Grida 2"
+	"Grida 3"
+	"Grida 4"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Frigg
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Frigg 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 15
+$Arrival Cue: ( is-destroyed-delay 0 "Grida" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 3 total
+	"Frigg 1"
+	"Frigg 2"
+	"Frigg 3"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+$Name: Odur
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Odur 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 1500
+$Arrival Anchor: Stargazer
++Arrival delay: 20
+$Arrival Cue: ( is-destroyed-delay 0 "Frigg" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( has-departed-delay 10 "Stargazer" ) 
+$Ships: (		;! 4 total
+	"Odur 1"
+	"Odur 2"
+	"Odur 3"
+	"Odur 4"
+)
+$AI Goals: ( goals ( ai-chase "Stargazer" 89 ) )
++Flags: ( )
+
+#Events		;! 51 total
+
+$Formula: ( when 
+   ( true ) 
+   ( never-warp "alpha 1" ) 
+   ( ship-subsys-guardian-threshold 
+      90 
+      "Stargazer" 
+      "<all engines>" 
+   )
+   ( ship-guardian-threshold 
+      ( rand 20 40 ) 
+      "Skull Hunter" 
+   )
+   ( set-armor-type 
+      "Skull Hunter" 
+      ( true ) 
+      "Cinematic Armor 1" 
+      "Hull" 
+   )
+)
++Name: mission ini
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Events---------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( beam-free-all "Skull Hunter" ) 
+   ( beam-free-all "Stargazer" ) 
+)
++Name: Free Up Beams
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-time-elapsed 2 ) 
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos" 
+   )
+   ( validate-goal 
+      "Disable Skull Hunter" 
+   )
+)
++Name: May Day
++Repeat Count: 1
++Interval: 1
++Team: 0
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Skull Hunter" 
+      "High" 
+      "Pirate" 
+   )
+)
++Name: Skull
++Repeat Count: 1
++Interval: 1
++Chained: 12
++Team: 0
+
+$Formula: ( when 
+   ( has-time-elapsed 180 ) 
+   ( beam-lock-all "Stargazer" ) 
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos3" 
+   )
+)
++Name: Stargazer beams disabled
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = ( hits-left "Stargazer" ) 50 ) 
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos2" 
+   )
+)
++Name: Stargazer  systems fatal
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-time-elapsed 120 ) 
+   ( send-message-list 
+      "Skull Hunter" 
+      "High" 
+      "Pirate2" 
+      0 
+      "Stargazer" 
+      "High" 
+      "Deimos4" 
+      8 
+      "Skull Hunter" 
+      "High" 
+      "Pirate3" 
+      4 
+   )
+)
++Name: Dialogue
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-disabled-delay 0 "Skull Hunter" ) 
+      ( not 
+         ( is-subsystem-destroyed-delay 
+            "Skull Hunter" 
+            "turret12" 
+            0 
+         )
+      )
+   )
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos 5" 
+   )
+)
++Name: Hunter Disabled-Beam active
++Repeat Count: 1
++Interval: 1
++Team: 0
+
+$Formula: ( when 
+   ( is-subsystem-destroyed-delay 
+      "Skull Hunter" 
+      "turret12" 
+      0 
+   )
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos 6" 
+   )
+)
++Name: Hunter beam destroyed
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( and 
+      ( is-subsystem-destroyed-delay 
+         "Skull Hunter" 
+         "turret12" 
+         0 
+      )
+      ( not 
+         ( is-disabled-delay 0 "Skull Hunter" ) 
+      )
+   )
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos 7" 
+   )
+)
++Name: Hunter Beam gone-not disabled
++Repeat Count: 1
++Interval: 1
++Team: 0
+
+$Formula: ( when 
+   ( is-disabled-delay 0 "Skull Hunter" ) 
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos 6" 
+   )
+)
++Name: Hunter Disabled
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( has-arrived-delay 0 "Vargi" ) 
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos 8" 
+   )
+)
++Name: Incoming Fighters
++Repeat Count: 1
++Interval: 1
++Team: 0
+
+$Formula: ( when 
+   ( has-arrived-delay 0 "Spectre" ) 
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos9" 
+   )
+)
++Name: Spectre arrives
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Spectre" "Stargazer" ) 
+      2100 
+   )
+   ( beam-free-all "Spectre" ) 
+)
++Name: Spectre in range
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( has-arrived-delay 0 "Anubis" ) 
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos10" 
+   )
+)
++Name: Anubis Arrives
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Anubis" "Stargazer" ) 
+      2100 
+   )
+   ( beam-free-all "Anubis" ) 
+)
++Name: Anubis in range
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( and 
+      ( has-arrived-delay 0 "Poltergeist" ) 
+      ( has-arrived-delay 0 "Semerket" ) 
+   )
+   ( send-message 
+      "Stargazer" 
+      "High" 
+      "Deimos 11" 
+   )
+)
++Name: Two more cruisers
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Poltergeist" "Stargazer" ) 
+      2100 
+   )
+   ( beam-free-all "Poltergeist" ) 
+)
++Name: Poltergeist in range
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance "Semerket" "Stargazer" ) 
+      2100 
+   )
+   ( beam-free-all "Semerket" ) 
+)
++Name: Semerket in range
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-goal-false-delay 
+      "protect Deimos 1" 
+      3 
+   )
+   ( send-message 
+      "#Command" 
+      "High" 
+      "command2" 
+   )
+   ( allow-warp "alpha 1" ) 
+   ( show-subtitle-text 
+      "Jump Drive Activated" 
+      0 
+      0 
+      ( true ) 
+      ( true ) 
+      10000 
+   )
+)
++Name: Stargazer destroyed
++Repeat Count: 1
++Interval: 1
++Team: 0
+
+$Formula: ( when 
+   ( has-departed-delay 0 "alpha 1" ) 
+   ( do-nothing ) 
+)
++Name: RTB Fail
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Return to Base", -1)
+
+$Formula: ( when 
+   ( is-goal-true-delay 
+      "protect Deimos 1" 
+      0 
+   )
+   ( send-message 
+      "#Command" 
+      "High" 
+      "command" 
+   )
+)
++Name: Deimos escaped
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-goal-true-delay 
+      "protect Deimos 1" 
+      20 
+   )
+   ( send-message 
+      "#Command" 
+      "High" 
+      "command4" 
+   )
+   ( validate-goal "Survive" ) 
+   ( validate-goal "Wipe out squadron" ) 
+)
++Name: Not yet over
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "#Command" 
+      "High" 
+      "Command4b" 
+   )
+)
++Name: Not Yet Over 2
++Repeat Count: 1
++Interval: 1
++Chained: 12
+
+$Formula: ( when 
+   ( is-goal-true-delay 
+      "protect Deimos 1" 
+      180 
+   )
+   ( allow-warp "alpha 1" ) 
+   ( send-message 
+      "#Command" 
+      "High" 
+      "command3" 
+   )
+   ( clear-subtitles ) 
+   ( show-subtitle-image 
+      "JumpOn.png" 
+      0 
+      28 
+      ( true ) 
+      ( false ) 
+      0 
+      0 
+      5000 
+   )
+)
++Name: Survival
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-departed-delay 0 "alpha 1" ) 
+   ( do-nothing ) 
+)
++Name: RTB
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Return to Base", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: ----Directives-----------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-departed-delay 0 "Stargazer" ) 
+   ( do-nothing ) 
+)
++Name: Protect Stargazer
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Protect Stargazer", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Vargi" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Vargi
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Vargi", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Baldr" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Baldr
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Baldr", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Njord" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Njord
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Njord", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Loki" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Loki
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Loki", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Hersir" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Hersir
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Hersir", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Vanir" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Vanir
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Vanir", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Aenir" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Aenir
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Aenir", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Grida" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Grida
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Grida", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Frigg" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Frigg
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Frigg", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Odur" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Odur
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Odur", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Fenrir" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Fenrir
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Fenrir", -1)
++Team: 0
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Freyja" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Freyja
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Freyja", -1)
++Team: 0
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Roskva" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Roskva
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Roskva", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Skadi" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Skadi
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Skadi", -1)
++Team: 0
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -------------------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( key-pressed "Alt-J" ) 
+      ( not 
+         ( is-event-true-delay "Survival" 0 ) 
+      )
+      ( not 
+         ( is-event-true-delay 
+            "Stargazer destroyed" 
+            0 
+         )
+      )
+   )
+   ( show-subtitle-image 
+      "JumpX.png" 
+      0 
+      28 
+      ( true ) 
+      ( false ) 
+      0 
+      0 
+      5000 
+   )
+   ( key-reset "Alt-J" ) 
+)
++Name: Player Alt-J Action
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "Alt-J" ) 
+      ( or 
+         ( is-event-true-delay "Survival" 0 ) 
+         ( is-event-true-delay 
+            "Stargazer destroyed" 
+            0 
+         )
+      )
+   )
+   ( clear-subtitles ) 
+)
++Name: Clear Jump Message
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: -------------------------------
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay "Survival" 0 ) 
+   ( tech-add-ships "GTCv Rigel" ) 
+   ( tech-add-intel-xstr 
+      "The Henderson Report" 
+      -1 
+   )
+)
++Name: Update Database
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay "Survival" 0 ) 
+   ( script-eval 
+      "jsv('Database', 'rigel')" 
+   )
+   ( script-eval 
+      "jsv('Intelligence', 'i13')" 
+   )
+   ( script-eval 
+      "jsv('Database', 'DBSection5')" 
+   )
+)
++Name: Update Journal
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay "Survival" 0 ) 
+   ( grant-medal 
+      "Distinguished Flying Cross" 
+   )
+)
++Name: Reward
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay "Survival" 0 ) 
+   ( do-nothing ) 
+)
++Name: Continue
++Repeat Count: 1
++Interval: 1
++Team: 1
+
+#Goals		;! 4 total
+
+$Type: Primary
++Name: protect Deimos 1
+$MessageNew:  XSTR("Escort Stargazer to the jump node", -1)
+$end_multi_text
+$Formula: ( has-departed-delay 0 "Stargazer" ) 
+
+$Type: Secondary
++Name: Disable Skull Hunter
+$MessageNew:  XSTR("Disable the Skull Hunter", -1)
+$end_multi_text
+$Formula: ( is-disabled-delay 0 "Skull Hunter" ) 
++Invalid
++No music
+
+$Type: Primary
++Name: Survive
+$MessageNew:  XSTR("Survive for a few minutes", -1)
+$end_multi_text
+$Formula: ( has-departed-delay 0 "alpha 1" ) 
++Invalid
+
+$Type: Bonus
++Name: Wipe out squadron
+$MessageNew:  XSTR("Wipe out the entire pirate squadron", -1)
+$end_multi_text
+$Formula: ( is-destroyed-delay 
+   0 
+   "Fenrir" 
+   "Freyja" 
+   "Roskva" 
+   "Skadi" 
+)
++Invalid
+
+#Waypoints		;! 5 lists total
+
+
+$Jump Node: 158.426239, -0.000000, 18954.324219
+$Jump Node Name: Vega Jump Node
+$Name: Waypoint path 1
+$List: (		;! 1 points in list
+	( 99.567123, 0.000000, 18963.121094 )
+)
+
+$Name: Spectre Cue
+$List: (		;! 1 points in list
+	( 11653.072266, 0.003181, 12424.165039 )
+)
+
+$Name: Waypoint path 3
+$List: (		;! 9 points in list
+	( 5793.916016, 1379.329468, 12089.872070 )
+	( 6418.572754, 718.741699, 12925.618164 )
+	( 7918.580078, -180.988113, 13676.620117 )
+	( 8344.066406, -504.544830, 14038.553711 )
+	( 8452.791016, -320.093384, 14898.184570 )
+	( 8036.654297, -204.399490, 15431.546875 )
+	( 7322.418457, -0.008482, 15876.170898 )
+	( 6095.174316, -0.009011, 16543.005859 )
+	( 2517.169434, -0.006245, 18324.140625 )
+)
+
+$Name: Anubis Cue
+$List: (		;! 1 points in list
+	( 10738.128906, -0.007680, 12877.410156 )
+)
+
+$Name: Waypoint path 5
+$List: (		;! 9 points in list
+	( 7960.097656, -1352.966675, 17816.978516 )
+	( 8203.187500, -991.537170, 17054.876953 )
+	( 8369.974609, -590.742493, 16244.676758 )
+	( 8587.007813, -66.006569, 15357.039063 )
+	( 8303.701172, 382.446228, 14534.874023 )
+	( 7753.698242, 704.986145, 14169.763672 )
+	( 7195.363770, 780.854126, 14223.734375 )
+	( 6294.062500, 637.036743, 14594.291992 )
+	( 1940.658203, -0.004333, 17195.337891 )
+)
+
+#Messages		;! 19 total
+
+
+$Name: Deimos
+$Team: -1
+$MessageNew:  XSTR("Civilian pilot. This is the Stargazer. We are under attack, please help. We are making a run for it. Do what you can, pilot, give us a fighting chance against the Skull Hunter. We must reach the jump node. ", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Pirate
+$Team: -1
+$MessageNew:  XSTR("Your futile attempt to escape is useless. You will be destroyed.
+", -1)
+$end_multi_text
++AVI Name: Head-CM1
+
+$Name: Deimos2
+$Team: -1
+$MessageNew:  XSTR("Whatever you do, pilot better do it quick. Our systems have gone fatal. We don't know if we can hold on for much longer", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Deimos3
+$Team: -1
+$MessageNew:  XSTR("Alert. Our beam cannons are not responding. We have no way to retaliate.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Pirate2
+$Team: -1
+$MessageNew:  XSTR("Give it up Stargazer. Surrender your ship and I might consider sparing your lives.", -1)
+$end_multi_text
++AVI Name: Head-CM1
+
+$Name: Deimos4
+$Team: -1
+$MessageNew:  XSTR("You will never take us alive.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Pirate3
+$Team: -1
+$MessageNew:  XSTR("So be it, Stargazer.", -1)
+$end_multi_text
++AVI Name: Head-CM1
+
+$Name: Deimos 5
+$Team: -1
+$MessageNew:  XSTR("Good work,  civilian pilot. That should keep them from chasing us. Can you do something about those cannons?", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: command
+$Team: -1
+$MessageNew:  XSTR("<Secure Channel>This is command. The Stargazer has successfully entered the jump node.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: command2
+$Team: -1
+$MessageNew:  XSTR("<Secure Channel>This is command. The Stargazer has been destroyed. Mission failed. Return to base", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: command4
+$Team: -1
+$MessageNew:  XSTR("<Secure Channel>We have a malfunction in our jump activation system. We should be able to get you out of there in three minutes. Meanwhile, we have detected a large squadron of pirates jumping in your vicinity.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: command3
+$Team: -1
+$MessageNew:  XSTR("<Secure Channel>This is command. Our jump remote activation system is back online. Get out of there, pilot.", -1)
+$end_multi_text
++AVI Name: Head-CM2
+
+$Name: Deimos 6
+$Team: -1
+$MessageNew:  XSTR("Nice. That ship is useless.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Deimos 7
+$Team: -1
+$MessageNew:  XSTR("Good job on those beam cannons. You might consider disabling it.", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Deimos 8
+$Team: -1
+$MessageNew:  XSTR("We have incoming fighters!", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Deimos9
+$Team: -1
+$MessageNew:  XSTR("A Fenris cruiser on an intercept vector. Deal with it, pilot!", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Deimos10
+$Team: -1
+$MessageNew:  XSTR("Another cruiser has just jump in!", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Deimos 11
+$Team: -1
+$MessageNew:  XSTR("Two more cruisers arriving to engage. They are flanking us!", -1)
+$end_multi_text
++AVI Name: Head-CM4
+
+$Name: Command4b
+$Team: -1
+$MessageNew:  XSTR("Evade them pilot or wipe them out if you can. We will contact you as soon as our remote transmitters are back online. Just hang on pilot.", -1)
+$end_multi_text
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 19 total
+
+$Num stars: 2000
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunBetelgeuse
++Angles: 4.694936 0.104720 1.413717
++Scale: 4.000000
+$Starbitmap: NebulC2-Main
++Angles: 6.178466 5.096362 3.804818
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC4-Whisp
++Angles: 5.829395 0.000000 3.752455
++ScaleX: 2.000000
++ScaleY: 2.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC6-Whisp
++Angles: 5.724676 0.000000 3.560469
++ScaleX: 1.000000
++ScaleY: 1.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC11-Whisp
++Angles: 0.366519 2.897244 3.281216
++ScaleX: 3.000000
++ScaleY: 3.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC12-Whisp
++Angles: 5.323250 0.000000 3.420843
++ScaleX: 1.000000
++ScaleY: 1.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC14-Whisp
++Angles: 5.934115 6.248274 3.944441
++ScaleX: 1.000000
++ScaleY: 1.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC5-Whisp
++Angles: 0.785398 0.000000 3.228857
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC7-Whisp
++Angles: 0.541052 0.000000 3.665189
++ScaleX: 2.000000
++ScaleY: 2.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC13-Whisp
++Angles: 0.628318 6.038835 4.031707
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: NebulC8-Whisp
++Angles: 1.012290 0.000000 3.490656
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 1
++DivY: 1
+$Starbitmap: neb04
++Angles: 1.117010 0.000000 2.722712
++ScaleX: 7.000000
++ScaleY: 7.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 4.293507 1.012290 2.565632
++ScaleX: 8.000000
++ScaleY: 7.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb02
++Angles: 0.610865 0.820304 6.248274
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: neb01
++Angles: 3.159044 3.036870 2.879791
++ScaleX: 4.000000
++ScaleY: 4.000000
++DivX: 1
++DivY: 1
+$Starbitmap: neb02
++Angles: 0.122173 0.000000 5.916662
++ScaleX: 5.000000
++ScaleY: 5.000000
++DivX: 1
++DivY: 1
+$Starbitmap: dneb01
++Angles: 0.942477 4.869465 5.235984
++ScaleX: 6.000000
++ScaleY: 6.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planet2
++Angles: 6.213367 5.969021 0.331612
++ScaleX: 1.100000
++ScaleY: 1.000000
++DivX: 1
++DivY: 1
+$Starbitmap: earthlikeplanet
++Angles: 5.532690 3.333576 5.532690
++ScaleX: 8.000000
++ScaleY: 11.000000
++DivX: 1
++DivY: 1
+$Starbitmap: planet5
++Angles: 0.069813 5.934115 0.855211
++ScaleX: 0.200000
++ScaleY: 0.200000
++DivX: 1
++DivY: 1
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: 2: Exodus
+$Briefing Music: Brief9
+$Debriefing Fail Music: Average
+$Fiction Viewer Music: Aney
+
+#End
+

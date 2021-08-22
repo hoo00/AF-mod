@@ -1,0 +1,274 @@
+
+
+$Entry:
+$Name: XSTR("The Great War",-1) 
+$Anim: Intel_Great_War 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"In 2335, the Terran-Vasudan War entered its fourteenth year. The Galactic Terran Alliance (GTA) and the Parliamentary Vasudan Navy (PVN) were both exhausted, demoralized, and on the verge of internal collapse. 
+
+The invasion of a mysterious species, designated the Shivans, compelled Terran and Vasudan leaders to sign an armistice and form a new alliance. Using advanced weaponry and shields, the Shivans attacked without provocation and without warning. 
+
+The allies acquired and developed new technologies to confront the menace. At the vanguard of the Shivan armada was the SD Lucifer, a massive superdestroyer. The Lucifer exterminated all life on Vasuda Prime and set course for Earth. No weapon in the allied arsenal could penetrate the Lucifer's shields. 
+
+In the Altair system, Vasudan scientists uncovered the ruins of an extinct civilization destroyed by the Shivans eight thousand years ago. The artifacts explained how to track the Lucifer into subspace where its shields would not function. In subspace, the Lucifer could be destroyed. 
+
+From the Delta Serpentis system, a squadron launched from the GTD Bastion pursued the Lucifer into the Sol jump node. These fighters and bombers had to destroy the Lucifer's reactors before the superdestroyer extinguished all life on Earth. 
+
+According to declassified transmissions, the mission succeeded. However, the explosion of the Lucifer created a subspace cataclysm that collapsed the Sol jump node, severing all contact between Earth and the other systems of Terran-Vasudan space.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Reconstruction",-1) 
+$Anim: Intel_Reconstruction 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"By the end of 2335, the Great War was over. The victory over the Lucifer had dealt the decisive blow. Incapable of coordinated strikes or strategic planning, the Shivans were outmaneuvered, isolated, and gradually destroyed. However, both species faced the challenge of rebuilding their interstellar societies from the ground up. 
+
+An ill-fated coup d'etat, orchestrated by the rogue intelligence branch of the GTA, marked the beginning of post-war factional politics. With its economy in ruins and political structures in turmoil, the Galactic Terran Alliance disintegrated into semi-autonomous regional blocs, each with its own agenda. The major entities included the Adhara Coalition, the Antares Federation, the Regulus Syndicate, and the Luyten New Alliance. As these groups consolidated and stabilized, the reconstruction gained momentum, and the resumption of open commerce rekindled the notion of a pan-Terran community. 
+
+Despite the annihilation of all life in their home system, the success of the Vasudan reconstruction surpassed that of their Terran allies. The Vasudans were governed by a Parliament until 2339, when the Vasudan Emperor, Khonsu II, dissolved this body and formed a new government, bringing an end to an institution notorious for its Byzantine treachery, corruption, and arrogance. The heir of a 10,000 year dynasty, Khonsu distinguished himself as a leader of unusual acumen and wisdom. Economists credit the Khonsu regime for the miraculous rehabilitation of Vasudan industry and society.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("GTVA",-1) 
+$Anim: Intel_GTVA 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"The Galactic Terran-Vasudan Alliance (GTVA) was formed in 2345, ten years after the Great War. This treaty organization recognized the autonomy of its constituents as it provided a framework for trade and mutual defense. The Great War had transformed the enmity between Terrans and Vasudans into a lasting fellowship. 
+
+As the industry and economy of the Terran-Vasudan systems recovered, support for a more powerful GTVA gained momentum. In 2358, delegates signed into existence the Beta Aquilae Convention (BETAC), named after the system where the constitution was drafted and ratified. BETAC dismantled the governments of the Terran blocs and recognized the General Assembly, the Security Council, which was renamed as the High Council, and the Vasudan Imperium as the supreme authorities of Terran-Vasudan space. 
+
+Under BETAC, the Vasudans and the Terrans maintain separate fleets under a single command structure. A warship is designated GT or GV, indicating whether it is Galactic Terran or Galactic Vasudan. The two species openly exchange information and technology, and the most recent fighters and bombers can be modified to accommodate pilots of either species. 
+
+Technically, BETAC is but one of a series of conventions and treaties that define how the GTVA functions as a political, military, and economic entity. However, the significance of BETAC as the cornerstone of the Terran-Vasudan alliance has made it the favored target of NTF propagandists.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Earth",-1) 
+$Anim: Intel_Earth 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR( 
+"In 2335, the destruction of the Lucifer superdestroyer collapsed the Sol jump node in Delta Serpentis, severing all contact with Earth. 
+
+The fate of the Terran home planet remains open to speculation, though a number of scenarios are possible. As the center of an interstellar community, Earth could not survive in isolation without a radical transformation of its political and economic structures. On this point, there is no disagreement. However, the question remains whether this transition occurred peacefully or whether Terran society collapsed into anarchy. Strong arguments have been advanced for both sides. 
+
+For generations, Earth had been the political, economic, and cultural center of Terran civilization. Humans still measured time in hours, days, months, and years. They named their ships after the mythological figures of ancient Terran civilizations, and systems were still identified according to the constellations observed from Earth. The planet served as capital of the GTA, and the bulk of the Terran industrial base was located in the Sol system. Offworlders identified their nationality according to the old Earth boundaries, though nation-states dissolved after the discovery of subspace and the emergence of an interstellar Terran society. 
+
+Though necessity has diminished Earth's practical importance in the post-war era, discovering the means to return home remains a high priority.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Neo-Terran Front",-1) 
+$Anim: Intel_NTF 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"Eighteen months ago, Admiral Aken Bosch, commander of the GTVA 6th Fleet, launched a violent military coup in the Polaris system. Within weeks, a regional domino effect also toppled the governments of Regulus and Sirius, all swearing allegiance to Bosch and his Neo-Terran Front. 
+
+Bosch's vision of Neo-Terra informs the ideology of his movement. Though Terrans have lived in exile from Earth since the end of the Great War, Bosch imagined a utopia that would restore the grandeur of the lost world. As the people of Earth once relied on Polaris to help them navigate the seas, the North Star would become the spiritual and political compass for Terrans of the new era. Bosch's message had a profound impact on the so-called Lost Generation, born during the post-war Reconstruction. The Neo-Terran Front provided the youth of Polaris, Regulus, and Sirius with a cause to fight and die for. 
+
+Bosch succeeded because his pro-Terran ideology was explicitly anti-Vasudan. The NTF opposed any Terran-Vasudan alliance and called for the dissolution of the GTVA. The NTF core systems had suffered political and economic chaos throughout the post-war Reconstruction. The Vasudans' miraculous recovery under Khonsu II's leadership embittered those Terrans still struggling to rebuild their own systems. Bosch exploited this anti-Vasudan sentiment to achieve his own political ends.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Vasudans",-1) 
+$Anim: Intel_Vasudan 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"The Vasudans are a civilization of philosophers, artists, and scholars. They immerse themselves in the teachings of those who came before them, perceiving history not as a linear chronology of events but as a space inhabited by both the living and the dead. 
+
+To the Terran outsider, Vasudan society appears convoluted and ritualistic. The Vasudans themselves may seem arrogant, treacherous, and superstitious. On the other hand, Vasudans tend to view Terrans as aggressive, paranoid, and stupid. Thirty years of peaceful interaction between Terrans and Vasudans has helped to deconstruct these stereotypes. 
+
+The crowning achievement of the Vasudan civilization is its language. For the average Terran, the formalities governing its usage are beyond comprehension. Syntax and vocabulary are dictated by such factors as the speaker's age, rank, and caste, the time of day and the phase of the Vasudan calendar, and the relative spatial position of the speaker to the Emperor. This is further compounded by the existence of several alphabets, dozens of verb tenses, and thousands of dialects. A translation device is standard on all GTVA communications systems, enabling Terrans and Vasudans to understand each other. 
+
+Because the Vasudan homeworld was primarily desert, the Terrans used Egyptian names to designate Vasudan warships during the Terran-Vasudan War and the Great War. After the defeat of the Shivans, the Vasudans insisted on maintaining this convention. The Emperor strongly identified with the history of Ancient Egypt, particularly the longevity of its civilization. Following their Emperor's example, Vasudans will take on what they call a Terran name from the myths and history of Ancient Egypt.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Hammer of Light",-1) 
+$Anim: Intel_HOL 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"The dark side of the Vasudan obsession with history was the emergence during the Great War of Hammer of Light (HoL), a cult that gained a strong following among the PVN, resulting in defections to the HoL cause. The HoL believed the Shivans were the cosmic redeemers and destroyers predicted in obscure prophecies written thousands of years ago. Following the destruction of the Lucifer, the ideology and activities of Hammer of Light shifted. 
+
+While some followers committed ritual suicide, the military branch of the movement continued their armed opposition to the Vasudan government and its alliance with the Terrans. Though they continued to espouse HoL's religious dogma, their activities turned more toward acts of terrorism and guerilla warfare. This branch of the HoL was later crushed in Operation Templar, following the HoL's kidnapping of the Vasudan admiralty. Other HoL leaders vanished into obscurity, returning to the study of arcane texts. A number of these religious leaders were apprehended and imprisoned for their role in the insurgency, though a few are still in hiding.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Shivans",-1) 
+$Anim: Intel_Shivans 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"32 years after the Great War, we still know almost nothing about the Shivans. 
+
+Physically, the Shivans have multiple, compound eyes and five legs with claw-like manipulators. Their insect-like carapace does not appear original to the creature's physiognomy, suggesting the Shivans are a cybernetic fusion of biology and technology. The integrated plasma weapon also exhibits properties of an organic-artificial fusion. The weapon may be a kind of focusing device powered by the energy of the being itself, though this point is the subject of heated controversy. 
+
+These details are cited as evidence that the Shivans could not have evolved as the Terran or Vasudan species had, but that they were likely constructed by another entity. Only a handful of Shivans have ever been captured, and all research on live specimens ended with the GTI's Hades rebellion in 2335. The results of these studies remain highly classified. 
+
+Though the Shivans are obviously xenocidal, their motives and origins have yet to be determined. According to Ancient artifacts, the Shivans seem to possess some kind of sensitivity to subspace disturbances. We do not know if the Shivans returned to this corner of the galaxy by chance, by cycle or pattern, or by their detection of Terran-Vasudan subspace travel. 
+
+Xenobiologists know very little about Shivan society. A leading hypothesis is the hive mind theory, arguing that Shivan society is broken down in specialized functions driven by a collective intelligence. The most convincing evidence supporting this theory is the behavior of Shivan forces following the destruction of the Lucifer, the turning point of the Great War. Other experts caution against attributing insectoid properties to the Shivans, regardless of their appearance and behavior. Shivan communication seems to occur in the electromagnetic spectrum, though efforts to decode their transmissions have yielded no meaningful results to date.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("The Ancients",-1) 
+$Anim: Intel_ancients 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"During the Great War, as the annihilation of Earth seemed imminent, Vasudan scientists discovered the ruins of an extinct civilization we now call the Ancients. Data excavated at the site enabled the allies to track and destroy the SD Lucifer in subspace. 
+
+After the Great War, scientists uncovered more sites throughout Terran-Vasudan space. Though only fragments remain, this interstellar society thrived thousands of years ago. Their empire was more expansive than the current boundaries of known space, and archeologists believe they might eventually uncover a map of the Ancient nodes, enabling the Alliance to travel to systems previously uncharted. 
+
+There is virtually no visual record of this civilization, except hieroglyphic forms discovered at the archeological sites and a handful of technological schematics. Major excavations are underway in Altair, Aldebaran, and Deneb, but the data gathered there remains classified at the highest level. 
+
+Terran archeologists use a Minoan naming convention to identify sites and major artifacts. Current evidence suggests the Shivans exterminated this civilization over eight thousand years ago. The Ancients believed the Shivans were a race of cosmic destroyers, and that the extinction of their species was an act of retribution for striving beyond their ordained place in the cosmic order.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Subspace",-1) 
+$Anim: Intel_Subspace 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"In simple terms, subspace is an n-dimensional tunnel between one point in the universe and another. A vessel can travel through this tunnel in a matter of minutes, making a journey that might otherwise take decades or even centuries at light speed. 
+
+A jump drive causes a ship to vibrate in multiple dimensions until its modulations are in perfect synchronization with the subspace continuum. A vortex opens, creating an aperture from an infinitesimally small point in the cosmos, enabling the vessel to cross the subspace threshold. 
+
+Two types of jumps are possible. 
+
+First, an intrasystem jump can occur between two points in a star system. Most small, space-faring vessels are equipped with motivators capable of these short jumps. The presence of an intense gravitational field is required, prohibiting travel beyond the boundaries of a star system. 
+
+Second, ships can jump from system to system via nodes. Until the Great War, only larger ships could generate sufficient power to use jump nodes. The development of jump drives for fighters and bombers in 2335 enabled the Alliance to destroy the SD Lucifer in subspace. Producing these small jump drives is prohibitively expensive, so they are restricted to missions that require pilots to travel between systems. The Head-Up Display indicates the location of jump nodes with a green sphere. 
+
+The vast majority of subspace nodes are extremely unstable, forming and dissipating in nanoseconds. Other nodes have a longer lifespan, existing for centuries or millennia before collapsing. The jump nodes sanctioned by the GTVA for interstellar travel are expected to remain stable for many years.", -1) 
+$end_multi_text 
+
+
+;===THE AFTERMATH INTEL: Written by Herkie423=======================================================
+
+$Entry: 
+$Name: XSTR("The United Pirate Coalition",-1) 
+$Anim: 
+$AlwaysInTechRoom: 1 
+$Description: 
+XSTR( 
+"Their presence was sighted by border patrols one year after the Capella Supernova in the outer reaches of the Altair system. A report of several Leviathan and Fenris class cruisers emerging from an asteroid belt in that region. Two weeks later, a mining convoy carrying ferrocite minerals was ambushed leaving no survivors. Only days following that event, a number of passenger transports were hi-jacked and no one was left alive again. These occurrences became rampant and these were no longer isolated incidents; way stations, supply depots and civilian installations were ransacked in neighboring star systems. The unknown aggressors were methodical and precise in their strikes and no traces were found in their wake just debris, dead bodies and smoke. They were deadly predators silently waiting in the shadows. For over a year, the centralized police had compiled almost a thousand of these incident reports and it was indeed a growing concern for the local enforcers who, at that point, admittedly felt that they were no longer adequate to counter this cruel menace. The Vega police superintendent, Robert Prescott convened with Admiral William Cartwright and Colonel Christopher Snipes of the GTVI and sought their aid to investigate the outer rim asteroid belt in Altair. Although Cartwright was reluctant to commit the entire 11th Fleet to this undertaking and Snipe refused the request because Altair was beyond Prescott's jurisdiction, the admiral assigned six Deimos corvette to compliment the police raiding fleet and the colonel secretly assigned some of SOC's expert navigators to this operation. The passage through the dangerous asteroid field was a navigational nightmare. Two of the corvettes and one Hyperion cruiser were incapacitated and forced to fall back for repairs. The fleet was searching through the dense badlands for many months and found nothing but a few dozen of inactive sentry guns and seven abandoned bases. The results proved only one thing; their quarry was long gone. Until one day, a shocking news was received and quivered the chamber halls of the High Council; the Deneb system was overrun.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Mission Protocol 729",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR( 
+"The information gathered from debriefings during the past two Shivan wars cited a number of desertions by GTVA pilots from the field of engagement. Some sorties even failed to meet their objectives because of these actions. Several pilots who cannot stand the pressure of combating a superior and overwhelming force have activated their jump drives and fled from the scene. Although these instances are quite uncommon, the action of even one pilot escaping his mission can have repercussions in the theater of war and even jeopardizing the entire campaign that could lead to defeat or worst, the death of millions. The GTVA High Command, after considering the possible ramifications, issued this protocol to the Terran-Vasudan military: No pilot is allowed to jump out from his mission without authorization. This high level directive was implemented immediately and it was a shock to the GTVA forces. Every military fighter was outfitted with a controller chip that will disable the jump engines until it will be activated remotely by mission control or CNC. The programming software is highly encrypted to prevent anyone from tampering with it. A few high ranking commanders including their proponent, Admiral Jennifer Cadeza, lobbied against this imperative and deemed this protocol as drastic, placing the very lives of pilots into hands of their commanding officers. She pointed out the possibility that a command ship might be destroyed and leaving the pilots stranded in a dire situation but High Command bluntly disregarded her views.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("The Henderson Report",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR( 
+"What follows is a report by an SOC operative known only by his alias as Mr. Henderson, the agent who was allegedly aboard the GTCv Stargazer that narrowly escaped the Deneb system. 
+
+'Here is a summary of the intelligence I have gathered during my covert stay deep within the heart of the pirate syndicate, all of which are itemized and archived in an encrypted data crystal to be delivered to the Galactic Terran-Vasudan Intelligence. My infiltration eight months ago was effective. Disguised as an independent smuggler in Deneb, I was taken into their ranks and later promoted as one of their commanders and personal confidant to the supreme leader himself. The success of my cover was due to my severing any contact with headquarters for the duration of my mission. Any transmission even the secured ones would be easily intercepted and coded messages or code speak would only provoke their suspicions.' 
+     
+'The military capability of the United Pirate Coalition is substantial with control over a hundred war vessels including modified corvettes and refitted Orion destroyers. Their overall fleet size had expanded considerably within a few months since their blitzkrieg invasion of Deneb. The rapid construction and deployment of assets was attributed to the fact that they had constructed quite a number of orbital shipyards and weapons manufacturing stations all over the system and bulk purchases of warships through back-channeling meaning they acquired these decommissioned ships from private firms who bought them from the military. The population of the planets Helios and Secunda were subjected to slavery and forced into heavy labor in these erected installations. The details under this subject are included in a separate category in my report. The important part of this summary which I slightly elaborated here is the information of how the UPC came into existence.' 
+
+'Contrary to the conclusion of the GTVA High Council, formerly the Security Council, that the Neo-Terran Front was completely disbanded, the last remnant of the insurgents went into seclusion deep in the recesses of a hazardous asteroid field somewhere in the outer rim of the Altair system where no destroyer or corvette dare venture. The NTF who had already lost all of its glory became the greatest threat to the alliance since the Second Shivan Invasion and the credit goes to one man.' 
+     
+'Admiral Boris Renasky, being the only high ranking commander left after the death of Admiral Koff and the disappearance of Admiral Bosch, took command of the NTF which was already demoralized after their utter defeat in Epsilon Pegasi. Most of its combatants had contemplated of surrendering to the GTVA. It was only through his strategic leadership skill combined with his oratorical prowess that he was able to hold his wayward soldiers together and prevented the total collapse of the NTF.' 
+     
+'Whatever principles of which the Neo-Terran Front was formed, the rebellion can never push through with it. The oaths taken by its loyal members can no longer be fulfilled and Bosch's dream was nothing more than a reverie. Seeing that their political agenda cannot be imposed through might and will, Boris Renasky conceded that the NTF's ultimate purpose was long gone. They have to evolve somehow. So the Admiral resorted to means that even Bosch would adamantly disagree. His followers and soldiers, fueled by either revenge or just plain, blunt hatred toward the GTVA were unanimous to this new course of action. Through meandering channels and twisting connections, Boris was able to meet with several crime lords from different parts of GTVA space. He parleyed agreements, negotiated deals and, finally, persuaded all of them to unite into one highly organized crime syndicate. Given Renasky's reputation as the leader of a once formidable rebellious faction, he was the obvious choice to lead them. The Neo-Terran Front have re-branded themselves as the United Pirate Coalition.'", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("The Proteuz Mandate",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR( 
+"The fall of Capella was the pinnacle moment that effectively ended the Second Shivan War --- as most would want to believe. But those who had witnessed the battle only knew of one bitter truth that the obliteration of that system was not a victory. After the half-hearted celebrations and revelry, the GTVA leaders went back to work in the rebuilding and feverishly researching new technologies to build superior ships and new weapons prevailing upon the haunting notion that our nemesis is just looming over the event horizon of an uncharted jump node like a brooding viper, ever-stalking like an unseen predator getting ready for another strike. 
+
+The effort to counter another intrusion of the Shivans, however, did not come as smooth as expected. Not all members in the GTVA High Council were unified in their credence of the possibility of a third incursion. The majority of the Terran delegates from the General Assembly were in denial, totally convinced that such an offensive would most unlikely to occur since the only connection to their domain was severed. The Vasudan leaders regarded them as severely delusional, deliberately diverted their thoughts of this foreboding threat to the other less favorable venture; the study of the research data gathered from the Knossos gate that we destroyed in Gamma Draconis. The animated exchanges and debates in the council chamber did not dissuade the unyielding views of their associates save for a few who wholly agree in upgrading the GTVA Armada. And so the Terran-Vasudan government were split in this undertaking. The Vasudan emperor, Khonsu II, was perturbed of the apparent discord in the High Council and he was deeply concerned of the impact on the society as a whole. 
+
+The Vasudan Imperium representatives in the High Council and a handful Terran supportive delegates voted on a resolution to create the 'Proteuz Mandate.' A policy with the sole purpose of improving the military in anticipation of a Shivan attack. A special committee was formed and charged with the duties of recruiting the best scientists and engineers and to oversee the entire activities related to this endeavor. The brightest minds were immediately assembled and assigned to research centers. These facilities were built in secret and in remote locations, closely guarded and isolated for obvious security reasons. The products of this new policy were promising. New classes of destroyers and corvettes were completed and deployed in just two years but none of them compared to the powerful ships of the GTVA prototypes.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("The GTVA Prototypes",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR( 
+"After several months of rigorous experiments, designing and data gathering, the researchers in a classified space station drafted their first blueprints of what is to be warships of 'unconventional engineering.' They sent the designs right away to a number of highly secured, state-of-the-art shipyards in Adhara and Beta Aquilae. And even though the star systems were still struggling to recover from the ashes that was left after a ravaging war, despite the economic devastation, the GTVA High Council pushed through with this military research and allocated an enormous budget for it. Two years later, a collection of prototype vessels were constructed and launched. These new class destroyers, corvettes, and cruisers were powerful ships using an experimental 'ablative hull' technology, a heavy armor that can withstand the tremendous pressure of multiple beam bombardment and torpedo impact. With an array of new gravimetric beam cannons and defensive turrets, one prototype destroyer was able to engage and destroy an entire pirate fleet with a full squadron of heavy assault fighters and bombers in a single engagement. However, the mass production of these new warships was put on hold for another five years to give enough time to field test these ships even further. To complement the destructive potential of this fleet mighty ships, more than four hundred units of newly designed assault fighters were also built. The product of the 'blood, sweat and tears' of the people behind the development of these behemoths are the proud, white ships of the 7th battlegroup.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Matching the Shivans",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR( 
+"Our new beam cannons mirror the Shivan weapons but not their technological aspects. A fairly large amount of data that had been collected during the preceding Shivan wars indicate their arsenal of beams are based on the techniques of subspace manipulation. In other words, the Shivan beams are, in fact, subspace beams. The Shivans are able to direct a highly focused torrent of dimensional rifts and project them on a hostile craft. Now, this directed energy does not necessarily be one subspace beam because this would, eventually, create a wormhole. The beam is actually composed of thousands or perhaps millions of planar tears or 'holes' no bigger than a millimeter traveling at high velocity created by pulsing microbursts made by their beam emitters. Upon impact, the subspace beams will agitate the atoms, sending most of their subatomic constituents to the other dimension, ultimately destabilizing them and, in effect, sever the molecular bonds of matter thereby disintegrating the ship's hull. 
+
+Although the physics behind this technology is unclear, the general method or dynamics at work is not unknown to us. The Shivans may be the masters of subspace, we are also the masters of gravity. We have applied this technique in our ships and in our space installations. Graviton engines that worked miracles allowing us to be efficient in Zero-G conditions. We used gravity shielding in our Meson reactors instead of the outdated electromagnetic field. Therefore, in applying the same principle, we impact titanium atoms with focused high intense gravity burst creating micro-singularities. So instead of subspace tears, our Gravimetric Beams are, in essence, waves of singularities along a stream of repulsing gravity field (this field prevents the inadvertent emergence of black holes in space battles). The effect on an enemy vessel is catastrophic similar to the Shivan beams. 
+
+There will be a time in our future when we no longer need jump engines to travel. As gravity is able to bend space, we may use our knowledge of gravity to build a warp engine, harnessing it's power of contracting space in front of our ships and expanding space behind it, propelling us at thousand times the speed of light relative to normal space without even moving while our spacecraft will be wrapped in a gravity cocoon or warp bubble. The ancient Law of Relativity will no longer apply here and there will be no time dilation. A true faster-than-light travel.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("The Latest on Shivan Tech",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR( 
+"In an attempt to reverse engineer the captured Shivan crafts to enable us to utilize them, our scientists made startling discoveries. The Shivan ship control systems are beyond our understanding or maybe their technology is not what we normally expect; certainly, there is no surprise there. Our computers and electronic circuitry used optical wires and crystalline ferromite relays to distribute electricity and photons to control our mechanisms. The Shivan 'electronics' (if we are allowed to call it that), however, used silica plates and a combination of attaching components that are unknown in our present periodic table. There are no hints of wirings, conduits or pathways that would suggest the distribution of energy but the plates did exert a tonic resonance analogous to the way our jump drives vibrate our ships to create a subspace vortex. Dr. Mina Hargrove deduced that the only possible explanation to this is that the Shivan control mechanisms do not exist in our dimensional plane almost suggesting a 'quantum entanglement' process and non-local energy transfer. So it is impossible to directly observe and analyze the inner workings of a Shivan craft. The engineering staff had no option but to strip down the control plates and replaced them with our own electronics but only up to a point without degrading the ship's integrity. Just the basic ship and weapons controls. Nonetheless, Dr. Hargrove is optimistic of the current findings as meager as it is. The very pattern of Shivan 'electronics' can be mimicked by using our understanding of subspace and the Laws of Quantum Physics. It will further reinforce our knowledge to build our own subspace portal because the Knossos 'circuitry,' although not of Shivan origin, shares a striking similarity with that of the Shivans.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("New Fleet Designation",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR("The 'Battlegroup' designation was adopted to the present war doctrine when the military accumulated an incredibly large number of new destroyers, corvettes and cruisers. The formation is composed of a flagship destroyer (Raynor Class), a multi-role destroyer (Sirona Class), a support destroyer (Raven Class), and a carrier (Nova Class). This destroyer group is backed by four new corvettes and six new cruisers of which can be any of the newer classes depending on what the fleet is specialized in whether it is a front line force, flanking assault, a follow-through unit, or an extended task force which in this case requires a logistic vessel. The war advisers and analysts are confident that this profile can prosecute an objective with excessive lethal force. 
+
+The old fleet groups currently active, typically comprised of two Hecates and six Deimoses and several Aeolus cruisers, like the 3rd Fleet were not abolished and still retained their designation as 'Fleet.' But their group will not be appended and this type of formation will no longer be used. And should they incur severe losses, their fleet will be decommissioned, its surviving ships will be sold and the entire officers and crew will be reassigned to new or existing battle groups. An example of this is the dissolution of the 11th Fleet under Admiral Cartwright when it suffered severe losses in an encounter with a massive UPC force. The surviving officers and crew were transferred to the newly formed 7th Battlegroup.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("The Mass Production",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR("There was a frantic clamor when the Proteuz Mandate was enacted. Hundreds of physicist, mechanical and structural engineers, and software programmers were signing up even before they were sought after to be recruited. After the public broadcast of the mandate's declaration, they took to the streets and crowd their local city hall and imperium sub centers. There was never a short supply of researchers and yet the employment of construction laborers and auxiliary personnel was cumbersome. So the GTVA High Council had no option but to execute a mass population 'forced drafting.' The majority of the populace were reassigned from their present jobs to service the military. 
+
+The resource stockpiles grew exponentially through over mining. Thousands of miners, harvesters and transports swarmed over a potential resource location and moved on to the next. The Terran methods were more severe as they move swiftly like giant galactic locusts. Several uninhabited planets were literally stripped down to the core and fragmented into useless floating rocks. A lot of moons were detonated to be harvested of their ores and minerals. Most of the inner asteroid belts were consumed. Meanwhile, the war factories operated at a rapid phase to produce the modules and components needed for the shipyards and research installations. The Vasudan citizens frowned upon this method as they loath the idea of destroying significant celestial objects, a stark reminder of their doomed home planet. They were even more furious on the human's non-compliance to repay their debt despite of the vast materials they had already acquired. Some of the Vasudan admirals began to question the motives of the Imperium representatives in the GTVA High Council because it was tolerated. 
+
+It only took a little more than three months to erect hundreds of shipyards and weapons manufacturing facilities in Beta Aquilae, Adhara, Polaris and Regulus. The speedy construction was possible through a technique called 'Subspace Hauling,' a method conceived by a brilliant engineer and scientist, Dr. Mina Hargrove. It is a process where a space station's pre-fabricated base frames, usually constructed by quadrants, were transported instantaneously to their final construction site through subspace. These massive structures were outfitted with detachable jump drives and boosters and sent them through a vortex opened just in the vicinity of the assembly point where they were initially constructed. The same procedure is also used for constructing ships. 
+
+At the same time, the research for new designs went into full gear with several individual teams in their specific projects each with dozens of scientists. In less than a year, more than a hundred new warships were deployed and underwent combat evaluation. Not counting the GTVA Prototypes, there are now five new classes of destroyers, five types of corvettes and three kinds of cruisers. These new crafts are faster, stronger, equipped with new defenses and each class have its own specialty in warfare. In the period of three years after the 2nd Shivan War, the GTVA massed-produced about a thousand military assets divided into 100 Battlegroups, Fleets, and Task Forces.", -1) 
+$end_multi_text 
+
+$Entry: 
+$Name: XSTR("Hargrove's Vision",-1) 
+$Anim: 
+$AlwaysInTechRoom: 0 
+$Description: 
+XSTR("Despite the Third Shivan War's escalation, the research and development of the Sol Gate Project was not put on hold. Instead, it was placed at the lowest priority in the GTA's agenda. Most of the scientific work and resource allocation were redirected to support the war effort. The project's lead scientist, Dr. Mina Hargrove, even after being ordered by the High Council to concentrate her attention in improving our chances in the war, continued on her quest to break the secrets of the Ancient Knossos. The GTVA High Command regarded her motivations as an obsession. Nevertheless, it was tolerated as long as she prioritize her work for the military's advantage over the Shivans. Her personal drive can help fulfill our dream to reconnect Earth.
+
+Dr. Hargrove had made several breakthroughs with outstanding results. From the development of the new hull armor to weapon designs. Along with it, her research of the Sol Gate was actually reinforced especially by the data gathered from captured Shivan technologies. Her ingenious idea on how to rapidly construct numerous shipyards and war factories in a short time was, actually, the foremost method that will be used in building that massive portal and not only to Earth, but to other stars as well. To expand our horizons.
+
+The brilliant scientist made a proposal that changed the outlook of this war. Originally, the GTVA's intention was to devastate the Shivans and push them away from our territories but Hargrove pointed out that this approach will only result to an endless battle with the enemy. The only way to end our strife with the destroyers and to prevent future wars is to take the battle to their shores. She further elaborated that the Shivan planet is the ultimate prize. A real treasure vault that contained vast libraries of technologies and resources that will make us formidable to any specie in the universe. Although her vision was somewhat ludicrous and farfetched, The GTVA High Council unanimously agreed to it. The military were amazed. For a civilian, Hargrove has the best tactical solution. It was on that day our campaign goal was changed. The planet Shiva must be captured.", -1)  
+$end_multi_text 
+

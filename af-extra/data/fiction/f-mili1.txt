@@ -1,0 +1,13 @@
+GTF FALCON
+
+Type:  Space Superiority
+Maneuverability:  Average
+Hull Armor:  Heavy Duranium
+Manufacturer:  B. Aquilae Orbital Shipyards
+Length:  21 meters
+Gun Mounts:  6 Mounts (4,2)
+Missile Banks:  1 Banks
+Description:  GTVA Prototypes Starter Issue
+
+
+The GTF Falcon is a new light space superiority fighter manufactured exclusive for the 7th Battlegroup as laid down by the Proteuz Mandate. It handles very well in dogfight situations and it packs a fire power similar to the Dark Angel. Although it has only one missile bank, it does have a huge payload. It is issued to new pilots drafted to the 77th and 76th Squadrons as a starter ship to hone their close combat skills. These new pilots have to earn enough elite points before they can use the standard issue.

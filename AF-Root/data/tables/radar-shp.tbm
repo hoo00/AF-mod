@@ -1,0 +1,1054 @@
+#Ship Classes
+
+;;Terran
+
+$Name:         GTF Ulysses
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Apollo
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Valkyrie
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Hercules
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Hercules Mark II
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Loki
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Loki#stealth
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Angel
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Perseus
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Pegasus
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Myrmidon
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Ares
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Erinyes
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Mara (terrans)
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTB Athena
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GTB Artemis
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GTB Artemis D.H.
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GTB Medusa
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GTB Ursa
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GTB Boanerges
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GTB Zeus
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GTT Hunter
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTT Elysium
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTT Argo
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTFr Triton
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         TC-TRI
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         GTFr Poseidon
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         TC 2
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         TSC 2
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         GTFr Chronos
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         TAC 1
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         TTC 1
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         GTC Aeolus
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Fenris
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Leviathan
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTCv Deimos
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         NTF Iceni
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTD Orion
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#2 (Bastion)
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Amadeus
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Bastion
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Eisenhower
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Galatea
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Goliath
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Intrepid
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Krios
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Legion
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Minnow
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Myrmidon
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Orion
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Repulse
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Orion#Soyakaze
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Hecate
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Hades
+  +nocreate
+$Radar Image 2D:    radar-hades
+
+$Name:         GTD Hades#scan
+  +nocreate
+$Radar Image 2D:    radar-hades
+
+$Name:         GTVA Colossus
+  +nocreate
+$Radar Image 2D:    radar-colossus
+
+$Name:         GTI Arcadia
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         GTI Ganymede
+  +nocreate
+$Radar Image 2D:    radar-drydock
+
+$Name:         GTI Polaris Extension
+  +nocreate
+$Radar Image 2D:    radar-drydock
+
+$Name:         GTI Polaris Pylon
+  +nocreate
+$Radar Image 2D:    radar-drydock
+
+$Name:         Terran Asteroid Base
+  +nocreate
+$Radar Image 2D:    radar-asteroid
+
+$Name:         NTF Boadicea
+  +nocreate
+$Radar Image 2D:    radar-asteroid
+
+$Name:         GTA Charybdis
+  +nocreate
+$Radar Image 2D:    radar-science
+
+$Name:         GTG Zephyrus
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTM Hippocrates
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTSC Faustus
+  +nocreate
+$Radar Image 2D:    radar-science
+
+$Name:         GTEP Hermes
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         GTS Centaur
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         GTS Hygeia
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         GTSG Watchdog
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+$Name:         GTSG Cerberus
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+$Name:         GTSG Alastor
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+$Name:         GTSG Mjolnir
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+$Name:         GTDr Amazon
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTDr Amazon Advanced
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         GTNB Pharos
+  +nocreate
+$Radar Image 2D:    radar-waypoint
+
+$Name:         Terran NavBuoy
+  +nocreate
+$Radar Image 2D:    radar-waypoint
+
+$Name:         Terran NavBuoy#destroyable
+  +nocreate
+$Radar Image 2D:    radar-waypoint
+
+$Name:         Terran Probe
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         TC-Meson Bomb
+  +nocreate
+$Radar Image 2D:    radar-cargo2
+
+$Name:         GTSC Faustus#medical
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         GTFr Chronos#medical
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         TAC 1#medical
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         GTT Elysium#medical
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+;;Vasudan
+
+$Name:         PVF Ulysses
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         PVF Anubis
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         PVF Seth
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         PVF Horus
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         PVF Thoth
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         PVB Osiris
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         PVB Amun
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         PVB Sekhmet
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         PVS Scarab
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         PVT Isis
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         PVFr Bast
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         VC 3
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         PVFr Ma'at
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         PVFr Satis
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         PVC Aten
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         PVSC Imhotep
+  +nocreate
+$Radar Image 2D:    radar-science
+
+$Name:         Vasudan Probe
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         PVD Typhon
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         PVI Karnak
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         PVI Shah Extension
+  +nocreate
+$Radar Image 2D:    radar-drydock
+
+$Name:         PVI Shah Pylon
+  +nocreate
+$Radar Image 2D:    radar-drydock
+
+$Name:          Vasudan Asteroid Base
+  +nocreate
+$Radar Image 2D:    radar-asteroid
+
+$Name:         Vasudan NavBuoy
+  +nocreate
+$Radar Image 2D:    radar-waypoint
+
+$Name:         Vasudan NavBuoy#destroyable
+  +nocreate
+$Radar Image 2D:    radar-waypoint
+
+$Name:         PVSG Ankh
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+$Name:         PVEP Ra
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         GVF Seth
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GVF Serapis
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GVF Tauret
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GVF Thoth
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GVF Horus
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GVF Ptah
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GVB Sekhmet
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GVB Osiris
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GVB Bakha
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         GVT Isis
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GVFr Bes
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         GVFr Satis
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GVFr Ma'at
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         VAC 4
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         VAC 5
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         GVC Aten
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GVC Mentu
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GVCv Sobek
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GVD Typhon
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GVD Hatshepsut
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GVA Setekh
+  +nocreate
+$Radar Image 2D:    radar-science
+
+$Name:         GVG Anuket
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GVEP Ra
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         GVS Nephthys
+  +nocreate
+$Radar Image 2D:    radar-smallship
+
+$Name:         GVSG Ankh
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+$Name:         GVSG Edjo
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+;;Shivan
+
+$Name:         SF Dragon
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Dragon#weakened
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Dragon#Terrans
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Manticore
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Basilisk
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Aeshma
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Astaroth
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Mara
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Scorpion
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SF Gorgon
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         SB Shaitan
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         SB Nephilim
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         SB Seraphim
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         SB Nahema
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         SB Taurvi
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         ST Azrael
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         SFr Dis
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         SFr Mephisto
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         SFr Asmodeus
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         SAC 3
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         SC 5
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         SAC 2
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:         SC Rakshasa
+  +nocreate
+$Radar Image 2D:    radar-rakshasa
+
+$Name:         SC Cain
+  +nocreate
+$Radar Image 2D:    radar-lilith
+
+$Name:         SC Lilith
+  +nocreate
+$Radar Image 2D:    radar-lilith
+
+$Name:         SCv Moloch
+  +nocreate
+$Radar Image 2D:    radar-moloch
+
+$Name:         SD Demon
+  +nocreate
+$Radar Image 2D:    radar-ravana
+
+$Name:         SD Demon#scan
+  +nocreate
+$Radar Image 2D:    radar-ravana
+
+$Name:         SD Ravana
+  +nocreate
+$Radar Image 2D:    radar-ravana
+
+$Name:         SD Lucifer
+  +nocreate
+$Radar Image 2D:    radar-lucifer
+
+$Name:         SD Lucifer#scan
+  +nocreate
+$Radar Image 2D:    radar-lucifer
+
+$Name:         SJ Sathanas
+  +nocreate
+$Radar Image 2D:    radar-sathanas
+
+$Name:         Shivan Comm Node
+  +nocreate
+$Radar Image 2D:    radar-unknownsmall
+
+$Name:         SG Rahu
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         SSG Rahu
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         SSG Trident
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+$Name:         SSG Belial
+  +nocreate
+$Radar Image 2D:    radar-sentry
+
+;;Other
+
+$Name:         Knossos
+  +nocreate
+$Radar Image 2D:    radar-knossos
+
+$Name:         Volition Bravos
+  +nocreate
+$Radar Image 2D:    radar-unknownbig
+
+$Name:         Asteroid
+  +nocreate
+$Radar Image 2D:    radar-asteroid
+
+
+
+;; "The Aftermath"  ==========================
+
+
+;; Capital Ships
+
+$Name:         GTD Excelsior
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Hercules
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Galileo
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTDc Titan
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTDc Warlock
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTVA Archangel
+  +nocreate
+$Radar Image 2D:    radar-colossus
+
+$Name:         GTSD Jupiter
+  +nocreate
+$Radar Image 2D:    radar-colossus
+
+$Name:         GTD Stromberg
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Alexander
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Damocles
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Excalibur
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTD Sovereign
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+;; corvettes
+
+$Name:         GTXV Avenger
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTSa Boreas#Player
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTSa Boreas
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTCv Capella
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Olympus
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Babylon
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Serenity
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Copernicus
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Comet
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Rigel
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Euphoria
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Coronis
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+$Name:         GTCv Alexandria
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+;; cruisers
+
+$Name:         GTC Hyperion
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Vigilant
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Adamant
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Dauntless
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Khitomer
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+
+$Name:         GTC Orca 
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Bajoran
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTC Minos
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+$Name:         GTc Hestia
+  +nocreate
+$Radar Image 2D:    radar-cruiser
+
+
+
+;; big ships, freigters and cargos
+
+$Name:         GTL Enterprise
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTL Opulence
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GTT Cradle
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTM Odyssey
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTG Pandora
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTT Damascus
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTT Neptune
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         GTFr Demeter
+  +nocreate
+$Radar Image 2D:    radar-freighter
+
+$Name:         TC-DEM
+  +nocreate
+$Radar Image 2D:    radar-cargo
+
+$Name:        GTT Corsair 
+  +nocreate
+$Radar Image 2D:    radar-bigship
+
+$Name:         Orion Refit
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+;; Fighters and bombers
+
+$Name:         GTF Enforcer
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Falcon
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Sparrow
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Dark Angel
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Phoenix
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Raptor
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTF Avalanche
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTB Albatross
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         SOC Eagle
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         GTTB Armageddon
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         SB Seraphim (Terrans)
+  +nocreate
+$Radar Image 2D:    radar-bomber
+
+$Name:         XJR Phantom
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         TF Tiger
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         TF Ghost
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         UPC Raider
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+$Name:         UPC Scorpion
+  +nocreate
+$Radar Image 2D:    radar-fighter
+
+
+;; others
+
+$Name:         GTI Andromeda
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         GTI Persephone
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         Space Port
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         GTVA Headquarters
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         Sector Comms
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         TPG 1
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+$Name:         Luna City
+  +nocreate
+$Radar Image 2D:    radar-installation
+
+;; Vasudans
+
+$Name:         GVD Archania
+  +nocreate
+$Radar Image 2D:    radar-capital
+
+$Name:         GVCv Hathor
+  +nocreate
+$Radar Image 2D:    radar-corvette
+
+;; shivans
+
+$Name:         SCv Scylla
+  +nocreate
+$Radar Image 2D:    radar-moloch
+
+$Name:         SCv Diablo
+  +nocreate
+$Radar Image 2D:    radar-moloch
+
+$Name:         SC Lamia
+  +nocreate
+$Radar Image 2D:    radar-rakshasa
+
+$Name:         SC Asura
+  +nocreate
+$Radar Image 2D:    radar-lilith
+
+$Name:         SD Garuda
+  +nocreate
+$Radar Image 2D:    radar-ravana
+
+$Name:         SSD Bhaal
+  +nocreate
+$Radar Image 2D:    radar-lucifer
+
+$Name:         SJR Sathanas
+  +nocreate
+$Radar Image 2D:    radar-sathanas
+
+
+;;====Test Ships===================================
+
+
+
+
+#End

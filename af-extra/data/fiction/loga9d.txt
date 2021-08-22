@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VDNO-706 $}
+$b{/UPLOADER: $VCAPTAIN $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>KPAV-271-VTY-50077 $}
+
+$B{Personal Log:
+July 17, 2371
+Shiva System $}
+
+That was the end of the 7th Battlegroup. The Excelsior is all that remain of this magnificent fleet. They have done more than what other fleet can and they have done enough. It was indeed a privilege serving under the 7th Battlegroup. The Warlock will now be assigned to the Excelsior. Admiral Cartwright is effectively in command of the spearhead fleet in this system. A motley collection of one destroyer, a super carrier, six corvettes and 3 cruisers. A paltry fleet against the whole might of the Shivan armada because are trapped in this system. We cannot escape through the Shivan Knossos for they have already tripled their blockade there. The GTVA fleet cannot come in without being mauled because only a handful of ships at a time can go through. So it is up to us. My two hours of rest is up. I am summoned to the briefing room.
+
+$b{/<END OF LOG> $}

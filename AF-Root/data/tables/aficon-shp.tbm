@@ -1,0 +1,374 @@
+;====Briefing Icons by Herkie423
+
+;====BRIEFING ICONS for certain assets============
+
+#Ship Classes
+
+$Name: 			@GTC Fenris 
++nocreate
+$Briefing icon: 
+    +Regular: fenrisicon 
+    +Fade: fenrisfade 
+    +Highlight: iconhighlight07
+
+$Name: 			GTC Leviathan
++nocreate
+$Briefing icon: 
+    +Regular: fenrisicon 
+    +Fade: fenrisfade 
+    +Highlight: iconhighlight07
+
+$Name: 			GTD Orion 
++nocreate
+$Briefing icon: 
+    +Regular: orionicon 
+    +Fade: orionfade 
+    +Highlight: iconhighlight06
+
+$Name: 			GTD Orion#2 (Bastion) 
++nocreate
+$Briefing icon: 
+    +Regular: orionicon 
+    +Fade: orionfade 
+    +Highlight: iconhighlight06
+
+$Name: 			GVD Typhon
++nocreate
+$Briefing icon: 
+    +Regular: typhonicon 
+    +Fade: typhonfade 
+    +Highlight: iconhighlight06
+
+$Name: 			SC Rakshasa
++nocreate
+$Briefing icon: 
+    +Regular: rakshasaicon 
+    +Fade: rakshasafade 
+    +Highlight: iconhighlight07
+
+$Name: 			SD Ravana
++nocreate
+$Briefing icon: 
+    +Regular: ravanaicon 
+    +Fade: ravanafade 
+    +Highlight: iconhighlight06
+
+$Name: 			GTD Excelsior
++nocreate
+$Briefing icon: 
+    +Regular: ExcelsiorIcon 
+    +Fade: ExcelsiorFade 
+    +Highlight: iconhighlight06
+
+$Name: 		GTD Hercules	
++nocreate
+$Briefing icon: 
+    +Regular:  HerculesIcon
+    +Fade:  HerculesFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTD Galileo	
++nocreate
+$Briefing icon: 
+    +Regular:  GalileoIcon
+    +Fade:  GalileoFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTDc Titan	
++nocreate
+$Briefing icon: 
+    +Regular:  TitanIcon
+    +Fade:  TitanFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTDc Warlock	
++nocreate
+$Briefing icon: 
+    +Regular:  WarlockIcon
+    +Fade:  WarlockFade
+    +Highlight: iconhighlight03
+
+$Name: 		GTVA Archangel	
++nocreate
+$Briefing icon: 
+    +Regular:  ArchangelIcon
+    +Fade:  ArchangelFade
+    +Highlight: iconhighlight03
+
+$Name: 		GTSD Jupiter	
++nocreate
+$Briefing icon: 
+    +Regular:  JupiterIcon
+    +Fade:  JupiterFade
+    +Highlight: iconhighlight03
+
+$Name: 		GTD Stromberg	
++nocreate
+$Briefing icon: 
+    +Regular:  StrombergIcon
+    +Fade:  StrombergFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTD Alexander	
++nocreate
+$Briefing icon: 
+    +Regular:  AlexIcon
+    +Fade:  AlexFade
+    +Highlight: iconhighlight06
+
+
+$Name: 		GTD Damocles 
++nocreate
+$Briefing icon: 
+    +Regular:  DamoclesIcon
+    +Fade:  DamoclesFade
+    +Highlight: iconhighlight06
+
+
+$Name: 		GTD Sovereign 
++nocreate
+$Briefing icon: 
+    +Regular:  SovereignIcon
+    +Fade:  SovereignFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTD Excalibur 
++nocreate
+$Briefing icon: 
+    +Regular:  ExcaliburIcon
+    +Fade:  ExcaliburFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTXV Avenger	
++nocreate
+$Briefing icon: 
+    +Regular:  AvengerIcon
+    +Fade:  AvengerFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTSa Boreas2#Player	
++nocreate
+$Briefing icon: 
+    +Regular:  BoreasIcon
+    +Fade:  BoreasFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTSa Boreas	
++nocreate
+$Briefing icon: 
+    +Regular:  BoreasIcon
+    +Fade:  BoreasFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Capella	
++nocreate
+$Briefing icon: 
+    +Regular:  CapellaIcon
+    +Fade:  CapellaFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Olympus	
++nocreate
+$Briefing icon: 
+    +Regular:  OlympusIcon
+    +Fade:  OlympusFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Babylon	
++nocreate
+$Briefing icon: 
+    +Regular:  BabylonIcon
+    +Fade:  BabylonFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Serenity	
++nocreate
+$Briefing icon: 
+    +Regular:  SerenityIcon
+    +Fade:  SerenityFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Copernicus	
++nocreate
+$Briefing icon: 
+    +Regular:  CopernicusIcon
+    +Fade:  CopernicusFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Comet	
++nocreate
+$Briefing icon: 
+    +Regular:  CometIcon
+    +Fade:  CometFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Rigel	
++nocreate
+$Briefing icon: 
+    +Regular:  HendersonIcon
+    +Fade:  HendersonFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Euphoria	
++nocreate
+$Briefing icon: 
+    +Regular:  EuphoriaIcon
+    +Fade:  EuphoriaFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Coronis	
++nocreate
+$Briefing icon: 
+    +Regular:  CoronisIcon
+    +Fade:  CoronisFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTCv Alexandria	
++nocreate
+$Briefing icon: 
+    +Regular:  AlexandriaIcon
+    +Fade:  AlexandriaFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTL Enterprise 
++nocreate
+$Briefing icon: 
+    +Regular:  EnterpriseIcon
+    +Fade:  EnterpriseFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTL Opulence 
++nocreate
+$Briefing icon: 
+    +Regular:  OpulenceIcon
+    +Fade:  OpulenceFade
+    +Highlight: iconhighlight06
+
+$Name: 		GTM Odyssey
++nocreate
+$Briefing icon: 
+    +Regular: OdysseyIcon
+    +Fade: OlympusFade
+    +Highlight: iconhighlight07
+
+$Name: 		GTG Pandora
++nocreate
+$Briefing icon: 
+    +Regular: PandoraIcon
+    +Fade: PandoraFade
+    +Highlight: iconhighlight07
+
+$Name: 		GTT Damascus
++nocreate
+$Briefing icon: 
+    +Regular: DamascusIcon
+    +Fade: DamascusFade
+    +Highlight: iconhighlight07
+
+$Name: 		GTFr Demeter
++nocreate
+$Briefing icon: 
+    +Regular: DemeterIcon
+    +Fade: DemeterFade
+    +Highlight: iconhighlight07
+
+$Name: 		GTT Neptune
++nocreate
+$Briefing icon: 
+    +Regular: NeptuneIcon
+    +Fade: NeptuneFade
+    +Highlight: iconhighlight07
+
+$Name: 		Orion Refit	
++nocreate
+$Briefing icon: 
+    +Regular:  OrionRefitIcon
+    +Fade:  OrionRefitFade
+    +Highlight: iconhighlight06
+
+$Name: 			GTI Andromeda
++nocreate
+$Briefing icon: 
+    +Regular: AndroIcon 
+    +Fade: AndroFade 
+    +Highlight: iconhighlight03
+
+$Name: 			GTI Persephone
++nocreate
+$Briefing icon: 
+    +Regular: iconInstall 
+    +Fade: FadeiconInstall 
+    +Highlight: iconhighlight03
+
+$Name: 			Space Port 
++nocreate
+$Briefing icon: 
+    +Regular: SpacePortIcon 
+    +Fade: SpacePortFade 
+    +Highlight: iconhighlight06
+
+$Name: 			GTVA Headquarters
++nocreate
+$Briefing icon: 
+    +Regular: HQIcon 
+    +Fade: HQFade 
+    +Highlight: iconhighlight03
+
+$Name: 			Sector Comms
++nocreate
+$Briefing icon: 
+    +Regular: SCommIcon 
+    +Fade: SCommFade 
+    +Highlight: iconhighlight03
+
+$Name: 			@TPG 1 
++nocreate
+$Briefing icon: 
+    +Regular: icont-cargo 
+    +Fade: FadeiconT-Cargo 
+    +Highlight: iconhighlight04
+
+$Name: 			Luna City 
++nocreate
+$Briefing icon: 
+    +Regular: LunaIcon 
+    +Fade: LunaFade 
+    +Highlight: iconhighlight06
+
+$Name: 		SCv Scylla	
++nocreate
+$Briefing icon: 
+    +Regular:  ScyllaIcon
+    +Fade:  ScyllaFade
+    +Highlight: iconhighlight06
+
+$Name: 		SCv Diablo	
++nocreate
+$Briefing icon: 
+    +Regular:  DiabloIcon
+    +Fade:  DiabloFade
+    +Highlight: iconhighlight06
+
+$Name: 		SC Asura	
++nocreate
+$Briefing icon: 
+    +Regular:  AsuraIcon
+    +Fade:  AsuraFade
+    +Highlight: iconhighlight06
+
+$Name: 		SC Lamia	
++nocreate
+$Briefing icon: 
+    +Regular:  LamiaIcon
+    +Fade:  LamiaFade
+    +Highlight: iconhighlight06
+
+$Name: 		SSD Bhaal	
++nocreate
+$Briefing icon: 
+    +Regular:  BhaalIcon
+    +Fade:  BhaalFade
+    +Highlight: iconhighlight03
+
+
+#End 

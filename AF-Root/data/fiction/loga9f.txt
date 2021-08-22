@@ -1,0 +1,15 @@
+
+
+$G{/GTVA GLOBAL LOG SYSTEM $}
+$b{/VOICE RECORD SESSION: $VKDV-788 $}
+$b{/UPLOADER: $VCAPTAIN $VJOHN $VK. $VRICHTER $}
+$b{/LCARS-DATABASE ID: $V00000639984769268 $}
+$b{/FLEETNET SYNC:$P//>>BKSL-333-MXC-78120 $}
+
+$B{Personal Log:
+July 20, 2371
+Shiva System $}
+
+The Battle of the Bulge, most of us here called the previous mission. An ancient reference from World War II on Earth. It was something to be proud of achieving. Holding the medal in my hand, I felt that I have found my true worth. The silent praises, the nods of approval, and the implied compliments of my men are the testament to that. My brave pilots. They are willing to follow me to hell and back again without question. In return, I will do the same. I swear to do all I can to defend them from now on. I feel humbled and I feel bad of my selfishness. It's time that I must cast aside the inner demons that had been taunting me for many years. It's time that I must come into terms with myself. I found my purpose. I am my people's defender and their avenger... Thank you, my blue guardian, for letting me see this.
+
+$b{/<END OF LOG> $}

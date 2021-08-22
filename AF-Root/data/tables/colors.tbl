@@ -1,0 +1,136 @@
+#Start Colors
+
+$Blue:			(90 90 255 255)
+$Bright Blue:		(4 168 230 255)
+$Green:			(0 255 0 255)
+$Bright Green:		(125 255 125 255)
+$Black:			(0 0 0 255)
+$Grey:			(65 65 65 255)
+$Silver:		(178 217 218 255)
+$White:			(150 150 150 255)
+$Bright White:		(255 255 255 255)
+$Violet Gray:		(178 139 217 255)  
+$Violet:		(170 70 255 255)  
+$Dim Red:		(216 12 94 255)
+$Red:			(226 4 4 255)
+$Bright Red:		(255 51 51 255)   
+$Pink:			(255 0 255 255)    ;;This is magenta
+$Light Pink:		(255 128 192 255)	  
+$Yellow:		(255 255 0 255)
+$Bright Yellow:		(236 255 128 255)
+$UI Light Green:	(125 255 125 255)
+$UI Green:		(0 255 0 255)
+$UI Light Pink:		(255 0 255 255)
+$UI Pink:		(255 120 188 255)
+
+#End
+
+#Interface Colors
+
+$Text Normal:			White
+$Text Subselected:		Blue
+$Text Selected:			Bright Blue
+$Text Error:			Red
+$Text Error Highlighted:	Bright Red
+$Text Active:			Bright White
+$Text Active Highlighted:	Bright White
+$Text Heading:			Violet
+$More Indicator:		Pink
+$Normal:			Bright Blue
+$Briefing Grid:			Grey
+
+#End
+
+#Color Tags
+
+$Tag:	$w
++Color:	White
+
+$Tag:	$W
++Color:	Bright White
+
+$Tag:	$r
++Color:	Red
+
+$Tag:	$g
++Color:	Green
+
+$Tag:	$y
++Color:	Yellow
+
+$Tag:	$b
++Color:	Blue
+
+$Tag:	$f
++Friendly
+
+$Tag:	$h
++Hostile
+
+$Tag:	$n
++Neutral
+
+$Tag:	$B
++Color:	Bright Blue
+
+$Tag:	$G
++Color:	Bright Green
+
+$Tag:	$R
++Color:	Bright Red
+
+$Tag:	$Y
++Color:	Bright Yellow
+
+$Tag:	$k
++Color:	Black
+
+$Tag:	$e
++Color:	Grey
+
+$Tag:	$E
++Color:	Silver
+
+$Tag:	$v
++Color:	Violet Gray
+
+$Tag:	$V
++Color:	Violet
+
+$Tag:	$p
++Color:	Pink
+
+$Tag:	$P
++Color:	Light Pink
+
+$Tag:	$c
++Color:	(81 55 207 255)
+
+$Tag:	$C
++Color:	(0 255 255 255)
+
+#End
+
+
+#Default Test Colors
+
+$Fiction Viewer		$C
+$Command Briefing	$w
+$Briefing		$w
+$Redalert Briefing	$w
+$Debriefing		$w
+$Recommendation		$C
+$Loop Briefing		$w
+
+#End
+
+
+
+
+
+
+
+
+
+
+

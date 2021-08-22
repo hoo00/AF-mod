@@ -1,0 +1,4034 @@
+;===PRIMARY WEAPONS=========================
+
+#Primary Weapons 
+
+$Name: @Subach HL-7 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Subach HL-D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Mekhu HL-7 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Mekhu HL-7D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Akheton SDG 
++nocreate 
+$Damage Type: PunctureWeapon 
+
+
+$Name: @Morning Star 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @MorningStar D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Prometheus R 
++nocreate 
+$Damage Type: NormalWeapon 
+$LaunchSnd: 344 
++Weapon Range: 1125 
+
+
+$Name: Prometheus S 
++nocreate 
+$Damage Type: NormalWeapon 
++Weapon Range: 1125 
+
+
+$Name: Prometheus D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Maxim 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Maxim D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: UD-8 Kayser 
++nocreate 
+$Damage Type: NormalWeapon 
++Weapon Range: 1125 
+
+
+
+$Name: UD-D Kayser 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Circe 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Lamprey 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Training 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: 			Skyrail 
+     
+    +Title: 		XSTR( "GTW XL-8 Skyrail", -1 ) 
+    +Description: XSTR("
+    High ROF Anti-matter Cannon 
+    Velocity 675, Range 1125 
+    DPS 80 Hull, 70 Shield, 21 Subsystem
+    Power Use: 1W ROF: 8/s", -1 ) 
+$end_multi_text 
+    +Tech Title: 	XSTR( "GTW XL-8 Skyrail", -1 ) 
+    +Tech Anim: Tech_Skyrail 
+    +Tech Description: XSTR( "The Skyrail cannon is the first weapon to use the experimental antimatter technology. By employing the Akheton's SDG gun frame design, it is optimized for low energy usage and high rate of fire. Developed by a collaborative crash program between the Akheton Corporation and Triton Dynamics, the Skyrail is designed for the 7th BG giving their fighters flexible, sustained firepower, capable of nullifying Shivan fighters and massive bombers in a few seconds and its high rate of fire makes it extremely effective in intercepting enemy torpedoes. The Skyrail fires anti-matter micro burst that would literally disintegrate the ship's hull upon impact. This is the favorite weapon of the Dark Angel pilots.", -1 ) 
+$end_multi_text 
+$Model File: 		none 
+@Laser Bitmap: 		Skyrail 
+@Laser Glow: 		Subach_Glow 
+@Laser Color: 		0, 90, 255 
+@Laser Color2: 		0, 20, 255 
+@Laser Length: 		3.5 
+@Laser Head Radius: 	1.5 
+@Laser Tail Radius: 	1.5 
+$Mass: 0.2 
+$Velocity: 			675.0 
+$Fire Wait: 			0.25 
+$Damage: 			16 
+$Damage Type: 			NormalWeapon 
+$Armor Factor: 			1.0 
+$Shield Factor: 		1.0 
+$Subsystem Factor: 		0.4 
+$Lifetime: 			1.83 
+$Energy Consumed: 		0.25 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 			347 
+$ImpactSnd: 			85 
++Weapon Range: 			1125 
+$Flags: 			( "player allowed" "cycle" "no primary linked penalty")
+$Trail: 
+    +Start Width: 0.7 
+    +End Width: 0.25 
+    +Start Alpha: 0.2 
+    +End Alpha: 0.0 
+    +Max Life: 	0.1 
+    +Bitmap: Maxim_Trail 
+$Icon: 				iconSkyrail 
+$Anim: 				Scalpel 
+$Impact Explosion: 			MS_Impact 
+$Impact Explosion Radius: 		1.8 
+$Piercing Impact Explosion: 		exp06 
+$Piercing Impact Radius: 		0.9 
+$Piercing Impact Velocity: 		10 
+$Piercing Impact Splash Velocity: 	-2.5 
+$Piercing Impact Variance: 		0.01 
+$Piercing Impact Particles: 		5 
+$Muzzleflash: 				vulcan2 
+
+
+
+$Name: 				Ripper 
+     
+    +Title: 			XSTR( "GTW ML-77 Ripper", -1 ) 
+    +Description: XSTR("
+    High ROF Plasma Cannon 
+    Velocity 1000, Range 1000 
+    DPS 70 Hull, 70 Shield, 21 Subsystem
+    Power Use: 1W ROF: 8/s", -1 ) 
+$end_multi_text 
+    +Tech Title: 		XSTR( "GTW ML-77 Ripper", -1 ) 
+    +Tech Anim: Tech_Ripper 
+    +Tech Description: XSTR( "Created by the same company that developed the Morning star, the GTW ML-77 Ripper has a very high rate of fire with an added computer regulating system that rotate the firing sequence among the gun banks. Unlike the Morning Star that employs high coherent laser beams, the Ripper uses a focused supercharged plasma bolts that makes it significantly powerful and longer in range. Produced in massive quantities even during the post-war economic depression, the high-compatibility Ripper is now used in every Terran fighter in the GTVA including pirates and mercenaries. The Ripper is the product of the nightmares in the Second Shivan Incursion. The tragedy of Capella.", -1 ) 
+$end_multi_text 
+     
+$Model File: none 
+
+@Laser Bitmap: 			Ripper 
+@Laser Glow: 			Subach_Glow 
+@Laser Color: 			230, 4, 252 
+@Laser Color2: 			173, 2, 190 
+@Laser Length: 			10.0 
+@Laser Head Radius: 		1.00 
+@Laser Tail Radius: 		0.90 
+$Mass: 			0.2 
+$Velocity: 			1000.0 
+$Fire Wait: 			0.2 
+$Damage: 			14 
+$Damage Type: 			NormalWeapon 
+$Armor Factor: 			1.0 
+$Shield Factor: 		1.0 
+$Subsystem Factor: 		0.3 
+$Lifetime: 			1.1 
+$Energy Consumed: 		0.2 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 			348 
+$ImpactSnd: 			85 
++Weapon Range: 			1000 
+$Flags: 			( "player allowed" "cycle" "in tech database") 
+$Icon: 				IconRipper 
+$Anim: 				circe 
+$Impact Explosion: 			Subach_Impact 
+$Impact Explosion Radius: 		1.6 
+$Piercing Impact Explosion: 		exp06 
+$Piercing Impact Radius: 		0.8 
+$Piercing Impact Velocity: 		10 
+$Piercing Impact Splash Velocity: 	-2.5 
+$Piercing Impact Variance: 		0.01 
+$Piercing Impact Particles: 		5 
+$Muzzleflash: 				vulcan2 
+
+
+$Name: 				Devastator
+ 
+    +Title: 			XSTR( "GTW UD-9 Devastator", -1 ) 
+    +Description: XSTR("
+    Experimental Prototype 
+    Velocity 800, Range 1200 
+    DPS 102 Hull, 100 Shield, 39 Subsystem
+    Power Use: 4W ROF: 5/s", -1 ) 
+$end_multi_text 
+    +Tech Title: XSTR( "GTW UD-9 Devastator", -1 ) 
+    +Tech Anim: Tech_Devastator 
+    +Tech Description: XSTR( "The UD-9 Devastator is modified version of the Kayser developed exclusively for the 7th BG. Although slightly less damaging than its earlier cousin, the Devastator has a higher rate of fire and longer range. Feedbacks and interviews from veteran pilots suggest that a less powered but high ROF weapon is much effective in close dogfight situations especially with dealing agile enemy craft.", -1 ) 
+$end_multi_text 
+          
+$Model File: none
+ 
+@Laser Bitmap: 			Devast 
+@Laser Glow: 			Subach_Glow 
+@Laser Color: 			69, 200, 42 
+@Laser Color2: 			69, 200, 42 
+@Laser Length: 			15.5 
+@Laser Head Radius: 		1.6 
+@Laser Tail Radius: 		1.6 
+     
+$Mass: 				0.2 
+$Velocity: 			800.0 
+$Fire Wait: 			0.25 
+$Damage: 			20 
+$Damage Type: 			NormalWeapon 
+$Armor Factor: 			1.0 
+$Shield Factor: 		1.0 
+$Subsystem Factor: 		0.4 
+$Lifetime: 			2.06 
+$Energy Consumed: 		0.4 
+$Cargo Size: 0.03 
+$Homing: NO 
+$LaunchSnd: 			327 
+$ImpactSnd: 			85 
++Weapon Range: 			1200 
+$Flags: 			( "player allowed" "particle spew" ) 
+$Icon: 				IconDevast 
+$Anim: 				lich 
+$Impact Explosion: 			Prometheus_Impact 
+$Impact Explosion Radius: 		3.0 
+$Piercing Impact Explosion: 		exp06 
+$Piercing Impact Radius: 		1.5 
+$Piercing Impact Velocity: 		10 
+$Piercing Impact Splash Velocity: 	-2.5 
+$Piercing Impact Variance: 		0.0 
+$Piercing Impact Particles: 		5 
+$Muzzleflash: 				Devast 
+$Pspew: 
+    +Count: 1 
+    +Time: 17 
+    +Vel: 0.0 
+    +Radius: 0.45 
+    +Life: 0.2 
+    +Scale: 0.65 
+    +Bitmap: Vepar_Particle
+
+
+$Name: 				Starfury
+
+    +Title: 			XSTR( "GTW SG-50 Starfury", -1 ) 
+    +Description: XSTR("
+    High ROF Plasma Scatter Gun 
+    Velocity 600, Range 1200 
+    DPS 90 Hull, 85 Shield, 30 Subsystem
+    Power Use: 2W ROF: 14/s", -1 ) 
+$end_multi_text 
+    +Tech Title: 		XSTR( "GTW SG-50 Starfury", -1 ) 
+    +Tech Anim: Tech_Starfury 
+    +Tech Description: XSTR( "One of the latest addition to the GTVA's arsenal, the GTW SG-50 Starfury scattergun. It fires a rapid succession of 3 to 4 high energy plasma projectiles randomly in a 25 degree cone. With its high rate of fire, it can rain down a fast moving fighter with a spray of death very ideal of close knife-fights. But this weapon is very inaccurate at long range and has a high probability of friendly fire especially with your wingmen around. This is not recommended for pilots who our upholding their accuracy percentages. Despite of its drawbacks, the Starfury is an effective weapon for short enemy work and it is recommended for intense combat.", -1 ) 
+$end_multi_text 
+     
+$Model File: none 
+
+@Laser Bitmap: 			Starfury 
+@Laser Glow: 			Subach_Glow 
+@Laser Color: 			0, 255, 255 
+@Laser Color2: 			241, 70, 0 
+@Laser Length: 			10.0 
+@Laser Head Radius: 		1.00 
+@Laser Tail Radius: 		0.90 
+$Mass: 0.2 
+$Velocity: 			600.0 
+$Fire Wait: 			0.3 
+$Damage: 			14 
+$Damage Type: 			NormalWeapon 
+$Armor Factor: 			1.0 
+$Shield Factor: 		1.0 
+$Subsystem Factor: 		0.3 
+$Lifetime: 			2.5 
+$Energy Consumed: 		0.2 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 			365 
+$ImpactSnd: 			85 
++Weapon Range: 			1200 
+$Flags: 			( "player allowed" "cycle" "no primary linked penalty" ) 
+$Icon: 				IconFury 
+$Anim: 				Flail2 
+$Impact Explosion: 			MS_Impact 
+$Impact Explosion Radius: 		1.6 
+$Piercing Impact Explosion: 		exp06 
+$Piercing Impact Radius: 		0.8 
+$Piercing Impact Velocity: 		10 
+$Piercing Impact Splash Velocity: 	-2.5 
+$Piercing Impact Variance: 		0.01 
+$Piercing Impact Particles: 		5 
+$Muzzleflash: 				vulcan2 
+$FOF: 2.0
+$Shots: 4
+
+
+$Name:    			Blizzard
+ 
++Title: 			XSTR("GTW Blizzard SDG", -1) 
+    +Description: XSTR(" 
+    Quantum Distruptor 
+    Velocity: 700 Range: 1200 
+    DPS: 0 Hull, 72 Shield, 140 Subsystem 
+    Power Use: 5W ROF: 4/s", -1) 
+$end_multi_text 
++Tech Title: 			XSTR("GTW Blizzard SDG", -1) 
++Tech Anim: Tech_Blizzard 
++Tech Description: XSTR("The Blizzard is a more powerful replacement of the Akheton SDG disruptor cannon. After analyzing the Shivan equivalent of our onboard electronics and discovering that they don't use electricity, the weapons developers devised a way to disrupt unconventional components by using our knowledge in quantum mechanics. So instead of EMP bursts, the Blizzard sends a pulsating stream of quantum-entangled protons inducing the atoms of a targeted subsystem to destabilize and degrade thereby breaking down its functions and ultimately destroying it completely.", -1) 
+$end_multi_text
+ 
+$Model File: none
+ 
+@Laser Bitmap: 			Akheton_Bitmap 
+@Laser Glow: 			Akheton_Glow 
+@Laser Color: 			100, 140, 255 
+@Laser Color2: 			0, 70,200 
+@Laser Length: 			3.5 
+@Laser Head Radius: 		1.5 
+@Laser Tail Radius: 		1.5 
+$Mass: 0.2 
+$Velocity: 			700.0 
+$Fire Wait: 			0.30  
+$Damage: 			45
+$Damage Type: 			PunctureWeapon  
+$Armor Factor: 			0.0 
+$Shield Factor: 		2.5 
+$Subsystem Factor: 		1.0 
+$Lifetime: 			2.5 
+$Energy Consumed: 		1.0 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 			339 
+$ImpactSnd: 			85
++Weapon Range: 			1200 
+$Flags: 			( "player allowed" "Puncture" "particle spew") 
+$Icon: 				IconBlizz 
+$Anim: 				Sd4 
+$Impact Explosion: 			Mekhu_Impact 
+$Impact Explosion Radius: 		24.0 
+$Piercing Impact Explosion: 		exp06 
+$Piercing Impact Radius: 		12.0 
+$Piercing Impact Velocity: 		10 
+$Piercing Impact Splash Velocity: 	-2.5 
+$Piercing Impact Variance: 		0.01 
+$Piercing Impact Particles: 		5 
+$Muzzleflash: Bmuzzle 
+$Pspew: 
+    +Count: 1 
+    +Time: 45 
+    +Vel: -0.03 
+    +Radius: 1.5 
+    +Life: 0.2 
+    +Scale: 0.15 
+    +Bitmap: Akheton_Particle 
+
+
+$Name: 				Mega Laser
+
+    +Title: 			XSTR( "Shivan Mega Laser", -1 ) 
+    +Description: XSTR("
+    Adapted Shivan Laser 
+    Velocity 400, Range 900 
+    DPS 120 Hull, 110 Shield, 42 Subsystem
+    Power Use: 4W ROF: 5/s", -1 ) 
+$end_multi_text 
+    +Tech Title: 		XSTR( "Shivan Mega Laser", -1 ) 
+    +Tech Anim: LoadGun07 
+    +Tech Description: XSTR( "Research centers in the SOC division were able to modify these Shivan weapons for Terran and Vasudan use, replacing its control systems and targeting processors. Although most of its components are still of Shivan origins, scientist had learned some knowledge of its inner workings.", -1 ) 
+$end_multi_text 
+ 
+$Model File: none 
+
+@Laser Bitmap: 			laserglow01 
+@Laser Glow: 			2_laserglow03 
+@Laser Color: 			250, 30, 30 
+@Laser Color2: 			250, 30, 30 
+@Laser Length: 			15.0 
+@Laser Head Radius: 		0.50 
+@Laser Tail Radius: 		0.30 
+$Mass: 0.3 
+$Velocity: 			400.0 
+$Fire Wait: 			0.4 
+$Damage: 			30
+$Damage Type: 			NormalWeapon 
+$Armor Factor: 			1.0 
+$Shield Factor: 		0.6 
+$Subsystem Factor: 		1.0 
+$Lifetime: 			1.5 
+$Energy Consumed: 		0.4 
+$Cargo Size: 0.0  
+$Homing: NO 
+$LaunchSnd: 			114 
+$ImpactSnd: 			85 
+$Flags: 			("player allowed" "particle spew" )
+$Trail: 
+    +Start Width: 	0.2 
+    +End Width: 	0.3 
+    +Start Alpha: 	0.25 
+    +End Alpha: 	0.0 
+    +Max Life: 		0.1 
+    +Bitmap: 		Alouqua_Trail 
+$Icon: 					iconSD4 
+$Anim: 					SD4 
+$Impact Explosion: 				Shivan_Impact01 
+$Impact Explosion Radius: 			6.4 
+$Piercing Impact Explosion: 			exp06 
+$Piercing Impact Radius: 			3.2 
+$Piercing Impact Velocity: 			10 
+$Piercing Impact Splash Velocity: 		-2.5 
+$Piercing Impact Variance: 			0.01 
+$Piercing Impact Particles: 			5 
+$Muzzleflash: 					Rmuzzle 
+$Pspew: 
+    +Count: 1 
+    +Time: 9 
+    +Vel: 0.31 
+    +Radius: 0.25 
+    +Life: 0.4 
+    +Scale: 0.0 
+    +Bitmap: Shivan_Laser_Stream 
+
+$Name: 				Heavy Laser
+
+    +Title: 			XSTR( "Shivan Heavy Laser", -1 ) 
+    +Description: XSTR("
+    Adapted Shivan Laser 
+    Velocity 400, Range 900 
+    DPS 75 Hull, 75 Shield, 40 Subsystem
+    Power Use: 1W ROF: 8/s", -1 ) 
+$end_multi_text 
+    +Tech Title: 		XSTR( "Shivan Heavy Laser", -1 ) 
+    +Tech Anim: LoadGun07 
+    +Tech Description: 	XSTR( "After capturing a number of shivan fighters during the Second Shivan War, researchers began analyzing the mechanisms and nature of their weapons. So far, scientists and weapons engineers have gathered enough data to adapt these weapons for GTVA use.", -1 ) 
+$end_multi_text
+  
+$Model File: none 
+
+@Laser Bitmap: 			laserglow01 
+@Laser Glow: 			2_laserglow03 
+@Laser Color: 			200, 31, 30 
+@Laser Color2: 			200, 31, 30 
+@Laser Length: 			7.0 
+@Laser Head Radius: 		0.90 
+@Laser Tail Radius: 		0.30 
+$Mass: 0.2 
+$Velocity: 			475.0 
+$Fire Wait: 			0.2  
+$Damage: 			15
+$Damage Type: 			NormalWeapon 
+$Armor Factor: 			1.0 
+$Shield Factor: 		1.0 
+$Subsystem Factor: 		1.0 
+$Lifetime: 			2.0 
+$Energy Consumed: 		0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 			332 
+$ImpactSnd: 			85  
+$Flags: 			("player allowed" "cycle" "particle spew" )
+$Trail: 
+    +Start Width: 	0.3 
+    +End Width: 	0.15 
+    +Start Alpha: 	0.3 
+    +End Alpha: 	0.0 
+    +Max Life: 		0.1 
+    +Bitmap: 		Alouqua_Trail 
+$Icon: 					icongun05 
+$Anim: 					LoadGun07 
+$Impact Explosion: 					Shivan_Impact01 
+$Impact Explosion Radius: 				4.0 
+$Piercing Impact Explosion: 				exp06 
+$Piercing Impact Radius: 				2.0 
+$Piercing Impact Velocity: 				10 
+$Piercing Impact Splash Velocity: 			-2.5 
+$Piercing Impact Variance: 				0.01 
+$Piercing Impact Particles: 				5 
+$Muzzleflash: 						Rmuzzle 
+$Pspew: 
+    +Count: 1 
+    +Time: 20 
+    +Vel: 0.30 
+    +Radius: 0.32 
+    +Life: 0.24 
+    +Scale: 0.0 
+    +Bitmap: Shivan_Laser_Stream
+
+$Name: @Vasudan Light Laser 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Shivan Light Laser 
++nocreate
+$Damage Type: NormalWeapon 
+$LaunchSnd: 333 
+$Burst Shots: 5 
+$Burst Delay: 100 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Shivan Heavy Laser 
++nocreate
+$Damage Type: NormalWeapon 
+$LaunchSnd: 333 
+$Burst Shots: 2 
+$Burst Delay: 100 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Shivan Mega Laser 
++nocreate
+$Damage Type: NormalWeapon 
+$LaunchSnd: 332 
+$Burst Shots: 5 
+$Burst Delay: 100 
+$Burst Flags: ( "fast firing" "random length" ) 
+ 
+
+
+$Name: @Terran Turret 
++nocreate
+$Velocity: 450.0 
+$Damage: 7 
+$Damage Type: NormalWeapon
+$LaunchSnd: 329 
+$Burst Shots: 2 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Terran Huge Turret 
++nocreate
+$Velocity: 450.0 
+$Damage: 14 
+$Damage Type: NormalWeapon 
+$LaunchSnd: 329 
+$Burst Shots: 2 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: @Terran Turret Weak 
++nocreate
+$Velocity: 450.0 
+$Damage: 4 
+$Damage Type: NormalWeapon 
+$LaunchSnd: 329 
+$Burst Shots: 2 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Shivan Turret Laser 
++nocreate
+$Velocity: 500.0 
+$Damage: 8 
+$Damage Type: NormalWeapon 
+$Burst Shots: 3 
+$Burst Delay: 170 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Shivan Weak Turret Laser 
++nocreate
+$Velocity: 500.0 
+$Damage: 4 
+$Damage Type: NormalWeapon 
+$Burst Shots: 3 
+$Burst Delay: 170 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Shivan Megafunk Turret 
++nocreate
+$Velocity: 500.0 
+$Damage: 17 
+$Damage Type: NormalWeapon 
+$Burst Shots: 3 
+$Burst Delay: 170 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Shivan Super Laser 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: SRed 
++nocreate
+$Damage Type: HugeBeam
+$LaunchSnd: 334 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    	$Section:
+    	+Index: 0 
+    		+Width: 14.5 
+    		+Texture: SBeamLX 
+    		+RGBA Inner: 0 0 0 0 
+    		+RGBA Outer: 0 0 0 0 
+    		+Flicker: 0.1 
+    		+Zadd: 10.0 
+   	 	+Tile Factor: 7, 0 
+    		+Translation: 0 
+    	$Section:
+    	+Index: 1 
+    		+Width: 7.0 
+    		+Texture: SbeamLXAB 
+    		+RGBA Inner: 255 255 255 100 
+    		+RGBA Outer: 150 150 150 10 
+    		+Flicker: 0.001 
+    		+Zadd: 1.0 
+    		+Tile Factor: 10, 1 
+    		+Translation: -4 
+    	$Section:
+    	+Index: 2 
+    		+Width: 10.5 
+    		+Texture: SbeamAF 
+    		+RGBA Inner: 160 160 160 100 
+    		+RGBA Outer: 120 120 120 10 
+    		+Flicker: 0.01 
+    		+Zadd: 2.0 
+    		+Tile Factor: 7, 0 
+    		+Translation: -3 
+    	$Section:
+    	+Index: 3 
+    		+Width: 15.5 
+    		+Texture: SbeamAC 
+    		+RGBA Inner: 160 160 0 100 
+    		+RGBA Outer: 60 60 0 10 
+    		+Flicker: 0.001 
+    		+Zadd: 1.0 
+    		+Tile Factor: 10, 1 
+    		+Translation: -2 
+    	$Section:
+    	+Index: 4 
+    		+Width: 20.5 
+    		+Texture: SbeamAD 
+    		+RGBA Inner: 255 0 0 255 
+    		+RGBA Outer: 60 0 0 10 
+    		+Flicker: 0.1 
+    		+Zadd: 0.0 
+
+$Name: SAAA 
++nocreate 
+$Damage Type: SmallBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Hostile Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Neutral Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Unknown Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+
+
+$Name: LRed 
++nocreate
+$Damage Type: HugeBeam
+$LaunchSnd: 334 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    	$Section:
+    	+Index: 0 
+    		+Width: 45.0 
+    		+Texture: SBeamLX 
+    		+RGBA Inner: 0 0 0 0 
+    		+RGBA Outer: 0 0 0 0 
+    		+Flicker: 0.1 
+    		+Zadd: 10.0 
+   	 	+Tile Factor: 7, 0 
+    		+Translation: 0 
+    	$Section:
+    	+Index: 1 
+    		+Width: 20.0 
+    		+Texture: SbeamLXAB 
+    		+RGBA Inner: 255 255 255 100 
+    		+RGBA Outer: 150 150 150 10 
+    		+Flicker: 0.001 
+    		+Zadd: 1.0 
+    		+Tile Factor: 10, 1 
+    		+Translation: -4 
+    	$Section:
+    	+Index: 2 
+    		+Width: 30.5 
+    		+Texture: SbeamAF 
+    		+RGBA Inner: 160 160 160 100 
+    		+RGBA Outer: 120 120 120 10 
+    		+Flicker: 0.01 
+    		+Zadd: 2.0 
+    		+Tile Factor: 7, 0 
+    		+Translation: -3 
+    	$Section:
+    	+Index: 3 
+    		+Width: 60.0 
+    		+Texture: SbeamAC 
+    		+RGBA Inner: 160 160 0 100 
+    		+RGBA Outer: 60 60 0 10 
+    		+Flicker: 0.001 
+    		+Zadd: 1.0 
+    		+Tile Factor: 10, 1 
+    		+Translation: -2 
+    	$Section:
+    	+Index: 4 
+    		+Width: 80.5 
+    		+Texture: SbeamAD 
+    		+RGBA Inner: 255 0 0 255 
+    		+RGBA Outer: 60 0 0 10 
+    		+Flicker: 0.1 
+    		+Zadd: 0.0 
+
+$Name: BFRed 
++nocreate
+$Damage Type: HugeBeam
+$LaunchSnd: 334 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    	$Section:
+    	+Index: 0 
+    		+Width: 70.5 
+    		+Texture: SBeamLX 
+    		+RGBA Inner: 0 0 0 0 
+    		+RGBA Outer: 0 0 0 0 
+    		+Flicker: 0.1 
+    		+Zadd: 10.0 
+   	 	+Tile Factor: 7, 0 
+    		+Translation: 0 
+    	$Section:
+    	+Index: 1 
+    		+Width: 37.0 
+    		+Texture: SbeamLXAB 
+    		+RGBA Inner: 255 255 255 100 
+    		+RGBA Outer: 150 150 150 10 
+    		+Flicker: 0.001 
+    		+Zadd: 1.0 
+    		+Tile Factor: 10, 1 
+    		+Translation: -4 
+    	$Section:
+    	+Index: 2 
+    		+Width: 50.5 
+    		+Texture: SbeamAF 
+    		+RGBA Inner: 160 160 160 100 
+    		+RGBA Outer: 120 120 120 10 
+    		+Flicker: 0.01 
+    		+Zadd: 2.0 
+    		+Tile Factor: 7, 0 
+    		+Translation: -3 
+    	$Section:
+    	+Index: 3 
+    		+Width: 65.5 
+    		+Texture: SbeamAC 
+    		+RGBA Inner: 160 160 0 100 
+    		+RGBA Outer: 60 60 0 10 
+    		+Flicker: 0.001 
+    		+Zadd: 1.0 
+    		+Tile Factor: 10, 1 
+    		+Translation: -2 
+    	$Section:
+    	+Index: 4 
+    		+Width: 186.5 
+    		+Texture: SbeamAD 
+    		+RGBA Inner: 255 0 0 255 
+    		+RGBA Outer: 60 0 0 10 
+    		+Flicker: 0.1 
+    		+Zadd: 0.0 
+
+$Name: AAAf 
++nocreate
+$Damage Type: SmallBeam
+$LaunchSnd: 338  
+$BeamInfo: 
+    +Friendly Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Hostile Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Neutral Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Unknown Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+
+
+$Name: AAAh 
++nocreate
+$Damage Type: SmallBeam
+$LaunchSnd: 338 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Hostile Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Neutral Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Unknown Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+
+
+$Name: S-AAA-Weak 
++nocreate 
+$Damage Type: SmallBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Hostile Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Neutral Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Unknown Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+
+
+$Name: ULTRA Anti-Fighter Beam 
++nocreate 
+$Damage Type: SmallBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Hostile Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Neutral Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+    +Unknown Miss Factor: 1.9 1.8 1.7 1.6 1.5 
+
+
+$Name: TerSlash 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: LTerSlash 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: BFGreen 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: LRBGreen 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: BGreen 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: SGreen 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: SVas 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: BVas 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: VSlash 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: Green Beam 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: MjolnirBeam 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: MjolnirBeam#home 
++nocreate 
+$Damage Type: HugeBeam 
+$BeamInfo: 
+    +Friendly Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Hostile Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Neutral Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +Unknown Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+
+
+$Name: Standard Flak 
++nocreate 
+$Damage Type: NormalFlak 
+
+
+$Name: Heavy Flak 
++nocreate 
+$Damage Type: NormalFlak 
+
+
+$Name: Long Range Flak 
++nocreate 
+$Damage Type: NormalFlak 
+
+
+$Name: MkII Plasma Gun 
+     
+    +Tech Title: XSTR( "Light Plasma Turret Mark II", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: none 
+@Laser Bitmap: Mekhu_Bitmap 
+@Laser Glow: Mekhu_Glow 
+@Laser Color: 0, 30, 220 
+@Laser Color2: 0, 30, 220 
+@Laser Length: 10.0 
+@Laser Head Radius: 5.00 
+@Laser Tail Radius: 5.00 
+$Mass: 0.4 
+$Velocity: 450.0 
+$Fire Wait: 0.5 
+$Damage: 4 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.25 
+$Shield Factor: 0.85 
+$Subsystem Factor: 0.75 
+$Lifetime: 6.0 
+$Energy Consumed: 0.30 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 110 
+$ImpactSnd: 85 
++Weapon Range: 1375 
+$Flags: ( "Big Ship" ) 
+$Impact Explosion: Mekhu_Impact 
+$Impact Explosion Radius: 10.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 5.0 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: Bmuzzle 
+$Burst Shots: 2 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Mk7 Plasma Gun 
+     
+    +Tech Title: XSTR( "Heavy Plasma Cannon Mark 7", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: none 
+@Laser Bitmap: Mekhu_Bitmap 
+@Laser Glow: Mekhu_Glow 
+@Laser Color: 0, 30, 220 
+@Laser Color2: 0, 30, 220 
+@Laser Length: 21.0 
+@Laser Head Radius: 9.0 
+@Laser Tail Radius: 9.0 
+$Mass: 0.4 
+$Velocity: 450.0 
+$Fire Wait: 1.5 
+$Damage: 14 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.25 
+$Shield Factor: 0.5 
+$Subsystem Factor: 0.75 
+$Lifetime: 14.4 
+$Energy Consumed: 0.30 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 111 
+$ImpactSnd: 85 
+$Flags: ( "Big Ship" ) 
+$Impact Explosion: Mekhu_Impact 
+$Impact Explosion Radius: 18.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 9.0 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: Bmuzzle 
+$Burst Shots: 2 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Positron Cannon 
+     
+    +Tech Title: XSTR( "Hellstar Heavy Positron Cannon", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: none 
+@Laser Bitmap: Akheton_Bitmap 
+@Laser Glow: Kayser_Glow 
+@Laser Color: 20, 20, 220 
+@Laser Color2: 20, 20, 150 
+@Laser Length: 45.0 
+@Laser Head Radius: 17.0 
+@Laser Tail Radius: 17.0 
+$Mass: 0.1 
+$Velocity: 600.0 
+$Fire Wait: 0.5 
+$Damage: 20 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.3 
+$Shield Factor: 1.0 
+$Subsystem Factor: 0.3 
+$Lifetime: 2.4 
+$Energy Consumed: 4.0 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 110 
+$ImpactSnd: 88 
++Weapon Range: 2400 
+$Flags: ( "big ship" "particle spew" ) 
+$Impact Explosion: Kayser_Impact 
+$Impact Explosion Radius: 24.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 12.0 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: Bmuzzle 
+$Pspew: 
+    +Count: 1 
+    +Time: 28 
+    +Vel: -0.03 
+    +Radius: 2.0 
+    +Life: 0.2 
+    +Scale: 0.15 
+    +Bitmap: Akheton_Particle 
+$FOF: 0.75 
+$Burst Shots: 3 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+
+$Name: Proton Blaster 
+     
+    +Tech Title: XSTR( "Viper Light Proton Blaster", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: none 
+@Laser Bitmap: Akheton_Bitmap 
+@Laser Glow: Kayser_Glow 
+@Laser Color: 20, 20, 220 
+@Laser Color2: 20, 20, 150 
+@Laser Length: 15.0 
+@Laser Head Radius: 12.0 
+@Laser Tail Radius: 12.0 
+$Mass: 0.1 
+$Velocity: 500.0 
+$Fire Wait: 0.35 
+$Damage: 5 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 0.3 
+$Lifetime: 2.0 
+$Energy Consumed: 4.0 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 110 
+$ImpactSnd: 85 
++Weapon Range: 2000 
+$Flags: ( "big ship" "particle spew" ) 
+$Impact Explosion: Kayser_Impact 
+$Impact Explosion Radius: 16.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 8.0 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: Bmuzzle 
+$Pspew: 
+    +Count: 1 
+    +Time: 28 
+    +Vel: -0.03 
+    +Radius: 2.0 
+    +Life: 0.2 
+    +Scale: 0.15 
+    +Bitmap: Akheton_Particle 
+$FOF: 0.75 
+$Burst Shots: 3 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+
+$Name: 		Kinetic Gun
+    +Tech Title: XSTR( "Thorium Kinetic Gun", -1 ) 
+    +Tech Description: XSTR( " ", -1 )
+$end_multi_text 
+$Model File: 		none 
+@Laser Bitmap: 		Ripper2 
+@Laser Glow: 		Prometheus_Glow 
+@Laser Color: 250, 250, 250 
+@Laser Color2: 150, 150, 150 
+@Laser Length: 3.0 
+@Laser Head Radius: 3.0 
+@Laser Tail Radius: 3.0 
+$Mass: 0.1 
+$Velocity: 750.0 
+$Fire Wait: 2.0 
+$Damage: 15 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 0.25 
+$Lifetime: 2.05 
+$Energy Consumed: 0.30 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 310 
+$ImpactSnd: 85 
++Weapon Range: 1400 
+$Flags: ( "Big Ship" ) 
+$Trail: 
+    +Start Width: 3.0 
+    +End Width: 3.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 0.10 
+    +Bitmap: missiletrail02 
+$Impact Explosion: MS_Impact 
+$Impact Explosion Radius: 6.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 3.0 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: Cmuzzle_small 
+$Burst Shots: 10 
+$Burst Delay: 100 
+$Burst Flags: ( "fast firing" ) 
+
+
+$Name: 		ROYALRed 
+$Model File: 		none
+@Laser Bitmap: 		laserglow01 
+@Laser Color: 		250, 30, 30 
+@Laser Length: 		0.0 
+@Laser Head Radius: 	0.30 
+@Laser Tail Radius: 	0.30 
+$Mass: 			100.0 
+$Velocity: 			1000.0 
+$Fire Wait: 			10.0  
+$Damage: 			2500  
+$Armor Factor: 			1.0 
+$Shield Factor: 		1.0 
+$Subsystem Factor: 		1.0 
+$Lifetime: 			25.0 
+$Energy Consumed: 		0.30 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 			334 
+$ImpactSnd: 			88
++Weapon Range: 			9000 
+$Flags: 			("Big Ship" "huge" "beam") 
+$Icon: icongun05 
+$Anim: LoadGun07 
+$Impact Explosion: 		exp04 
+$Impact Explosion Radius: 	200.0 
+$BeamInfo: 
+    +Type: 		0 
+    +Life: 		7.0 
+    +Warmup: 		3700 
+    +Warmdown: 		1500 
+    +Radius: 		300.0
+    +PCount: 		22  
+    +PRadius: 		1.9  
+    +PAngle: 		65.0 
+    +PAni: 		particleexp01 	 
+    +Miss Factor: 	0.5 0.875 1.0 1.2 1.5 
+    +BeamSound: 	178 
+    +WarmupSound: 	184  
+    +WarmdownSound: 	188  
+    +Muzzleglow: 	SbeamAglow 
+    +Shots: 		0  
+    +ShrinkFactor: 	0.1 
+    +ShrinkPct: 	1.8 
+    	$Section:  
+    		+Width: 200.0  
+    		+Texture: SbeamAC  
+    		+RGBA Inner: 255 255 255 255  
+    		+RGBA Outer: 150 150 150 10  
+    		+Flicker: 0.1  
+    		+Zadd: 2.0
+    		+Tile Factor: 10, 1 
+    		+Translation: -5   
+    	$Section:  
+    		+Width: 250.0  
+    		+Texture: SbeamAF  
+    		+RGBA Inner: 160 160 0 255  
+    		+RGBA Outer: 60 60 0 10  
+    		+Flicker: 0.1  
+    		+Zadd: 1.0  
+    	$Section:  
+    		+Width: 300.0 
+    		+Texture: beam-red  
+    		+RGBA Inner: 255 0 0 255 
+    		+RGBA Outer: 60 0 0 10  
+    		+Flicker: 0.1  
+    		+Zadd: 0.0  
+
+
+$Name: 		Red Emitter 
+$Model File: 		none 
+@Laser Bitmap: 		Emitter 
+@Laser Glow: 		Kayser_Glow 
+@Laser Color: 		200, 0, 0 
+@Laser Color2: 		196, 0, 189 
+@Laser Length: 		150.0 
+@Laser Head Radius: 	30.0 
+@Laser Tail Radius: 	25.0 
+$Mass: 			2.0 
+$Velocity: 		2200.0 
+$Fire Wait: 		5.0 
+$Damage: 		200
+$Damage Type: 		HugeWeapon 
+$Blast Force: 		500.0 
+$Inner Radius: 		70.0 
+$Outer Radius: 		180.0 
+$Shockwave Speed: 	0 
+$Armor Factor: 		1.0 
+$Shield Factor: 	0.5 
+$Subsystem Factor: 	1.0 
+$Lifetime: 		18.0 
+$Energy Consumed: 	0.30 
+$Cargo Size: 		0.0 
+$Homing: 		NO 
+$LaunchSnd: 		366 
+$ImpactSnd: 		88
+	+Weapon Range:  6500 
+$Flags: 		( "big ship" "huge" "supercap" "particle spew" "same turret cooldown" ) 
+$Icon: 			icongun03 
+$Anim: 			LoadGun02 
+$Impact Explosion: 		exp06 
+$Impact Explosion Radius: 	120 
+$Muzzleflash: 			RMMuzzle 
+$Pspew:
+	+Count: 1 
+	+Time: 15 
+	+Vel: 0.0 
+	+Radius: 5.0 
+	+Life: 0.8 
+	+Scale: 2.0 
+	+Bitmap: Shivan_Particle02 
+$Burst Shots: 4 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: HRed 
+     
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 250, 30, 30 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.30 
+@Laser Tail Radius: 0.30 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 20.0 
+$Damage: 800 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 30.0 
+$Energy Consumed: 0.30 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 334 
+$ImpactSnd: 88 
++Weapon Range: 7000 
+$Flags: ( "Big Ship" "huge" "beam" "supercap" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 40 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 7.0 
+    +Warmup: 3000 
+    +Warmdown: 1500 
+    +Radius: 100.0 
+    +PCount: 24 
+    +PRadius: 2.8 
+    +PAngle: 65.0 
+    +PAni: particle_red 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 177 
+    +WarmupSound: 184 
+    +WarmdownSound: 188 
+    +Muzzleglow: SbeamAglow 
+    +Shots: 0 
+    +ShrinkFactor: 0.1 
+    +ShrinkPct: 1.8 
+    +Range: 6750 
+    +BeamWidth: 60.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 20.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 20.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 100.0 
+    +Texture: SBeamLX 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.3 
+    +Zadd: 1.0 
+    +Tile Factor: 10, 1 
+    +Translation: 0 
+    $Section: 
+    +Width: 12.0 
+    +Texture: SbeamAB 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 2.0 
+    $Section: 
+    +Width: 60.0 
+    +Texture: SbeamAC 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.001 
+    +Zadd: 1.0 
+    +Tile Factor: 10, 1 
+    +Translation: -3 
+    $Section: 
+    +Width: 180.0 
+    +Texture: SbeamAD 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.1 
+    +Zadd: 0.0 
+    $Section: 
+    +Width: 120.0 
+    +Texture: SbeamAE 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.2 
+    +Zadd: 0.0 
+ 
+
+
+$Name: LRSRed 
+     
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 250, 30, 30 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.30 
+@Laser Tail Radius: 0.30 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 25.0 
+$Damage: 100 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 30.0 
+$Energy Consumed: 0.30 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 334 
+$ImpactSnd: 88 
++Weapon Range: 8000 
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 20 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 3.8 
+    +Warmup: 1500 
+    +Warmdown: 1000 
+    +Radius: 90.0 
+    +PCount: 24 
+    +PRadius: 2.8 
+    +PAngle: 65.0 
+    +PAni: particle_red 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 177 
+    +WarmupSound: 183 
+    +WarmdownSound: 187 
+    +Muzzleglow: SbeamAglow 
+    +Shots: 0 
+    +ShrinkFactor: 0.1 
+    +ShrinkPct: 1.8 
+    +Range: 12000 
+    +BeamWidth: 30.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 10.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 10.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 55.0 
+    +Texture: SBeamLX 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.3 
+    +Zadd: 1.0 
+    +Tile Factor: 90, 1 
+    +Translation: -2 
+    $Section: 
+    +Width: 6.0 
+    +Texture: SbeamAB 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 2.0 
+    $Section: 
+    +Width: 30.0 
+    +Texture: SbeamAC 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.001 
+    +Zadd: 1.0 
+    +Tile Factor: 10, 1 
+    +Translation: -3 
+    $Section: 
+    +Width: 90.0 
+    +Texture: SbeamAD 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.1 
+    +Zadd: 0.0 
+    $Section: 
+    +Width: 60.0 
+    +Texture: SbeamAE 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.2 
+    +Zadd: 0.0 
+
+
+$Name: TachyonB 
+
+$Model File: none ; laser1-1.pof 
+@Laser Bitmap: laserglow01 
+@Laser Color: 255, 100, 255 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 ;; speed of the weapon (initially) -- may or may not change 
+$Fire Wait: 15.0 ;; in seconds 
+$Damage: 14000 ;; NOTE: for beam weapons this is kind of a "continuous" damage applied every few fractions of a second that the beam is on. 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 120.0 ;; How long this thing lives 
+$Energy Consumed: 0.10 ;; Energy used when fired 
+$Cargo Size: 0.0 ;; Amount of space taken up in weapon cargo 
+$Homing: NO 
+$LaunchSnd: 336 ;; The sound it makes when fired 
+$ImpactSnd: 88 ;; The sound it makes when it hits something 
++Weapon Range: 20000 ;; Limit to range at which weapon will actively target object 
+$Flags: ("Big Ship" "huge" "beam" "supercap") 
+$Icon: icongun05 
+$Anim: LoadGun07 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 800.0 
+$BeamInfo: 
+    +Type: 0 ;; 0 - 4 are valid #'s 
+    +Life: 9.0 ;; how long it lasts once the beam is actually firing 
+    +Warmup: 6000 ;; warmup time in ms 
+    +Warmdown: 9999 ;; warmdown time in ms 
+    +Radius: 1000.0 ;; muzzle glow radius in meters 
+    +PCount: 80 ;; particles spewed every interval 
+    +PRadius: 2.5 ;; particle radius 
+    +PAngle: 60.0 ;; angle of the random "cone" where the particles are generated 
+    +PAni: particleexp01 ;; particle ani 
+    +Miss Factor: 1.0 1.1 1.2 1.3 1.4 ;; magic # - higher == miss more (only really applicable to type 0 and type 3 beams) 
+    +BeamSound: 356 ;; the looping beam-firing sound 
+    +WarmupSound: 335 ;; associated warmup sound 
+    +WarmdownSound: 158 ;; associated warmdown sound 
+    +Muzzleglow: beamglow8 ;; muzzle glow bitmap 
+    +Shots: 0 ;; only used for TYPE 3 beams 
+    +ShrinkFactor: 0.1 ;; what percentage of lifetime where beam starts shrinking (0.1 == 10% life left) 
+    +ShrinkPct: 2.5 ;; what percentage of max width we subtract per second 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 700 ;; width of the section 
+    +Texture: beam-dblue ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.0 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 10 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 850 ;; width of the section 
+    +Texture: beam-saph ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.45 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 7.5 ;; hehe 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 950.0 ;; width of the section 
+    +Texture: beam-saph2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.4 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 5 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 1000.0 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.5 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 0.0 ;; hehe 
+
+
+
+
+
+$Name: BFTach 
+
+$Model File: none ; laser1-1.pof 
+@Laser Bitmap: laserglow01 
+@Laser Color: 255, 90, 255 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 ;; speed of the weapon (initially) -- may or may not change 
+$Fire Wait: 15.0 ;; in seconds 
+$Damage: 2200 ;; NOTE: for beam weapons this is kind of a "continuous" damage applied every few fractions of a second that the beam is on. 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35.0 ;; How long this thing lives 
+$Energy Consumed: 0.10 ;; Energy used when fired 
+$Cargo Size: 0.0 ;; Amount of space taken up in weapon cargo 
+$Homing: NO 
+$LaunchSnd: 330 ;; The sound it makes when fired 
+$ImpactSnd: 88 ;; The sound it makes when it hits something 
++Weapon Range: 6000 ;; Limit to range at which weapon will actively target object 
+$Flags: ("Big Ship" "huge" "beam" "supercap") 
+$Icon: icongun05 
+$Anim: LoadGun07 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 120.0 
+$BeamInfo: 
+    +Type: 0 ;; 0 - 4 are valid #'s 
+    +Life: 6.0 ;; how long it lasts once the beam is actually firing 
+    +Warmup: 4100 ;; warmup time in ms 
+    +Warmdown: 5150 ;; warmdown time in ms 
+    +Radius: 160.0 ;; muzzle glow radius in meters 
+    +PCount: 50 ;; particles spewed every interval 
+    +PRadius: 1.4 ;; particle radius 
+    +PAngle: 60.0 ;; angle of the random "cone" where the particles are generated 
+    +PAni: particleexp01 ;; particle ani 
+    +Miss Factor: 1.0 1.1 1.2 1.3 1.4 ;; magic # - higher == miss more (only really applicable to type 0 and type 3 beams) 
+    +BeamSound: 121 ;; the looping beam-firing sound 
+    +WarmupSound: 122 ;; associated warmup sound 
+    +WarmdownSound: 123 ;; associated warmdown sound 
+    +Muzzleglow: beamglow8 ;; muzzle glow bitmap 
+    +Shots: 0 ;; only used for TYPE 3 beams 
+    +ShrinkFactor: 0.1 ;; what percentage of lifetime where beam starts shrinking (0.1 == 10% life left) 
+    +ShrinkPct: 1.8 ;; what percentage of max width we subtract per second 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 40 ;; width of the section 
+    +Texture: beam-dblue ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.0 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 4.0 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 50 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.45 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 3.0 ;; hehe 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 60.0 ;; width of the section 
+    +Texture: beam-dblue ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.4 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 2.0 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 90.0 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 150 150 150 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.5 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 0.0 ;; hehe 
+
+
+$Name: LRBTach 
+
+$Model File: none ; laser1-1.pof 
+@Laser Bitmap: laserglow01 
+@Laser Color: 255, 90, 255 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 2900.0 ;; speed of the weapon (initially) -- may or may not change 
+$Fire Wait: 15.0 ;; in seconds 
+$Damage: 2200 ;; NOTE: for beam weapons this is kind of a "continuous" damage applied every few fractions of a second that the beam is on. 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35.0 ;; How long this thing lives 
+$Energy Consumed: 0.10 ;; Energy used when fired 
+$Cargo Size: 0.0 ;; Amount of space taken up in weapon cargo 
+$Homing: NO 
+$LaunchSnd: 330 ;; The sound it makes when fired 
+$ImpactSnd: 88 ;; The sound it makes when it hits something 
++Weapon Range: 10000 ;; Limit to range at which weapon will actively target object 
+$Flags: ("Big Ship" "huge" "beam" "supercap") 
+$Icon: icongun05 
+$Anim: LoadGun07 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 120.0 
+$BeamInfo: 
+    +Type: 0 ;; 0 - 4 are valid #'s 
+    +Life: 7.0 ;; how long it lasts once the beam is actually firing 
+    +Warmup: 4100 ;; warmup time in ms 
+    +Warmdown: 5150 ;; warmdown time in ms 
+    +Radius: 199.0 ;; muzzle glow radius in meters 
+    +PCount: 50 ;; particles spewed every interval 
+    +PRadius: 1.4 ;; particle radius 
+    +PAngle: 60.0 ;; angle of the random "cone" where the particles are generated 
+    +PAni: particleexp01 ;; particle ani 
+    +Miss Factor: 0.3 0.4 0.8 1.1 1.6 ;; magic # - higher == miss more (only really applicable to type 0 and type 3 beams) 
+    +BeamSound: 121 ;; the looping beam-firing sound 
+    +WarmupSound: 122 ;; associated warmup sound 
+    +WarmdownSound: 123 ;; associated warmdown sound 
+    +Muzzleglow: beamglow8 ;; muzzle glow bitmap 
+    +Shots: 0 ;; only used for TYPE 3 beams 
+    +ShrinkFactor: 0.1 ;; what percentage of lifetime where beam starts shrinking (0.1 == 10% life left) 
+    +ShrinkPct: 1.8 ;; what percentage of max width we subtract per second 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 90 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.0 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 4.0 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 110 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.45 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 3.0 ;; hehe 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 130.0 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.4 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 2.0 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 180.0 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 0 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.5 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 0.0 ;; hehe 
+
+$Name: BTach 
+
+$Model File: none ; laser1-1.pof 
+@Laser Bitmap: laserglow01 
+@Laser Color: 255, 90, 255 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1800.0 ;; speed of the weapon (initially) -- may or may not change 
+$Fire Wait: 20.0 ;; in seconds 
+$Damage: 1500 ;; NOTE: for beam weapons this is kind of a "continuous" damage applied every few fractions of a second that the beam is on. 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 25.0 ;; How long this thing lives 
+$Energy Consumed: 0.20 ;; Energy used when fired 
+$Cargo Size: 0.0 ;; Amount of space taken up in weapon cargo 
+$Homing: NO 
+$LaunchSnd: 330 ;; The sound it makes when fired 
+$ImpactSnd: 88 ;; The sound it makes when it hits something 
++Weapon Range: 4500 ;; Limit to range at which weapon will actively target object 
+$Flags: ("Big Ship" "huge" "beam") 
+$Icon: icongun05 
+$Anim: LoadGun07 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 60.0 
+$BeamInfo: 
+    +Type: 0 ;; 0 - 4 are valid #'s 
+    +Life: 4.0 ;; how long it lasts once the beam is actually firing 
+    +Warmup: 4100 ;; warmup time in ms 
+    +Warmdown: 5150 ;; warmdown time in ms 
+    +Radius: 110.0 ;; muzzle glow radius in meters 
+    +PCount: 40 ;; particles spewed every interval 
+    +PRadius: 1.4 ;; particle radius 
+    +PAngle: 60.0 ;; angle of the random "cone" where the particles are generated 
+    +PAni: particleexp01 ;; particle ani 
+    +Miss Factor: 0.8 0.9 0.9 1.5 1.2 ;; magic # - higher == miss more (only really applicable to type 0 and type 3 beams) 
+    +BeamSound: 121 ;; the looping beam-firing sound 
+    +WarmupSound: 122 ;; associated warmup sound 
+    +WarmdownSound: 123 ;; associated warmdown sound 
+    +Muzzleglow: beamglow8 ;; muzzle glow bitmap 
+    +Shots: 0 ;; only used for TYPE 3 beams 
+    +ShrinkFactor: 0.0 ;; what percentage of lifetime where beam starts shrinking (0.1 == 10% life left) 
+    +ShrinkPct: 0.0 ;; what percentage of max width we subtract per second 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 25 ;; width of the section 
+    +Texture: beam-dblue ;; texture for this section 
+    +RGBA Inner: 255 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 60 0 0 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.0 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 4.0 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 30 ;; width of the section 
+    +Texture: beam-dblue2 ;; texture for this section 
+    +RGBA Inner: 160 160 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 60 60 0 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.45 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 3.0 ;; hehe 
+    $Section: ;; one section of the beam (you can have up to 5) 
+    +Width: 40.0 ;; width of the section 
+    +Texture: beam-dblue ;; texture for this section 
+    +RGBA Inner: 255 255 255 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 255 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.4 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 2.0 ;; hehe 
+    $Section: ;; one section of the beam 
+    +Width: 50.0 ;; width of the section 
+    +Texture: beam-dblue ;; texture for this section 
+    +RGBA Inner: 255 0 0 255 ;; rgba values (only for non-textured beam compiles) 
+    +RGBA Outer: 60 0 0 10 ;; rgba values (only for non-textured beam compiles) 
+    +Flicker: 0.5 ;; how much it flickers (0.0 to 1.0) 
+    +Zadd: 0.0 ;; hehe 
+
+
+$Name: NeutronBeamH 
+$Model File: none 
+@Laser Bitmap: laserglow06 
+@Laser Color: 100, 0, 255 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 30.0 
+$Damage: 2200 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 362 
+$ImpactSnd: 88 
++Weapon Range: 9500 
+$Flags: ( "Big Ship" "huge" "beam" "supercap" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 140 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 4.0 
+    +Warmup: 4100 
+    +Warmdown: 5150 
+    +Radius: 100.0 
+    +PCount: 50 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 363 
+    +WarmupSound: 361 
+    +WarmdownSound: 364 
+    +Muzzleglow: NeutronGlow 
+    +Shots: 0 
+    +ShrinkFactor: 0.1 
+    +ShrinkPct: 1.8 
+    +Range: 14250 
+    +BeamWidth: 140.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 70.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 70.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 15 
+    +Texture: NeutronHaze1
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 8 
+    +Tile Factor: 9, 1 
+    +Translation: -10 
+    $Section: 
+    +Width: 100 
+    +Texture: NeutronHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.07 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -7 
+    $Section: 
+    +Width: 120.0 
+    +Texture: NeutronHaze2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 3 
+    +Tile Factor: 16, 1 
+    +Translation: -5 
+    $Section: 
+    +Width: 130.0 
+    +Texture: NeutronHaze3 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.4 
+    +Zadd: 0.0 
+    +Tile Factor: 20, 1 
+    +Translation: -2 
+    $Section: 
+    +Width: 300.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: NeutronBeamLR
+$Model File: none 
+@Laser Bitmap: laserglow06 
+@Laser Color: 100, 0, 255  
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 30.0 
+$Damage: 2200 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 362 
+$ImpactSnd: 88 
++Weapon Range: 8000 
+$Flags: ( "Big Ship" "huge" "beam" "supercap" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 140 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 4.0 
+    +Warmup: 4100 
+    +Warmdown: 5150 
+    +Radius: 50.0 
+    +PCount: 50 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 363 
+    +WarmupSound: 361 
+    +WarmdownSound: 364  
+    +Muzzleglow: NeutronGlow 
+    +Shots: 0 
+    +ShrinkFactor: 0.1 
+    +ShrinkPct: 1.8 
+    +Range: 14250 
+    +BeamWidth: 80.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 70.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 70.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 10 
+    +Texture: NeutronHaze1
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 8 
+    +Tile Factor: 9, 1 
+    +Translation: -10 
+    $Section: 
+    +Width: 70 
+    +Texture: NeutronHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.07 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -7 
+    $Section: 
+    +Width: 75.0 
+    +Texture: NeutronHaze2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 3 
+    +Tile Factor: 16, 1 
+    +Translation: -5 
+    $Section: 
+    +Width: 80.0 
+    +Texture: NeutronHaze3 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.4 
+    +Zadd: 0.0 
+    +Tile Factor: 20, 1 
+    +Translation: -2 
+    $Section: 
+    +Width: 200.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: NeutronBeamM
+
+$Model File: none 
+@Laser Bitmap: laserglow06 
+@Laser Color: 100, 0, 255  
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 30.0 
+$Damage: 1500 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 362 
+$ImpactSnd: 88 
++Weapon Range: 8000 
+$Flags: ( "Big Ship" "huge" "beam" "supercap" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 140 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 4.0 
+    +Warmup: 4100 
+    +Warmdown: 5150 
+    +Radius: 40.0 
+    +PCount: 50 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 363 
+    +WarmupSound: 361 
+    +WarmdownSound: 364 
+    +Muzzleglow: NeutronGlow 
+    +Shots: 0 
+    +ShrinkFactor: 0.1 
+    +ShrinkPct: 1.8 
+    +Range: 14250 
+    +BeamWidth: 50.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 70.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 70.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 10 
+    +Texture: NeutronHaze1
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 8 
+    +Tile Factor: 9, 1 
+    +Translation: -10 
+    $Section: 
+    +Width: 30 
+    +Texture: NeutronHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.07 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -7 
+    $Section: 
+    +Width: 40.0 
+    +Texture: NeutronHaze2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 3 
+    +Tile Factor: 16, 1 
+    +Translation: -5 
+    $Section: 
+    +Width: 50.0 
+    +Texture: NeutronHaze3 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.4 
+    +Zadd: 0.0 
+    +Tile Factor: 20, 1 
+    +Translation: -2 
+    $Section: 
+    +Width: 100.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: Ion Cannon#Player 
+$Model File: none 
+@Laser Bitmap: Railgun ;;massdriver_bitmap 
+@Laser Glow: Maxim_Glow 
+@Laser Color: 70, 255, 50 
+@Laser Color2: 60, 240, 10 
+@Laser Length: 40.0 
+@Laser Head Radius: 120.00 
+@Laser Tail Radius: 120.00 
+$Mass: 100.0 
+$Velocity: 7000.0 
+$Fire Wait: .30 
+$Damage: 2400 
+$Damage Type: HugeWeapon 
+$Blast Force: 400.0 
+$Inner Radius: 80.0 
+$Outer Radius: 120.0 
+$Shockwave Speed: 0.0 
+$Armor Factor: 1.0 
+$Shield Factor: 0.25 
+$Subsystem Factor: 0.25 
+$Lifetime: 7.8 
+$Energy Consumed: 7.0 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 343 
+$ImpactSnd: 88 
++Weapon Range: 10000 
+$Flags: ( "Big Ship" "Huge" "supercap" "particle spew" "player allowed" "cycle") 
+$Trail: 
+    +Start Width: 90.0 
+    +End Width: 30.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 0.6 
+    +Bitmap: gausscannon_trail 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 200.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 90.0 
+$Piercing Impact Velocity: 200 
+$Piercing Impact Splash Velocity: -10 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 10 
+$Muzzleflash: gausscannon_karuna2 
+$Pspew: 
+    +Count: 3 
+    +Time: 1 
+    +Vel: 0.0 
+    +Radius: 3.0 
+    +Life: 0.1 
+    +Scale: 1.5 
+    +Bitmap: Particle_Yellow 
+
+
+
+$Name: Ion Cannon 
+$Model File: none 
+@Laser Bitmap: Railgun ;;massdriver_bitmap 
+@Laser Glow: Maxim_Glow 
+@Laser Color: 70, 255, 50 
+@Laser Color2: 60, 240, 10 
+@Laser Length: 40.0 
+@Laser Head Radius: 120.00 
+@Laser Tail Radius: 120.00 
+$Mass: 100.0 
+$Velocity: 7000.0 
+$Fire Wait: 20.0 
+$Damage: 2400 
+$Damage Type: HugeWeapon 
+$Blast Force: 400.0 
+$Inner Radius: 80.0 
+$Outer Radius: 120.0 
+$Shockwave Speed: 0.0 
+$Armor Factor: 1.0 
+$Shield Factor: 0.25 
+$Subsystem Factor: 0.25 
+$Lifetime: 4.8 
+$Energy Consumed: 0.0 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 343 
+$ImpactSnd: 88 
++Weapon Range: 10000 
+$Flags: ( "Big Ship" "Huge" "supercap" "particle spew" "same turret cooldown") 
+$Trail: 
+    +Start Width: 90.0 
+    +End Width: 30.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 0.6 
+    +Bitmap: gausscannon_trail 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 200.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 90.0 
+$Piercing Impact Velocity: 200 
+$Piercing Impact Splash Velocity: -10 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 10 
+$Muzzleflash: gausscannon_karuna2 
+$Pspew: 
+    +Count: 3 
+    +Time: 1 
+    +Vel: 0.0 
+    +Radius: 3.0 
+    +Life: 0.1 
+    +Scale: 1.5 
+    +Bitmap: Particle_Yellow 
+$Burst Shots: 8 
+$Burst Delay: 250 
+$Burst Flags: ( "fast firing" ) 
+
+$Name: Pyros Gun 
+     
+    +Tech Title: XSTR( "Pyros Accelerator", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: none 
+@Laser Bitmap: Akheton_Bitmap 
+@Laser Glow: Kayser_Glow 
+@Laser Color: 148, 92, 255 
+@Laser Color2: 52, 33, 240 
+@Laser Length: 25.0 
+@Laser Head Radius: 17.0 
+@Laser Tail Radius: 17.0 
+$Mass: 0.1 
+$Velocity: 500.0 
+$Fire Wait: 0.5 
+$Damage: 20 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.3 
+$Shield Factor: 1.0 
+$Subsystem Factor: 0.3 
+$Lifetime: 4.4 
+$Energy Consumed: 4.0 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 110 
+$ImpactSnd: 88 
++Weapon Range: 2400 
+$Flags: ( "big ship" "particle spew" ) 
+$Impact Explosion: Kayser_Impact 
+$Impact Explosion Radius: 24.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 12.0 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: Bmuzzle 
+$Pspew: 
+    +Count: 1 
+    +Time: 28 
+    +Vel: -0.03 
+    +Radius: 2.0 
+    +Life: 0.2 
+    +Scale: 0.15 
+    +Bitmap: Akheton_Particle 
+$FOF: 0.75 
+$Burst Shots: 4 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+$Name: Flux Gun 
+     
+    +Tech Title: XSTR( "Neutron Flux Gun", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: none 
+@Laser Bitmap: Akheton_Bitmap 
+@Laser Glow: Kayser_Glow 
+@Laser Color: 148, 92, 255 
+@Laser Color2: 52, 33, 240
+@Laser Length: 20.0 
+@Laser Head Radius: 12.0 
+@Laser Tail Radius: 12.0 
+$Mass: 0.1 
+$Velocity: 500.0 
+$Fire Wait: 0.35 
+$Damage: 5 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 0.3 
+$Lifetime: 4.0 
+$Energy Consumed: 4.0 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 110 
+$ImpactSnd: 85 
++Weapon Range: 2000 
+$Flags: ( "big ship" "particle spew" ) 
+$Impact Explosion: Kayser_Impact 
+$Impact Explosion Radius: 16.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 8.0 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: Bmuzzle 
+$Pspew: 
+    +Count: 1 
+    +Time: 28 
+    +Vel: -0.03 
+    +Radius: 2.0 
+    +Life: 0.2 
+    +Scale: 0.15 
+    +Bitmap: Akheton_Particle 
+$FOF: 0.75 
+$Burst Shots: 4 
+$Burst Delay: 300 
+$Burst Flags: ( "fast firing" "random length" ) 
+
+
+$Name: Railgun 
+    +Title: XSTR( "Mark 1 Rail Gun", -1 ) 
+    +Description: XSTR(" 
+    Velocity 1500, Range 2000, ROF 0.1 
+    DPS 300 Armor, 70 Shield, 100 Subsystem 
+    BAS 0.05 
+    ", -1 ) 
+$end_multi_text 
+    +Tech Title: XSTR( "Rail Gun", -1 ) 
+    +Tech Anim: Tech_GTM_MX-6_Tempest 
+    +Tech Description: XSTR( " Prototype Mark 1 railgun shell was designed for exclusive use by the Armageddon Bombers. ", -1 ) 
+$end_multi_text 
+
+$Model File: none 
+@Laser Bitmap: Akheton_Bitmap 
+@Laser Glow: Kayser_Glow 
+@Laser Color: 0, 66, 255 
+@Laser Color2: 5, 55, 185 
+@Laser Length: 5.5 
+@Laser Head Radius: 2.5 
+@Laser Tail Radius: 2.5 
+$Mass: 0.15 
+$Velocity: 1500.0 
+$Fire Wait: 0.1 
+$Damage: 40 
+$Damage Type: NormalWeapon 
+$Armor Factor: 1.0 
+$Shield Factor: 0.35 
+$Subsystem Factor: 0.5 
+$Lifetime: 1.47 
+$Energy Consumed: 0.1 
+$Cargo Size: 0.05 
+$Homing: NO 
+$LaunchSnd: 342 
+$ImpactSnd: 85 
++Weapon Range: 2000 
+$Flags: ( "player allowed" "cycle" ) 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 15.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 2.5 
+$Piercing Impact Velocity: 10 
+$Piercing Impact Splash Velocity: -2.5 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 5 
+$Muzzleflash: gattler2 
+
+
+$Name: SlashGrv 
+
+     
+    +Tech Title: XSTR( "'Bull Frost' Tactical Beam", -1 ) 
+    +Tech Description: XSTR( "One of a new generation of Terran weapons systems, the 'Bull Frost' tactical beam is a product of the Threat Exigency Initiative's adaptation of Shivan beam technology. Using the Akheton Corporation's adaptive fire control suite, a dedicated meson reactor, and a cryogenic slurry heat sink, the Bull Frost offers rapid-fire engagement options against multiple turrets and subsystems. The Bull Frost serves as the primary armament of the Diomedes strike corvette and as a battery weapon on the Raynor-class and Titan-class destroyers.", -1 ) 
+$end_multi_text 
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 88, 176, 249 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.30 
+@Laser Tail Radius: 0.30 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 10.0 
+$Damage: 425 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 330 
+$ImpactSnd: 88 
++Weapon Range: 4500 
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 34 
+$BeamInfo: 
+    +Type: 1 
+    +Life: 2.3 
+    +Warmup: 1800 
+    +Warmdown: 5150 
+    +Radius: 60.0 
+    +PCount: 24 
+    +PRadius: 2.8 
+    +PAngle: 65.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 358 
+    +WarmupSound: 357 
+    +WarmdownSound: 359 
+    +Muzzleglow: BlueBeamGlow2 
+    +Shots: 0 
+    +ShrinkFactor: 0.0 
+    +ShrinkPct: 0.0 
+    +Range: 6750 
+    +BeamWidth: 60.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 17.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 17.0 
+    +Beam Piercing Effect Velocity: 100 
+    +Beam Piercing Splash Effect Velocity: -5 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 17.0 
+    +Texture: BBlueCore 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.0 
+    +Zadd: 8 
+    +Tile Factor: 20, 1 
+    +Translation: -3 
+    $Section: 
+    +Width: 28.0 
+    +Texture: BlueBeam4Core 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.05 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -13 
+    $Section: 
+    +Width: 35.0 
+    +Texture: BlueBeam2CoreHaze 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 4 
+    +Tile Factor: 12, 1 
+    +Translation: -7 
+    $Section: 
+    +Width: 60.0 
+    +Texture: BBlueHaze2 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.1 
+    +Zadd: 2 
+    +Tile Factor: 12, 1 
+    +Translation: -3 
+    $Section: 
+    +Width: 80.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: BFGrv  
+
+     
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 88, 176, 249 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 30.0 
+$Damage: 2200 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 330 
+$ImpactSnd: 88 
++Weapon Range: 9500 
+$Flags: ( "Big Ship" "huge" "beam" "supercap" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 140 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 4.0 
+    +Warmup: 4100 
+    +Warmdown: 5150 
+    +Radius: 160.0 
+    +PCount: 50 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 352 
+    +WarmupSound: 351 
+    +WarmdownSound: 354 
+    +Muzzleglow: BlueBeamGlow2 
+    +Shots: 0 
+    +ShrinkFactor: 0.1 
+    +ShrinkPct: 1.8 
+    +Range: 14250 
+    +BeamWidth: 160.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 70.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 70.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 70 
+    +Texture: BBlueCore  
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 8 
+    +Tile Factor: 20, 1 
+    +Translation: -3 
+    $Section: 
+    +Width: 50 
+    +Texture: BBlueHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.07 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -16 
+    $Section: 
+    +Width: 135.0 
+    +Texture: BBlueHaze2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 3 
+    +Tile Factor: 16, 1 
+    +Translation: -16 
+    $Section: 
+    +Width: 145.0 
+    +Texture: BlueLightning 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.4 
+    +Zadd: 0.0 
+    +Tile Factor: 20, 1 
+    +Translation: -10 
+    $Section: 
+    +Width: 400.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: HGrv 
+
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 88, 176, 249 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 30.0 
+$Damage: 1850 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 25.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 330 
+$ImpactSnd: 88 
++Weapon Range: 6500 
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 120 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 4.0 
+    +Warmup: 4100 
+    +Warmdown: 5150 
+    +Radius: 150.0 
+    +PCount: 50 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 352 
+    +WarmupSound: 351 
+    +WarmdownSound: 354 
+    +Muzzleglow: BlueBeamGlow2 
+    +Shots: 0 
+    +ShrinkFactor: 0.0 
+    +ShrinkPct: 0.0 
+    +Range: 9750 
+    +BeamWidth: 150.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 60.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 60.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 60 
+    +Texture: BBlueCore 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 9 
+    +Tile Factor: 20, 1 
+    +Translation: -3 
+    $Section: 
+    +Width: 120 
+    +Texture: BBlueHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.07 
+    +Zadd: 7 
+    +Tile Factor: 10, 1 
+    +Translation: -12 
+    $Section: 
+    +Width: 135.0 
+    +Texture: BBlueHaze2 
+    +RGBA Inner: 160 160 255 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.15 
+    +Zadd: 5 
+    +Tile Factor: 16, 1 
+    +Translation: -6 
+    $Section: 
+    +Width: 145.0 
+    +Texture: BlueLightning 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.2 
+    +Zadd: 3 
+    +Tile Factor: 16, 1 
+    +Translation: -6 
+    $Section: 
+    +Width: 345.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: BGrv  
+
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 88, 176, 249 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 30.0 
+$Damage: 1500 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 25.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 330 
+$ImpactSnd: 88 
++Weapon Range: 5500 
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 80 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 4.0 
+    +Warmup: 4100 
+    +Warmdown: 5150 
+    +Radius: 110.0 
+    +PCount: 50 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 352 
+    +WarmupSound: 351 
+    +WarmdownSound: 354 
+    +Muzzleglow: BlueBeamGlow2 
+    +Shots: 0 
+    +ShrinkFactor: 0.0 
+    +ShrinkPct: 0.0 
+    +Range: 8250 
+    +BeamWidth: 100.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 40.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 40.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 40 
+    +Texture: BBlueCore2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 9 
+    +Tile Factor: 20, 1 
+    +Translation: -4 
+    $Section: 
+    +Width: 80 
+    +Texture: BBlueHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.07 
+    +Zadd: 7 
+    +Tile Factor: 10, 1 
+    +Translation: -12 
+    $Section: 
+    +Width: 90.0 
+    +Texture: BBlueHaze2 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.15 
+    +Zadd: 5 
+    +Tile Factor: 16, 1 
+    +Translation: -6 
+    $Section: 
+    +Width: 95.0 
+    +Texture: BlueLightning 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.2 
+    +Zadd: 3 
+    +Tile Factor: 19, 1 
+    +Translation: -10 
+    $Section: 
+    +Width: 230.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: MGrv  
+
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 88, 176, 249 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 35.0 
+$Damage: 900 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 25.0 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 330 
+$ImpactSnd: 88 
++Weapon Range: 4500 
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 34 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 4.0 
+    +Warmup: 2500 
+    +Warmdown: 5150 
+    +Radius: 100.0 
+    +PCount: 40 
+    +PRadius: 2.8 
+    +PAngle: 60.0 
+    +PAni: particle_blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 353 
+    +WarmupSound: 357 
+    +WarmdownSound: 355 
+    +Muzzleglow: BlueBeamGlow2 
+    +Shots: 0 
+    +ShrinkFactor: 0.0 
+    +ShrinkPct: 0.0 
+    +Range: 6750 
+    +BeamWidth: 60.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 17.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 17.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 17 
+    +Texture: BBlueCore2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.0 
+    +Zadd: 8 
+    +Tile Factor: 20, 1 
+    +Translation: -4 
+    $Section: 
+    +Width: 28 
+    +Texture: BlueBeam4Core 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.05 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -13 
+    $Section: 
+    +Width: 35.0 
+    +Texture: BlueBeam2CoreHaze 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.2 
+    +Zadd: 4 
+    +Tile Factor: 12, 1 
+    +Translation: -7 
+    $Section: 
+    +Width: 50.0 
+    +Texture: BlueLightning 
+    +RGBA Inner: 255 0 0 255 
+    +RGBA Outer: 60 0 0 10 
+    +Flicker: 0.1 
+    +Zadd: 2 
+    +Tile Factor: 12, 1 
+    +Translation: -7 
+    $Section: 
+    +Width: 100.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+$Name: SGrv 
+
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 88, 176, 249 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 40.0 
+$Damage: 320 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 25 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 330 
+$ImpactSnd: 88 
++Weapon Range: 4250 
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 28 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 2.5 
+    +Warmup: 2000 
+    +Warmdown: 5150 
+    +Radius: 55.0 
+    +PCount: 40 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 353 
+    +WarmupSound: 357 
+    +WarmdownSound: 355 
+    +Muzzleglow: BlueBeamGlow2 
+    +Shots: 0 
+    +ShrinkFactor: 0.0 
+    +ShrinkPct: 0.0 
+    +Range: 6375 
+    +BeamWidth: 50.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 14.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 14.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 14 
+    +Texture: BBlueCore2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 8 
+    +Tile Factor: 12, 1 
+    +Translation: -4 
+    $Section: 
+    +Width: 28 
+    +Texture: SBlueHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.15 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -10 
+    $Section: 
+    +Width: 40.0 
+    +Texture: BlueLightning 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.25 
+    +Zadd: 3 
+    +Tile Factor: 12, 1 
+    +Translation: -6 
+    $Section: 
+    +Width: 80.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+
+
+$Name: TGrv 
+
+$Model File: none 
+@Laser Bitmap: laserglow01 
+@Laser Color: 88, 176, 249 
+@Laser Length: 0.0 
+@Laser Head Radius: 0.3 
+@Laser Tail Radius: 0.3 
+$Mass: 100.0 
+$Velocity: 1000.0 
+$Fire Wait: 20.0 
+$Damage: 500 
+$Damage Type: HugeBeam 
+$Armor Factor: 1.0 
+$Shield Factor: 1.0 
+$Subsystem Factor: 1.0 
+$Lifetime: 35 
+$Energy Consumed: 0.40 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 330 
+$ImpactSnd: 88 
++Weapon Range: 9500 
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" ) 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 28 
+$BeamInfo: 
+    +Type: 0 
+    +Life: 2.5 
+    +Warmup: 2000 
+    +Warmdown: 5150 
+    +Radius: 55.0 
+    +PCount: 40 
+    +PRadius: 3.0 
+    +PAngle: 60.0 
+    +PAni: particle_Blue 
+    +Miss Factor: 1.4 1.3 1.2 1.1 1.0 
+    +BeamSound: 353 
+    +WarmupSound: 357 
+    +WarmdownSound: 355 
+    +Muzzleglow: BlueBeamGlow2 
+    +Shots: 0 
+    +ShrinkFactor: 0.0 
+    +ShrinkPct: 0.0 
+    +Range: 6375 
+    +BeamWidth: 50.0 
+    +Beam Flash Effect: capflash 
+    +Beam Flash Radius: 14.0 
+    +Beam Piercing Effect: exp06 
+    +Beam Piercing Radius: 14.0 
+    +Beam Piercing Effect Velocity: 200 
+    +Beam Piercing Splash Effect Velocity: -10 
+    +Beam Piercing Effect Variance: 0.01 
+    $Section: 
+    +Width: 14 
+    +Texture: BBlueCore2 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.1 
+    +Zadd: 8 
+    +Tile Factor: 20, 1 
+    +Translation: -4 
+    $Section: 
+    +Width: 28 
+    +Texture: SBlueHaze1 
+    +RGBA Inner: 160 160 0 255 
+    +RGBA Outer: 60 60 0 10 
+    +Flicker: 0.15 
+    +Zadd: 6 
+    +Tile Factor: 12, 1 
+    +Translation: -10 
+    $Section: 
+    +Width: 40.0 
+    +Texture: BlueLightning 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.25 
+    +Zadd: 3 
+    +Tile Factor: 12, 1 
+    +Translation: -6 
+    $Section: 
+    +Width: 80.0 
+    +Texture: BlueFade 
+    +RGBA Inner: 255 255 255 255 
+    +RGBA Outer: 150 150 150 10 
+    +Flicker: 0.35 
+    +Zadd: 1 
+;end 
+
+$Name: Antimatter 
+$Model File: 		none 
+@Laser Bitmap: 		Antimatter 
+@Laser Glow: 		Kayser_Glow 
+@Laser Color: 		10, 200, 10 
+@Laser Color2: 		0, 0, 200 
+@Laser Length: 		200.0 
+@Laser Head Radius: 	30.0 
+@Laser Tail Radius: 	25.0 
+$Mass: 			2.0 
+$Velocity: 		2200.0 
+$Fire Wait: 		5.0 
+$Damage: 		200
+$Damage Type: 		HugeWeapon 
+$Blast Force: 		500.0 
+$Inner Radius: 		70.0 
+$Outer Radius: 		180.0 
+$Shockwave Speed: 	100 
+$Armor Factor: 		1.0 
+$Shield Factor: 	0.5 
+$Subsystem Factor: 	1.0 
+$Lifetime: 		18.0 
+$Energy Consumed: 	0.30 
+$Cargo Size: 		0.0 
+$Homing: 		NO 
+$LaunchSnd: 		346 
+$ImpactSnd: 		88
+	+Weapon Range:  6500 
+$Flags: 		( "big ship" "huge" "supercap" "particle spew" "same turret cooldown" ) 
+$Icon: 			icongun03 
+$Anim: 			LoadGun02 
+$Impact Explosion: 		AMImpact 
+$Impact Explosion Radius: 	120 
+$Muzzleflash: 			AmMuzzle 
+$Pspew:
+	+Count: 1 
+	+Time: 15 
+	+Vel: 0.0 
+	+Radius: 5.0 
+	+Life: 0.8 
+	+Scale: 2.0 
+	+Bitmap: Kayser_Particle 
+$Burst Shots: 3 
+$Burst Delay: 200 
+$Burst Flags: ( "fast firing" "random length" )
+
+$Name: AM Cannon 
+$Model File: 		none 
+@Laser Bitmap: 		Antimatter 
+@Laser Glow: 		Kayser_Glow 
+@Laser Color: 		10, 200, 10 
+@Laser Color2: 		0, 0, 200 
+@Laser Length: 		250.0 
+@Laser Head Radius: 	30.0 
+@Laser Tail Radius: 	25.0 
+$Mass: 			2.0 
+$Velocity: 		2200.0 
+$Fire Wait: 		5.0 
+$Damage: 		200
+$Damage Type: 		HugeWeapon 
+$Blast Force: 		500.0 
+$Inner Radius: 		70.0 
+$Outer Radius: 		180.0 
+$Shockwave Speed: 	0 
+$Armor Factor: 		1.0 
+$Shield Factor: 	0.5 
+$Subsystem Factor: 	1.0 
+$Lifetime: 		18.0 
+$Energy Consumed: 	0.30 
+$Cargo Size: 		0.0 
+$Homing: 		NO 
+$LaunchSnd: 		346 
+$ImpactSnd: 		88
+	+Weapon Range:  7000 
+$Flags: 		( "big ship" "huge" "supercap" "particle spew" "same turret cooldown"  "player allowed" ) 
+$Icon: 			icongun03 
+$Anim: 			LoadGun02 
+$Impact Explosion: 		AMImpact 
+$Impact Explosion Radius: 	120 
+$Muzzleflash: 			AmMuzzle 
+$Pspew:
+	+Count: 1 
+	+Time: 15 
+	+Vel: 0.0 
+	+Radius: 5.0 
+	+Life: 0.8 
+	+Scale: 2.0 
+	+Bitmap: Kayser_Particle 
+$Burst Shots: 3 
+$Burst Delay: 200 
+$Burst Flags: ( "fast firing" )
+
+
+$Name: AM Cannon MK II
+$Model File: 		none 
+@Laser Bitmap: 		Antimatter 
+@Laser Glow: 		Kayser_Glow 
+@Laser Color: 		10, 200, 10 
+@Laser Color2: 		0, 0, 200 
+@Laser Length: 		250.0 
+@Laser Head Radius: 	30.0 
+@Laser Tail Radius: 	25.0 
+$Mass: 			2.0 
+$Velocity: 		2200.0 
+$Fire Wait: 		5.0 
+$Damage: 		200
+$Damage Type: 		HugeWeapon 
+$Blast Force: 		500.0 
+$Inner Radius: 		70.0 
+$Outer Radius: 		180.0 
+$Shockwave Speed: 	0 
+$Armor Factor: 		1.0 
+$Shield Factor: 	0.5 
+$Subsystem Factor: 	1.0 
+$Lifetime: 		18.0 
+$Energy Consumed: 	0.30 
+$Cargo Size: 		0.0 
+$Homing: 		NO 
+$LaunchSnd: 		346 
+$ImpactSnd: 		88
+	+Weapon Range:  7000 
+$Flags: 		( "big ship" "huge" "supercap" "particle spew" "same turret cooldown" "cycle" "player allowed" ) 
+$Icon: 			icongun03 
+$Anim: 			LoadGun02 
+$Impact Explosion: 		AMImpact 
+$Impact Explosion Radius: 	120 
+$Muzzleflash: 			AmMuzzle 
+$Pspew:
+	+Count: 1 
+	+Time: 15 
+	+Vel: 0.0 
+	+Radius: 5.0 
+	+Life: 0.8 
+	+Scale: 2.0 
+	+Bitmap: Kayser_Particle 
+$Burst Shots: 6 
+$Burst Delay: 400 
+$Burst Flags: ( "fast firing" )
+
+
+$Name: Meson Cannon 
+$Model File: 		none 
+@Laser Bitmap: 		Meson 
+@Laser Glow: 		Maxim_Glow 
+@Laser Color: 		170, 150, 0 
+@Laser Color2: 		129, 114, 0 
+@Laser Length: 		200.0 
+@Laser Head Radius: 	40.0 
+@Laser Tail Radius: 	35.0 
+$Mass: 			2.0 
+$Velocity: 		2200.0 
+$Fire Wait: 		3.0 
+$Damage: 		500
+$Damage Type: 		HugeWeapon 
+$Blast Force: 		500.0 
+$Inner Radius: 		70.0 
+$Outer Radius: 		180.0 
+$Shockwave Speed: 	0 
+$Armor Factor: 		1.0 
+$Shield Factor: 	0.5 
+$Subsystem Factor: 	1.0 
+$Lifetime: 		18.0 
+$Energy Consumed: 	0.30 
+$Cargo Size: 		0.0 
+$Homing: 		NO 
+$LaunchSnd: 		360 
+$ImpactSnd: 		88
+	+Weapon Range:  6500 
+$Flags: 		( "big ship" "huge" "supercap" "same turret cooldown" ) 
+$Icon: 			icongun03 
+$Anim: 			LoadGun02 
+$Impact Explosion: 		exp06 
+$Impact Explosion Radius: 	120 
+$Muzzleflash: 			massdriver_karuna2 
+
+$Burst Shots: 2 
+$Burst Delay: 150 
+$Burst Flags: ( "fast firing" "random length" )
+
+
+$Name: Mass Driver 
+
+     
+$Model File: none 
+@Laser Bitmap: massdriver_bitmap 
+@Laser Glow: Maxim_Glow 
+@Laser Color: 250, 200, 50 
+@Laser Color2: 255, 200, 10 
+@Laser Length: 2.0 
+@Laser Head Radius: 30.0 
+@Laser Tail Radius: 30.0 
+$Mass: 4.0 
+$Velocity: 3000.0 
+$Fire Wait: 10.0 
+$Damage: 1200 
+$Damage Type: HugeWeapon 
+$Blast Force: 200.0 
+$Inner Radius: 40.0 
+$Outer Radius: 60.0 
+$Shockwave Speed: 0.0 
+$Armor Factor: 1.0 
+$Shield Factor: 0.25 
+$Subsystem Factor: 0.25 
+$Lifetime: 1.4 
+$Energy Consumed: 0.0 
+$Cargo Size: 1.0 
+$Homing: NO 
+$LaunchSnd: 308 
+$ImpactSnd: 88 
++Weapon Range: 3500 
+$Flags: ( "Huge" "big ship" "particle spew" "same turret cooldown" ) 
+$Trail: 
+    +Start Width: 15.0 
+    +End Width: 15.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 0.6 
+    +Bitmap: massdriver_trail 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 60.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 30.0 
+$Piercing Impact Velocity: 200 
+$Piercing Impact Splash Velocity: -10 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 10 
+$Muzzleflash: massdriver_karuna2 
+$Pspew: 
+    +Count: 6 
+    +Time: 1 
+    +Vel: 0.0 
+    +Radius: 1.5 
+    +Life: 0.1 
+    +Scale: 1.5 
+    +Bitmap: Particle_Yellow 
+
+
+$Name: Gauss Cannon 
+
+     
+$Model File: none 
+@Laser Bitmap: railgun 
+@Laser Glow: Maxim_Glow 
+@Laser Color: 55, 150, 250 
+@Laser Color2: 55, 120, 210 
+@Laser Length: 2.0 
+@Laser Head Radius: 30.0 
+@Laser Tail Radius: 30.0 
+$Mass: 4.0 
+$Velocity: 3000.0 
+$Fire Wait: 10.0 
+$Damage: 1200 
+$Damage Type: HugeWeapon 
+$Armor Factor: 0.25 
+$Shield Factor: 0.25 
+$Subsystem Factor: 1.0 
+$Lifetime: 2.4 
+$Energy Consumed: 0.30 
+$Cargo Size: 0.0 
+$Homing: NO 
+$LaunchSnd: 308 
+$ImpactSnd: 88 
++Weapon Range: 6000 
+$Flags: ( "Big Ship" "Huge" "particle spew" "same turret cooldown" ) 
+$Trail: 
+    +Start Width: 15.0 
+    +End Width: 15.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 0.6 
+    +Bitmap: gausscannon_trail 
+$Impact Explosion: exp04 
+$Impact Explosion Radius: 60.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 30.0 
+$Piercing Impact Velocity: 100 
+$Piercing Impact Splash Velocity: -10 
+$Piercing Impact Variance: 0.01 
+$Piercing Impact Particles: 10 
+$Muzzleflash: gausscannon_karuna2 
+$Pspew: 
+    +Count: 6 
+    +Time: 1 
+    +Vel: 0.0 
+    +Radius: 1.5 
+    +Life: 0.1 
+    +Scale: 1.5 
+    +Bitmap: Particle_Blue 
+
+
+#End 
+
+;===SECONDARY WEAPONS=======================================
+
+
+#Secondary Weapons 
+
+$Name: @Rockeye 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Rockeye D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Enemy MX-64 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Tempest 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Tempest D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Hornet 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Hornet D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Hornet#Weak 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Tornado 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Tornado D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Harpoon 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Harpoon D 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Harpoon#Weak 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @Trebuchet 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @TAG-A 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @TAG-B 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: @TAG-C 
++nocreate 
+    +Description: XSTR(" 
+    Designator Missile, Lock-On 
+    Yield 0 
+    Range 2665m Reload 8s", -1) 
+$end_multi_text 
+$Detail distance: ( 0, 10, 39 ) 
++Weapon Range: 2665 
+$Flags: ( "player allowed" )
+
+
+$Name: Piranha 
++nocreate 
+$Damage Type: SpawnWeapon 
+
+
+$Name: @Stiletto II 
++nocreate 
+$Damage Type: PunctureWeapon 
+
+
+$Name: Infyrno 
++nocreate 
+$Damage Type: SpawnWeapon 
+
+
+$Name: Infyrno D 
++nocreate 
+$Damage Type: SpawnWeapon 
+
+
+$Name: Cyclops 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: Cyclops#short 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: Rebel Bomb 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: Helios 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: EMP Adv. 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: MX-52 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+
+$Name: 		Screamer 
+
+    +Title: XSTR( "GTM-700 Screamer", -1 ) 
+    +Description: XSTR(" 
+    Heat-seeking Extended range 
+    Velocity 260, Range 1430, ROF 1.5 
+    Yield 65 per volley Reload 1.5 Sec 
+    ", -1 ) 
+$end_multi_text 
+    +Tech Title: 		XSTR( "GTM-700 Screamer", -1 ) 
+    +Tech Anim: 		Tech_Screamer 
+    +Tech Description: XSTR( "The GTM-700 Screamer is the latest weapon developed by the Subach Corporation formerly Subach Innes. The weapon employs advance heat-seeking systems and AI Trajectory Predictors. It is a small heat-seeking swarm missile fired in salvos of six, twelve in double-fire mode. After the fall of Capella it was mass-produced and it became an instant success in the military in a matter of weeks. Many Dark Angel pilots favor the Screamer over the Rockeye due to its instantaneous lock time and the sheer number of missiles fired per volley.", -1 ) 
+$end_multi_text 
+     
+$Model File: 		dart.pof 
+$Mass: 			5.0 
+$Velocity: 			260.0 
+$Fire Wait: 			1.5 
+$Damage: 			15 
+$Damage Type: 			NormalWeapon 
+$Blast Force: 5.0 
+$Inner Radius: 10.0 
+$Outer Radius: 20.0 
+$Shockwave Speed: 0.0 
+$Armor Factor: 			1.0 
+$Shield Factor: 		0.8 
+$Subsystem Factor: 		0.8 
+$Lifetime: 			5.5 
+$Energy Consumed: 		0.0 
+$Cargo Size: 			0.5 
+$Homing: 		 YES 
+    +Type: 		 HEAT 
+    +Turn Time: 	 0.7 
+    +View Cone: 	 180.0 
+    +Seeker Strength:    3 
+    +Target Lead Scaler: 1
+ $LaunchSnd: 			87 
+$ImpactSnd: 			88 
+$FlyBySnd: -1 
+$Rearm Rate: 			4.0 
++Weapon Range: 			1430 
+$Flags: 			( "player allowed" "corkscrew" )
+$Trail: 
+    +Start Width: 	0.2 
+    +End Width: 	0 
+    +Start Alpha: 	1.0 
+    +End Alpha: 	0.0 
+    +Max Life: 		2.6 
+    +Bitmap: 		MissileTrail09
+$Icon: 					icontagb 
+$Anim: 					tagb 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 10.24 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 5.12 
+$Piercing Impact Velocity: 20 
+$Piercing Impact Splash Velocity: -5 
+$Piercing Impact Variance: 0.1 
+$Piercing Impact Particles: 5 
+$Corkscrew: 
+    +Num Fired: 6 
+    +Radius: 1 
+    +Fire Delay: 0 
+    +Counter rotate: 1 
+    +Twist: 1 
+$Thruster Flame Effect: missilethruster02 
+$Thruster Glow Effect: missileglow02 
+
+
+$Name: 		Hunter 
+
+    +Title: XSTR( "GTM-105 Hunter", -1 ) 
+    +Description: XSTR(" 
+    Aspect-seeking Extended Range 
+    Velocity 190, Range 1786
+    Yield 65 per volley Reload 2.5 Sec 
+    ", -1 ) 
+$end_multi_text 
+    +Tech Title: 		XSTR( "GTM-105 Hunter", -1 ) 
+    +Tech Anim: 		Tech_Hunter 
+    +Tech Description: XSTR( "The prototype GTM-105 Hunter swarm missile is primarily used against bombers and slower heavy fighters. It has moderate stopping power, and although its tracking abilities are limited, its range is excellent, making it a strong choice for head-to-head engagements. High cost-per-kill ratio make the Hunter a distasteful commodity for logistics officers and 7th BG pilots still prefers the Tornado.", -1 ) 
+$end_multi_text 
+$Model File: 	InterceptorT.pof 
+$Mass: 		13.0 
+$Velocity: 			190.0 
+$Fire Wait: 			2.5 
+$Damage: 			40 
+$Damage Type: 			NormalWeapon 
+$Blast Force: 10.0 
+$Inner Radius: 10.0 
+$Outer Radius: 20.0 
+$Shockwave Speed: 0 
+$Armor Factor: 			1.0 
+$Shield Factor: 		0.8 
+$Subsystem Factor: 		0.7 
+$Lifetime: 			9.4 
+$Energy Consumed: 		0.0 
+$Cargo Size: 			1.0 
+$Homing: YES 
+    +Type: 		  ASPECT 
+    +Turn Time: 	  2.0 
+    +Min Lock Time: 	  2.4 
+    +Lock Pixels/Sec: 	  60 
+    +Catch-up Pixels/Sec: 80 
+    +Catch-up Penalty: 	  25 
+$LaunchSnd: 			98 
+$ImpactSnd: 			88 
+$FlyBySnd: -1 
+$Rearm Rate: 2.0 
++Weapon Range: 			1786 
+$Flags: 			( "player allowed" "Bomber+" "corkscrew" )
+$Trail: 
+    +Start Width: 	0.3 
+    +End Width: 	0 
+    +Start Alpha: 	1.0 
+    +End Alpha: 	0.0 
+    +Max Life: 		2.1 
+    +Bitmap: 		missiletrail03
+$Icon: 					icontagc 
+$Anim: 					tagc 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 8.0 
+$Piercing Impact Explosion: exp06 
+$Piercing Impact Radius: 4.0 
+$Piercing Impact Velocity: 20 
+$Piercing Impact Splash Velocity: -5 
+$Piercing Impact Variance: 0.1 
+$Piercing Impact Particles: 5 
+$Corkscrew: 
+    +Num Fired: 4 
+    +Radius: 2 
+    +Fire Delay: 25 
+    +Counter rotate: 1 
+    +Twist: 2 
+$Thruster Flame Effect: missilethruster05 
+$Thruster Glow Effect: missileglow05 
+
+
+$Name: 		Hellstorm
+
+    +Title: XSTR("GTM MX-109 Hellstorm", -1) 
+    +Description: XSTR("
+    60-Volley Defensive Measure 
+    Smart Lock Missiles
+    Velocity 260, Range 2000
+    Yield 70 Reload 15 Sec
+    ", -1 )
+$end_multi_text 
+   +Tech Title: 		XSTR("GTM MX-109 Hellstorm", -1) 
+   +Tech Anim: 			Tech_Hellstorm 
+   +Tech Description: 
+XSTR( 
+"The GTM MX-109 Hellstorm 60-volley swarm missiles designed by Vasudan engineers. They are basically upgraded Tempest missiles retrofitted with guidance systems similar to the Screamer. Unlike other type of missiles, this weapon fires its volley in all directions to deter enemy wings in critical dogfight situations especially if the pilot is being overwhelmed by several attackers. Even though this package is not designed for direct assault, it can be devastating against bigger warships if the assaulting squadron is outfitted with it.", -1) 
+$end_multi_text 
+$Model File: 		Tempest.pof 
+$Mass: 			5.0 
+$Velocity: 			260.0 
+$Fire Wait: 			15 
+$Damage: 			45
+$Damage Type: 			NormalWeapon  
+$Blast Force: 	0.2 
+$Inner Radius: 	10.0  
+$Outer Radius: 	20.0 
+$Shockwave Speed: 0  
+$Armor Factor: 			1.0 
+$Shield Factor: 		0.8 
+$Subsystem Factor: 		0.6 
+$Lifetime: 			15.8 
+$Energy Consumed: 		0.0  
+$Cargo Size: 			0.25 
+$Homing: 		 YES 
+    +Type: 		 HEAT 
+    +Turn Time: 	 0.4 
+    +View Cone: 	 360.0 
+    +Seeker Strength: 	 3 
+    +Target Lead Scaler: 1
+$LaunchSnd: 			90 
+$ImpactSnd: 			88 
+$FlyBySnd: -1 
+$Rearm Rate: 12.0 
+$Flags: 			( "player allowed" "corkscrew" ) 
+$Trail: 
+    +Start Width: 	0.3 
+    +End Width: 	0 
+    +Start Alpha: 	1.0 
+    +End Alpha: 	0.0 
+    +Max Life: 		0.7  
+    +Bitmap: 		MissileTrail07 
+$Icon: 					IconTagA 
+$Anim: 					TagA
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 3.0
+$Corkscrew: 
+    +Num Fired: 60 
+    +Radius: 1 
+    +Fire Delay: 50 
+    +Counter rotate: 1 
+    +Twist: 1 
+$FOF: 20.0
+$Thruster Flame Effect: missilethruster02 
+$Thruster Glow Effect: missileglow02 
+ 
+
+$Name: 		Widowmaker
+ 
++Title: XSTR("GTM-750 Widowmaker", -1) 
++Description: XSTR(" 
+    Aspect Lock Antimatter Missile
+    Can Disrupt Electronics 
+    Velocity 280 Range 5000
+    Yield 400 Reload 3 Sec", -1)
+$end_multi_text 
+    +Tech Title: XSTR("GTM-750 Widowmaker", -1) 
+    +Tech Anim: Tech_Widowmaker 
+    +Tech Description: 
+XSTR("The GTM-750 Widowmaker combines the advantage of the Trebuchet, the locking time of the Harpoon, and the maneuverability of the Screamer. It is also a fact that this weapon outmatch all of them. With sophisticated driving fins and an ion-based propellant, it has the speed and agility that can outrun and catch up a fast moving target. With Smart-Lock onboard computers, the enemy has no escape. Unlike most conventional rockets that are armed with Meson, Plasma or Thorite explosives that is notable in a Trebuchet missile, Rockeye, Hornet or a Tornado, the Widowmaker carries an antimatter warhead surrounded with a flux bubble of quantum oscillated anti-protons encased in a magnetically charged laurentium casing. Antimatter is far more destructive than a regular radioactive catalyst and requires only a small quantity to get the desired effect. With this advantage, the missile itself has much less payload weight than heavy missiles with high yield. Therefore, a fighter can carry more of these in their weapons bay. The field layer of anti-protons themselves, upon detonation, sends a disruptive wave that can have a massive impact on a targeted subsystem with a probable instance of incapacitating an enemy transport even a corvette.", -1) 
+$end_multi_text 
+$Model File: 		trebuchet.pof 
+$Detail distance: 	( 0, 7, 29 )
+$Mass: 			20.0 
+$Velocity: 			280.0 
+$Fire Wait: 			3.0 
+$Damage: 			2000
+$Damage Type: 			NormalWeapon 
+$Blast Force: 160.0 
+$Inner Radius: 20.0 
+$Outer Radius: 40.0 
+$Shockwave Speed: 0 
+$Armor Factor: 			1.0 
+$Shield Factor: 		1.0 
+$Subsystem Factor: 		2.4 
+$Lifetime: 			25.0 
+$Energy Consumed: 		0.0 
+$Cargo Size: 			3.0 
+$Homing: 		YES 
+    +Type: 		ASPECT 
+    +Turn Time: 	0.7 
+    +Min Lock Time: 	1.5 
+    +Lock Pixels/Sec: 	70 
+    +Catch-up Pixels/Sec: 100 
+    +Catch-up Penalty: 30 
+$LaunchSnd: 			92  
+$ImpactSnd: 			88 
+$FlyBySnd: -1 
+$Rearm Rate: 0.33
++Weapon Range: 			5040 
+$Flags: 			( "player allowed" "Bomber+" "Electronics" "No Dumbfire" ) 
+$Trail: 
+    +Start Width: 1.028 
+    +End Width: 0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 3.8 
+    +Bitmap: missiletrail08
+$Icon: 				iconStilettoII 
+$Anim: 				still 
+$Impact Explosion: exp06 
+$Impact Explosion Radius: 25.0 
+$Thruster Flame Effect: missilethruster04 
+$Thruster Glow Effect: missileglow04
+
+$Name: Unknown Bomb 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: Unknown Megabomb 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: @Fusion Mortar 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: Vasudan Flux Cannon 
++nocreate 
+$Damage Type: HugeWeapon 
+
+
+$Name: Shivan Cluster 
++nocreate 
+$Damage Type: SpawnWeapon 
+
+
+$Name: FighterKiller 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Swarmer 
++nocreate 
+$Damage Type: NormalWeapon 
+
+
+$Name: Cluster Baby 
++nocreate 
+$Damage Type: SpawnWeapon 
+
+
+$Name: Cluster Baby Weak 
++nocreate 
+$Damage Type: SpawnWeapon 
+
+
+$Name: Cluster Bomb Baby 
++nocreate 
+$Damage Type: SpawnWeapon
+
+$Name: Shivan Bomb
++nocreate
+$Velocity: 125.0
+
+$Name: Shivan Bomb#Short
++nocreate
+$Velocity: 125.0
+
+$Name: Shivan Weak Bomb
++nocreate
+$Velocity: 125.0
+
+$Name: Shivan Megabomb
++nocreate
+$Velocity: 150.0
+
+
+$Name: Polaris 
+
+     
+    +Tech Title: XSTR( "Polaris Torpedo", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: MissileL.pof 
+$POF target LOD: 0 
+$Mass: 30.0 
+$Velocity: 170.0 
+$Fire Wait: 30.0 
+$Damage: 1000 
+$Damage Type: HugeWeapon 
+$Blast Force: 1000.0 
+$Inner Radius: 150.0 
+$Outer Radius: 300.0 
+$Shockwave Speed: 250 
+$Shockwave name: shockwave01 
+$Armor Factor: 1.0 
+$Shield Factor: 0.1 
+$Subsystem Factor: 0.5 
+$Lifetime: 42.0 
+$Energy Consumed: 0.0 
+$Cargo Size: 25.0 
+$Homing: YES 
+    +Type: ASPECT 
+    +Turn Time: 0.7 
+    +View Cone: 360.0 
+    +Min Lock Time: 4.0 
+    +Lock Pixels/Sec: 40 
+    +Catch-up Pixels/Sec: 80 
+    +Catch-up Penalty: 10
+$Swarm: 2 
+    +SwarmWait: 2.0 
+$Free Flight Time: 1 
+$LaunchSnd: 97 
+$ImpactSnd: 101 
+$FlyBySnd: -1 
+$Rearm Rate: 1.0 
++Weapon Range: 5950 
+$Flags: ( "Huge" "bomb" "Big Ship" "same turret cooldown" "no lifeleft penalty" "particle spew" ) 
+$Trail: 
+    +Start Width: 5.4 
+    +End Width: 5.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 3.0 
+    +Bitmap: missiletrail04 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 100.00 
+$Piercing Impact Explosion: exp04 
+$Piercing Impact Radius: 50.00 
+$Piercing Impact Velocity: 25 
+$Piercing Impact Splash Velocity: -25 
+$Piercing Impact Variance: 20000 
+$Piercing Impact Particles: 10 
+$Pspew: 
+    +Count: 1 
+    +Time: 1 
+    +Vel: 0.0 
+    +Radius: 0.7 
+    +Life: 0.1 
+    +Scale: 0.0 
+    +Bitmap: missilespew04 
+$Thruster Flame Effect: missilethruster04 
+$Thruster Glow Effect: missileglow04 
+
+
+$Name: Novatron 
+
+     
+    +Tech Title: XSTR( "Novatron Torpedo", -1 ) 
+    +Tech Description: XSTR( " ", -1 ) 
+$end_multi_text 
+$Model File: MissileL.pof 
+$POF target LOD: 0 
+$Mass: 30 
+$Velocity: 200.0 
+$Fire Wait: 30.0 
+$Damage: 3000 
+$Damage Type: HugeWeapon 
+$Blast Force: 2000.0 
+$Inner Radius: 200.0 
+$Outer Radius: 400.0 
+$Shockwave Speed: 250 
+$Shockwave name: shockwave01 
+$Armor Factor: 1.0 
+$Shield Factor: 0.1 
+$Subsystem Factor: 0.5 
+$Lifetime: 48.0 
+$Energy Consumed: 0.0 
+$Cargo Size: 2.5 
+$Homing: YES 
+    +Type: ASPECT 
+    +Turn Time: 0.7 
+    +View Cone: 360.0 
+    +Min Lock Time: 4.0 
+    +Lock Pixels/Sec: 40 
+    +Catch-up Pixels/Sec: 80 
+    +Catch-up Penalty: 10
+$Swarm: 2 
+    +SwarmWait: 2.0 
+$Free Flight Time: 1.0 
+$LaunchSnd: 96 
+$ImpactSnd: 101 
+$FlyBySnd: -1 
+$Rearm Rate: 0.05 
++Weapon Range: 6000 
+$Flags: ( "No Dumbfire" "Bomb" "Huge" "Big Ship" "same turret cooldown" "no lifeleft penalty" "particle spew" ) 
+$Trail: 
+    +Start Width: 5.2 
+    +End Width: 5.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 3.0 
+    +Bitmap: missiletrail03 
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 120.00 
+$Piercing Impact Explosion: exp04 
+$Piercing Impact Radius: 70.00 
+$Piercing Impact Velocity: 25 
+$Piercing Impact Splash Velocity: -25 
+$Piercing Impact Variance: 20000 
+$Piercing Impact Particles: 10 
+$Pspew: 
+    +Count: 1 
+    +Time: 1 
+    +Vel: 0.0 
+    +Radius: 0.6 
+    +Life: 0.1 
+    +Scale: 0.0 
+    +Bitmap: missilespew03 
+$Thruster Flame Effect: missilethruster03 
+$Thruster Glow Effect: missileglow03 
+
+
+$Name: Hornviper 
+$Model File: MissileL.pof 
+$POF target LOD: 0 
+$Mass: 30.0 
+$Velocity: 200.0 
+$Fire Wait: 20 
+$Damage: 700 
+$Damage Type: HugeWeapon 
+$Arm radius: 250 
+$Blast Force: 1000.0 
+$Inner Radius: 100.0 
+$Outer Radius: 200.0 
+$Shockwave Speed: 250 
+$Shockwave name: shockwave01 
+$Dinky shockwave: 
+    +Blast Force: 100 
+    +Inner Radius: 10 
+    +Outer Radius: 20 
+    +Shockwave Speed: 0.0 
+$Armor Factor: 1.0 
+$Shield Factor: 0.1 
+$Subsystem Factor: 0.5 
+$Lifetime: 36.0 
+$Energy Consumed: 0.0 
+$Cargo Size: 2.5 
+$Homing: YES 
+    +Type: ASPECT 
+    +Turn Time: 0.7 
+    +View Cone: 360.0 
+    +Min Lock Time: 4.0 
+    +Lock Pixels/Sec: 40 
+    +Catch-up Pixels/Sec: 80 
+    +Catch-up Penalty: 10 
+$Swarm: 6 
+    +SwarmWait: 2.0 
+$Free Flight Time: 1.0 
+$LaunchSnd: 19 
+$ImpactSnd: 101 
+$FlyBySnd: -1 
+$Rearm Rate: 0.02 
++Weapon Range: 6000 
+$Flags: ( "Huge" "No Dumbfire" "Big Ship" "particle spew" "bomb" "same turret cooldown" "cycle" "no lifeleft penalty" ) 
+$Trail: 
+    +Start Width: 5.4 
+    +End Width: 5.0 
+    +Start Alpha: 1.0 
+    +End Alpha: 0.0 
+    +Max Life: 3.0 
+    +Bitmap: missiletrail05
+$Impact Explosion: ExpMissileHit1 
+$Impact Explosion Radius: 100.00 
+$Dinky impact explosion: ExpMissileHit1 
+$Dinky impact explosion radius: 28.64 
+$Piercing Impact Explosion: exp04 
+$Piercing Impact Radius: 40.00 
+$Piercing Impact Velocity: 25 
+$Piercing Impact Splash Velocity: -25 
+$Piercing Impact Variance: 20000 
+$Piercing Impact Particles: 10 
+$Pspew: 
+    +Count: 1 
+    +Time: 1 
+    +Vel: 0.0 
+    +Radius: 0.7 
+    +Life: 0.1 
+    +Scale: 0.0 
+    +Bitmap: missilespew05 
+$Thruster Flame Effect: missilethruster05 
+$Thruster Glow Effect: missileglow05 
+
+
+
+
+#End 

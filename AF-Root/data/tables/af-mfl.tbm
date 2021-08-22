@@ -1,0 +1,95 @@
+#Muzzle flash types
+
+$Mflash:
++name: 			Devast
++blob_name: 	Bmuzzle
++blob_offset: 	3.0
++blob_radius: 	1.5
+
+$Mflash: 
++name:                 vulcan2 
++blob_name: Bmuzzle 
++blob_offset: 0.1 
++blob_radius: 1.0 
+
+$Mflash: 
++name:                 RMMuzzle 
++blob_name: RMMuzzle
++blob_offset: 0.1 
++blob_radius: 10.0
++blob_name: RMMuzzle 
++blob_offset: 0.1 
++blob_radius: 30.0
++blob_name: RMMuzzle  
++blob_offset: 0.1 
++blob_radius: 60.0 
+
+$Mflash:
++name: 			AmMuzzle
++blob_name: AMCMuzzle
++blob_offset: 0.0 
++blob_radius: 5.0 
++blob_name: AMCMuzzle
++blob_offset: 5.0 
++blob_radius: 10.0 
++blob_name: AMCMuzzle
++blob_offset: 12.5 
++blob_radius: 15.0 
++blob_name: AMCMuzzle
++blob_offset: 27.5 
++blob_radius: 30.0 
++blob_name: AMCMuzzle
++blob_offset: 42.5 
++blob_radius: 30.0
+
+$Mflash: 
++name: massdriver_karuna2 
++blob_name: exp06 
++blob_offset: 0.0 
++blob_radius: 5.0 
++blob_name: exp06 
++blob_offset: 5.0 
++blob_radius: 10.0 
++blob_name: exp06 
++blob_offset: 12.5 
++blob_radius: 15.0 
++blob_name: exp06 
++blob_offset: 27.5 
++blob_radius: 30.0 
++blob_name: exp06 
++blob_offset: 42.5 
++blob_radius: 30.0 
+
+$Mflash: 
++name: gausscannon_karuna2 
++blob_name: exp06b 
++blob_offset: 0.0 
++blob_radius: 5.0 
++blob_name: exp06b 
++blob_offset: 5.0 
++blob_radius: 10.0 
++blob_name: exp06b 
++blob_offset: 12.5 
++blob_radius: 15.0 
++blob_name: exp06b 
++blob_offset: 27.5 
++blob_radius: 30.0 
++blob_name: exp06b 
++blob_offset: 42.5 
++blob_radius: 30.0 
+
+$Mflash: 
++name: gattler2 
++blob_name: exp06 
++blob_offset: 6.0 
++blob_radius: 0.5 
++blob_name: exp06 
++blob_offset: 6.5 
++blob_radius: 0.5 
++blob_name: exp06 
++blob_offset: 7.0 
++blob_radius: 0.5 
+
+
+
+#End
