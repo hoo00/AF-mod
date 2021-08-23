@@ -11721,6 +11721,7 @@ $Subsystem: Engine02, 40, 0.0
 $Subsystem: Engine03, 40, 0.0 
     $Engine Wash: Default900 
 $Subsystem: Radara, 15, 0.0 
+$Subsystem: Fighterbay, 0, 0.0 
 
 
 $Name: 				GTD Galileo 
@@ -17719,9 +17720,13 @@ $Subsystem: turret24, 2.0, 2.0
 $Subsystem: navigation, 5, 0.0 
 $Subsystem: communication, 5, 0.0 
 $Subsystem: weapons, 15, 0.0 
-$Subsystem: sensors, 5, 0.0
+$Subsystem: Sensors01, 5, 0.0
+$Subsystem: Sensors02, 5, 0.0
+$Subsystem: Sensors03, 5, 0.0
 $Subsystem: Radar01, 5, 0.0
+    $Flags: ( "untargetable" ) 
 $Subsystem: Radar02, 5, 0.0
+    $Flags: ( "untargetable" ) 
 $Subsystem: Fighterbay01, 15, 0.0
 $Subsystem: Fighterbay02, 15, 0.0 
 $Subsystem: Engine01, 20, 0.0 
