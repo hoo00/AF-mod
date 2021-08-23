@@ -11200,7 +11200,7 @@ $Subsystem: Turret04a-base, 2.0, 3.0
     +relative_angle: 80, 0, 0 
 $Subsystem: Turret05a, 2.0, 0.0 
     $Default SBanks: 				( "Novatron" "Novatron" "Novatron" "Novatron" ) 
-$Subsystem: door1-trrt05a, 0, 2.0 
+$Subsystem: door1-activator05a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11211,7 +11211,7 @@ $Subsystem: door1-trrt05a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt05a, 0, 2.0 
+$Subsystem: door2-activator05a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11224,7 +11224,7 @@ $Subsystem: door2-trrt05a, 0, 2.0
     +time: 100 
 $Subsystem: Turret06a, 2.0, 0.0 
     $Default SBanks: 				( "Novatron" "Novatron" "Novatron" "Novatron" ) 
-$Subsystem: door1-trrt06a, 0, 2.0 
+$Subsystem: door1-activator06a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11235,7 +11235,7 @@ $Subsystem: door1-trrt06a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt06a, 0, 2.0 
+$Subsystem: door2-activator06a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11248,7 +11248,7 @@ $Subsystem: door2-trrt06a, 0, 2.0
     +time: 100 
 $Subsystem: Turret07a, 2.0, 0.0 
     $Default SBanks: 				( "Novatron" "Novatron" "Novatron" "Novatron" ) 
-$Subsystem: door1-trrt07a, 0, 2.0 
+$Subsystem: door1-activator07a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11259,7 +11259,7 @@ $Subsystem: door1-trrt07a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt07a, 0, 2.0 
+$Subsystem: door2-activator07a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11272,7 +11272,7 @@ $Subsystem: door2-trrt07a, 0, 2.0
     +time: 100 
 $Subsystem: Turret08a, 2.0, 0.0 
     $Default SBanks: 				( "Novatron" "Novatron" "Novatron" "Novatron" ) 
-$Subsystem: door1-trrt08a, 0, 2.0 
+$Subsystem: door1-activator08a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11283,7 +11283,7 @@ $Subsystem: door1-trrt08a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt08a, 0, 2.0 
+$Subsystem: door2-activator08a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11296,7 +11296,7 @@ $Subsystem: door2-trrt08a, 0, 2.0
     +time: 100 
 $Subsystem: Turret09a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt09a, 0, 2.0 
+$Subsystem: door1-activator09a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11307,7 +11307,7 @@ $Subsystem: door1-trrt09a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt09a, 0, 2.0 
+$Subsystem: door2-activator09a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11320,7 +11320,7 @@ $Subsystem: door2-trrt09a, 0, 2.0
     +time: 100 
 $Subsystem: Turret10a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt10a, 0, 2.0 
+$Subsystem: door1-activator10a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11331,7 +11331,7 @@ $Subsystem: door1-trrt10a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt10a, 0, 2.0 
+$Subsystem: door2-activator10a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11344,7 +11344,7 @@ $Subsystem: door2-trrt10a, 0, 2.0
     +time: 100 
 $Subsystem: Turret11a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt11a, 0, 2.0 
+$Subsystem: door1-activator11a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11355,7 +11355,7 @@ $Subsystem: door1-trrt11a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt11a, 0, 2.0 
+$Subsystem: door2-activator11a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11368,7 +11368,7 @@ $Subsystem: door2-trrt11a, 0, 2.0
     +time: 100 
 $Subsystem: Turret12a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt12a, 0, 2.0 
+$Subsystem: door1-activator12a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11379,7 +11379,7 @@ $Subsystem: door1-trrt12a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt12a, 0, 2.0 
+$Subsystem: door2-activator12a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11392,7 +11392,7 @@ $Subsystem: door2-trrt12a, 0, 2.0
     +time: 100 
 $Subsystem: Turret13a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt13a, 0, 2.0 
+$Subsystem: door1-activator13a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11403,7 +11403,7 @@ $Subsystem: door1-trrt13a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt13a, 0, 2.0 
+$Subsystem: door2-activator13a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11416,7 +11416,7 @@ $Subsystem: door2-trrt13a, 0, 2.0
     +time: 100 
 $Subsystem: Turret14a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt14a, 0, 2.0 
+$Subsystem: door1-activator14a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11427,7 +11427,7 @@ $Subsystem: door1-trrt14a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt14a, 0, 2.0 
+$Subsystem: door2-activator14a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11440,7 +11440,7 @@ $Subsystem: door2-trrt14a, 0, 2.0
     +time: 100 
 $Subsystem: Turret15a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt15a, 0, 2.0 
+$Subsystem: door1-activator15a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11451,7 +11451,7 @@ $Subsystem: door1-trrt15a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt15a, 0, 2.0 
+$Subsystem: door2-activator15a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11464,7 +11464,7 @@ $Subsystem: door2-trrt15a, 0, 2.0
     +time: 100 
 $Subsystem: Turret16a, 2.0, 0.0 
     $Default SBanks: 				( "Polaris" "Polaris" "Polaris" "Polaris" ) 
-$Subsystem: door1-trrt16a, 0, 2.0 
+$Subsystem: door1-activator16a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11475,7 +11475,7 @@ $Subsystem: door1-trrt16a, 0, 2.0
     +velocity: 60, 60, 60 
     +acceleration: 40, 40, 40 
     +time: 100 
-$Subsystem: door2-trrt16a, 0, 2.0 
+$Subsystem: door2-activator16a, 0, 2.0 
     $Flags: ( "untargetable" ) 
     $animation: triggered 
     $type: turret firing 
@@ -11720,8 +11720,7 @@ $Subsystem: Engine02, 40, 0.0
     $Engine Wash: Default900 
 $Subsystem: Engine03, 40, 0.0 
     $Engine Wash: Default900 
-$Subsystem: Fighterbay, 0.0, 0.0 
-
+$Subsystem: Radara, 15, 0.0 
 
 
 $Name: 				GTD Galileo 
